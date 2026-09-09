@@ -1,4 +1,6 @@
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Evals research citation map</title>
 <style>
   :root{
     --ground:#101F27; --panel:#0A171E; --line:#233A45; --line-soft:#1A2C36;
@@ -137,7 +139,9 @@ let W = 0, H = 0, dpr = 1;
 
 NODES.forEach((n,i) => {
   const a = CLUSTERS[n.c].anchor, ang = i * 2.39996;
-  n.x = a[0] + Math.cos(ang) * .05; n.y = a[1] + Math.sin(ang) * .05; // normalised 0..1
+  /* px/py, not x/y: node.y is the publication year from map.json and the layout
+     would overwrite it, which is what put floats in the node labels. */
+  n.px = a[0] + Math.cos(ang) * .05; n.py = a[1] + Math.sin(ang) * .05; // normalised 0..1
   n.vx = n.vy = 0;
 });
 
@@ -149,33 +153,38 @@ function size(){
   ctx.setTransform(dpr,0,0,dpr,0,0);
 }
 
-const REP = 0.00072, SPR = 0.0075, GRAV = 0.010, DAMP = 0.86;
+/* Repulsion is inverse-square in normalised 0..1 coordinates, so REP has to sit
+   near the spring/gravity force scale (~1e-3) at a typical separation of ~0.16.
+   MIND floors the denominator: nodes seeded within .05 of a cluster anchor — and
+   the up-to-8 the weekly job adds — would otherwise produce a near-zero d2, kick
+   each other a full canvas width in one frame, and pin the graph to the clamps. */
+const REP = 0.000008, SPR = 0.0075, GRAV = 0.010, DAMP = 0.86, MIND = 0.045;
 function step(){
   for (let i = 0; i < NODES.length; i++){
     const p = NODES[i];
     for (let j = i+1; j < NODES.length; j++){
       const q = NODES[j];
-      let dx = q.x - p.x, dy = q.y - p.y, d2 = dx*dx + dy*dy + 1e-5;
-      const d = Math.sqrt(d2), f = REP / d2;
+      let dx = q.px - p.px, dy = q.py - p.py, d2 = dx*dx + dy*dy + 1e-5;
+      const d = Math.sqrt(d2), de = Math.max(d, MIND), f = REP / (de * de);
       const ux = dx/d, uy = dy/d;
       p.vx -= ux*f; p.vy -= uy*f; q.vx += ux*f; q.vy += uy*f;
     }
   }
   edges.forEach(e => {
     const p = byId[e.s], q = byId[e.t];
-    const dx = q.x - p.x, dy = q.y - p.y, d = Math.hypot(dx,dy) + 1e-5;
+    const dx = q.px - p.px, dy = q.py - p.py, d = Math.hypot(dx,dy) + 1e-5;
     const rest = e.cross ? .21 : .13;
     const f = (d - rest) * SPR, ux = dx/d, uy = dy/d;
     p.vx += ux*f; p.vy += uy*f; q.vx -= ux*f; q.vy -= uy*f;
   });
   NODES.forEach(n => {
     const a = CLUSTERS[n.c].anchor;
-    n.vx += (a[0] - n.x) * GRAV; n.vy += (a[1] - n.y) * GRAV;
+    n.vx += (a[0] - n.px) * GRAV; n.vy += (a[1] - n.py) * GRAV;
     if (n === held) return;
     n.vx *= DAMP; n.vy *= DAMP;
-    n.x += n.vx; n.y += n.vy;
-    n.x = Math.max(.05, Math.min(.95, n.x));
-    n.y = Math.max(.06, Math.min(.95, n.y));
+    n.px += n.vx; n.py += n.vy;
+    n.px = Math.max(.05, Math.min(.95, n.px));
+    n.py = Math.max(.06, Math.min(.95, n.py));
   });
 }
 
@@ -185,7 +194,7 @@ let bridgesOnly = false, newOnly = false, sel = null, hov = null, held = null, q
 const visible = n => on[n.c] && (!bridgesOnly || n.bridge) && (!newOnly || n.isNew) &&
   (!query || (n.t + " " + n.a).toLowerCase().includes(query));
 
-const PX = n => [n.x * W, n.y * H];
+const PX = n => [n.px * W, n.py * H];
 const rad = n => 4.2 + Math.min(n.deg, 9) * 0.72;
 
 function nbrs(id){
@@ -280,7 +289,7 @@ function pos(ev){
 }
 cv.addEventListener("pointermove", ev => {
   const [mx,my] = pos(ev);
-  if (held){ held.x = Math.max(.05,Math.min(.95,mx/W)); held.y = Math.max(.06,Math.min(.95,my/H)); held.vx = held.vy = 0; return; }
+  if (held){ held.px = Math.max(.05,Math.min(.95,mx/W)); held.py = Math.max(.06,Math.min(.95,my/H)); held.vx = held.vy = 0; return; }
   const n = at(mx,my); const id = n ? n.id : null;
   if (id !== hov){ hov = id; cv.style.cursor = id ? "pointer" : "grab"; }
 });
