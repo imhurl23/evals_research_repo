@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "0 13 * * 1"      # Mondays 13:00 UTC
   workflow_dispatch:           # lets you trigger a run by hand
+    inputs:
+      mode:
+        description: "update = crawl for new papers; backfill = write notes for nodes a past run left with the placeholder"
+        type: choice
+        options: [update, backfill]
+        default: update
 
 permissions:
   contents: write
@@ -26,7 +32,9 @@ jobs:
           BRAINTRUST_API_KEY: ${{ secrets.BRAINTRUST_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           S2_API_KEY: ${{ secrets.S2_API_KEY }}     # optional
-        run: python scripts/update_map.py
+        # inputs.mode is null on a schedule, which is falsy, so the weekly run
+        # crawls as before and only a hand-triggered backfill passes the flag.
+        run: python scripts/update_map.py ${{ inputs.mode == 'backfill' && '--backfill' || '' }}
 
       - name: Render snapshot PNG
         continue-on-error: true                      # a failed screenshot must not block the commit
@@ -67,13 +75,14 @@ jobs:
             exit 0
           fi
           echo "changed=true" >> "$GITHUB_OUTPUT"
-          git commit -m "Weekly map update $DATE"
+          git commit -m "${{ inputs.mode == 'backfill' && 'Backfill map notes' || 'Weekly map update' }} $DATE"
           git push
 
       # Opening an issue notifies you by email through GitHub itself,
       # so there are no SMTP secrets to manage. The snapshot embeds from raw.
+      # A backfill writes no digest, so there is nothing to open an issue from.
       - name: Notify
-        if: steps.commit.outputs.changed == 'true'
+        if: steps.commit.outputs.changed == 'true' && inputs.mode != 'backfill'
         env:
           GH_TOKEN: ${{ github.token }}
           DATE: ${{ steps.commit.outputs.date }}

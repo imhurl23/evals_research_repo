@@ -195,6 +195,8 @@ def claude(prompt, max_tokens=1400):
                    "anthropic-version": "2023-06-01"})
         if not d:
             return None
+        if d.get("stop_reason") == "max_tokens":
+            print("  ! response truncated at max_tokens", file=sys.stderr)
         return "".join(b.get("text", "") for b in d.get("content", [])
                        if b.get("type") == "text")
 
@@ -210,38 +212,143 @@ def claude(prompt, max_tokens=1400):
         if not d:
             return None
         choices = d.get("choices") or []
-        return choices[0].get("message", {}).get("content", "") if choices else None
+        if not choices:
+            print(f"  ! gateway returned no choices: {str(d)[:200]}", file=sys.stderr)
+            return None
+        if choices[0].get("finish_reason") == "length":
+            print("  ! response truncated at the token limit", file=sys.stderr)
+        return choices[0].get("message", {}).get("content", "")
 
     return None
 
 
-def describe(batch, clusters, nodes_by_id):
-    """Ask for cluster + note only. Never for citations or authors."""
+CHUNK = 3          # papers per model call
+
+
+def _json_array(txt):
+    """Pull a JSON array out of a model response, tolerating code fences and
+    any stray prose around it. Returns None if there is no parsable array."""
+    txt = re.sub(r"```(?:json)?", "", txt.strip())
+    i, j = txt.find("["), txt.rfind("]")
+    if i == -1 or j <= i:
+        return None
+    try:
+        arr = json.loads(txt[i:j + 1])
+    except Exception:
+        return None
+    return arr if isinstance(arr, list) else None
+
+
+def _describe_chunk(batch, idx, clusters):
+    """One model call for the papers at positions `idx`. The indices in the
+    prompt are real batch positions, so results key straight back to it."""
     listing = "\n\n".join(
-        f"[{i}] {r['paper'].get('title')} ({r['paper'].get('year')})\n"
-        f"cites on-map: {', '.join(sorted(set(r['cites'])))}\n"
-        f"abstract: {(r['paper'].get('abstract') or '')[:900]}"
-        for i, r in enumerate(batch))
+        f"[{i}] {batch[i]['paper'].get('title')} ({batch[i]['paper'].get('year')})\n"
+        f"cites on-map: {', '.join(sorted(set(batch[i]['cites'])))}\n"
+        f"abstract: {(batch[i]['paper'].get('abstract') or '')[:900]}"
+        for i in idx)
     keys = ", ".join(f"{k} ({v['name']})" for k, v in clusters.items())
     prompt = f"""These papers are being added to a citation map. For each, assign one cluster and write a note.
 
 Clusters: {keys}
 
-For each paper return JSON only, no prose, no markdown fences:
-[{{"i": 0, "c": "<cluster key>", "n": "<two sentences: what it does, and why it matters given what it cites>"}}]
+Return JSON only, no prose, no markdown fences. One object per paper, reusing the bracketed index you were given as "i":
+[{{"i": {idx[0]}, "c": "<cluster key>", "n": "<two sentences: what it does, and why it matters given what it cites>"}}]
 
 The note is read by one researcher tracking these four literatures. Be specific and concrete about the finding. Do not pad, do not hedge, do not restate the title. If the abstract is too thin to say something real, write "abstract too thin to summarise".
 
 {listing}"""
     txt = claude(prompt)
     if not txt:
+        return None
+    arr = _json_array(txt)
+    if arr is None:
+        print(f"  ! unparsable model output for {idx}: {txt[:200]!r}", file=sys.stderr)
+        return None
+    out = {d["i"]: d for d in arr
+           if isinstance(d, dict) and isinstance(d.get("i"), int) and d.get("n")}
+    if not out:
+        print(f"  ! no usable objects for {idx}: {txt[:200]!r}", file=sys.stderr)
+        return None
+    return out
+
+
+def describe(batch, clusters, nodes_by_id):
+    """Ask for cluster + note only. Never for citations or authors.
+
+    Chunked deliberately: a single truncated response used to cost every note
+    in the run, because one json.loads over the whole batch either worked or
+    returned nothing. Now a chunk that will not parse is retried one paper at
+    a time, so a bad response costs one note instead of eight.
+    """
+    if not have_model():
         return {}
-    txt = re.sub(r"^```(?:json)?|```$", "", txt.strip(), flags=re.M).strip()
-    try:
-        return {d["i"]: d for d in json.loads(txt)}
-    except Exception as e:
-        print(f"  ! could not parse model output: {e}", file=sys.stderr)
-        return {}
+    notes = {}
+    for start in range(0, len(batch), CHUNK):
+        idx = list(range(start, min(start + CHUNK, len(batch))))
+        got = _describe_chunk(batch, idx, clusters)
+        if got is None and len(idx) > 1:
+            for i in idx:                       # salvage what the chunk lost
+                one = _describe_chunk(batch, [i], clusters)
+                if one:
+                    notes.update(one)
+        elif got:
+            notes.update(got)
+    missing = [i for i in range(len(batch)) if i not in notes]
+    if missing:
+        print(f"  ! no note for batch positions {missing}", file=sys.stderr)
+    return notes
+
+
+# -------------------------------------------------------------------- backfill
+
+PLACEHOLDER = "No summary generated this run."
+
+
+def backfill(m, nodes_by_id):
+    """Give notes to nodes a previous run left with the placeholder.
+
+    A run that reaches the model but cannot parse it still commits the node,
+    so the map keeps papers no summary ever landed on. Abstracts are not
+    stored in map.json, so they are refetched from S2 by paper id.
+    """
+    stale = [n for n in m["nodes"] if (n.get("n") or "") == PLACEHOLDER]
+    if not stale:
+        print("nothing to backfill")
+        return 0
+    if not have_model():
+        sys.exit("backfill needs BRAINTRUST_API_KEY or ANTHROPIC_API_KEY")
+
+    print(f"backfilling {len(stale)} notes…")
+    batch = []
+    for n in stale:
+        abstract = ""
+        if n.get("s2"):
+            try:
+                d = get(f"{S2}/paper/{n['s2']}?fields=abstract")
+                abstract = (d or {}).get("abstract") or ""
+            except Exception as e:
+                print(f"  ! abstract fetch failed for {n['id']}: {e}", file=sys.stderr)
+            time.sleep(1.1)
+        batch.append({
+            "paper": {"title": n["t"], "year": n["y"], "abstract": abstract},
+            "cites": sorted({e["target"] for e in m["edges"] if e["source"] == n["id"]}),
+            "node": n,
+        })
+
+    notes = describe(batch, m["clusters"], nodes_by_id)
+    fixed = 0
+    for i, rec in enumerate(batch):
+        info = notes.get(i) or {}
+        if not info.get("n"):
+            continue
+        rec["node"]["n"] = info["n"]
+        if info.get("c") in m["clusters"] and info["c"] != rec["node"]["c"]:
+            print(f"  {rec['node']['id']}: cluster {rec['node']['c']} -> {info['c']}")
+            rec["node"]["c"] = info["c"]
+        fixed += 1
+    print(f"  backfilled {fixed}/{len(stale)}")
+    return fixed
 
 
 # ------------------------------------------------------------------------ main
@@ -250,6 +357,16 @@ def main():
     m = load(MAP, None)
     if not m:
         sys.exit("data/map.json missing")
+
+    if "--backfill" in sys.argv:
+        nodes_by_id = {n["id"]: n for n in m["nodes"]}
+        if backfill(m, nodes_by_id):
+            m["updated"] = datetime.date.today().isoformat()
+            with open(MAP, "w") as f:
+                json.dump(m, f, indent=2, ensure_ascii=False)
+            print("wrote data/map.json")
+        return
+
     rejects = load(REJECTS, {})
     nodes_by_id = {n["id"]: n for n in m["nodes"]}
     today = datetime.date.today().isoformat()
