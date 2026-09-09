@@ -303,16 +303,23 @@ def describe(batch, clusters, nodes_by_id):
 # -------------------------------------------------------------------- backfill
 
 PLACEHOLDER = "No summary generated this run."
+THIN = "abstract too thin to summarise"
+# Both are worth another attempt. THIN is included because a rate-limited
+# abstract fetch produces it just as readily as a genuinely thin abstract,
+# and the map should not record a 429 as an editorial verdict.
+STALE_NOTES = (PLACEHOLDER, THIN)
 
 
 def backfill(m, nodes_by_id):
-    """Give notes to nodes a previous run left with the placeholder.
+    """Give notes to nodes a previous run left without a real one.
 
     A run that reaches the model but cannot parse it still commits the node,
     so the map keeps papers no summary ever landed on. Abstracts are not
-    stored in map.json, so they are refetched from S2 by paper id.
+    stored in map.json, so they are refetched from S2 by paper id. A node
+    whose abstract will not fetch is deferred rather than judged on its title
+    alone, so it keeps its placeholder and a later pass can retry it.
     """
-    stale = [n for n in m["nodes"] if (n.get("n") or "") == PLACEHOLDER]
+    stale = [n for n in m["nodes"] if (n.get("n") or "").strip() in STALE_NOTES]
     if not stale:
         print("nothing to backfill")
         return 0
@@ -320,21 +327,30 @@ def backfill(m, nodes_by_id):
         sys.exit("backfill needs BRAINTRUST_API_KEY or ANTHROPIC_API_KEY")
 
     print(f"backfilling {len(stale)} notes…")
-    batch = []
+    batch, deferred = [], []
     for n in stale:
-        abstract = ""
+        abstract, failed = "", False
         if n.get("s2"):
             try:
                 d = get(f"{S2}/paper/{n['s2']}?fields=abstract")
                 abstract = (d or {}).get("abstract") or ""
             except Exception as e:
                 print(f"  ! abstract fetch failed for {n['id']}: {e}", file=sys.stderr)
+                failed = True
             time.sleep(1.1)
+        if failed:
+            deferred.append(n["id"])       # retry next pass, don't guess now
+            continue
         batch.append({
             "paper": {"title": n["t"], "year": n["y"], "abstract": abstract},
             "cites": sorted({e["target"] for e in m["edges"] if e["source"] == n["id"]}),
             "node": n,
         })
+    if deferred:
+        print(f"  deferred {len(deferred)} with no abstract: {', '.join(deferred)}")
+        print("  (set S2_API_KEY to stop Semantic Scholar rate-limiting these)")
+    if not batch:
+        return 0
 
     notes = describe(batch, m["clusters"], nodes_by_id)
     fixed = 0
@@ -347,7 +363,8 @@ def backfill(m, nodes_by_id):
             print(f"  {rec['node']['id']}: cluster {rec['node']['c']} -> {info['c']}")
             rec["node"]["c"] = info["c"]
         fixed += 1
-    print(f"  backfilled {fixed}/{len(stale)}")
+    print(f"  backfilled {fixed}/{len(batch)} attempted"
+          + (f", {len(deferred)} deferred" if deferred else ""))
     return fixed
 
 
