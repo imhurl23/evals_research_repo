@@ -1,0 +1,361 @@
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root{
+    --ground:#101F27; --panel:#0A171E; --line:#233A45; --line-soft:#1A2C36;
+    --paper:#ECE4D6; --muted:#7C949F;
+    --eval:#E9B44C; --interp:#63C4DC; --rl:#E4705E; --human:#A98BD8;
+    --bridge:#F4EBD0; --fresh:#7FD6A2;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, ui-serif, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  *{box-sizing:border-box}
+  #wrap{background:var(--ground);color:var(--paper);font-family:var(--sans);
+    display:grid;grid-template-columns:1fr 340px;height:760px;max-height:88vh;
+    border:1px solid var(--line);overflow:hidden;position:relative}
+  @media (max-width:820px){#wrap{grid-template-columns:1fr;grid-template-rows:1fr 300px;height:640px}}
+
+  /* ---- canvas side ---- */
+  #stage{position:relative;overflow:hidden}
+  canvas{display:block;width:100%;height:100%;cursor:grab}
+  canvas.dragging{cursor:grabbing}
+
+  #controls{position:absolute;top:0;left:0;right:0;padding:14px 16px;
+    display:flex;gap:8px;flex-wrap:wrap;align-items:center;
+    background:linear-gradient(180deg,rgba(16,31,39,.96),rgba(16,31,39,0));pointer-events:none}
+  #controls > *{pointer-events:auto}
+  .chip{background:transparent;border:1px solid var(--line);color:var(--muted);
+    font:inherit;font-size:12px;padding:5px 10px;border-radius:2px;cursor:pointer;
+    display:inline-flex;align-items:center;gap:7px}
+  .chip:hover{border-color:var(--muted);color:var(--paper)}
+  .chip:focus-visible{outline:2px solid var(--interp);outline-offset:2px}
+  .chip[aria-pressed="true"]{color:var(--paper);border-color:currentColor}
+  .dot{width:8px;height:8px;border-radius:50%;background:currentColor;flex:none}
+  .chip.c-eval[aria-pressed="true"]{color:var(--eval)}
+  .chip.c-interp[aria-pressed="true"]{color:var(--interp)}
+  .chip.c-rl[aria-pressed="true"]{color:var(--rl)}
+  .chip.c-human[aria-pressed="true"]{color:var(--human)}
+  .chip.bridge[aria-pressed="true"]{color:var(--bridge);border-color:var(--bridge)}
+  .chip.newchip[aria-pressed="true"]{color:var(--fresh);border-color:var(--fresh)}
+  #find{background:var(--panel);border:1px solid var(--line);color:var(--paper);
+    font:inherit;font-size:12px;padding:5px 9px;border-radius:2px;width:150px}
+  #find::placeholder{color:var(--muted)}
+  #find:focus{outline:none;border-color:var(--interp)}
+
+  #stamp{position:absolute;right:16px;bottom:14px;font-size:11px;color:var(--muted);pointer-events:none}
+  #readout{position:absolute;left:16px;bottom:14px;font-size:11px;color:var(--muted);
+    letter-spacing:.02em;pointer-events:none}
+
+  /* ---- detail panel ---- */
+  #side{background:var(--panel);border-left:1px solid var(--line);
+    padding:20px;overflow-y:auto}
+  @media (max-width:820px){#side{border-left:none;border-top:1px solid var(--line);padding:16px}}
+  #side h1{font-family:var(--serif);font-size:19px;line-height:1.32;font-weight:500;
+    margin:0 0 10px;color:var(--paper)}
+  #side .meta{font-size:12px;color:var(--muted);line-height:1.6;margin:0 0 4px}
+  #side .authors{font-size:12.5px;color:var(--paper);opacity:.72;line-height:1.55;margin:0 0 12px}
+  #side .tag{display:inline-block;font-size:11px;padding:3px 8px;border:1px solid currentColor;
+    border-radius:2px;margin:0 6px 14px 0}
+  #side p.note{font-size:12.5px;line-height:1.65;color:var(--paper);opacity:.8;
+    border-left:2px solid var(--line);padding-left:11px;margin:0 0 16px}
+  #side a.src{font-size:12px;color:var(--interp);text-decoration:none;border-bottom:1px solid rgba(99,196,220,.35)}
+  #side a.src:hover{border-bottom-color:var(--interp)}
+  .grouphead{font-size:11px;color:var(--muted);margin:18px 0 8px;
+    border-top:1px solid var(--line-soft);padding-top:12px}
+  .ref{display:block;width:100%;text-align:left;background:none;border:none;
+    color:var(--paper);font:inherit;font-size:12.5px;line-height:1.45;padding:5px 0 5px 12px;
+    cursor:pointer;opacity:.78;position:relative}
+  .ref:hover{opacity:1}
+  .ref::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;
+    border-radius:50%;background:currentColor;opacity:.55}
+  .ref.dashed::before{border-radius:0;height:1px;width:7px;top:13px}
+  #empty{color:var(--muted);font-size:13px;line-height:1.7}
+  #empty b{color:var(--paper);font-weight:500;font-family:var(--serif);font-size:15px;
+    display:block;margin-bottom:9px}
+  kbd{font:inherit;font-size:11px;border:1px solid var(--line);padding:1px 5px;border-radius:2px;color:var(--muted)}
+</style>
+
+<div id="wrap">
+  <div id="stage">
+    <canvas id="cv"></canvas>
+    <div id="controls">
+      <button class="chip c-eval"   aria-pressed="true" data-cluster="eval"><i class="dot"></i>Evaluation methodology</button>
+      <button class="chip c-interp" aria-pressed="true" data-cluster="interp"><i class="dot"></i>Mech. interpretability</button>
+      <button class="chip c-rl"     aria-pressed="true" data-cluster="rl"><i class="dot"></i>RL &amp; reward hacking</button>
+      <button class="chip c-human"  aria-pressed="true" data-cluster="human"><i class="dot"></i>Human&ndash;AI interaction</button>
+      <button class="chip bridge"   aria-pressed="false" id="bridgeBtn">Bridges only</button>
+      <button class="chip newchip"  aria-pressed="false" id="newBtn">New arrivals</button>
+      <input id="find" placeholder="Find a paper" autocomplete="off">
+    </div>
+    <div id="readout"></div>
+      <div id="stamp"></div>
+  </div>
+  <div id="side">
+    <div id="empty">
+      <b>39 papers, 47 citation links</b>
+      Click any node to read it and walk its references. Drag to rearrange, hover to isolate a neighbourhood.
+      <br><br>
+      Solid links are citations I confirmed in the citing paper's own text. Dashed links are standard lineage I could not verify directly &mdash; treat them as provisional.
+      <br><br>
+      Ringed nodes cite across cluster boundaries. Those are the papers joining your five interests into one literature.
+    </div>
+  </div>
+</div>
+
+<script>
+/* Graph data lives in data/map.json so the weekly job edits data, not code. */
+let CLUSTERS, NODES, EDGES;
+async function loadMap(){
+  const res = await fetch('./data/map.json?v=' + Date.now());
+  if (!res.ok) throw new Error('map.json ' + res.status);
+  const d = await res.json();
+  CLUSTERS = d.clusters;
+  NODES = d.nodes;
+  EDGES = d.edges.map(e => [e.source, e.target, e.confidence]);
+  return d;
+}
+
+async function boot(){
+const meta = await loadMap();
+/* ---------- indices ---------- */
+const byId = {}; NODES.forEach(n => byId[n.id] = n);
+const out = {}, inn = {};
+NODES.forEach(n => { out[n.id] = []; inn[n.id] = []; });
+const edges = EDGES.filter(e => byId[e[0]] && byId[e[1]]).map(([s,t,k]) => {
+  out[s].push({id:t,k}); inn[t].push({id:s,k});
+  return {s, t, k, cross: byId[s].c !== byId[t].c};
+});
+// a bridge node is one with a real citation link crossing a cluster boundary
+const bridge = {};
+edges.forEach(e => { if (e.cross) { bridge[e.s] = true; bridge[e.t] = true; } });
+NODES.forEach(n => { n.deg = out[n.id].length + inn[n.id].length; n.bridge = !!bridge[n.id]; });
+
+/* ---------- layout ---------- */
+const cv = document.getElementById("cv"), ctx = cv.getContext("2d");
+const stage = document.getElementById("stage");
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+let W = 0, H = 0, dpr = 1;
+
+NODES.forEach((n,i) => {
+  const a = CLUSTERS[n.c].anchor, ang = i * 2.39996;
+  n.x = a[0] + Math.cos(ang) * .05; n.y = a[1] + Math.sin(ang) * .05; // normalised 0..1
+  n.vx = n.vy = 0;
+});
+
+function size(){
+  const r = stage.getBoundingClientRect();
+  dpr = Math.min(devicePixelRatio || 1, 2);
+  W = r.width; H = r.height;
+  cv.width = W * dpr; cv.height = H * dpr;
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+}
+
+const REP = 0.00072, SPR = 0.0075, GRAV = 0.010, DAMP = 0.86;
+function step(){
+  for (let i = 0; i < NODES.length; i++){
+    const p = NODES[i];
+    for (let j = i+1; j < NODES.length; j++){
+      const q = NODES[j];
+      let dx = q.x - p.x, dy = q.y - p.y, d2 = dx*dx + dy*dy + 1e-5;
+      const d = Math.sqrt(d2), f = REP / d2;
+      const ux = dx/d, uy = dy/d;
+      p.vx -= ux*f; p.vy -= uy*f; q.vx += ux*f; q.vy += uy*f;
+    }
+  }
+  edges.forEach(e => {
+    const p = byId[e.s], q = byId[e.t];
+    const dx = q.x - p.x, dy = q.y - p.y, d = Math.hypot(dx,dy) + 1e-5;
+    const rest = e.cross ? .21 : .13;
+    const f = (d - rest) * SPR, ux = dx/d, uy = dy/d;
+    p.vx += ux*f; p.vy += uy*f; q.vx -= ux*f; q.vy -= uy*f;
+  });
+  NODES.forEach(n => {
+    const a = CLUSTERS[n.c].anchor;
+    n.vx += (a[0] - n.x) * GRAV; n.vy += (a[1] - n.y) * GRAV;
+    if (n === held) return;
+    n.vx *= DAMP; n.vy *= DAMP;
+    n.x += n.vx; n.y += n.vy;
+    n.x = Math.max(.05, Math.min(.95, n.x));
+    n.y = Math.max(.06, Math.min(.95, n.y));
+  });
+}
+
+/* ---------- state ---------- */
+const on = {eval:1, interp:1, rl:1, human:1};
+let bridgesOnly = false, newOnly = false, sel = null, hov = null, held = null, query = "";
+const visible = n => on[n.c] && (!bridgesOnly || n.bridge) && (!newOnly || n.isNew) &&
+  (!query || (n.t + " " + n.a).toLowerCase().includes(query));
+
+const PX = n => [n.x * W, n.y * H];
+const rad = n => 4.2 + Math.min(n.deg, 9) * 0.72;
+
+function nbrs(id){
+  const s = new Set([id]);
+  out[id].forEach(o => s.add(o.id)); inn[id].forEach(o => s.add(o.id));
+  return s;
+}
+
+/* ---------- draw ---------- */
+function draw(){
+  ctx.clearRect(0,0,W,H);
+  const focus = hov || sel;
+  const near = focus ? nbrs(focus) : null;
+
+  edges.forEach(e => {
+    const p = byId[e.s], q = byId[e.t];
+    if (!visible(p) || !visible(q)) return;
+    const lit = !focus || (near.has(e.s) && near.has(e.t));
+    const [x1,y1] = PX(p), [x2,y2] = PX(q);
+    ctx.save();
+    ctx.setLineDash(e.k === "l" ? [3,4] : []);
+    ctx.lineWidth = e.cross ? 1.5 : 1;
+    ctx.strokeStyle = e.cross
+      ? (lit ? "rgba(244,235,208,.62)" : "rgba(244,235,208,.10)")
+      : (lit ? "rgba(160,190,205,.34)" : "rgba(160,190,205,.07)");
+    // slight arc so reciprocal directions stay legible
+    const mx = (x1+x2)/2 + (y2-y1)*.055, my = (y1+y2)/2 - (x2-x1)*.055;
+    ctx.beginPath(); ctx.moveTo(x1,y1); ctx.quadraticCurveTo(mx,my,x2,y2); ctx.stroke();
+    ctx.restore();
+  });
+
+  NODES.forEach(n => {
+    if (!visible(n)) return;
+    const lit = !focus || near.has(n.id);
+    const [x,y] = PX(n), r = rad(n), col = CLUSTERS[n.c].color;
+    ctx.globalAlpha = lit ? 1 : .16;
+    if (n.bridge){
+      ctx.beginPath(); ctx.arc(x,y,r+3.6,0,6.2832);
+      ctx.strokeStyle = "rgba(244,235,208,.75)"; ctx.lineWidth = 1; ctx.stroke();
+    }
+    if (n.isNew){
+      ctx.beginPath(); ctx.arc(x,y,r + (n.bridge ? 7 : 3.6),0,6.2832);
+      ctx.strokeStyle = "rgba(127,214,162,.9)"; ctx.lineWidth = 1.6; ctx.stroke();
+    }
+    ctx.beginPath(); ctx.arc(x,y,r,0,6.2832);
+    ctx.fillStyle = col; ctx.fill();
+    if (n.id === sel){
+      ctx.beginPath(); ctx.arc(x,y,r+7.5,0,6.2832);
+      ctx.strokeStyle = col; ctx.lineWidth = 1.5; ctx.stroke();
+    }
+    if (lit && (focus || n.deg >= 5 || bridgesOnly || query)){
+      ctx.globalAlpha = lit ? .92 : .16;
+      ctx.font = '11px ' + getComputedStyle(document.body).getPropertyValue('font-family');
+      ctx.font = '11px system-ui, sans-serif';
+      ctx.fillStyle = "#ECE4D6"; ctx.textAlign = "center";
+      const short = n.a.split(",")[0].split(" ")[0] + " " + n.y;
+      ctx.fillText(short, x, y - r - 6);
+    }
+    ctx.globalAlpha = 1;
+  });
+
+  const shown = NODES.filter(visible).length;
+  document.getElementById("readout").textContent =
+    shown + " of " + NODES.length + " papers · " +
+    edges.filter(e => e.cross).length + " cross-cluster links · " +
+    NODES.filter(n => n.bridge).length + " bridge papers";
+}
+
+let alpha = 1;
+function loop(){
+  const iters = reduce ? 1 : (alpha > .02 ? 3 : 1);
+  for (let k = 0; k < iters; k++) step();
+  alpha *= .997;
+  draw();
+  requestAnimationFrame(loop);
+}
+
+/* ---------- hit testing & interaction ---------- */
+function at(mx,my){
+  let best = null, bd = 18*18;
+  NODES.forEach(n => {
+    if (!visible(n)) return;
+    const [x,y] = PX(n), d = (x-mx)**2 + (y-my)**2;
+    if (d < bd){ bd = d; best = n; }
+  });
+  return best;
+}
+function pos(ev){
+  const r = cv.getBoundingClientRect();
+  const t = ev.touches ? ev.touches[0] : ev;
+  return [t.clientX - r.left, t.clientY - r.top];
+}
+cv.addEventListener("pointermove", ev => {
+  const [mx,my] = pos(ev);
+  if (held){ held.x = Math.max(.05,Math.min(.95,mx/W)); held.y = Math.max(.06,Math.min(.95,my/H)); held.vx = held.vy = 0; return; }
+  const n = at(mx,my); const id = n ? n.id : null;
+  if (id !== hov){ hov = id; cv.style.cursor = id ? "pointer" : "grab"; }
+});
+cv.addEventListener("pointerdown", ev => {
+  const [mx,my] = pos(ev); const n = at(mx,my);
+  if (n){ held = n; cv.classList.add("dragging"); cv.setPointerCapture(ev.pointerId); open(n.id); alpha = Math.max(alpha,.4); }
+});
+addEventListener("pointerup", () => { held = null; cv.classList.remove("dragging"); });
+cv.addEventListener("pointerleave", () => { if (!held) hov = null; });
+
+/* ---------- panel ---------- */
+const side = document.getElementById("side");
+function open(id){
+  sel = id;
+  const n = byId[id], col = CLUSTERS[n.c].color;
+  const refs = (list, dashLabel) => list.map(o => {
+    const m = byId[o.id];
+    return `<button class="ref ${o.k==='l'?'dashed':''}" data-go="${o.id}" style="color:${CLUSTERS[m.c].color}">
+      ${m.a.split(",")[0]} ${m.y} &mdash; <span style="color:var(--paper)">${m.t}</span></button>`;
+  }).join("") || `<div style="font-size:12px;color:var(--muted)">None recorded in this map.</div>`;
+
+  side.innerHTML = `
+    <h1>${n.t}</h1>
+    <div class="authors">${n.a}</div>
+    <div class="meta">${n.v} &middot; ${n.y}</div>
+    <span class="tag" style="color:${col}">${CLUSTERS[n.c].name}</span>
+    ${n.bridge ? `<span class="tag" style="color:var(--bridge)">bridge</span>` : ``}
+    ${n.isNew ? `<span class="tag" style="color:var(--fresh)">added ${n.added || "this run"}</span>` : ``}
+    <p class="note">${n.n}</p>
+    ${n.url ? `<a class="src" href="${n.url}" target="_blank" rel="noopener">Open source</a>` : ``}
+    <div class="grouphead">Cites (${out[id].length})</div>${refs(out[id])}
+    <div class="grouphead">Cited by, within this map (${inn[id].length})</div>${refs(inn[id])}
+    <div class="grouphead">&nbsp;</div>
+    <div style="font-size:11.5px;color:var(--muted);line-height:1.6">
+      Dashes mark links I could not verify in the citing text.
+    </div>`;
+  side.scrollTop = 0;
+  side.querySelectorAll("[data-go]").forEach(b =>
+    b.addEventListener("click", () => { const t = b.dataset.go; on[byId[t].c] = 1; syncChips(); open(t); alpha = Math.max(alpha,.3); }));
+}
+
+/* ---------- controls ---------- */
+function syncChips(){
+  document.querySelectorAll("[data-cluster]").forEach(b =>
+    b.setAttribute("aria-pressed", on[b.dataset.cluster] ? "true" : "false"));
+}
+document.querySelectorAll("[data-cluster]").forEach(b => b.addEventListener("click", () => {
+  on[b.dataset.cluster] = on[b.dataset.cluster] ? 0 : 1; syncChips(); alpha = Math.max(alpha,.3);
+}));
+const bb = document.getElementById("bridgeBtn");
+bb.addEventListener("click", () => {
+  bridgesOnly = !bridgesOnly;
+  bb.setAttribute("aria-pressed", bridgesOnly ? "true" : "false");
+  alpha = Math.max(alpha,.5);
+});
+const nb = document.getElementById("newBtn");
+nb.addEventListener("click", () => {
+  newOnly = !newOnly;
+  nb.setAttribute("aria-pressed", newOnly ? "true" : "false");
+  alpha = Math.max(alpha,.5);
+});
+document.getElementById("find").addEventListener("input", e => {
+  query = e.target.value.trim().toLowerCase(); alpha = Math.max(alpha,.3);
+});
+
+addEventListener("resize", () => { size(); alpha = Math.max(alpha,.3); });
+size();
+for (let i = 0; i < 320; i++) step();   // settle before first paint
+loop();
+
+document.getElementById("stamp").textContent = "data updated " + meta.updated;
+}
+boot().catch(err => {
+  document.getElementById("side").innerHTML = '<div id="empty"><b>Could not load the map</b>' +
+    'data/map.json did not load (' + err.message + '). If you are opening this file directly from disk, ' +
+    'browsers block the fetch. Serve the folder over HTTP instead, or view the published Pages site.</div>';
+});
+</script>

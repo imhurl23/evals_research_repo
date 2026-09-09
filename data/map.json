@@ -1,0 +1,649 @@
+{
+  "schema": 1,
+  "updated": "2026-09-09",
+  "clusters": {
+    "eval": {
+      "name": "Evaluation methodology",
+      "color": "#E9B44C",
+      "anchor": [
+        0.27,
+        0.26
+      ]
+    },
+    "interp": {
+      "name": "Mechanistic interpretability",
+      "color": "#63C4DC",
+      "anchor": [
+        0.73,
+        0.28
+      ]
+    },
+    "rl": {
+      "name": "RL & reward hacking",
+      "color": "#E4705E",
+      "anchor": [
+        0.74,
+        0.74
+      ]
+    },
+    "human": {
+      "name": "Human–AI interaction & design",
+      "color": "#A98BD8",
+      "anchor": [
+        0.26,
+        0.75
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "raji2021",
+      "t": "AI and the Everything in the Whole Wide World Benchmark",
+      "a": "Raji, Bender, Paullada, Denton, Hanna",
+      "y": 2021,
+      "v": "NeurIPS Datasets & Benchmarks",
+      "c": "eval",
+      "n": "The origin point for the modern validity critique: general-capability benchmarks are treated as if they measure general ability, when their task construction cannot support that claim."
+    },
+    {
+      "id": "adcock2001",
+      "t": "Measurement Validity: A Shared Standard for Qualitative and Quantitative Research",
+      "a": "Adcock & Collier",
+      "y": 2001,
+      "v": "American Political Science Review",
+      "c": "eval",
+      "n": "Pre-AI political science. It supplies the four-level concept→measurement ladder that the GenAI measurement framework runs on, which is why it sits at the root of this cluster."
+    },
+    {
+      "id": "wallach2025",
+      "t": "Position: Evaluating Generative AI Systems Is a Social Science Measurement Challenge",
+      "a": "Wallach, Desai, Cooper, Wang, Atalla, Barocas, Blodgett, Chouldechova, Vaughan, Jacobs, et al.",
+      "y": 2025,
+      "v": "ICML",
+      "c": "eval",
+      "url": "https://proceedings.mlr.press/v267/wallach25a.html",
+      "n": "The hinge of your whole map. Argues ML jumps straight from a vague concept to an instrument with no systematisation step. Authored largely by the same MSR group that produces the reliance studies in the human cluster."
+    },
+    {
+      "id": "bean2025",
+      "t": "Measuring what Matters: Construct Validity in Large Language Model Benchmarks",
+      "a": "Bean, Kearns, Romanou, Hafner, Mayne, Batzner, Foroutan, et al.",
+      "y": 2025,
+      "v": "NeurIPS Datasets & Benchmarks",
+      "c": "eval",
+      "url": "https://arxiv.org/abs/2511.04703",
+      "n": "29 reviewers, 445 benchmarks. The empirical backbone of the validity critique — only a small minority of benchmarks used any uncertainty estimate, and roughly a quarter relied on convenience sampling."
+    },
+    {
+      "id": "lambert2024",
+      "t": "RewardBench: Evaluating Reward Models for Language Modeling",
+      "a": "Lambert, Pyatkin, Morrison, Miranda, Lin, Chandu, Dziri, Kumar, Zick, Choi, Smith, Hajishirzi",
+      "y": 2024,
+      "v": "arXiv:2403.13787",
+      "c": "eval",
+      "url": "https://arxiv.org/abs/2403.13787",
+      "n": "Turns the reward model itself into an object of evaluation. This is the literal join between your evaluation interest and your RL interest."
+    },
+    {
+      "id": "rmbench2025",
+      "t": "RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style",
+      "a": "Liu, Yao, Min, Cao, Hou, Li",
+      "y": 2025,
+      "v": "ICLR",
+      "c": "eval",
+      "n": "Sharpens RewardBench by separating substance from style — a reward model that rewards verbosity scores well on the wrong axis."
+    },
+    {
+      "id": "lin2021",
+      "t": "TruthfulQA: Measuring How Models Mimic Human Falsehoods",
+      "a": "Lin, Hilton, Evans",
+      "y": 2021,
+      "v": "arXiv:2109.07958",
+      "c": "eval",
+      "url": "https://arxiv.org/abs/2109.07958",
+      "n": "An early benchmark built adversarially against a known failure mode rather than sampled from convenience. Frequently the gold-standard reference in reward-hacking papers."
+    },
+    {
+      "id": "olah2020",
+      "t": "Zoom In: An Introduction to Circuits",
+      "a": "Olah, Cammarata, Schubert, Goh, Petrov, Carter",
+      "y": 2020,
+      "v": "Distill",
+      "c": "interp",
+      "n": "Names the programme: features as the unit, circuits as the composition, and the polysemanticity problem that everything downstream tries to dissolve."
+    },
+    {
+      "id": "elhage2022",
+      "t": "Toy Models of Superposition",
+      "a": "Elhage, Hume, Olsson, et al.",
+      "y": 2022,
+      "v": "Transformer Circuits",
+      "c": "interp",
+      "n": "The most load-bearing node in this cluster. Formalises superposition and lays out the three strategies for recovering features — strategy two is what became the SAE literature."
+    },
+    {
+      "id": "sharkey2022",
+      "t": "Taking Features Out of Superposition with Sparse Autoencoders",
+      "a": "Sharkey, Braun, Millidge",
+      "y": 2022,
+      "v": "Interim research report",
+      "c": "interp",
+      "n": "Circulated as an interim report rather than a paper, but repeatedly cited as the first application of SAEs to superposition. A good example of a node a keyword search would miss and a citation graph catches."
+    },
+    {
+      "id": "bricken2023",
+      "t": "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning",
+      "a": "Bricken, Templeton, Batson, et al.",
+      "y": 2023,
+      "v": "Transformer Circuits",
+      "c": "interp",
+      "url": "https://transformer-circuits.pub/2023/monosemantic-features",
+      "n": "The demonstration that made SAEs the default tool: a one-layer transformer decomposed into interpretable features, with expansion factors up to 256×."
+    },
+    {
+      "id": "cunningham2023",
+      "t": "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
+      "a": "Cunningham, Ewart, Riggs, Huben, Sharkey",
+      "y": 2023,
+      "v": "arXiv:2309.08600 / ICLR 2024",
+      "c": "interp",
+      "url": "https://arxiv.org/abs/2309.08600",
+      "n": "The parallel result to Bricken et al., and the one that ties SAE features back to a known circuit by localising the indirect-object-identification behaviour more finely than prior decompositions."
+    },
+    {
+      "id": "wang2022ioi",
+      "t": "Interpretability in the Wild: A Circuit for Indirect Object Identification in GPT-2 Small",
+      "a": "Wang, Variengien, Conmy, Shlegeris, Steinhardt",
+      "y": 2022,
+      "v": "arXiv / ICLR 2023",
+      "c": "interp",
+      "n": "The reference circuit. Its value to the field is as a ground truth that later methods get checked against."
+    },
+    {
+      "id": "templeton2024",
+      "t": "Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet",
+      "a": "Templeton, Conerly, Marcus, Batson, et al.",
+      "y": 2024,
+      "v": "Transformer Circuits",
+      "c": "interp",
+      "n": "Same method as Towards Monosemanticity at production scale, which is what moved SAEs from demonstration to tooling."
+    },
+    {
+      "id": "gao2024sae",
+      "t": "Scaling and Evaluating Sparse Autoencoders",
+      "a": "Gao, la Tour, Tillman, et al.",
+      "y": 2024,
+      "v": "arXiv / OpenAI",
+      "c": "interp",
+      "n": "Note the title's second verb. Introduces k-sparse autoencoders and, more importantly for you, treats SAE quality as a measurement problem rather than a demo."
+    },
+    {
+      "id": "raja2024",
+      "t": "Improving Dictionary Learning with Gated Sparse Autoencoders",
+      "a": "Rajamanoharan, Conmy, Smith, Lieberum, Varma, Kramár, Shah, Nanda",
+      "y": 2024,
+      "v": "arXiv / DeepMind",
+      "c": "interp",
+      "n": "Architectural fix for the shrinkage that L1 sparsity penalties impose on feature magnitudes."
+    },
+    {
+      "id": "doshivelez2017",
+      "t": "Towards a Rigorous Science of Interpretable Machine Learning",
+      "a": "Doshi-Velez & Kim",
+      "y": 2017,
+      "v": "arXiv:1702.08608",
+      "c": "interp",
+      "url": "https://arxiv.org/abs/1702.08608",
+      "n": "Sits in this cluster but is cited constantly from the human cluster. Its claim — that interpretability claims need human-subject validation — is exactly the seam between your interpretability and human-centred interests."
+    },
+    {
+      "id": "minegishi2025",
+      "t": "Rethinking Evaluation of Sparse Autoencoders through the Representation of Polysemous Words",
+      "a": "Minegishi, Furuta, Iwasawa, Matsuo",
+      "y": 2025,
+      "v": "arXiv:2501.06254",
+      "c": "interp",
+      "url": "https://arxiv.org/abs/2501.06254",
+      "n": "Finds that pushing the MSE–L0 Pareto frontier does not necessarily buy monosemanticity. Thematically this is a construct-validity argument aimed at interpretability, though it cites the interpretability canon rather than the measurement one."
+    },
+    {
+      "id": "ouyang2022",
+      "t": "Training Language Models to Follow Instructions with Human Feedback",
+      "a": "Ouyang, Wu, Jiang, Almeida, Wainwright, Mishkin, et al.",
+      "y": 2022,
+      "v": "NeurIPS",
+      "c": "rl",
+      "n": "InstructGPT. Establishes the RLHF pipeline whose failure modes the rest of this cluster studies, and serves as the synthetic gold reward model in the overoptimization work."
+    },
+    {
+      "id": "krakovna2020",
+      "t": "Specification Gaming: The Flip Side of AI Ingenuity",
+      "a": "Krakovna, Uesato, Mikulik, Rahtz, Everitt, Kumar, et al.",
+      "y": 2020,
+      "v": "DeepMind",
+      "c": "rl",
+      "n": "The catalogue of agents satisfying the letter of an objective. Pre-LLM, and the conceptual ancestor of reward hacking."
+    },
+    {
+      "id": "pan2022",
+      "t": "The Effects of Reward Misspecification: Mapping and Mitigating Misaligned Models",
+      "a": "Pan, Bhatia, Steinhardt",
+      "y": 2022,
+      "v": "ICLR",
+      "c": "rl",
+      "n": "Finds phase transitions — capability increases can flip a proxy from roughly aligned to actively harmful discontinuously, which is why monitoring a proxy score is not enough."
+    },
+    {
+      "id": "gao2023",
+      "t": "Scaling Laws for Reward Model Overoptimization",
+      "a": "Gao, Schulman, Hilton",
+      "y": 2023,
+      "v": "ICML (PMLR 202)",
+      "c": "rl",
+      "url": "https://proceedings.mlr.press/v202/gao23h/gao23h.pdf",
+      "n": "The quantitative statement of Goodhart's law for RLHF: proxy-versus-gold reward divergence grows with optimisation pressure in a predictable functional form. The most cited node in this cluster."
+    },
+    {
+      "id": "dpo2023",
+      "t": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "a": "Rafailov, Sharma, Mitchell, Ermon, Manning, Finn",
+      "y": 2023,
+      "v": "NeurIPS",
+      "c": "rl",
+      "n": "Removes the explicit reward model, which was widely read as removing the reward-hacking surface. The next two nodes are the correction to that reading."
+    },
+    {
+      "id": "park2024",
+      "t": "Disentangling Length from Quality in Direct Preference Optimization",
+      "a": "Park, Rafailov, Ermon, Finn",
+      "y": 2024,
+      "v": "ACL Findings",
+      "c": "rl",
+      "n": "DPO-trained models get longer throughout training without getting better past a point. Length is the cleanest observable instance of a proxy being gamed."
+    },
+    {
+      "id": "rafailov2024",
+      "t": "Scaling Laws for Reward Model Overoptimization in Direct Alignment Algorithms",
+      "a": "Rafailov, Chittepu, Park, Sikchi, Hejna, Knox, Finn, Niekum",
+      "y": 2024,
+      "v": "NeurIPS",
+      "c": "rl",
+      "url": "https://arxiv.org/abs/2406.02900",
+      "n": "Shows direct alignment methods degrade the same way despite having no learned reward model, often before a single epoch completes. Overoptimization survives the removal of the thing it was blamed on."
+    },
+    {
+      "id": "safer2025",
+      "t": "SAFER: Probing Safety in Reward Models with Sparse Autoencoders",
+      "a": "authors not verified",
+      "y": 2025,
+      "v": "arXiv:2507.00665",
+      "c": "rl",
+      "url": "https://arxiv.org/abs/2507.00665",
+      "n": "Points SAEs at reward models. This is the single most direct bridge on your map between mechanistic interpretability and the RL/evaluation question — it cites the interpretability canon wholesale while working on an alignment-training object."
+    },
+    {
+      "id": "inform2025",
+      "t": "Information-Theoretic Reward Modeling for Stable RLHF: Detecting and Mitigating Reward Hacking",
+      "a": "authors not verified",
+      "y": 2025,
+      "v": "arXiv:2510.13694",
+      "c": "rl",
+      "url": "https://arxiv.org/abs/2510.13694",
+      "n": "A four-way bridge, and the reason it earns a place in a seed map: it cites the overoptimization line, both reward-model benchmarks, and a capability benchmark together. An information-bottleneck reward model plus a hacking indicator."
+    },
+    {
+      "id": "dudley2018",
+      "t": "A Review of User Interface Design for Interactive Machine Learning",
+      "a": "Dudley & Kristensson",
+      "y": 2018,
+      "v": "ACM TiiS",
+      "c": "human",
+      "n": "The pre-LLM interaction-design substrate. Still the reference for what an ML interface owes its user structurally."
+    },
+    {
+      "id": "amershi2019",
+      "t": "Guidelines for Human-AI Interaction",
+      "a": "Amershi, Weld, Vorvoreanu, Fourney, Nushi, Collisson, Suh, Iqbal, Bennett, Inkpen, Teevan, Kikin-Gil, Horvitz",
+      "y": 2019,
+      "v": "CHI",
+      "c": "human",
+      "url": "https://dl.acm.org/doi/10.1145/3290605.3300233",
+      "n": "18 guidelines synthesised from two decades of work, validated with 49 practitioners against 20 shipped products. The hub of the human-centred design cluster and the thing later HCAI standards work orbits."
+    },
+    {
+      "id": "mohseni2018",
+      "t": "A Multidisciplinary Survey and Framework for Design and Evaluation of Explainable AI Systems",
+      "a": "Mohseni, Zarei, Ragan",
+      "y": 2018,
+      "v": "arXiv:1811.11839 / ACM TiiS",
+      "c": "human",
+      "url": "https://arxiv.org/abs/1811.11839",
+      "n": "Organises XAI by who the explanation is for. Cites the design guidelines and the interpretability-rigour argument in the same breath, which makes it a structural connector."
+    },
+    {
+      "id": "bucinca2021",
+      "t": "To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-Assisted Decision-Making",
+      "a": "Buçinca, Malaya, Gajos",
+      "y": 2021,
+      "v": "CSCW",
+      "c": "human",
+      "url": "https://dl.acm.org/doi/10.1145/3449287",
+      "n": "The most cited node in this cluster. Interventions that force deliberation cut overreliance — and are liked less by the people they help, which is the design tension the cluster keeps circling."
+    },
+    {
+      "id": "collins2024",
+      "t": "Building Machines that Learn and Think with People",
+      "a": "Collins, Bhatt, Liu, Piriyakulkij, Sucholutsky, Ganguli, Lake, Weller, et al.",
+      "y": 2024,
+      "v": "Nature Human Behaviour",
+      "c": "human",
+      "n": "Frames models as thought partners rather than oracles or tools. The theoretical framing that recent overreliance work builds its motivation on."
+    },
+    {
+      "id": "bo2025",
+      "t": "To Rely or Not to Rely? Evaluating Interventions for Appropriate Reliance on Large Language Models",
+      "a": "Bo, Wan, Anderson",
+      "y": 2025,
+      "v": "CHI",
+      "c": "human",
+      "url": "https://arxiv.org/abs/2412.15584",
+      "n": "Tests reliance interventions head to head. Insists on appropriate reliance as the target — underreliance is a failure too, which most overreliance framings quietly ignore."
+    },
+    {
+      "id": "kim2025",
+      "t": "Fostering Appropriate Reliance on Large Language Models: The Role of Explanations, Sources, and Inconsistencies",
+      "a": "Kim, Vaughan, Liao, Lombrozo, Russakovsky",
+      "y": 2025,
+      "v": "CHI",
+      "c": "human",
+      "url": "https://arxiv.org/abs/2502.08554",
+      "n": "Users read inconsistency as an unreliability cue and use sources to verify. Note the author list — Vaughan and Liao also sit on the measurement-theory work in the evaluation cluster."
+    },
+    {
+      "id": "bucinca2025",
+      "t": "Contrastive Explanations That Anticipate Human Misconceptions Can Improve Human Decision-Making Skills",
+      "a": "Buçinca, Swaroop, Paluch, Doshi-Velez, Gajos",
+      "y": 2025,
+      "v": "CHI",
+      "c": "human",
+      "n": "Explanations aimed at the user's likely misconception rather than at the model's reasoning. Doshi-Velez appearing here is the interpretability/HCI seam in author form."
+    },
+    {
+      "id": "overreliance2025",
+      "t": "Measuring and Mitigating Overreliance to Build Human-Compatible AI",
+      "a": "authors not verified",
+      "y": 2025,
+      "v": "arXiv:2509.08010",
+      "c": "human",
+      "url": "https://arxiv.org/abs/2509.08010",
+      "n": "Argues the conversational, open-ended nature of LLMs breaks the measurement instruments overreliance research inherited from AI-assisted decision-making. A measurement-validity argument raised inside the human cluster."
+    },
+    {
+      "id": "liu2026",
+      "t": "Behavioral Indicators of Overreliance During Interaction with Conversational Language Models",
+      "a": "Liu, Zhou, Shen, Liu, Wu, Chen",
+      "y": 2026,
+      "v": "CHI",
+      "c": "human",
+      "url": "https://dl.acm.org/doi/10.1145/3772318.3790332",
+      "n": "77 participants, an LLM seeded with plausible misinformation, three realistic tasks. Derives behavioural signatures of overreliance from interaction logs — whole-paragraph copy-paste, skipped comprehension, coarse navigation."
+    },
+    {
+      "id": "reliance2026",
+      "t": "From Trust to Appropriate Reliance: Measurement Constructs in Human-AI Decision-Making",
+      "a": "authors not verified",
+      "y": 2026,
+      "v": "arXiv:2604.23896",
+      "c": "human",
+      "url": "https://arxiv.org/abs/2604.23896",
+      "n": "A systematic review asking whether the field's reliance constructs are coherent. Structurally the best entry point on the map: it reaches back to the 2017–2021 foundations and forward into the current CHI work."
+    },
+    {
+      "id": "nguyen2026",
+      "t": "Validating and Refining Measurements for Generative AI Evaluation via Stakeholder Engagement",
+      "a": "Nguyen, Garcia-Gathright, Washington, Chouldechova, Wallach, Vaughan",
+      "y": 2026,
+      "v": "FAccT",
+      "c": "human",
+      "url": "https://dl.acm.org/doi/10.1145/3805689.3812403",
+      "n": "Takes the measurement framework and asks the people affected whether the instrument measures the right thing. This is where human-centred method and evaluation methodology stop being separate interests."
+    }
+  ],
+  "edges": [
+    {
+      "source": "bean2025",
+      "target": "raji2021",
+      "confidence": "l"
+    },
+    {
+      "source": "bean2025",
+      "target": "wallach2025",
+      "confidence": "l"
+    },
+    {
+      "source": "wallach2025",
+      "target": "adcock2001",
+      "confidence": "v"
+    },
+    {
+      "source": "rmbench2025",
+      "target": "lambert2024",
+      "confidence": "l"
+    },
+    {
+      "source": "elhage2022",
+      "target": "olah2020",
+      "confidence": "l"
+    },
+    {
+      "source": "bricken2023",
+      "target": "elhage2022",
+      "confidence": "v"
+    },
+    {
+      "source": "bricken2023",
+      "target": "olah2020",
+      "confidence": "l"
+    },
+    {
+      "source": "cunningham2023",
+      "target": "wang2022ioi",
+      "confidence": "v"
+    },
+    {
+      "source": "cunningham2023",
+      "target": "elhage2022",
+      "confidence": "l"
+    },
+    {
+      "source": "cunningham2023",
+      "target": "sharkey2022",
+      "confidence": "l"
+    },
+    {
+      "source": "templeton2024",
+      "target": "bricken2023",
+      "confidence": "v"
+    },
+    {
+      "source": "gao2024sae",
+      "target": "bricken2023",
+      "confidence": "l"
+    },
+    {
+      "source": "gao2024sae",
+      "target": "cunningham2023",
+      "confidence": "l"
+    },
+    {
+      "source": "raja2024",
+      "target": "bricken2023",
+      "confidence": "l"
+    },
+    {
+      "source": "minegishi2025",
+      "target": "sharkey2022",
+      "confidence": "v"
+    },
+    {
+      "source": "minegishi2025",
+      "target": "bricken2023",
+      "confidence": "v"
+    },
+    {
+      "source": "minegishi2025",
+      "target": "elhage2022",
+      "confidence": "v"
+    },
+    {
+      "source": "gao2023",
+      "target": "ouyang2022",
+      "confidence": "v"
+    },
+    {
+      "source": "gao2023",
+      "target": "pan2022",
+      "confidence": "v"
+    },
+    {
+      "source": "gao2023",
+      "target": "krakovna2020",
+      "confidence": "v"
+    },
+    {
+      "source": "rafailov2024",
+      "target": "gao2023",
+      "confidence": "v"
+    },
+    {
+      "source": "rafailov2024",
+      "target": "park2024",
+      "confidence": "v"
+    },
+    {
+      "source": "rafailov2024",
+      "target": "dpo2023",
+      "confidence": "v"
+    },
+    {
+      "source": "park2024",
+      "target": "dpo2023",
+      "confidence": "l"
+    },
+    {
+      "source": "safer2025",
+      "target": "olah2020",
+      "confidence": "v"
+    },
+    {
+      "source": "safer2025",
+      "target": "elhage2022",
+      "confidence": "v"
+    },
+    {
+      "source": "safer2025",
+      "target": "cunningham2023",
+      "confidence": "v"
+    },
+    {
+      "source": "safer2025",
+      "target": "raja2024",
+      "confidence": "v"
+    },
+    {
+      "source": "safer2025",
+      "target": "gao2024sae",
+      "confidence": "v"
+    },
+    {
+      "source": "inform2025",
+      "target": "rafailov2024",
+      "confidence": "v"
+    },
+    {
+      "source": "inform2025",
+      "target": "lambert2024",
+      "confidence": "v"
+    },
+    {
+      "source": "inform2025",
+      "target": "rmbench2025",
+      "confidence": "v"
+    },
+    {
+      "source": "inform2025",
+      "target": "lin2021",
+      "confidence": "v"
+    },
+    {
+      "source": "mohseni2018",
+      "target": "amershi2019",
+      "confidence": "v"
+    },
+    {
+      "source": "mohseni2018",
+      "target": "dudley2018",
+      "confidence": "v"
+    },
+    {
+      "source": "mohseni2018",
+      "target": "doshivelez2017",
+      "confidence": "l"
+    },
+    {
+      "source": "reliance2026",
+      "target": "bucinca2021",
+      "confidence": "v"
+    },
+    {
+      "source": "reliance2026",
+      "target": "bucinca2025",
+      "confidence": "v"
+    },
+    {
+      "source": "reliance2026",
+      "target": "doshivelez2017",
+      "confidence": "v"
+    },
+    {
+      "source": "reliance2026",
+      "target": "dudley2018",
+      "confidence": "v"
+    },
+    {
+      "source": "bucinca2025",
+      "target": "bucinca2021",
+      "confidence": "l"
+    },
+    {
+      "source": "kim2025",
+      "target": "bucinca2021",
+      "confidence": "l"
+    },
+    {
+      "source": "kim2025",
+      "target": "amershi2019",
+      "confidence": "l"
+    },
+    {
+      "source": "bo2025",
+      "target": "bucinca2021",
+      "confidence": "l"
+    },
+    {
+      "source": "liu2026",
+      "target": "bucinca2021",
+      "confidence": "l"
+    },
+    {
+      "source": "overreliance2025",
+      "target": "collins2024",
+      "confidence": "v"
+    },
+    {
+      "source": "nguyen2026",
+      "target": "wallach2025",
+      "confidence": "l"
+    }
+  ]
+}

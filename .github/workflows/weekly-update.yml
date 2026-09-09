@@ -1,0 +1,89 @@
+name: Weekly citation map update
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"      # Mondays 13:00 UTC
+  workflow_dispatch:           # lets you trigger a run by hand
+
+permissions:
+  contents: write
+  issues: write               # the Notify step opens an issue as the digest
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Update the map
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}     # optional
+        run: python scripts/update_map.py
+
+      - name: Render snapshot PNG
+        continue-on-error: true                      # a failed screenshot must not block the commit
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+          python - <<'PY'
+          import datetime, http.server, socketserver, threading, functools, pathlib
+          from playwright.sync_api import sync_playwright
+          h = functools.partial(http.server.SimpleHTTPRequestHandler, directory=".")
+          srv = socketserver.TCPServer(("127.0.0.1", 8765), h)
+          threading.Thread(target=srv.serve_forever, daemon=True).start()
+          pathlib.Path("snapshots").mkdir(exist_ok=True)
+          out = f"snapshots/{datetime.date.today().isoformat()}.png"
+          with sync_playwright() as p:
+              b = p.chromium.launch()
+              pg = b.new_page(viewport={"width": 1400, "height": 900},
+                              device_scale_factor=2)
+              pg.goto("http://127.0.0.1:8765/index.html")
+              pg.wait_for_timeout(6000)          # let the force layout settle
+              pg.screenshot(path=out)
+              pg.screenshot(path="snapshots/latest.png")
+              b.close()
+          print("wrote", out)
+          PY
+
+      - name: Commit
+        id: commit
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          git config user.name "citation-map bot"
+          git config user.email "actions@github.com"
+          git add data/ digests/ snapshots/
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "nothing to commit"
+            exit 0
+          fi
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          git commit -m "Weekly map update $DATE"
+          git push
+
+      # Opening an issue notifies you by email through GitHub itself,
+      # so there are no SMTP secrets to manage. The snapshot embeds from raw.
+      - name: Notify
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DATE: ${{ steps.commit.outputs.date }}
+        run: |
+          BODY=$(mktemp)
+          RAW="https://raw.githubusercontent.com/${{ github.repository }}/main/snapshots/${DATE}.png"
+          cat "digests/${DATE}.md" > "$BODY"
+          if [ -f "snapshots/${DATE}.png" ]; then
+            printf '\n\n![map snapshot](%s)\n' "$RAW" >> "$BODY"
+          else
+            printf '\n\n_Snapshot render failed this run._\n' >> "$BODY"
+          fi
+          printf '\n[Open the live map](https://%s.github.io/%s/)\n' \
+            "${{ github.repository_owner }}" "${{ github.event.repository.name }}" >> "$BODY"
+          TITLE=$(head -1 "digests/${DATE}.md" | sed 's/^# //')
+          gh issue create --title "$TITLE" --body-file "$BODY" --label citation-map
