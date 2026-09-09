@@ -21,6 +21,9 @@ jobs:
 
       - name: Update the map
         env:
+          # Either model secret works. Set one; the script says so in the
+          # digest if it finds neither and falls back to verified edges only.
+          BRAINTRUST_API_KEY: ${{ secrets.BRAINTRUST_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           S2_API_KEY: ${{ secrets.S2_API_KEY }}     # optional
         run: python scripts/update_map.py

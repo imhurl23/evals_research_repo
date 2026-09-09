@@ -23,8 +23,12 @@ Data is separate from the viewer on purpose. The weekly job edits JSON, never Ja
 ## Setup
 
 1. **Create the repo** as `imhurl23/evals_research_repo` and push these files to `main`.
-2. **Enable Pages:** Settings → Pages → Source: *Deploy from a branch* → `main` / `/ (root)`. The map is live in about a minute.
-3. **Add a secret:** Settings → Secrets and variables → Actions → New repository secret → `ANTHROPIC_API_KEY`. Without it the map still updates, but new papers arrive with no summary or cluster assignment.
+2. **Enable Pages:** Settings → Pages → Source: *Deploy from a branch* → `main` / `/ (root)`. The map is live in about a minute. Pages only serves a private repo on a paid plan, so on a free plan the repo has to be public.
+3. **Add a model secret:** Settings → Secrets and variables → Actions → New repository secret. Set **one** of:
+   - `BRAINTRUST_API_KEY` — routes through the [Braintrust gateway](https://braintrust.dev/docs/deploy/gateway), which needs Anthropic connected as a provider in the Braintrust org. Use this when you can't get an Anthropic Console key: a claude.ai Team or Enterprise seat is a different product and doesn't come with one.
+   - `ANTHROPIC_API_KEY` — a key from the [Claude Console](https://platform.claude.com). Takes precedence if both are set.
+
+   Without either, the map still updates and every edge is still a verified citation; new papers just arrive with no summary, and cluster assignment falls back to the cluster of the first paper they cite. The digest says so when that happens.
 4. **Optional:** add `S2_API_KEY` for a [Semantic Scholar key](https://www.semanticscholar.org/product/api). Unkeyed access is heavily rate limited, and with 39+ nodes to query the first few runs will be slow without one.
 5. **Test it:** Actions → Weekly citation map update → Run workflow. Don't wait a week to find out it works.
 

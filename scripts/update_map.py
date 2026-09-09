@@ -20,8 +20,16 @@ DIGESTS  = os.path.join(ROOT, "digests")
 
 S2       = "https://api.semanticscholar.org/graph/v1"
 S2_KEY   = os.environ.get("S2_API_KEY")           # optional, raises rate limits
-ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY")
-MODEL    = "claude-sonnet-5"
+
+# Two ways to reach a model, because a claude.ai Enterprise seat is not an
+# Anthropic Console account and does not come with an API key. Either secret
+# works; a direct Anthropic key wins when both are set because it is one hop
+# fewer. With neither, the run still writes verified edges and says in the
+# digest that judgement was skipped.
+ANTHROPIC_KEY  = os.environ.get("ANTHROPIC_API_KEY")
+BRAINTRUST_KEY = os.environ.get("BRAINTRUST_API_KEY")
+GATEWAY  = os.environ.get("BRAINTRUST_GATEWAY", "https://gateway.braintrust.dev/v1")
+MODEL    = os.environ.get("MAP_MODEL", "claude-sonnet-5")
 
 MAX_ADDITIONS   = 8
 FIELDS = "paperId,title,year,authors,venue,externalIds,citationCount,abstract"
@@ -143,21 +151,68 @@ def crosses_clusters(cites, nodes_by_id):
 
 # ------------------------------------------------------------------ Claude calls
 
+def have_model():
+    return bool(ANTHROPIC_KEY or BRAINTRUST_KEY)
+
+
+def _post(url, body, headers, tries=3):
+    """POST JSON with the same patience as get(). A transient 429 on a weekly
+    job should cost a retry, not a whole run's worth of notes."""
+    data = json.dumps(body).encode()
+    for i in range(tries):
+        try:
+            req = urllib.request.Request(url, data=data, headers=headers)
+            with urllib.request.urlopen(req, timeout=120) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 500, 502, 503, 529) and i < tries - 1:
+                time.sleep(5 * (i + 1))
+                continue
+            detail = ""
+            try:
+                detail = e.read().decode()[:300]
+            except Exception:
+                pass
+            print(f"  ! model call {e.code}: {detail}", file=sys.stderr)
+            return None
+        except Exception as e:
+            if i < tries - 1:
+                time.sleep(4)
+                continue
+            print(f"  ! model call failed: {e}", file=sys.stderr)
+            return None
+    return None
+
+
 def claude(prompt, max_tokens=1400):
-    if not ANTHROPIC_KEY:
-        return None
-    body = json.dumps({
-        "model": MODEL, "max_tokens": max_tokens,
-        "messages": [{"role": "user", "content": prompt}],
-    }).encode()
-    req = urllib.request.Request(
-        "https://api.anthropic.com/v1/messages", data=body,
-        headers={"content-type": "application/json",
-                 "x-api-key": ANTHROPIC_KEY,
-                 "anthropic-version": "2023-06-01"})
-    with urllib.request.urlopen(req, timeout=120) as r:
-        d = json.load(r)
-    return "".join(b.get("text", "") for b in d.get("content", []) if b.get("type") == "text")
+    """Ask for judgement. Same job either way, two different transports."""
+    if ANTHROPIC_KEY:
+        d = _post("https://api.anthropic.com/v1/messages",
+                  {"model": MODEL, "max_tokens": max_tokens,
+                   "messages": [{"role": "user", "content": prompt}]},
+                  {"content-type": "application/json",
+                   "x-api-key": ANTHROPIC_KEY,
+                   "anthropic-version": "2023-06-01"})
+        if not d:
+            return None
+        return "".join(b.get("text", "") for b in d.get("content", [])
+                       if b.get("type") == "text")
+
+    if BRAINTRUST_KEY:
+        # The gateway is OpenAI-shaped and takes a Braintrust key, so it needs
+        # Anthropic connected as a provider in the Braintrust org. Model names
+        # are the provider's own; override with MAP_MODEL if the org pins one.
+        d = _post(f"{GATEWAY}/chat/completions",
+                  {"model": MODEL, "max_tokens": max_tokens,
+                   "messages": [{"role": "user", "content": prompt}]},
+                  {"content-type": "application/json",
+                   "authorization": f"Bearer {BRAINTRUST_KEY}"})
+        if not d:
+            return None
+        choices = d.get("choices") or []
+        return choices[0].get("message", {}).get("content", "") if choices else None
+
+    return None
 
 
 def describe(batch, clusters, nodes_by_id):
@@ -309,8 +364,10 @@ def write_digest(added, dropped, screened, today, nodes_by_id):
         L += [""]
     L += ["---", f"Screened {screened} citing papers. Added {len(added)}."
           + (f" Held back {dropped} over the per-run cap." if dropped else "")]
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        L += ["", "_No ANTHROPIC_API_KEY set: notes and cluster assignments were skipped._"]
+    if not have_model():
+        L += ["", "_Neither BRAINTRUST_API_KEY nor ANTHROPIC_API_KEY set: "
+                  "notes and cluster assignments were skipped. Edges above are "
+                  "still verified citations._"]
 
     with open(os.path.join(DIGESTS, f"{today}.md"), "w") as f:
         f.write("\n".join(L) + "\n")
