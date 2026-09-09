@@ -453,9 +453,9 @@
       "a": "Jihyeon Kim, Hanyong Lee, Jaesung Lee",
       "y": 2026,
       "v": "Neurocomputing",
-      "c": "eval",
+      "c": "rl",
       "url": "https://doi.org/10.1016/j.neucom.2026.134332",
-      "n": "No summary generated this run.",
+      "n": "Surveys methods for jointly compressing and fine-tuning LLMs under resource constraints, citing lin2021 (quantization) and ouyang2022 (RLHF-based instruction tuning) as foundational techniques. It maps the toolchain landscape rather than proposing new results, situating RLHF-style fine-tuning alongside compression as a resource-efficiency challenge.",
       "s2": "118a315fe00b4844b2cd81e948cdd819db7c1fab",
       "isNew": true,
       "added": "2026-09-09"
@@ -468,7 +468,7 @@
       "v": "preprint",
       "c": "eval",
       "url": "https://arxiv.org/abs/2609.05025",
-      "n": "No summary generated this run.",
+      "n": "Proposes a neurosymbolic hallucination detection pipeline that has an LLM build a SQL database from reference documents and checks responses against it for grounding, evaluated on RAGTruth and DiaHalu. It targets a core evaluation methodology problem (detecting unsupported LLM outputs) using a low-level symbolic competence as an unsupervised signal, distinct from the RLHF alignment framing of ouyang2022.",
       "s2": "84f3c6cb37e592dd814c78fef52a8d7b887430c5",
       "isNew": true,
       "added": "2026-09-09"
@@ -479,9 +479,9 @@
       "a": "Zheng Wang, Muchen Li, Renjie Liao, Yan Leng",
       "y": 2026,
       "v": "preprint",
-      "c": "eval",
+      "c": "interp",
       "url": "https://arxiv.org/abs/2609.02089",
-      "n": "No summary generated this run.",
+      "n": "Introduces IDEEA, a training-free activation-steering method that computes input-specific steering directions via per-head clustering and optimal matching, rather than a single fixed direction shared across inputs. It advances mechanistic control of LLM internals as a cheaper alternative to weight-update alignment methods like the RLHF fine-tuning used in ouyang2022.",
       "s2": "ac8da9fe512d0ed1b24267dd3faade86ebca31a6",
       "isNew": true,
       "added": "2026-09-09"
@@ -494,7 +494,7 @@
       "v": "arXiv.org",
       "c": "interp",
       "url": "https://arxiv.org/abs/2512.02004",
-      "n": "No summary generated this run.",
+      "n": "Introduces sparse autoencoders trained to align learned features with predefined concepts, building on prior SAE feature-analysis work. This pushes interpretability research toward more controllable, human-labeled concept spaces rather than purely unsupervised feature discovery.",
       "s2": "cd5e256c0e5715ed71041af5a49b864a03ecba7d",
       "isNew": true,
       "added": "2026-09-09"
@@ -505,9 +505,9 @@
       "a": "Jing Xu, Qingqing Yang, Zhiwei Yang, Yingying Gao, Kewei Yang, Jiang Jiang",
       "y": 2026,
       "v": "Engineering applications of artificial intelligence",
-      "c": "rl",
+      "c": "human",
       "url": "https://doi.org/10.1016/j.engappai.2026.115411",
-      "n": "No summary generated this run.",
+      "n": "abstract too thin to summarise",
       "s2": "87bd19f3b479204f2d3f7a6da4cbed192ddd55ab",
       "isNew": true,
       "added": "2026-09-09"
@@ -520,7 +520,7 @@
       "v": "Conference on Fairness, Accountability and Transparency",
       "c": "human",
       "url": "https://doi.org/10.1145/3805689.3812376",
-      "n": "No summary generated this run.",
+      "n": "An interview study (N=23) showing that novice and expert data scientists use interpretability tools differently, with novices driven by curiosity and experts by efficiency concerns. It extends work on socio-organizational factors in interpretability adoption, arguing tool design must account for user proficiency level rather than treating all users uniformly.",
       "s2": "a1ff73093e74c0f110571368c807be16e31699d8",
       "isNew": true,
       "added": "2026-09-09"
@@ -533,7 +533,7 @@
       "v": "arXiv.org",
       "c": "human",
       "url": "https://arxiv.org/abs/2606.23491",
-      "n": "No summary generated this run.",
+      "n": "abstract too thin to summarise",
       "s2": "3a70762cf73610a40400382ae3a42ef543245f2f",
       "isNew": true,
       "added": "2026-09-09"
@@ -546,7 +546,7 @@
       "v": "arXiv.org",
       "c": "human",
       "url": "https://arxiv.org/abs/2604.04418",
-      "n": "No summary generated this run.",
+      "n": "Proposes 'error verifiability'—whether a user can actually tell when an LLM answer is wrong—as a quality dimension distinct from surface plausibility or confidence. Builds on overreliance and persuasiveness (bo2025) literatures to argue that convincing-but-unverifiable outputs drive miscalibrated trust in human-AI interaction.",
       "s2": "96c45a58618894342b2865b2d5f0641b467daa01",
       "isNew": true,
       "added": "2026-09-09"
