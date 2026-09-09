@@ -11,7 +11,8 @@ Division of labour, deliberately:
 The script never invents an edge and never invents an author list.
 """
 
-import json, os, re, sys, time, datetime, urllib.request, urllib.parse, urllib.error
+import json, os, re, sys, time, datetime, collections
+import urllib.request, urllib.parse, urllib.error
 
 ROOT     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAP      = os.path.join(ROOT, "data", "map.json")
@@ -129,12 +130,49 @@ def candidates(nodes, since_year):
     return found
 
 
-def qualifies(rec, nodes_by_id):
-    """The inclusion rule. Deterministic, so it can be audited."""
+# A map paper that a large share of the candidate pool cites carries no
+# topical signal: TruthfulQA, InstructGPT and DPO are cited by most of the
+# LLM literature, so attaching through them says only "this is about language
+# models". Measured against each run's own pool rather than a hardcoded list,
+# so the set moves as the map and the literature move.
+HUB_SHARE     = 0.20    # cited by at least this share of screened candidates
+HUB_MIN_COUNT = 15      # ...and by at least this many of them
+HUB_MIN_POOL  = 40      # only classify hubs when the pool is big enough to mean it
+
+
+def hub_anchors(found):
+    """Map papers too widely cited in this pool to discriminate on topic."""
+    if len(found) < HUB_MIN_POOL:
+        return set()
+    counts = collections.Counter()
+    for rec in found.values():
+        counts.update(set(rec["cites"]))
+    cut = max(HUB_MIN_COUNT, HUB_SHARE * len(found))
+    return {nid for nid, c in counts.items() if c >= cut}
+
+
+def qualifies(rec, nodes_by_id, hubs=frozenset()):
+    """The inclusion rule. Deterministic, so it can be audited.
+
+    Every branch requires at least one informative anchor — a cited map paper
+    that is not a hub. Without that gate, citing two famous papers was enough
+    to join, which is how an LLM compression survey and a review of maritime
+    emergency response arrived on a map of four alignment literatures.
+    """
     cites = set(rec["cites"])
     p = rec["paper"]
+    informative = cites - hubs
+    if not cites:
+        return False, "cites no map papers"
+    if not informative:
+        return False, (f"attaches only through hub papers "
+                       f"({', '.join(sorted(cites))}); no topical signal")
+
     if len(cites) >= 2:
-        return True, f"cites {len(cites)} map papers"
+        why = f"cites {len(cites)} map papers"
+        if cites & hubs:
+            why += f", {len(informative)} beyond hubs"
+        return True, why
     title = (p.get("title") or "").lower()
     if any(w in title for w in ("survey", "systematic review", "position",
                                 "benchmark", "bench:", "a review")):
@@ -395,11 +433,18 @@ def main():
     found = candidates(m["nodes"], since_year=datetime.date.today().year - 1)
     print(f"  {len(found)} distinct citing papers")
 
+    hubs = hub_anchors(found)
+    if hubs:
+        print(f"  hub anchors this run (>={HUB_SHARE:.0%} of pool): "
+              f"{', '.join(sorted(hubs))}")
+    else:
+        print("  no hub anchors (pool too small or no anchor dominant)")
+
     keep, dropped = [], 0
     for pid, rec in found.items():
         if pid in rejects:
             continue
-        ok, why = qualifies(rec, nodes_by_id)
+        ok, why = qualifies(rec, nodes_by_id, hubs)
         if ok:
             rec["why"] = why
             keep.append(rec)

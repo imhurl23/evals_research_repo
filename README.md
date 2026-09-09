@@ -36,11 +36,17 @@ The schedule is Mondays 13:00 UTC. Change the cron in `.github/workflows/weekly-
 
 ## How a paper gets added
 
-Citations come from the Semantic Scholar API, not from a language model. A paper is added if it:
+Citations come from the Semantic Scholar API, not from a language model. A paper must first clear the **hub gate**, then satisfy one of the three signals.
+
+The hub gate: at least one map paper it cites must not be a *hub* — a paper that at least 20% of the week's screened candidates also cite. TruthfulQA, InstructGPT and DPO are cited by most of the LLM literature, so attaching only through them says nothing about topic. Without this gate, citing two famous papers was enough to join, which admitted an LLM compression survey and a review of maritime emergency response. Hubs are recomputed each run against that run's own pool and printed in the log, so the set moves as the map and the literature move rather than sitting in a hardcoded list.
+
+Having cleared it, a paper is added if it:
 
 - cites **two or more** papers already on the map, or
 - is a survey, position paper, or benchmark citing at least one, since those become hubs, or
 - cites at least one and has unusual citation velocity for its age.
+
+The gate runs first, so a widely-cited survey that only attaches through hubs is still rejected. This does mean a high-velocity paper hanging off a single hub no longer gets in on velocity alone — deliberate, since topical attachment is what the map is for.
 
 Everything else is logged to `data/rejects.json` with a reason and skipped in future runs. Additions are capped at 8 per week; over the cap, papers with the widest cross-cluster attachment win and the rest are reconsidered next week. An unreadable map has failed at its job.
 
