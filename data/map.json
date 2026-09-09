@@ -533,7 +533,7 @@
       "v": "arXiv.org",
       "c": "human",
       "url": "https://arxiv.org/abs/2606.23491",
-      "n": "abstract too thin to summarise",
+      "n": "This is a review paper that disentangles skepticism, verification, and reliance as distinct constructs in how users interact with organization-backed GenAI advisors that hallucinate. It matters because it reframes hallucination not as a pure model-quality metric but as a human-AI interaction problem, situating it alongside cited work on trust/reliance calibration.",
       "s2": "3a70762cf73610a40400382ae3a42ef543245f2f",
       "isNew": true,
       "added": "2026-09-09"
