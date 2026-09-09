@@ -1,1 +1,2112 @@
-{}
+{
+  "5d62dcb5b951539e29538509bd63646d30086ab3": {
+    "title": "A Scalable Graph Neural Framework for Cross-Platform Trust and Intent Modeling in Large Language Model Systems",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "c2c3f2ee47e3bf99925b810d0cd04030122467e5": {
+    "title": "Failure-mode-aware uncertainty intervention routing for large language models",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "acaef3d943cd6ad6b561e3631950074bf6b82963": {
+    "title": "Beyond Retraining-Free MoE Compression: A Cost-Normalized Study of Post-Compression Adjustment",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "67b4e6e8c77662b6f4c5cb4f229e2630a1212f23": {
+    "title": "SAFEGuard: Detect Optimization-Based Jailbreak Attacks Through Harmful Semantic Analysis and Fluency Measurement",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "055f1c7210d53f384b329981b7df8a193a7dc500": {
+    "title": "Locating and Steering Refusal Beyond Attention",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0230f9fd0254a43028a332c3dd8e1155e6aec178": {
+    "title": "Remember and Reweight: Enhancing Multi-Agent Debate with Experience Memory and Confidence Estimation",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "3f408a3adc25fb3162959e528c37222228155378": {
+    "title": "Beyond\"Made with AI\": Visualizing Provenance Density to Mitigate the Transparency Penalty",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0c3b4bedd958df8b8b13d197da37d01e7e814b0b": {
+    "title": "Inferred Generative-Process Diversity Predicts Correlated Failure Across Language Models",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "067a1f98c9656fe54b63e54eb7f283082f5a636e": {
+    "title": "GRACE: Graph-Grounded Reflective Agent Copilot Engine for Expert-in-the-Loop Knowledge Expansion",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "fed739a530fbcb14801ef3c8e4866227ae5c0f82": {
+    "title": "SEAL: Reinforcing Global Safety in Mixture-of-Experts through Shared Expert ALignment",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "81adfea09816d655862ca6e2347c5b8e662862cc": {
+    "title": "The Shape of Ownership: Verifying LLM Provenance through Semantic Structures",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "f0d464e2f11c79a02df5afdf389c833aee016d67": {
+    "title": "Estimating difficulty for the open-ended reading comprehension questions via Large Language Models",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b0426fc8317a17a05b9a1632ebee99c755b01b8e": {
+    "title": "When structure predicts hallucination: Aligning LLMs with knowledge graph features",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "f0b4842e7c6e8d63799a86c993b70a0432be5989": {
+    "title": "Triple-Bottom-Line Sustainability of Language Models for Edge AI: A Comparison Between SLMs and Quantized LLMs",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "24fb348f43927210902472db944660ec2587f78f": {
+    "title": "SCoNE: Selective Context-aware Neuron Editing for Robust Retrieval-Augmented Generation",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "19da1084d56457a077f97863ac7985e4ab1dffde": {
+    "title": "Confess What You Know: Forget-Set Misalignment with Model Knowledge in LLM Unlearning",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "fb2ebd675044d55672d79cba1e3e17ad4f954554": {
+    "title": "LLMPEDIA: Browsing, Verifying, and Comparing the Parametric Encyclopedic Knowledge of LLMs",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "742d07e598f53a3dac68116b92a1b91c30ee50c7": {
+    "title": "Learning Evidence Sufficiency Boundaries for Selective Answering in Grounded Multi-Hop QA",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "abb2453c8bf38cfd741691f8ecb730cda96886b8": {
+    "title": "When financial fine-tuning fails: A three-level detectability analysis of numerical hallucination in domain-adapted language models",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b42aefcf52891422ad5d7a2d53a60611fe663afb": {
+    "title": "SingProbe Technical Report",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0232c32c936aa472213037a18aef8ec618741706": {
+    "title": "Stick to What You Know: A Study of Knowledge-Aligned Supervised Fine-Tuning",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "e0f87d0db1fab4daf97fd8cecec5c0c34abc7146": {
+    "title": "Automated Testing of LLM-Based Post Hoc Explainers Using Model Checking as an Oracle",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "7508c29b35bf617f55b021e419f3cefaa65bc2f0": {
+    "title": "DRLM: Deep Reinforcement Learning-Based LLM Query Orchestration in Edge Environments",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "1f462c37b65617f81154be98cb6a11c6332a81ce": {
+    "title": "CoCoA: Context-Conditional Cultural Alignment for Large Language Models",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "4b5f219792aed09e70482f881bbbaf43be750ee6": {
+    "title": "Autodesign? Large Language Model Evaluations for UX Assistants",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "3f2c6ccfb05e52ab4b269810b2e88cd869de5a33": {
+    "title": "Capability-Stratified Degradation in Ternary Language Models",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "caf54b34daf381dccc7a068369d67fefd8ddaf40": {
+    "title": "The Hallucination Signal Is a Mean Shift: Why Simple Probes Suffice",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b5d835a3f55e8372dfa4f18c4aa4d16f89a898f2": {
+    "title": "Sycophancy Suppression Can Impair Rational Updating: Anti-Sycophancy Should Preserve the Ability to Update",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "c60021b86426b7b7e29121abef3b6566e9c12b3d": {
+    "title": "Prediction of Prediction (PoP): Inter-Layer Activation Fusion for Single-Pass Hallucination Detection in Large Language Models",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "692b0899f1e067ff11ee5145137ea1231ac48737": {
+    "title": "LAAF: A Layered Accountability Architecture Framework for LLM Applications",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9ac532fc40f88d06a3ced086e94906b167a32cdf": {
+    "title": "Uncertainty-aware large language models: a scoping review of conformal prediction methods.",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "78a8ae490138386864aebf94f614641583b9773e": {
+    "title": "From Passive Response to Proactive Correction: Enhancing LLM Robustness Against Input Fact Perturbations",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "8dba7846de8494be41a7f46a365302e89197e342": {
+    "title": "Learning New Facts with QLoRA: An Acquisition-Retention Frontier",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "898b0cce5ef68a88cf8f65cb2f843a2cdfd42bc6": {
+    "title": "When Personality Meets Quantization: A Layer-wise MBTI Analysis of Quantized LLMs",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "8ad8df82dca744dfba014eb142c29dae1faf759d": {
+    "title": "Why RAGs Hallucinate: Penalty-Aware Evaluation of Retrieval-Augmented Generation Systems with Knowledge-Gap Canaries",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "3ab3d8eabfb5e1dabdda7d1037cfad7e23279a5d": {
+    "title": "Knowledge-Verified Emergent Deception in LLM Agents Under Conflicting Incentives",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "81e864b1dc18dd8f1fdbcc339bb85b8e27412b77": {
+    "title": "FARCA: Fact-Aligned Reliability-Aware Credit Assignment for Reinforcement Learning with Factual Supervision",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "97a79bb597733587799887842ee15ade3f94693f": {
+    "title": "Theoretical Framework for Completeness and Consistency of Knowledge in Generative AI Large Language Models",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "3dd4df72a4b6fa2a3749ebae64caddb0dc299e50": {
+    "title": "DIAG: Diagnostic Iterative Alignment and Generation for Data-Efficient Mathematical Preference Distillation",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "03285718949fa91a214f49d13dee93990fd7c038": {
+    "title": "Your AI, On a Dial: Controlling Investment Bias in LLMs with a Single Neuron",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "90b7d41f5de585544c037c8a69037b8bcbce6623": {
+    "title": "Claim-Level Confidence Calibration for Reliable Decision Making with Large Language Models",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9e254d47ebd9015f17f7732618bfaf7f4f3bb837": {
+    "title": "Evaluation Awareness in Language Models: Representation, Verbalization, and Control",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b2a07d11024891b280847f6a8ecdd2ba9babc150": {
+    "title": "Measuring Stability and Failure Behavior in Language Models Under Structured Perturbations",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "21c1fac19d0c3a8a1ebbddabcdc5b5109b566700": {
+    "title": "Trustworthy RAG: An Evaluation Agent for Detecting Misinformation and Knowledge Poisoning in Generative AI Systems",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "8aa7d26161e7d893362a8d58bd69194e94b48b7a": {
+    "title": "Jacobian-guided Noise Injection for Quantization Robustness in Large Language Models",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "83102505df10f74a40956053e62d1055a6d65d04": {
+    "title": "RARE: Decoupling Representation Steering from Expert Routing in Mixture-of-Experts Language Models",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "c104435afe7d72c3759e1e72eeaf64cb89833286": {
+    "title": "CyrillicQA: The Influence of Phonetically Encoded Secret Language on LLM Performance",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "d4d1a3ecd680c24083cfbe0f880156b005c24be0": {
+    "title": "Discrete Diffusion Inference-Time Control with Nested Sequential Monte Carlo",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "6ec88ec53e982a204ac6ff274817787c1ff1f863": {
+    "title": "Open-Weight Masked Introspection: Measuring What Language Models Can Report About Their Own Computation",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "c444d0313d001adf1cef46b348e68e166cdabf7e": {
+    "title": "aiXamine: Unified Black-Box Evaluation of Cross-Dimensional Trade-offs in LLM Safety, Security, and Privacy",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9a4331c7a4119738e521c4b2cc03d29aa55d4d2c": {
+    "title": "Mixture-of-Expert Blocks Contain Strong Hallucination Detection Signals",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "14c6dfa0f0a3132072c5722c52cedb4309dec259": {
+    "title": "Translate, Search, or Answer: Cost-Aware Cross-Lingual Retrieval for Kazakh Small Language Models",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "2bc97d02615ac66f4691feb5016874de1de23236": {
+    "title": "Cross-Model Memory Transfer via Target-Side Reader Adaptation",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "304cef217a15efcce2da4a403a3a58285b4111cf": {
+    "title": "HalluTracer: Hallucination Detection via Depth-Averaging Truth Signals",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "69856abfd71dca31cae1de9d1fd5c1df52b9f69b": {
+    "title": "STAGE: Controlled Objective Admission for Multi-Preference LLM Alignment",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "1bb6316640a5255d32798ffcca492331178057c0": {
+    "title": "THESIS-MoE: Trainable Hierarchical Extraction and SteerIng of Sycophancy in Mixture-of-Experts",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "c6506bd14f34ce61e45ebd1354de6c151ddb9437": {
+    "title": "PAMI-GPT: knowledge-grounded LLMs for reliable pattern mining workflow generation",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "23840ede153f2c35c71e6fd603dce273e7d814e3": {
+    "title": "Machine Unlearning Across AI Systems: A Scoping Review of Evidence, Evaluation, and Deployment Contexts",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "eee6b68389b37fe933f874f78693bd18697c05ba": {
+    "title": "Towards Trustworthy Large Language Models",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "8567b5fc739dc41113bc28275ee34d557fbf9958": {
+    "title": "Framework for Grounding Healthcare LLMs in a Causal Knowledge Graph: A Cardiovascular Example Pilot",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "5d3fcd48dbfbbe3deaa41f717f41ad11f6c164e9": {
+    "title": "Trustworthy Digital Auxiliary Processes for Sustainable Energy Utilization: A Targeted Process-Oriented Review and Conceptual Evidence-to-Review Framework",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b6fb24ef982639936770250ac3fd13ca24995586": {
+    "title": "Content Depth Matters in Short-Video Recommendation: Rethinking the Attention Economy",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "422f831f36a74485e8f4ec2dddb30b8c2eda4362": {
+    "title": "QUASAR: Lowering the Loss Floor of Quantization-Aware Training with Loss-Aware Reconstruction",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "be9097e2cbdbc5d82e0890f850b20883b0d75c6b": {
+    "title": "Unifying Depth and Width Pruning for LLMs via Binary Knapsack Optimization",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "64be7fbabcd0281a415e6832b65f461cf71e5298": {
+    "title": "CABS+: Efficient and Scalable Model Merging via Conflict-Aware Sparsification and Adaptive Weight Allocation",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "aed222f8a88b7828f1a02cce0a93fa147a6086bc": {
+    "title": "APEX: Adaptive Expert Prefetching for Memory-Efficient Edge MoE Inference",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "2da9fe6c56df9986057a23849f624c17c356cdbd": {
+    "title": "Graph-Structured Rubrics: Compiling Rubrics into Typed Evaluation Graphs for LLM Judges",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "e6f7f4fbf8c281ed9d9065a4a72656041444aee0": {
+    "title": "Information Abundance Paradox: Long-Context Training Undermines Parametric Knowledge",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "e2f7405ead516c68553e17524689785a4cf95764": {
+    "title": "Mapping and Measuring the Behavioral Evolution of Large Language Models",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "1e8d6427cf20853adeeb298db61dac6dc19e3c6f": {
+    "title": "Semantic Uncertainty-Guided Orchestration in Hierarchical Multi-Agent Systems",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ebb0c621828606557cdec9c7f5c3430d9591ab25": {
+    "title": "Behaviorally Grounded User Profiles from the Wild for Personalized Alignment and Multi-Perspective Reasoning",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "a88384eb420228f467a4c9d3c6812f97cf1eb0b8": {
+    "title": "VeriFin: A Neurosymbolic Framework for Verifying LLM-Generated Financial Claims",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "5770830df203344b043c0dbd7bed544f7790300a": {
+    "title": "AI Evaluation Should Measure Verification Cost, Not Correctness Alone",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "80844b3075688d0fa9217dea4e870d85d74662d1": {
+    "title": "PACE: Unleashing the Power of Code Embeddings to Boost AutoML Agents",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0a822bb66ef545e914de823f29b8ea1d99eef597": {
+    "title": "SAFT: Safety-Preserving Adaptation via Fine-Tuning Transfer for Large Language Models",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "c3f90711e2a5509edba8cd8a89f6296a195e992a": {
+    "title": "Generative AI and Large Language Models for Financial Markets: From Behavioral Prediction to Autonomous Trading",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "28fb140e9889f6fd7075e3ba203092dea218d96d": {
+    "title": "Harmful Content Is Not Enough: Continuation Framing Moderates In-Context Emergent Misalignment",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "f668ae800056a16910bcdec58095ee16a24049af": {
+    "title": "Wiener Representation Filtering for VLM Hallucination Suppression",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "53c2a57de5bcf6469014d4c66d73c6bfac6a6b19": {
+    "title": "AI Agents and the Progressive Intermediation Between Users and Online Services: A Critical Analysis",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b4ad7af2ae7ad4f403137ba581f5c47b9d53d78c": {
+    "title": "HyperEdit: Mitigating Hallucinations of Large Language Models via Hyperbolic Representation Editing",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "3c43d15d1b4cf89c99aa6c01251a7ddcf0f10059": {
+    "title": "The Entropic Overhead of Conformal Correction",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "cd3346acb7481e85c916e11daef7ea8589470b7d": {
+    "title": "Training a Generalist Hallucination Detector across Multiple Domains via Adaptive Layer Aggregation",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "829f2b50b73353cbf9af309842473ca8b355aee2": {
+    "title": "Minimal AIF-inspired response control for evidence-aware and dependable LLM behavior",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "f326f34761d589328fe8f7fcde12fad697d9c026": {
+    "title": "How Should I Pick a Foundation Model for My Robot? In Favor of a Community Evaluation Framework for Social Robots",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "21b0f50eee7930465f69c9b7f9ee7b2ef8d33386": {
+    "title": "Hallucinations in generative artificial intelligence and large language models: tests, datasets, detection and correction methods",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "5cfe6e204fd8cc6ff5c03585ac73fba7bfb0c115": {
+    "title": "In-Context VLA: Endowing Vision-Language-Action Models with Language via In-Context Post-Training and Agentic Tool Use",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "d33ad7ce28279c1f4a4cb61de3de2f789a1254c5": {
+    "title": "Learning When to Trust via Selective Context Preference Optimization",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0dc5114ff4fbab93c587f6fa85d9946404ec83b5": {
+    "title": "The Sparsity Whisperer",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "55f024180fc936d62609156ef7f3257f61f5d1c8": {
+    "title": "The Evaluator Is Part of the Experiment: Measuring Open-Ended LLM Conformity",
+    "why": "cites only lin2021; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "c1a660ff4b7cb6790d2a448b16e759eaf8ee7e3d": {
+    "title": "Sparse Autoencoders Encode Both Concepts and Functions: The Downstream Geometry of Feature Effects",
+    "why": "cites only minegishi2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0c04ecdd34478d2475cbcc8e2c2043bc37b09827": {
+    "title": "Building Fast, Evaluating Slow: Pipeline Choices Dominate Autointerpretability Score Variance",
+    "why": "cites only minegishi2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "82770ea142bd0f24aaa34b741e66fcb7eab5d26e": {
+    "title": "Directional Neuron Attribution for Hallucination Analysis in LLMs",
+    "why": "cites only minegishi2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "4a973ca1dd2d6838d0d459f8eb5b86827323215e": {
+    "title": "The Rate-Distortion-Polysemanticity Tradeoff in SAEs",
+    "why": "cites only minegishi2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "3b4eb662aeeb4fc61fe0306beb8a7caa3f8a1a6f": {
+    "title": "The Expert Strikes Back: Interpreting Mixture-of-Experts Language Models at Expert Level",
+    "why": "cites only minegishi2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "5d7156ce2c39b7aa36c52bac017c64611cf9ef62": {
+    "title": "Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?",
+    "why": "cites only minegishi2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "2b11ec335af9ea5856e52135732394af58bedee0": {
+    "title": "Distributional Semantics Tracing: A Framework for Explaining Hallucinations in Large Language Models",
+    "why": "cites only minegishi2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "e3becc3f7841c81742275598103a2f634126d70d": {
+    "title": "Hypothesis-Driven Feature Manifold Analysis in LLMs via Supervised Multi-Dimensional Scaling",
+    "why": "cites only minegishi2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "6ca1fcb31b1bb0b1438c661e6d6fc66c7af3af86": {
+    "title": "Concept-SAE: A Controllable and Invertible Concept Interface for Sparse Autoencoders",
+    "why": "cites only minegishi2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "01db059c28246277f636b0e283a20d73f04750f9": {
+    "title": "Evaluating Sparse Autoencoders for Monosemantic Representation",
+    "why": "cites only minegishi2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "4a470a1cfb9a7ae81ec9c01e508fd833b467dc6d": {
+    "title": "Probing the Representational Power of Sparse Autoencoders in Vision Models",
+    "why": "cites only minegishi2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "4c9e3db24264bc8dc3c8252bef9bd60495d603e4": {
+    "title": "On the Limits of Sparse Autoencoders: A Theoretical Framework and Reweighted Remedy",
+    "why": "cites only minegishi2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "e7d7e3511e85328352a6a8c0fbdec3c01bd42396": {
+    "title": "Evaluating and Designing Sparse Autoencoders by Approximating Quasi-Orthogonality",
+    "why": "cites only minegishi2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9592822d157eb1310039d0810e8055ea36e14bb0": {
+    "title": "Concept-SAE: Active Causal Probing of Visual Model Behavior",
+    "why": "cites only minegishi2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "915ee638f70dd259af24c9cbb9d257e9df45e482": {
+    "title": "Revising and Falsifying Sparse Autoencoder Feature Explanations",
+    "why": "cites only minegishi2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9ec78945926f789839ef28825c1ec0d728430984": {
+    "title": "DADSA: Dual-Side Adaptive Deep Safety Alignment for Large Language Models",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "10d89b52ce1ed450994c1e74b17308b2eeb3e12f": {
+    "title": "An unsupervised graph attention network empowered by large language models for knowledge graph grounded medical question answering",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "2f47fb42211707d53bea2b1a74e60831f64075d6": {
+    "title": "FreeLayout: Free range multi-modal input to free form floorplan generation",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "a2ff649de8a8809c3617f738c416b9539477db25": {
+    "title": "Knowledge design in complex domains",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "1c1b614a5b5fcb1407a91c44302f55b84d405cb8": {
+    "title": "Decoding hate: The rise of transformer and large language model architectures in automated hate speech detection",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "6f177195923af88f12b1bd40536042fbb09b6548": {
+    "title": "LowLightReward: A unified framework for low-light enhancement across spatial, channel, and aesthetic domains",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "d5bb686f74078bbbf3cde03f5f96e83c8753d90b": {
+    "title": "Do math-reasoning LLMs help predict the impact of public transit events?",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "de3a18506f1fa6c27e01f47f855b1a1a24db69ba": {
+    "title": "Foundation-model-assisted electrochemical sensing: from molecular recognition interfaces to autonomous point-of-need analytical decisions",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "d170825f3d5ef0dfd559af95e7a48f3fcfecf286": {
+    "title": "HCFNet: Hierarchical and complementary feature embedding for remote sensing change captioning",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b29e99bf1beb87b1e11d53607c50c2c2e9ce841e": {
+    "title": "Image-based question, answer, and distractor generation: A novel multiple-choice VQA task",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "794547c37673e839cd2ea53432da8d8c12b932d7": {
+    "title": "Multi-Path Causal Optimization for claim verification through controlling confounding",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ae26e34d771f6cfa9838e246cf2a54667cc34938": {
+    "title": "AGI imagined: social AGI and the co-formation of human-AGI society",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "a484f9b0d9023ebf66de82a7bca8cbd49fec3352": {
+    "title": "Herder in the lab: Maximizing “cultural density” in multilingual training data for an open‐science\n AI\n project",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9ca95cd4c27574b86ed3049b1eca2d85c077fb26": {
+    "title": "AlignDiff: Exploiting Model-Intrinsic Information for Better Preference Data Selection",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0218398edeb1058eaae7613bf0bb0d8e51b93e63": {
+    "title": "Beyond the Blue Link: Empirical Evaluation of Generative Engine Optimization in Stochastic Retrieval Systems",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ed6942b6fb63afc1705b21a21cb631bb5b518bc7": {
+    "title": "Spillover-Aware Multi-Value Steering for Pluralistic LLM Alignment",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0c69494f6678c8cd2224e0ce21f5abdf0a140510": {
+    "title": "Bait-and-Recover: Poisoning Internal Refusal Signals to Defend LLMs against White-Box Editing Jailbreaks",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "80d8b50d5f4ac1cc806c94e976621d7ca65df069": {
+    "title": "MM-SVGEdit: A Multimodal-Driven SVG Editing for UI Design",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "2d2defc8c58d76648b6a1456fc32513350249457": {
+    "title": "Certiguard: a fine-tuned LLM for mastering security certification exams",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "24de007a64b0886fd7c18e3f99173a067bc3c90b": {
+    "title": "SAM-D2Q: Aligning Multimodal Doc2Query with Search Demand and Conversion for E-commerce",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "76b3bf25c0425206e03b47b09cdcbd894d55e55f": {
+    "title": "Training Large Language Models for Small-Molecule Design with Synthetic Task Scaling",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "21f12e097d159d5d8c1de9c08b8b74661df12833": {
+    "title": "Language models judge war differently when tested for alignment",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "a0bba0cad9d5ceab5870ba6f0fddb01055acc787": {
+    "title": "SQL-Zero: Self-Evolving Text-to-SQL",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "4b44cfcb0fef2d008666f26a482bcd6fcc9e40e1": {
+    "title": "Reinforcement Learning for improving Large Language Models'Catalan text simplification capabilities",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "7e4f430a470796088eb1ac51873683b120175f48": {
+    "title": "Knowing What Not to Answer: Selective Non-Compliance in Vision-Language Models",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "78957d85a4944b5f4b953a9b89c467d5b7ba5ff7": {
+    "title": "AtomRec: Evolving Atomic Memory for Agentic Recommendation",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "7c939a9a27caff54528fed8b4a06c34bcb2441f6": {
+    "title": "Moral Competence Before Moral Content: Why LLM Agents Lack the Prerequisites for Coherent Alignment",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "05b999f886062906edf43186b8bd230014664ddc": {
+    "title": "Refuse without Refusal: A Structural Analysis of Safety-Tuning Responses for Reducing False Refusals in Language Models",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "c56e6f8a93bd71d5500cb8a51e7f457045db0252": {
+    "title": "A Structured Debate-Mixture-of-Agents Framework for Complex Clinical Diagnostic Decision Support",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "f37c5b22896987733a40849ec9a661dae7e75b55": {
+    "title": "First Things First: Teaching LLM-Based Agents to Prioritize Must-Haves before Nice-to-Haves",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "95d3c8a82127a3b37bf847b6f8f78b93e0a96ac3": {
+    "title": "RISE: Recursive Improvement via Self-Extrapolating Policy Distillation",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "19d2eb769aa77a04af02e24097d8166bfb9797b3": {
+    "title": "Unifying ICL, SFT, KL-Regularized RL Through a Bayesian Lens",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "943aabda73de4b8e68971369d3f67f67c0efadca": {
+    "title": "Benefits and challenges of integrating generative AI in health technology education—a case study",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "72227dfa3657dae714bd64fbac14b7c310013277": {
+    "title": "Time-Aware Assistive Navigation",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "5c5b38441f203d2c9fd23d7f24c30bd13e2dc8e5": {
+    "title": "From Monolithic Blending to Agentic Orchestration: Dynamic Response for Conversational Assistants at Scale",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "66957dde3b6611d4aefc07b32e055565271ca461": {
+    "title": "The Impact of GenAI on the Future of Requirements Engineering",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "8fc1cd1323c05cfa95971ce203e3346ba419304f": {
+    "title": "Capsule Lens: Locating and Tracking Concept Geometry in Model Representations",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "a901aafc892dfc880e1e4f328f0150f310d364a3": {
+    "title": "Step Back to Move Forward: Reflection-Aware Preference Optimization for Visual Generation",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ba0366d065c943059751d7d8f8e1620adf5ca72d": {
+    "title": "When Retrieval Helps: Selective Retrieval for Single-Turn Mental-Health QA",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "583a16b817529be38c7b545739e0dbee09e2509c": {
+    "title": "Generative AI emotion recognition from bodily gestures and vocal tone reveals modality-specific performance and positivity bias",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "4094d1ed7d581efe13a06c4eca52be43ff51de96": {
+    "title": "FoRIS: Progressive Foreground Refinement for Training-Free In-Context Segmentation",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "c2019862956bd853317e65baf0adfb53df24408a": {
+    "title": "Unlocking Lossless Speedups in LLMs via Discrete Diffusion",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "153ff7c8f9fcb8c6925f5ed40152576c53517bd9": {
+    "title": "The Dice Roll Method: A Standardized Protocol for Repeated-Query Auditing of Large Language Model Brand Recommendations",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "cc9f60b2c74d4002544948dbb2e6f78dc8f7557a": {
+    "title": "LabelMate: An LLM-Driven Framework for Refined Issue Report Labeling",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "85056ea2bae954da9527370f6c5050f8936abbf9": {
+    "title": "Extracting Forgotten Prompts from Targeted Unlearned Models",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "a1414b62c4346cc0b6d8f33d9c2a768b3bb6176f": {
+    "title": "FiMI Banking: A Sovereign Model for Indian Retail Banking",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9f820388833afd2aa6afdb98ba0efe2dd039bc83": {
+    "title": "CROCODIL: Cross-Model Code Editing with LLMs",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "1caab0ea7b52d185e6d2328b1e1d99c817b4b01f": {
+    "title": "Subspace Inference Enables Efficient Active Reward Learning from Preferences",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "823074966a27071ecbe821ea83133f03ca8a09f9": {
+    "title": "Instruction Duplication as an Inference-Time Control Primitive",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "64ed3127b65a424ca15f4e444d384207d1d0ba8a": {
+    "title": "Emotion recognition in cross-linguistic legal context: a comparison between human-based and computational approaches",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "8b72742f91ec336d5d8572ffd7902a2ca09748bd": {
+    "title": "What Does Multi-Harness RL Learn? Credit Assignment and Portability in Coding Agents",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "d290c72a468b31c8eaa1bd2bae873a75455027d1": {
+    "title": "Extremely Sparse Supervision Incentivizes Reasoning Ability",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "045abdc0929cccdaf4265765d7a90b9de420b6dc": {
+    "title": "Joint Alignment and Distillation for Video Generation via Sample-Guided Distribution Matching",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "1224d6f4631933055ae8bee09f603fca742cccbe": {
+    "title": "AI models as consciousness attributors: how LLMs ascribe consciousness to other agents",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "d0a25b55ac07c9dda42a8369e22537babe2e8d27": {
+    "title": "DKL: Decoupled Knowledge Learning for Instruction-Tuned Language Models",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "7c2e0f31d60ee8a4ca56d2e1f41da93049c8744c": {
+    "title": "NE-R1: Enhancing Named Entity Recognition Model via Reinforcement Learning",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0e22f0eea07911249e95264fa8187b281a1a1c76": {
+    "title": "SALA: Semantic-Aware Logical Alignment for Complex Reasoning in In-Context Learning",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "bd2fe35a0bd253a55c0cb85919e977abe4306f83": {
+    "title": "CoMerge: Conflict-Driven Preference Optimization for Multi-Task Model Merging",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "6c2ef186b5091367d9c2667d2f3013a2b6f79ab7": {
+    "title": "CAPTURE: Disentangling Preference Drift from Memory Poisoning in Personalized LLM Agents",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "cb5a86e942280be4bee07e2ce5570b43ef7f9526": {
+    "title": "PGPO: Potential-Guided Policy Optimization for Multi-Turn Agentic Tasks",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b4f1ab34f0641982aecad362c72f2d8e73de0369": {
+    "title": "FUSE: An Evaluating Framework for Dangerous Capabilities of LLMs",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "4cd583f67331eaa92e54eb8576ef05c0fcd29f82": {
+    "title": "Learn from Whoever Is Right: Answer-Verified Multi-Teacher Distillation for Multi-Domain LLMs",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "8a0fcf44e367d73b938812a53a6bc677a5cb247a": {
+    "title": "Cliff: Learning Process Rewards from the First Mistake",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "253472d02a456d78b20a2c5b4e0bd44143ef6c6b": {
+    "title": "SWIM: Student Writing Simulation via Proficiency-Conditioned Generation",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "cc3c2c3009ffb377238707952b5358a8d8d353d5": {
+    "title": "An interpretable framework for agricultural carbon decoupling: integrating Tapio, LMDI, and spatial Markov models with CoT-enhanced LLMs",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "2f92132193a736df13216fd5eada9f9e40f90da3": {
+    "title": "Can Generative Large Language Models Serve as Raters for Test Development? A Systematic Evaluation Across Tasks, Models, and Inference Configurations",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "02ee9494d77ebb5f35d1112a2b60a86b51c29e4d": {
+    "title": "Generative large language models in medicine: a scoping review of recent methodological advances",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "fc4e43b8b2666caed152e387a0cbe2d98e5db44d": {
+    "title": "Trust Your Guide Only When Certain: Uncertainty-Aware Sparse Alignment at Inference Time",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "aa213fe890bf37f87b02831093bd957c9c515a99": {
+    "title": "Emotional supporters often use multiple strategies in a single turn",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "185858ea6a5f09d8cc5987c254c108d1f8ffa0bf": {
+    "title": "DyCoT-RE: Chain-of-Thought-enhanced LLM reward engineering with dual-dynamic optimization for reinforcement learning",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "12e5acb3fd4001285de2bf23d71f8eb8349cd653": {
+    "title": "EnhanceIT: Enhancing instruction tuning of large language models with selective quality and diversity instruction data",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "45183ae274f0db39b66fa44e083e7038bfb309ee": {
+    "title": "Toward causally-inspired explanations of maintenance effort: Integrating SHAP and LLM-based heuristic reasoning",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "6535c346f177878556254cbcd8469f0a157d2838": {
+    "title": "Self-enhancing prompt optimization for language style generation",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b3de6073d320eea2efac7765e87ae19a30a33cc7": {
+    "title": "Remote sensing change captioning meets large language and vision models",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0070c7a110d5a06d3f81b548a7a99b3b37bd217f": {
+    "title": "VideoEvent: Hierarchical and adaptive event modelling for complex video understanding",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "e2a3153c946eb22c611475c5bfc0b69e6ab37cc8": {
+    "title": "Beyond textual rationales: Anatomy-grounded chain-of-thought for traceable radiology reasoning",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9ddac097cb6e21c1600e3b8e003029786cfb7b71": {
+    "title": "From evolution to autonomous modeling: need-driven self-system and intelligent agent self-evolution for remote sensing detection",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "41ba9994a7f015d1f3d9447633e9dfb781cfde1e": {
+    "title": "Addressing hallucinations with RAG and NMISS in Italian healthcare LLM chatbots",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "c158a342bd1d30a7383fb6c60a5d8199e5f56a40": {
+    "title": "Construction Quality Risk Factors Extraction Based on LLM-Assisted Text Mining from Big Data in Court Cases: Aligned with IDI Liability Clauses",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "188aeb71a6e32e297a0733d7b841b306c042c686": {
+    "title": "ExMe: Keep Improving With Extrapolation and Merging",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ac972aecf875ec71a515382b0e06d687ac9077a7": {
+    "title": "GMDRA: Optimizing Edge-Cloud LLM Security and Efficiency via Game-Theoretic Detection Resource Allocation",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "7c44d2745a4896d1a442c67b980237f202499e52": {
+    "title": "Rationality and financial risk aversion in large language models: Evidence from a multi-model Holt–laury experiment",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "3d263155c46d91260d6c4456e0693e8daf9bca77": {
+    "title": "From anatomy to diagnosis: A hierarchical post-training framework for lumbar MRI report generation with limited multimodal data",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0da20a4b608c07d6b2749c6ae597f22092fac700": {
+    "title": "ShenhuaAI: An LLM-powered software platform for multi-dimensional corporate health assessment in FinTech analytics",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "7ecc8bf212ba04a3db3043938853af5bca5e6533": {
+    "title": "IC-GCG: Jailbreaking Large Language Models via Intermediate Consistency Optimization",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ca23826b510b72ed9e6d800bf6e51dcdd9f447eb": {
+    "title": "CLPA: A Clustering-Based Low-Power Accelerator for Energy-Efficient Matrix Multiplication",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "dbf7565a52ceee7c8c3f8a5f61190c5c6758976d": {
+    "title": "TransMap: Transformer-Enhanced Divide-and-Conquer Reinforcement Learning Framework for Efficient CGRA Compilation",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "3dc3397cefc84583f159202c5f5de9e67a3c6f77": {
+    "title": "Low-resource hallucination detection in LLMs on multi-task datasets via iterative pseudo-labeling using confidence thresholding and active learning",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "654446b060b2681371d9e1ed32811fbcfc375599": {
+    "title": "Implicit semantic control manifolds for learning-enabled multi-UAV coordination",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "caeba07342bfcd52e412b43b6f750e097fe3d72d": {
+    "title": "Online Self-Weighted Fine-Tuning",
+    "why": "cites only ouyang2022; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "6dafebe3a7d5577309ee0648193bf93096b02782": {
+    "title": "Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large LLMs",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b5a6ddc1dcb29edf1d7de36a3bdcbe2b4a0d8caf": {
+    "title": "MoE Proxy Models for Low-Cost Failure Reproduction and Diagnosis in LLM RL Post-Training",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "2addebd501967d6022354738fc762b1d883a0da0": {
+    "title": "Evaluator Ensembles Under Reward Hacking: Covariance Geometry and Finite-Search Guarantees",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "e844b247d3a2616aeb13387560b94d8f02b2c11f": {
+    "title": "Explore or Converge? Stage-Guided Per-Step Optimization for Diffusion Models",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9b8557616c66c17d53bc66ac7921336672a39aec": {
+    "title": "Ethical Guidelines for Designing, Developing, and Deploying AI Negotiation Agents",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "74b1781e02299290322d272509afddc280672c42": {
+    "title": "More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b6056fbf40d160e54fd3aa46a29f0f5ce3695334": {
+    "title": "Safe Inference-Time Alignment via Lagrangian Reward Augmentation",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "a822b8bd149d815924faee7458b7f938651188c6": {
+    "title": "Normalized Rewards for Preference Optimization",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "4640f8ac7774c14c047ddcd7a410057ee566def3": {
+    "title": "Enhancing Control in Chemical Processes using Reinforcement from Human Feedback",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "096714bf7096f275c0f803dd877c5c76433094eb": {
+    "title": "Reward Hacking in Language Model Agents: Revisiting AI Safety Gridworlds",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "dccae4991944952396eb5a09224ca7c5a803f696": {
+    "title": "Beyond Scalar Rewards by Internalizing Reasoning into Score Distributions",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0c02030da666aab891ee0016212753c36f188e54": {
+    "title": "Self-Commitment Latency: A Reward-Free Probe for Prompted Implicit Hacking",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "c2887cd41786061eb146c0c95dc5a2423ed40090": {
+    "title": "Using Reward Uncertainty to Induce Diverse Behaviour in Reinforcement Learning",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9a9f63861a0305d5c69547bdd6248fdae3e34e6a": {
+    "title": "EvalStop: Using World Feedback to Detect and Correct Reward Overoptimization in Multi-Tenant RLHF Platforms",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "025a427e56db67476a23d96361f7b50786fe976c": {
+    "title": "A Primer in Post-Training Reasoning Data: What We Know About How It Works",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "127eae45b4cccb84b24ee0962f60d9ee2cdba6c1": {
+    "title": "Are we really tilting? The mechanics of reward guidance in flow and diffusion models",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "68755b0d966c8c5518af0546c45a31e44409a84e": {
+    "title": "The Representation-Rationalizability Tradeoff in Reward Learning",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "80ff3f3f349402a23b51a1825d92699b14280b3f": {
+    "title": "Algorithmic Due Process: A Comparative Study of Indian and Eu Ai Governance Models",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "e22bd2f9be379345c64861c25f4ff268fb9c3dbc": {
+    "title": "TPMM-DPO: Trajectory-Aware Preference-Guided Model Merging for Iterative Direct Preference Optimization*",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "701532c650c0085fc55f8aae001ac09f768a2738": {
+    "title": "Towards Context-Invariant Safety Alignment for Large Language Models",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ae55bea1b00f516dccee5725ef6a7bea506699d6": {
+    "title": "Epistemic Uncertainty for Test-Time Discovery",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ae92569a34a60bc2a2948a242eb620ce9842e904": {
+    "title": "Quantifying the Utility of User Simulators for Building Collaborative LLM Assistants",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "d5b00ef47ab4b5fdca88944d52799eca9eb13ee6": {
+    "title": "ξ-DPO: Direct Preference Optimization via Ratio Reward Margin",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "8c8594900057822e978de861ba11eaaeb872c4b9": {
+    "title": "Non-Ideal Foundations for Preference-Based AI Alignment",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "70352f8b793ac04b870516dd8187ba3835b04d12": {
+    "title": "f-Divergence Regularized RLHF: Two Tales of Sampling and Unified Analyses",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "e6dd1c1928286502acacbecbbe3aaa6c089a31cb": {
+    "title": "Efficiently Aligning Language Models with Online Natural Language Feedback",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "68e35a05a121f5e3f858b0e8746ee40d121180aa": {
+    "title": "Explaining and Preventing Alignment Collapse in Iterative RLHF",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "39ca8b1fd55668624b452d1f307a4ba71efe5ac7": {
+    "title": "Reliable AI Needs to Externalize Implicit Knowledge: A Human-AI Collaboration Perspective",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b83f29027e5e6fc9fd2235843681335b2b150ae7": {
+    "title": "Understanding Hallucinations in Large Visual and Language Models",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "54eeb6a98ac558bebd39475c38604c4b54dbeaa2": {
+    "title": "Reward Hacking in the Era of Large Models: Mechanisms, Emergent Misalignment, Challenges",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ef21d1f7e247562006d2c11164710d091efeb5de": {
+    "title": "Rater State Bias in RLHF Preference Data: An Audit Framework",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "4b8a17cc5282a23dd5802142276b689407040f5e": {
+    "title": "Mosaic: A Multi-Level Framework for Observing and Evaluating Performance of Multi-Agent Systems",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "c03e8f755446a199245658e026eaa28ce23f4428": {
+    "title": "Likelihood hacking in probabilistic program synthesis",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "f8caf80783cc10853e9f0fb16a00cb901e5913d7": {
+    "title": "Efficient Exploration at Scale",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "d6a3de24c66d6a2edcb0b04b9529a7885be0640d": {
+    "title": "Safe RLHF Beyond Expectation: Stochastic Dominance for Universal Spectral Risk Control",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "26c0f0bd70a9f02f84a2960549b74f9318c56cc8": {
+    "title": "Beyond the Illusion of Consensus: From Surface Heuristics to Knowledge-Grounded Evaluation in LLM-as-a-Judge",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "46373ab72b4452f9d242746387a84c076389cf6b": {
+    "title": "Robust Post-Training for Generative Recommenders: Why Exponential Reward-Weighted SFT Outperforms RLHF",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "d712bccc8ed5798bc04e9c3efc833981be59e056": {
+    "title": "DARC: Disagreement-Aware Alignment via Risk-Constrained Decoding",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "fdb330269f4bacd6c44d3bcb319d2f616df988aa": {
+    "title": "Why Is RLHF Alignment Shallow? A Gradient Analysis",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "167c0c281967935d2bf8134cdddf7405055550a9": {
+    "title": "Mitigating Mismatch within Reference-based Preference Optimization",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "5c698be4db7ead84a4dc8eb13184916b2e1bcc39": {
+    "title": "Unifying Stable Optimization and Reference Regularization in RLHF",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "e91cfc24e83f50ca66f77ae2a5c6b1b72704421f": {
+    "title": "Factored Causal Representation Learning for Robust Reward Modeling in RLHF",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "379930aa820d8e23bd50a79f23abff018c25203f": {
+    "title": "Lattice: Generative Guardrails for Conversational Agents",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "4c83f91c9d60bbd2ad9560a8bb8e97253d408cb4": {
+    "title": "Breaking Up with Normatively Monolithic Agency with GRACE: A Reason-Based Neuro-Symbolic Architecture for Safe and Ethical AI Alignment",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "d3043a408a79655aea5542f7a39b5d8fe1c6a439": {
+    "title": "DafnyPro: LLM-Assisted Automated Verification for Dafny Programs",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ca96ba4a274fb5e686db99e69bf437b42fee560d": {
+    "title": "Trade-R1: Bridging Verifiable Rewards to Stochastic Environments via Process-Level Reasoning Verification",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "338abb244c3ad4972ebf3b1d66f9b0db712732e4": {
+    "title": "From RLHF to Direct Alignment: A Theoretical Unification of Preference Learning for Large Language Models",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "917c71ade21463b2658482e47723cfa379852dba": {
+    "title": "Shapley-based Data Valuation for LLM Alignment via Sequential Preference Optimization",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "5b6300f5cf4335c28fb1b54ede2a033b91a02f9e": {
+    "title": "Inverse Optimality for Fair Digital Twins: A Preference-based approach",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "8af448dbd95aeab772f0077320e5bd531867c6ef": {
+    "title": "PLSJ-Framework: Prompt-in-the-Loop Traffic Safety Judgement Framework",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "3e311dbeea61ed6fa8dcd25d5f3e24bb20e039ef": {
+    "title": "Preference Learning from Physics-Based Feedback: Tuning Language Models to Design BCC/B2 Superalloys",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "be25f8a433e47da6120b664b06596ce1153fc571": {
+    "title": "Rectifying Shortcut Behaviors in Preference-based Reward Learning",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b9a3fc3edb2e9b9754542a4fd79d9002d9adaadd": {
+    "title": "Information-Theoretic Reward Modeling for Stable RLHF: Detecting and Mitigating Reward Hacking",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b04cd34eafd8d0a212c892c33b95b41e1d7f2527": {
+    "title": "Reinforced Preference Optimization for Recommendation",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "001fac4a50892e3cc57f53f8310f501ae24cf822": {
+    "title": "Best-of-Majority: Minimax-Optimal Strategy for Pass@k Inference Scaling",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "51fa6682984b9a8b3085cdd3d2918444317ef3ee": {
+    "title": "Alignment-Aware Decoding",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "94317dab6cb3d29548abb365c87128aa53ce7d49": {
+    "title": "Hybrid Reward Normalization for Process-supervised Non-verifiable Agentic Tasks",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9f6f36d1a3e4a1d7f78aaa4e3565bfe1fff53339": {
+    "title": "Causally-Enhanced Reinforcement Policy Optimization",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "057d785034c4debfe169a9f320b3bb6e98120f3a": {
+    "title": "MO-GRPO: Mitigating Reward Hacking of Group Relative Policy Optimization on Multi-Objective Problems",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "4cba3bd7a32f7ef1ab33383dc02e79dee8cb69fe": {
+    "title": "Adaptive Margin RLHF via Preference over Preferences",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "5ef246ec5941eeb61e532e0d8b9bdf18617a8222": {
+    "title": "Review of Hallucination Understanding in Large Language and Vision Models",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "89d01a6cd69161b1fba09dc4a2bed062497e4000": {
+    "title": "Failure Modes of Maximum Entropy RLHF",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "6aebe394b781205ec9accd634e9395b7c21c1310": {
+    "title": "The Alignment Bottleneck",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "28af78801ba76122e047a8f8df37061b957e1b45": {
+    "title": "Learning to Refine: Self-Refinement of Parallel Reasoning in LLMs",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ae11024cb18ee5444d8c7c950d42a111735aed72": {
+    "title": "MoL-RL: Distilling Multi-Step Environmental Feedback into LLMs for Feedback-Independent Reasoning",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "da62bb50adf8ae3df3db7d372f9398356e51b7cd": {
+    "title": "Preference-Strength-Aware Self-Improving Alignment with Generative Preference Models",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "265fdd781ac5f96f0e6ae37fbca0a370ee7c1b26": {
+    "title": "Quantile Reward Policy Optimization: Alignment with Pointwise Regression and Exact Partition Functions",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "a6a5e2d4319e2fa9bf780a9b28f71677de4baaf6": {
+    "title": "Aligning Spoken Dialogue Models from User Interactions",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "fc246dda7be2d982e7d60f50a879d8157d4947b3": {
+    "title": "Cognitive models can reveal interpretable value trade-offs in language models",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b76d2d4da4b70489d85cd1fbf2ff3a7ebbadc578": {
+    "title": "Towards Bridging the Reward-Generation Gap in Direct Alignment Algorithms",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "7985e019694318d12c52cc03ee2adef36845059c": {
+    "title": "ConfPO: Exploiting Policy Model Confidence for Critical Token Selection in Preference Optimization",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "d5925e094acf86f5bd1b8169d21808afbc78c752": {
+    "title": "Mitigating Reward Over-optimization in Direct Alignment Algorithms with Importance Sampling",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "416908dee133533bc8a08f7507718c5697190467": {
+    "title": "Reinforcement Learning from Human Feedback with High-Confidence Safety Constraints",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "fea9cf41242aa4faf831d26b7570e501363ca65b": {
+    "title": "Aligning Language Models with Observational Data: Opportunities and Risks from a Causal Perspective",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "121b2ea3770c1e5627846f06b58ada4d886a7f01": {
+    "title": "Interleaved Reasoning for Large Language Models via Reinforcement Learning",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "15da3d93b763e090381e2cdcd65099a2c6944108": {
+    "title": "Learning a Pessimistic Reward Model in RLHF",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "961789d210238911b457c190e86adae816203a55": {
+    "title": "From Mathematical Reasoning to Code: Generalization of Process Reward Models in Test-Time Scaling",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "bdf6334fb878f90b71b325223cc904c3b7aad0c3": {
+    "title": "Reward Model Overoptimisation in Iterated RLHF",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9f6ec75cbb930edecbeeef964f50cddb10abdb6e": {
+    "title": "Learning to Choose or Choosing to Learn: Best-of-N vs. Supervised Fine-Tuning for Bit String Generation",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "62529f40fcc21c10a90608bc2b6bbeb43b6a11db": {
+    "title": "Rethinking Reward Model Evaluation Through the Lens of Reward Overoptimization",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0467ea5c1751f55693840be65a46573fe1c9d5eb": {
+    "title": "On the Robustness of Reward Models for Language Model Alignment",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "309bd4508e9f454dd74ca3075c05ec82d2872990": {
+    "title": "ComPO: Preference Alignment via Comparison Oracles",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "f901c812e41109f84168a5d29b080514795ae802": {
+    "title": "RankAlign: A Ranking View of the Generator-Validator Gap in Large Language Models",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "039054cb35e5168a00a42da39d2ce2adee4bca29": {
+    "title": "Scaling Evaluation-Time Compute with Reasoning Models as Evaluators",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "43908f36b802ab4422a7e7c995aa40f85906a10f": {
+    "title": "Direct Post-Training Preference Alignment for Multi-Agent Motion Generation Models Using Implicit Feedback from Pre-training Demonstrations",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "5ca8dc1ea8078ba29a75bb1a1d6be4c580b5bbbb": {
+    "title": "RePO: Understanding Preference Learning Through ReLU-Based Optimization",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ed034fff0b46b7b375befb284f3591b022e38def": {
+    "title": "Robust Multi-Objective Preference Alignment with Online DPO",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "5cb5453d2c54e1449f82fdf2e976cab04396b224": {
+    "title": "Distributionally Robust Reinforcement Learning with Human Feedback",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "6bb2b2314a0edd377ae06687566e2d75fa3654f8": {
+    "title": "Preference Learning Unlocks LLMs' Psycho-Counseling Skills",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "986839c6cd0f3cbd3dbb68b5376ea4c9c1d58765": {
+    "title": "Two Heads Are Better Than One: Dual-Model Verbal Reflection at Inference-Time",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "a2e08a2fce333a7c8961103fe022bb9b334030cf": {
+    "title": "Aligning Compound AI Systems via System-level DPO",
+    "why": "cites only rafailov2024; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "fe123e0712cb712cf909a6d9e0316f6d4b0169ec": {
+    "title": "When Safety Speaks a Language: A Mechanistic Analysis of Safety-Language Identity Entanglement in LLMs",
+    "why": "cites only safer2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "e66e6b0b800cf0b27c8601ea5db6dfc06ffb9f5f": {
+    "title": "Understanding helpfulness and harmless tension in reward models",
+    "why": "cites only safer2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "f59a278ec86f51c963e5c6a98b848143f6b35087": {
+    "title": "Preference Instability in Reward Models: Detection and Mitigation via Sparse Autoencoders",
+    "why": "cites only safer2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "473ab2cd396ad8ad5048704d7c68f64f32651f19": {
+    "title": "Interpretable Reward Model via Sparse Autoencoder",
+    "why": "cites only safer2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9cd38ff26252224c0cbecf0df07a53ae46824b13": {
+    "title": "Human-in-the-Loop User Feedback Affects Perceived Accuracy and Trust, but Task Subjectivity Matters",
+    "why": "cites only mohseni2018; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "bc3c0b78193aba2c0d56f3fc2c1a4a2c83ff31e3": {
+    "title": "Domain-adapted explainability for machine learning predictions of rotodynamic pump degradation in safety-critical industrial sectors",
+    "why": "cites only mohseni2018; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "2ddf6218985a019a428dde334f851706d3317e10": {
+    "title": "How informative is your XAI? Assessing the quality of explanations through information power",
+    "why": "cites only mohseni2018; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "2397b57c8020d95bbb899526d9abd883e02a4a4f": {
+    "title": "MoRE-XAI: Moment-Based Rigid Registration and Multi-Perspective Explainability for Fracture Localization in X-Ray Imaging",
+    "why": "cites only mohseni2018; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "90e5d8b911264d24fe1a68760b6e3d7425ccc696": {
+    "title": "Research-Driven Apps: The Last Mile of Marketing Scholarship",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "557474f6990536351c30d0c90f548030e30e06c9": {
+    "title": "Runtime Action Interference for AI Control of AlphaStar in StarCraft II",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "95f92723db89abbf9e8859f32593d33b729ec985": {
+    "title": "Do people rely on ChatGPT more than their peers to detect deepfake news?",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "5555d5040d997f64d609476deb8facad5847ff23": {
+    "title": "assessment of artificial intelligence-generatedFrom manual to autonomous: a literature review of GenAI integration levels for design education",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "799fac8ef123c32da4b079b535f39876c0225473": {
+    "title": "Beyond the Response: Examining Reasoning and Execution Fidelity in Large Language Models for Mental Health",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "3f9d9fa9839e7d3a5de54d2b9023e9ddfcc033db": {
+    "title": "Human Decision-Making with Persuasive and Narrative LLM Explanations",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "c9aa581a733a3fe8770f1829104c2addb1f7757e": {
+    "title": "The safety failures we are not instrumenting: a perspective on hidden safety-critical challenges in modern AI systems",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "2f9581ea3b66d9a37de20e155334bdfa043de8f7": {
+    "title": "Evaluating the False Trust Engendered by LLM Explanations",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "888caa481b11b3e2d9c7c1e71fd6671ca9a73710": {
+    "title": "Caring Without Feeling: Affective Dynamics as the Control Layer of Human-AI Agent Collaboration",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "eb882adfd77ceb7298b9095292fc4022b61e7bcc": {
+    "title": "CoAX: Cognitive-Oriented Attribution eXplanation User Model of Human Understanding of AI Explanations",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "2426c61c0c42d0138bc3f4d4430ededeb3bdd1fe": {
+    "title": "Unsupervised Confidence Calibration for Reasoning LLMs from a Single Generation",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9c1584ac422b8728854bb53f87d24d492a02c50e": {
+    "title": "“Are Compliments Bad Now?”: Comparing LLMs and Human Interpretations of Gender Microaggressions in the Workplace",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9404dc8b8ef9b7908bda64f5efd712c770d3eb19": {
+    "title": "Glanceable Verification Indicators for AI-Assisted Storytelling",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "127eab0015b39523b6dc6db5b9fe6be39c489051": {
+    "title": "Designing Scaffolding Cards to Facilitate LLM-Based Socratic Instruction: An Exploratory Study of Response Strategies to Support Learning",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "6c94c6d875a588d112712379d11d8841618d6ffa": {
+    "title": "Understanding the Affordances of Control in AI Reasoning for Human-AI Decision-Making",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "86e49f2045e922c075edcdc7fa2d1979cebea0dd": {
+    "title": "AHAlogy: Agent-Supported In-Class Analogical Learning for Primary School Students' Divergent Thinking",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "824baa24ecc1fe4dea909bc51f46907bf8aeba72": {
+    "title": "Towards an Appropriate Level of Reliance on AI: A Preliminary Reliance-Control Framework for AI in Software Engineering",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "841c77ac8406d859b4cfe41ae06cce77bb3796c8": {
+    "title": "From Use to Oversight: How Mental Models Influence User Behavior and Output in AI Writing Assistants",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "2685a33e4ba985881d87c1f2f47be291617f5f25": {
+    "title": "Beyond Compliance: How AI Could Help Creative Writers by Refusing Them",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "b2a8987cf1d811cbcedc6e99f42cf466b14a2a04": {
+    "title": "\"Pathways to the Metaverse\": Exploring the User Experience Mechanisms Driving Technology Acceptance in Virtual Lab Visits with an LLM-powered Avatar",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0d010e931d69d97fcefaa60089cf6826cae26b0e": {
+    "title": "AgentCraft: Workshop on Developing Trustworthy Agentic AI Systems",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "7f56740135aa0aad2362db1cbe9830ab2489f05f": {
+    "title": "Designing with Medical Mistrust: Perspectives from Black Older Adults in Publicly Subsidized Housing",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "f3759457c6702b4ee9e798e1df6188d1702af65d": {
+    "title": "PaperTrail: A Claim-Evidence Interface for Grounding Provenance in LLM-based Scholarly Q&A",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ce5bfb67c4e72382cad5ca0c9dfbd3d0be717b40": {
+    "title": "Reasoning Capabilities of Large Language Models. Lessons Learned from General Game Playing",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "6dd8fb1bcd2e81190183df9695535a553b97b997": {
+    "title": "Who Does What? Archetypes of Roles Assigned to LLMs During Human-AI Decision-Making",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "939eaa02aa1226fe187f87db41568db77da02695": {
+    "title": "“Do I Trust the AI?” Towards Trustworthy AI-Assisted Diagnosis: Understanding User Perception in LLM-Supported Clinical Reasoning",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ef9d096013a0bee886a9c574683499f5d3fae687": {
+    "title": "The Promises and Perils of using LLMs for Effective Public Services",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "a14b26a443ecf86ec8f99669683645e453a809ea": {
+    "title": "Analyzing the Behavior of LLM Under Concurrency and Token-Based DoS Attacks",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "edb7cace7708a458982b4463007706336ded4fcc": {
+    "title": "Presenting Large Language Models as Companions Affects What Mental Capacities People Attribute to Them",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "79ea123c8dd45345e38c99daa9c770b1d1b0779b": {
+    "title": "The Siren Song of LLMs: How Users Perceive and Respond to Dark Patterns in Large Language Models",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "88d9d3b24110bba5115537f97e910b898a9381e9": {
+    "title": "Non-programmers Assessing AI-Generated Code: A Case Study of Business Users Analyzing Data",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "3568ff80244debee9b77efc9754ddae6090c537a": {
+    "title": "Interactive Reasoning: Visualizing and Controlling Chain-of-Thought Reasoning in Large Language Models",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "a912bacd191c73a23af3d909692f31036508a264": {
+    "title": "Should I Share this Translation? Evaluating Quality Feedback for User Reliance on Machine Translation",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "f7b889c602543d7e3f58d43cd1fb46911b85d308": {
+    "title": "Campus AI vs. Commercial AI: Comparing How Students and Employees Perceive their University’s LLM Chatbot vs. ChatGPT",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "f5c7b9e7f3603278190d33e1916c8319a680ef8b": {
+    "title": "Passing the Buck to AI: How Individuals’ Decision-Making Patterns Affect Reliance on AI",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "239a4b13de068c46a8ef1d8e6b1b4e991f4b8155": {
+    "title": "A Framework for Situating Innovations, Opportunities, and Challenges in Advancing Vertical Systems with Large AI Models",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "112cf86a05fddf1d7c13dab2ab4dc5bbdc35c4ac": {
+    "title": "The governance & behavioral challenges of generative artificial intelligence’s hypercustomization capabilities",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0acd61314707c2c35b4fe3cdc9800aa5647db6df": {
+    "title": "A Peek Behind the Curtain: Using Step-Around Prompt Engineering to Identify Bias and Misinformation in GenAI Models",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "7ca291f24182ce6a8d926d03493bbf829b2d2c81": {
+    "title": "Short-term AI literacy intervention does not reduce over-reliance on incorrect ChatGPT recommendations",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "59126ebc06d31dfd45d3255903115f6f33cc4418": {
+    "title": "Measuring and identifying factors of individuals' trust in Large Language Models",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "14e305ba32c2d0af85b154558909b0eed2f300b1": {
+    "title": "Beyond Hype: Will Ugandan Educators Continue Using Large Language Models for Learning Content Creation?",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "2185afc55795b58337a98b6d3420fac5419c3011": {
+    "title": "The Code Council: Orchestrating Heterogeneous Large Language Models for Robust Programming Scaffolding",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "4c4740187e7c16f83d097c1bdabc40e10d524fac": {
+    "title": "Design Features for Explainable Generative AI (GenXAI) Systems in Knowledge-Intensive Service Work",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "4fe19d3b715cc0ecaa790c7018410a8667fc502d": {
+    "title": "Epistemic Transfer in AI-Assisted Verification: A Framework and Evaluation Protocol",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0a82d6def2dbf6817490d70827014d3e81f2ecbc": {
+    "title": "Cognitive Friction in Clinical Decision Support: A Comparative Study of Judicial and Adjunct Human–AI Interaction Protocols",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "79761e24bb71cae6d06405df60fa060c14dbb955": {
+    "title": "Intelligence Is Not All You Need: A Case for Artificial Wisdom in Conversational Agents",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "4382c407eadcebbb23c1665e00d0dc3b7da2b2ae": {
+    "title": "Consolidating Access to Candidate Data for Recruitment Headhunting: Leveraging Explainable Machine Learning",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0ffb18c0f03b3af9756d59795d1bfe5846eb045b": {
+    "title": "AI Error Difficulty Modulates the Effectiveness of Explainability in Decision Support Systems",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "536df4073d6ce3865e1fd4a1497598d63a171c9e": {
+    "title": "Explaining Too Much? Understanding How Large Language Model Reasoning Traces Influence Performance and Metacognition",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "3da17a4fca2adbc9ad0727a449a7d1df865a55d4": {
+    "title": "Offline Reinforcement Learning for Adaptive Support in AI-Assisted Decision-Making",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "e69f8a4a295630d63f2bd42b90a9abaae1adb13f": {
+    "title": "Why Someone Asked \"Why\": Foil Inference in Human and LLM Question Interpretation",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "5ad42d9007a154a870812e9d9c5a0a934b0e11bb": {
+    "title": "From Trust to Appropriate Reliance: Measurement Constructs in Human-AI Decision-Making",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9b6a0034a09ea74174dee127d6647cd5d3e01889": {
+    "title": "C'est Bon: Contrastive Explanation for Multi-Class Graph Neural Networks",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "add585ef666b65fb7d7651733229284defd731f2": {
+    "title": "Do People Appropriately Rely on AI-Advice? An Analytical Review of HCI Research on Human-AI Decision-Making",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "6e1230d1aa80a84556d2bfad905500813454204d": {
+    "title": "Guided Reflection in AI-Assisted Decision-Making: Effects on AI Overreliance and Decision Accuracy",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "443a7f8714a24d29e305cae0c9695eb881b3311c": {
+    "title": "Clarifying or Complicating?: Understanding Older Adults' Engagement with Real-World XAI in E-Commerce",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "290e217086428312d406176cbe55db30cb608bbe": {
+    "title": "Trust to Reliance: Measurement Constructs for Human-AI Appropriate Reliance",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "cc251f39dccaba12fb6267b20a741177262616e0": {
+    "title": "Understanding Interactive Model Engagement for Appropriate Reliance: An Exploration of AI-Assisted Decision Support in Customer Classification",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "c3e39a4054d7540803e93a4c1b035712f16b12e7": {
+    "title": "From the Lab to the Field: The Role of Motivation in Rigorous XAI User Studies",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "d713b7c6559f69323adc244ad88ea2f41590c3c8": {
+    "title": "Understanding and Designing Human-Centered AI Interactions for Non-Expert Users",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "1a0c37a5d81243754cbac0d769934aced98beca0": {
+    "title": "Confidence Without Competence in AI-Assisted Knowledge Work",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "9ef914e869e68732ef080546e158fd60db5e3c9f": {
+    "title": "Beyond AI advice - independent aggregation boosts human-AI accuracy",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "a0f56f14e82ea1f7d72ca8caed0a1e47c2e6b512": {
+    "title": "Designing Uncertainty Statements for Responsible Use of GenAI in Lesson Planning: Evidence from Pre-service Teachers",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "bb98c5a32cb595a414be25973d532cc9f2fea1d1": {
+    "title": "Does Explanation Correctness Matter? Linking Computational XAI Evaluation to Human Understanding",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0cc0bbebf0fbe881b6513762793f524313df884a": {
+    "title": "More Isn't Always Better: Balancing Decision Accuracy and Conformity Pressures in Multi-AI Advice",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "d6cc50b6300f5aca5adfac230a6819cc6bba6bb7": {
+    "title": "To Believe or Not To Believe: Comparing Supporting Information Tools to Aid Human Judgments of AI Veracity",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "c24bc938058326578ac0fee94bc60ec7c27d6247": {
+    "title": "Believing vs. Achieving - The Disconnect between Efficacy Beliefs and Collaborative Outcomes",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "d0f0784c6387f6eea2509c2ad795a2ff69177c32": {
+    "title": "Beyond Scores: Explainable Intelligent Assessment Strengthens Pre-service Teachers' Assessment Literacy",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ab9dce74cd879e2b2e8f7f0833f5f40fbdf924e9": {
+    "title": "Can Agents Distinguish Visually Hard-to-Separate Diseases in a Zero-Shot Setting? A Pilot Study",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "0d3cc9535063479ef451cc4c07d3d033a18dd5be": {
+    "title": "Editable XAI: Toward Bidirectional Human-AI Alignment with Co-Editable Explanations of Interpretable Attributes",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "640a8cc6da1d7b02425954bf86452cd0f6dc6402": {
+    "title": "Building Pro-Worker Artificial Intelligence",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "a6e693aec9c2719230f7d73dc9be59319561ac1a": {
+    "title": "From Junior to Senior: Allocating Agency and Navigating Professional Growth in Agentic AI-Mediated Software Engineering",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "4198e8aba9de5c2fa2460695e1e1372be34f9ec1": {
+    "title": "Show me the evidence: Evaluating the role of evidence and natural language explanations in AI-supported fact-checking",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "e9becb6c65234b3204cfc34b6bee649338a4b57c": {
+    "title": "When Thinking Pays Off: Incentive Alignment for Human-AI Collaboration",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "f500af1c7739ff3b85386e12baa03b62b72bccc5": {
+    "title": "Design Considerations for Human Oversight of AI: Insights from Co-Design Workshops and Work Design Theory",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "eb299f45c5dcab577a2edc9d822eb2eea0466812": {
+    "title": "AbstractExplorer: Leveraging Structure-Mapping Theory to Enhance Comparative Close Reading at Scale",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "8e7ff4299aad59ca7ee0725d37be6c68c6590eb4": {
+    "title": "Beyond the emptiness machine: New directions for leadership research in digital and ai-driven work contexts",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "70793394311c2a1d9086cd58656880eb2c04482f": {
+    "title": "Enhancing XAI Interpretation through a Reverse Mapping from Insights to Visualizations",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "281e9309278462ed7276e743bac996d951525f8b": {
+    "title": "Unequal Uncertainty: Rethinking Algorithmic Interventions for Mitigating Discrimination from AI",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "2b3b5b2d4519f8eda97d0235b5331b8d3481300c": {
+    "title": "Beyond Autocomplete: Designing CopilotLens Towards Transparent and Explainable AI Coding Agents",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "02878bfaa0fb260ba87ae0da7e3fe0b5531fa8b5": {
+    "title": "Discrimination Exposed? On the Reliability of Explanations for Discrimination Detection",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "baa51035253ed6791e55d9c139bbaaa0fb226eae": {
+    "title": "Exploring the impact of explainable AI and cognitive capabilities on users’ decisions",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "883447e932eea818684c9bd7880be3799e183c26": {
+    "title": "Personalising AI Assistance Based on Overreliance Rate in AI-Assisted Decision Making",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "5d2e0e346c8519fa19816e941bc90f9cb524de74": {
+    "title": "Effects of Interaction and Explanation Type on Human–AI Collaboration for Fake News Detection",
+    "why": "cites only bucinca2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "e47678194bc95e78b87c405b4f3c9056b6bddb66": {
+    "title": "LL.me: Supporting Identity Work through Human-AI Alignment",
+    "why": "cites only overreliance2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "ad6b0cd5d8e1243277210d7c37c0cda9ffa35956": {
+    "title": "How are AI agents used? Evidence from 177,000 MCP tools",
+    "why": "cites only overreliance2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "86945dacddb7dcde3f9fe31e6b5fe8349d6697ae": {
+    "title": "Under the Influence: Quantifying Persuasion and Vigilance in Large Language Models",
+    "why": "cites only overreliance2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "910601ad598d169fcf60a5297abb0c1ff0bb5793": {
+    "title": "Overseeing Agents Without Constant Oversight: Challenges and Opportunities",
+    "why": "cites only overreliance2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "dcdfb113560f088e25b9aeae121f2000cdfa254d": {
+    "title": "Why Human Guidance Matters in Collaborative Vibe Coding",
+    "why": "cites only overreliance2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "6cba4efc1824ede98df49b324c204b44e90829f1": {
+    "title": "InterFlow: Designing Unobtrusive AI to Empower Interviewers in Semi-Structured Interviews",
+    "why": "cites only overreliance2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "72aafdcf29c9dfb38e4525b553350e2c8ef3901f": {
+    "title": "Critical or Compliant? The Double-Edged Sword of Reasoning in Chain-of-Thought Explanations",
+    "why": "cites only overreliance2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "eff2e73ebf354165155a49098c0fb6dac20ca24a": {
+    "title": "Human-AI Collaboration with Misaligned Preferences",
+    "why": "cites only overreliance2025; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "daa8b372fe45379eaac262963be2a468414b3d83": {
+    "title": "Towards Cognitive Process-Aware Proactive Writing Support",
+    "why": "cites only liu2026; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "73524d8d4737e0b9beaa578b8c4dfe7f5c4855f5": {
+    "title": "TutorTrace: A Dataset and Taxonomy for Classifying Learner Behavioral States during AI-Assisted Programming Education",
+    "why": "cites only liu2026; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "818cfc24670816bdaf6902ebe23e9b5a41fffb79": {
+    "title": "Fact-Check Your Information (FYI): A Design Probe to Understand How People Actually Fact-Check Data-Driven Articles",
+    "why": "cites only liu2026; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "026033aede6238989b9a19bd4a29729aee17cd40": {
+    "title": "Reliability-Aware Cross-Modal Learning Behavior Sensing for Student Cognitive Bias Recognition and Teaching-Oriented Psychological Risk Warning",
+    "why": "cites only liu2026; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "db484babc4d08f396e819ba473fa907b2074cbc1": {
+    "title": "From Prompting to Epistemic Proactivity: Temporal Trajectories of Student-AI Interaction in Mathematics Learning",
+    "why": "cites only liu2026; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "7695ca07c331c8dd7e789a8fa8f160bf780ff542": {
+    "title": "Offloading Score: Measuring AI Reliance Through Counterfactual Workflows",
+    "why": "cites only liu2026; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "62b2e06422623851fea24d307eddba88bb4e1649": {
+    "title": "Session Summary Podcast: Session 113: Human Behavior with AI Systems",
+    "why": "cites only liu2026; no velocity signal",
+    "seen": "2026-09-09"
+  },
+  "5ce7ef3e5d22eff2ac57f9fed9c05f147b0098bb": {
+    "title": "Pak3H: Evaluating the Cost of Cultural Mismatch in LLM Alignment with a Human-Contextualized Urdu Benchmark",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "1bae99a17e09d0f1d9af762b58d63650c857f045": {
+    "title": "From Language Models to Agentic AI: A Survey of Autonomous, Action-Enabled, and Collaborative LLM Agents",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "9f0dbb48324087b30f7bda670b4d29303e9a0901": {
+    "title": "Beyond Factual Knowledge: Benchmarking and Learning Step-Level Procedural Rule Reasoning in Large Language Models",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "595f710c201d2199e9e20069e990c1f30ed73288": {
+    "title": "Beyond Correctness: Benchmarking and Aligning Response Behaviors in Hybrid-Thinking MLLMs",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "105bb33831caa549a317593d9d9621cd95337a08": {
+    "title": "The Versatility of Large Language Models: A Comprehensive Review and Structured Survey of Architectures, Applications, Challenges, and Future Trajectories",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "e935f6cade1577ba5f166f7fc506c6cd0d86ed67": {
+    "title": "From Values to Benchmarks: Evaluating Large Language Models for Governmental Use in Dutch",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "75159e93871bc68e42892bf2357cd9892b0b5e91": {
+    "title": "ELBench: A Multi-Dimensional Benchmark for Education-Facing Large Language Models",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "66810aceffd226d7530bae6d17642e27c47ef0c9": {
+    "title": "What Current AI Benchmarks Leave Unmeasured: Modality, Search, Citations, and Implications (for Safety Evaluations)",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "e0eda70460e3d108dbf4d46ac05433c529f05057": {
+    "title": "Understanding Emergent Misalignment via Feature Superposition Geometry",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "5af8881c955e592a0658def3b5602ca0c13fa5a7": {
+    "title": "Polysemanticity or Polysemy? Lexical Identity Confounds Superposition Metrics",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "e8d625a3feb4ac5cd30f4653b3379b66db1ed4ef": {
+    "title": "Topology of Reasoning: Understanding Large Reasoning Models through Reasoning Graph Properties",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "5abeedfd6abbcb11578c6c635802bd0cc157e698": {
+    "title": "Automatic prompt generation via semantic decomposition-and-recomposition for multi-hop question answering",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "2bea41c71c5c9a7b85ad0d69fdf616314f5cb225": {
+    "title": "Vision-Language Models for medical imaging: A survey on anomaly detection and multimodal applications",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "234fea0bca0519286edc98b49e94337bac2e2719": {
+    "title": "Systematic review and comparative synthesis of cross lingual question answering systems for low resource Indic languages",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "ca9ef9653b05325b2051e3b95a8dc3a2f6edfd92": {
+    "title": "ConsensusBench: Benchmark of Consensus Nodes for LLM Reasoning via Outcome Reward Densifying",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "33d12ab29873b233a29cee1c5dae8eb1887ed0a7": {
+    "title": "A Review of Neural Question Generation: Approaches, Challenges, and Future Directions",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "e63a53d6b7a5989c355890eea9aa6c02359d0b51": {
+    "title": "A review of bias detection and fairness auditing techniques in LLMs",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "ffcbc4c0827327a594672ea9e1307f3ca4f24db8": {
+    "title": "A survey of reward hacking in agentic large language model systems",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "27c172bf8d5cf95b4565c4496183f599f45f98a8": {
+    "title": "Likelihood scoring for continuations of mathematical text: a self-supervised benchmark with tests for shortcut vulnerabilities",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "b94905f20cb8cbfb412ecc592f27154ee013ba01": {
+    "title": "Rethinking Reinforcement Fine-Tuning in LVLM: Convergence, Reward Decomposition, and Generalization",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "f9593e4c247defe3e1e518f59848048c9bc19a8e": {
+    "title": "Critique-GRPO: Advancing LLM Reasoning with Natural Language and Numerical Feedback",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "2edd56fd82749d0f0d987ee341d8caf95037b164": {
+    "title": "SafeDPO: A Simple Approach to Direct Preference Optimization with Enhanced Safety",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "5759a0e3a98496e7cce0a5a312aff3f4f491a2c4": {
+    "title": "Reward Reasoning Model",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "24519912c263a84321d5bf1126eddc24a2e1863e": {
+    "title": "Aligning Multimodal LLM with Human Preference: A Survey",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "5c33a1dade777d08f3d4ba8a761a4902dafd211a": {
+    "title": "Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "6b34d9f4a91670a265ce51ce4be71cdbf8e15d05": {
+    "title": "LLM Post-Training: A Deep Dive into Reasoning Large Language Models",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "a873278f177865a4c3816f632f129d97a3d34c54": {
+    "title": "Effects of Explanations in Human-AI Interaction: A Systematic Review and Framework for Future Research on Explainable AI",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "84d184526b7dfc974b79a66968d65fed5fdcf700": {
+    "title": "Accumulating Context Changes the Beliefs of Language Models",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "94b47f0feb7de3b59857ce25667b7fb3938c6417": {
+    "title": "Large language models for enhancing human-machine interaction in autonomous vehicles: A comprehensive survey",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  },
+  "793e5231cbb952f706316465a16b6b53e421a794": {
+    "title": "Sensing What Surveys Miss: Understanding and Personalizing Proactive LLM Support by User Modeling",
+    "why": "over per-run cap, reconsider next week",
+    "seen": "2026-09-09"
+  }
+}
