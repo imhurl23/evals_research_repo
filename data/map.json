@@ -4,7 +4,7 @@
   "clusters": {
     "eval": {
       "name": "Evaluation methodology",
-      "color": "#E9B44C",
+      "color": "#9C6210",
       "anchor": [
         0.27,
         0.26
@@ -12,7 +12,7 @@
     },
     "interp": {
       "name": "Mechanistic interpretability",
-      "color": "#63C4DC",
+      "color": "#0E6E8C",
       "anchor": [
         0.73,
         0.28
@@ -20,7 +20,7 @@
     },
     "rl": {
       "name": "RL & reward hacking",
-      "color": "#E4705E",
+      "color": "#C0243F",
       "anchor": [
         0.74,
         0.74
@@ -28,7 +28,7 @@
     },
     "human": {
       "name": "Human–AI interaction & design",
-      "color": "#A98BD8",
+      "color": "#6B3FA0",
       "anchor": [
         0.26,
         0.75
