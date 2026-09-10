@@ -1,0 +1,238 @@
+{
+  "arxiv:2609.06976v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.06993v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.07290v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.07603v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.07611v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.07664v2": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.07681v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.07741v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.08040v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.08149v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.08226v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.08275v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.08399v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.08402v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.08592v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.08637v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.08765v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.08919v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.08943v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.08947v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.08965v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.09004v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.09349v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.09396v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.09468v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.09476v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.09664v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.09672v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.09678v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.09852v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.09853v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.09875v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.10099v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.10253v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.10410v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "arxiv:2609.10451v1": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "hf:CohereLabs/tiny-aya-base-32K": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "hf:deepseek-ai/DeepSeek-V4.1-Flash": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "hf:nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:QwenLM/Qwen-MM-Plugins": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:Sahir619/fable-method": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:ShawnPana/phone-harness": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:Waishnav/devspace": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:XiaoDuoYa/codex-with-chatgpt": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:anywhere-labs/dsh-desktop": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:awesome-dsh-plugin/awesome-dsh-plugin": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:chuspeeism/dashi-taskboard": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:dataelement/dsh-desktop": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:deepseek-ai/deepseek-harness": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:dsh-market/dsh-market": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:elder-plinius/T3MP3ST": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:lopopolo/harness-engineering": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:pathwaycom/arc-task-gen": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:simonlin1212/Vibe-Research": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:truefoundry/trueforge": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:xai-org/grok-build": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:xiaobright/dsh-anchored-standard": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:yc-software/qm": {
+    "kept": false,
+    "seen": "2026-09-10"
+  },
+  "repo:zhu1090093659/dsh-web": {
+    "kept": false,
+    "seen": "2026-09-10"
+  }
+}
