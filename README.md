@@ -12,10 +12,14 @@ The map is a real citation graph — nodes are papers, edges are citations — r
 index.html                     the viewer; fetches data/map.json at load
 data/map.json                  the graph. this is the only file you edit by hand
 data/rejects.json              papers already screened and declined
-digests/YYYY-MM-DD.md          what each weekly run found
+data/frontier_seen.json        what the frontier watch has already reported
+digests/YYYY-MM-DD.md          what each weekly map run found
+digests/frontier-YYYY-MM-DD.md what the daily watch found
 snapshots/YYYY-MM-DD.png       rendered image of the map that week
-scripts/update_map.py          the weekly updater
-.github/workflows/             the schedule
+scripts/update_map.py          the weekly map updater
+scripts/watch_frontier.py      the daily frontier watch
+scripts/llm.py                 model transport, shared by both jobs
+.github/workflows/             the two schedules
 ```
 
 Data is separate from the viewer on purpose. The weekly job edits JSON, never JavaScript, so a bad run produces a readable diff instead of a broken page.
@@ -49,6 +53,23 @@ Having cleared it, a paper is added if it:
 The gate runs first, so a widely-cited survey that only attaches through hubs is still rejected. This does mean a high-velocity paper hanging off a single hub no longer gets in on velocity alone — deliberate, since topical attachment is what the map is for.
 
 Everything else is logged to `data/rejects.json` with a reason and skipped in future runs. Additions are capped at 8 per week; over the cap, papers with the widest cross-cluster attachment win and the rest are reconsidered next week. An unreadable map has failed at its job.
+
+## Frontier watch
+
+A second, independent job runs daily at 12:00 UTC and opens an issue labelled `frontier-watch` when something new shows up. It is not part of the map and never edits it. Four structured sources, no scraping:
+
+| Source | What it catches |
+|---|---|
+| Hugging Face model API | new model repos from labs that ship weights — model cards often appear before the announcement |
+| PyPI + GitHub Releases | eval harness versions. PyPI is primary: `inspect_ai` publishes no GitHub releases at all, so a releases-only watch would miss one of the most active harnesses |
+| arXiv | new benchmark and harness papers, which land before the code and long before anyone cites them |
+| GitHub search | recently created, fast-growing eval repos |
+
+Facts come from the APIs. The model only decides what is worth your attention and writes the one-line reason; it is never asked whether something was released. Items are reported once and recorded in `data/frontier_seen.json`, rejections included, so nothing is re-judged every morning. A quiet day opens no issue.
+
+The report is capped at 25 items and allocated round-robin across the four kinds — arXiv alone returned 60 of 103 items in testing, which would otherwise bury a model launch under a busy week of preprints.
+
+**The first run primes rather than reports.** With no state it would announce a 90-day repo backlog as news, so it records what already exists, opens nothing, and reports only deltas from then on. Run it once by hand before relying on it.
 
 ## What the model does and doesn't do
 

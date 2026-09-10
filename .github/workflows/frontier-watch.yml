@@ -1,0 +1,72 @@
+name: Frontier watch
+
+on:
+  schedule:
+    - cron: "0 12 * * *"     # daily 12:00 UTC, an hour before the Monday map job
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write              # the digest is delivered as an issue
+
+# Two scheduled jobs push to main; never let this one race itself.
+concurrency:
+  group: frontier-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Look for new models, harnesses, benchmarks and repos
+        id: watch
+        env:
+          # Same two routes as the map job. With neither, everything new is
+          # reported untriaged rather than nothing being reported.
+          BRAINTRUST_API_KEY: ${{ secrets.BRAINTRUST_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GH_TOKEN: ${{ github.token }}          # lifts the search/API rate limit
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          python scripts/watch_frontier.py
+          # The script writes a digest only when it has something to say, so
+          # its presence is the signal for whether to open an issue.
+          if [ -f "digests/frontier-${DATE}.md" ]; then
+            echo "digest=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "digest=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit
+        env:
+          DATE: ${{ steps.watch.outputs.date }}
+        run: |
+          git config user.name "citation-map bot"
+          git config user.email "actions@github.com"
+          git add data/frontier_seen.json digests/
+          if git diff --staged --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git commit -m "Frontier watch $DATE"
+          # the weekly map job also pushes to main; rebase rather than fail
+          git pull --rebase --autostash origin main
+          git push
+
+      - name: Notify
+        if: steps.watch.outputs.digest == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DATE: ${{ steps.watch.outputs.date }}
+        run: |
+          TITLE=$(head -1 "digests/frontier-${DATE}.md" | sed 's/^# //')
+          gh issue create --title "$TITLE" \
+            --body-file "digests/frontier-${DATE}.md" \
+            --label frontier-watch
