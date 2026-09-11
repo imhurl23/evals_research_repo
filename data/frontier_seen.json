@@ -143,6 +143,58 @@
     "kept": false,
     "seen": "2026-09-10"
   },
+  "arxiv:2609.10712v1": {
+    "kept": true,
+    "seen": "2026-09-11"
+  },
+  "arxiv:2609.11018v1": {
+    "kept": true,
+    "seen": "2026-09-11"
+  },
+  "arxiv:2609.11022v1": {
+    "kept": true,
+    "seen": "2026-09-11"
+  },
+  "arxiv:2609.11028v1": {
+    "kept": true,
+    "seen": "2026-09-11"
+  },
+  "arxiv:2609.11101v1": {
+    "kept": false,
+    "seen": "2026-09-11"
+  },
+  "arxiv:2609.11117v1": {
+    "kept": true,
+    "seen": "2026-09-11"
+  },
+  "arxiv:2609.11128v1": {
+    "kept": false,
+    "seen": "2026-09-11"
+  },
+  "arxiv:2609.11247v1": {
+    "kept": false,
+    "seen": "2026-09-11"
+  },
+  "arxiv:2609.11318v1": {
+    "kept": true,
+    "seen": "2026-09-11"
+  },
+  "arxiv:2609.11334v1": {
+    "kept": false,
+    "seen": "2026-09-11"
+  },
+  "arxiv:2609.11414v1": {
+    "kept": false,
+    "seen": "2026-09-11"
+  },
+  "arxiv:2609.11682v1": {
+    "kept": false,
+    "seen": "2026-09-11"
+  },
+  "arxiv:2609.11892v1": {
+    "kept": false,
+    "seen": "2026-09-11"
+  },
   "hf:CohereLabs/tiny-aya-base-32K": {
     "kept": false,
     "seen": "2026-09-10"
