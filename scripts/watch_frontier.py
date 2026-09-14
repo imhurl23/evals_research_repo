@@ -24,7 +24,7 @@ State lives in data/frontier_seen.json so a thing is reported once. Items the
 triage rejected are recorded too, so they are not re-judged every morning.
 """
 
-import json, os, sys, time, datetime, urllib.request, urllib.parse, urllib.error
+import json, os, re, sys, time, datetime, urllib.request, urllib.parse, urllib.error
 import xml.etree.ElementTree as ET
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -53,11 +53,28 @@ GH_RELEASE_REPOS = ["EleutherAI/lm-evaluation-harness", "stanford-crfm/helm",
                     "UKGovernmentBEIS/inspect_ai", "METR/vivaria",
                     "allenai/olmes"]
 
-ARXIV_TERMS = ['abs:"evaluation harness"', 'abs:"new benchmark"',
-               'abs:"agent benchmark"', 'abs:"benchmark for evaluating"',
-               'abs:"evaluation framework"', 'abs:"we introduce a benchmark"']
+ARXIV_CATS  = ["cs.CL", "cs.AI", "cs.LG"]
+# Matched against title + abstract of each day's new submissions. Plain
+# substrings, not API query syntax: we filter the feed ourselves now.
+# Deliberately specific. Bare "benchmark", "we evaluate" and
+# "interpretability" matched 191 papers in a single day — nearly every ML
+# preprint says one of them — which is triage cost, not signal.
+ARXIV_TERMS = ["evaluation harness", "eval harness", "evaluation framework",
+               "evaluation suite", "evaluation protocol", "leaderboard",
+               "new benchmark", "we introduce a benchmark",
+               "we present a benchmark", "benchmark for evaluating",
+               "benchmark suite", "reward hacking", "reward model",
+               "sparse autoencoder", "llm-as-a-judge", "llm as a judge",
+               "mechanistic interpretability", "agent benchmark",
+               "evaluating agents", "contamination"]
 
 REPO_QUERY = "eval OR benchmark OR harness OR evals in:name,description"
+
+
+class SourceDown(Exception):
+    """A source could not be reached. Raised rather than returning [] so a
+    dead source is never indistinguishable from a quiet one — arXiv failed
+    silently on four consecutive scheduled runs before this existed."""
 
 
 # ----------------------------------------------------------------- http helpers
@@ -178,33 +195,44 @@ def gh_releases(days):
 
 
 def arxiv_papers(days):
-    """arXiv only answers over https; the http endpoint returns an empty feed."""
-    terms = " OR ".join(ARXIV_TERMS)
-    q = f"(cat:cs.CL OR cat:cs.AI OR cat:cs.LG) AND ({terms})"
-    url = ("https://export.arxiv.org/api/query?search_query=" + urllib.parse.quote(q) +
-           "&sortBy=submittedDate&sortOrder=descending&max_results=40")
-    raw = get(url, parse="raw")
-    if not raw:
-        return []
-    ns = {"a": "http://www.w3.org/2005/Atom"}
-    out = []
-    try:
-        root = ET.fromstring(raw)
-    except Exception as e:
-        print(f"  ! arxiv parse failed: {e}", file=sys.stderr)
-        return []
-    for e in root.findall("a:entry", ns):
-        pub = (e.findtext("a:published", "", ns) or "")
-        if not recent(pub, days):
-            continue
-        aid = (e.findtext("a:id", "", ns) or "").rsplit("/", 1)[-1]
-        out.append({
-            "key": "arxiv:" + aid, "kind": "paper",
-            "title": " ".join((e.findtext("a:title", "", ns) or "").split()),
-            "url": "https://arxiv.org/abs/" + aid,
-            "when": pub[:10],
-            "detail": " ".join((e.findtext("a:summary", "", ns) or "").split())[:420],
-        })
+    """arXiv's daily RSS, not its search API.
+
+    The search API 429s and times out from GitHub's shared runner IPs — it
+    failed on every scheduled run while working fine from a laptop, and
+    returned nothing rather than an error, so the watch silently lost a
+    source. The RSS feeds are static files on a CDN, and for a daily job they
+    are also the better semantics: they *are* the new-submissions list.
+    """
+    out, seen_ids = [], set()
+    for cat in ARXIV_CATS:
+        raw = get(f"https://rss.arxiv.org/rss/{cat}", parse="raw")
+        if raw is None:
+            raise SourceDown(f"arxiv rss {cat} unreachable")
+        try:
+            root = ET.fromstring(raw)
+        except Exception as e:
+            raise SourceDown(f"arxiv rss {cat} unparsable: {e}")
+        for it in root.findall(".//item"):
+            # 'replace' is a revision of an existing paper, not news
+            if (it.findtext("announce_type") or "").strip() == "replace":
+                continue
+            link = (it.findtext("link") or "").strip()
+            aid = link.rsplit("/", 1)[-1]
+            if not aid or aid in seen_ids:
+                continue
+            title = " ".join((it.findtext("title") or "").split())
+            desc = " ".join((it.findtext("description") or "").split())
+            hay = (title + " " + desc).lower()
+            if not any(t in hay for t in ARXIV_TERMS):
+                continue
+            seen_ids.add(aid)
+            out.append({
+                "key": "arxiv:" + aid, "kind": "paper", "title": title,
+                "url": link or ("https://arxiv.org/abs/" + aid),
+                "when": datetime.date.today().isoformat(),
+                "detail": re.sub(r"^arXiv:\S+\s+Announce Type:\s*\w+\s*", "", desc)[:420],
+            })
+        time.sleep(1.0)      # arXiv asks for a gap between requests
     return out
 
 
@@ -297,9 +325,12 @@ def allocate(kept, cap):
     return out
 
 
-def write_digest(kept, dropped, screened, today):
+def write_digest(kept, dropped, screened, today, down=()):
     os.makedirs(DIGESTS, exist_ok=True)
     L = [f"# Frontier watch — {today}", ""]
+    if down:
+        L += ["> **Sources unavailable this run — coverage is incomplete:** "
+              + "; ".join(down), ""]
     for kind in KIND_ORDER:
         rows = [k for k in kept if k["kind"] == kind]
         if not rows:
@@ -309,7 +340,7 @@ def write_digest(kept, dropped, screened, today):
             L += [f"- **[{r['title']}]({r['url']})** · {r['when']}", f"  {r['why']}"]
         L += [""]
     L += ["---",
-          f"Screened {screened} items across four sources; {len(kept)} worth a look, "
+          f"Screened {screened} new items; {len(kept)} worth a look, "
           f"{dropped} filtered out."]
     if not have_model():
         L += ["", "_No model key set: everything new is listed untriaged._"]
@@ -324,13 +355,20 @@ def main():
     seen = load(SEEN, {})
 
     print("collecting…")
-    items = []
+    items, down = [], []
     for name, fn in (("hugging face", hf_models), ("pypi", pypi_releases),
                      ("github releases", gh_releases), ("arxiv", arxiv_papers),
                      ("github search", trending_repos)):
-        got = fn(WINDOW)
-        print(f"  {name}: {len(got)}")
-        items += got
+        try:
+            got = fn(WINDOW)
+            print(f"  {name}: {len(got)}")
+            items += got
+        except SourceDown as e:
+            down.append(f"{name}: {e}")
+            print(f"  {name}: DOWN — {e}", file=sys.stderr)
+        except Exception as e:
+            down.append(f"{name}: {type(e).__name__}")
+            print(f"  {name}: DOWN — {type(e).__name__}: {e}", file=sys.stderr)
 
     # one key, one report, ever
     uniq = {}
@@ -340,6 +378,12 @@ def main():
     print(f"  {len(uniq)} distinct, {len(fresh)} not seen before")
 
     if not fresh:
+        # A dead source must still reach you. "Nothing new" and "we couldn't
+        # look" are different facts and used to look identical from outside.
+        if down:
+            print("nothing new, but sources are down — reporting that")
+            print("wrote " + write_digest([], 0, 0, today, down))
+            return 0
         print("nothing new")
         return 0
 
@@ -374,11 +418,11 @@ def main():
     with open(SEEN, "w") as f:
         json.dump(seen, f, indent=2, sort_keys=True)
 
-    if not kept:
+    if not kept and not down:
         print(f"screened {len(fresh)}, nothing worth reporting")
         return 0
 
-    path = write_digest(kept, dropped, len(fresh), today)
+    path = write_digest(kept, dropped, len(fresh), today, down)
     print(f"wrote {path}: {len(kept)} reported, {dropped} filtered")
     return 0
 
