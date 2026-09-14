@@ -64,8 +64,14 @@ A second, independent job runs daily at 12:00 UTC and opens an issue labelled `f
 |---|---|
 | Hugging Face model API | new model repos from labs that ship weights — model cards often appear before the announcement |
 | PyPI + GitHub Releases | eval harness versions. PyPI is primary: `inspect_ai` publishes no GitHub releases at all, so a releases-only watch would miss one of the most active harnesses |
-| arXiv | new benchmark and harness papers, which land before the code and long before anyone cites them |
+| arXiv | new benchmark and harness papers, which land before the code and long before anyone cites them. Read from the daily RSS feeds, not the search API — that API 429s from GitHub's shared runner IPs while working fine from a laptop |
 | GitHub search | recently created, fast-growing eval repos |
+| Hacker News | launch chatter, via Algolia. Free, no key |
+| Reddit | r/LocalLLaMA and r/MachineLearning, where early model chatter lands. Needs a free app id and secret (below); skipped until they exist |
+
+**X is not wired up.** It has no free read tier — an unauthenticated request returns `401`, and search needs a paid plan. A source that can only ever return nothing is worse than an honest gap, so it is absent rather than silently empty. If you get an X API key, say so and it can be added.
+
+For Reddit: create a **script** app at [reddit.com/prefs/apps](https://www.reddit.com/prefs/apps) (redirect uri `http://localhost:8080`, unused), then set `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET` as repo secrets. Auth is app-only `client_credentials`, so no Reddit password is involved.
 
 Facts come from the APIs. The model only decides what is worth your attention and writes the one-line reason; it is never asked whether something was released. Items are reported once and recorded in `data/frontier_seen.json`, rejections included, so nothing is re-judged every morning. A quiet day opens no issue.
 

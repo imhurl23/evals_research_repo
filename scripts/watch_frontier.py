@@ -8,7 +8,7 @@ numbers, upload dates, star counts, arXiv ids — comes from an API and is
 reproducible. The model only decides what is worth your attention and writes
 one line saying why. It is never asked whether something was released.
 
-Four sources, all structured, no scraping:
+Sources, all structured, no scraping:
   hugging face   new model repos from labs that ship weights. Model cards
                  routinely appear before the announcement, which is the
                  earliest public signal there is.
@@ -19,12 +19,17 @@ Four sources, all structured, no scraping:
                  and long before anyone cites them.
   github search  recently created, fast-growing eval repos, for harnesses
                  nobody has told you about yet.
+  reddit + hn    launch chatter, which often runs ahead of any of the above.
+                 Reddit needs a free app id/secret and is skipped until those
+                 exist. X is absent on purpose: it has no free read tier, and
+                 a source that can only ever return nothing is worse than an
+                 honest gap.
 
 State lives in data/frontier_seen.json so a thing is reported once. Items the
 triage rejected are recorded too, so they are not re-judged every morning.
 """
 
-import json, os, re, sys, time, datetime, urllib.request, urllib.parse, urllib.error
+import base64, json, os, re, sys, time, datetime, urllib.request, urllib.parse, urllib.error
 import xml.etree.ElementTree as ET
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -69,6 +74,32 @@ ARXIV_TERMS = ["evaluation harness", "eval harness", "evaluation framework",
                "evaluating agents", "contamination"]
 
 REPO_QUERY = "eval OR benchmark OR harness OR evals in:name,description"
+
+# --- chatter -----------------------------------------------------------------
+# X is deliberately absent: it has no free read tier, so wiring it would mean
+# a source that always returns nothing. Reddit and HN cover much of the same
+# launch chatter, and both say so when they fail.
+REDDIT_ID     = os.environ.get("REDDIT_CLIENT_ID")
+REDDIT_SECRET = os.environ.get("REDDIT_CLIENT_SECRET")
+# Reddit throttles generic agents; their convention is platform:id:version.
+REDDIT_UA = os.environ.get(
+    "REDDIT_USER_AGENT",
+    "github-actions:evals-research-repo-frontier:1.1 (+https://github.com/imhurl23/evals_research_repo)")
+SUBS = ["LocalLLaMA", "MachineLearning"]
+REDDIT_MIN_SCORE = 25
+
+HN_MIN_POINTS = 25
+# Must name something in this field. The first pass used "release", "launch"
+# and "open source" as triggers and surfaced a GCC point release and a news
+# story about a police crackdown — generic verbs are not a topic filter.
+CHATTER_TERMS = ["llm", "language model", "gpt-", "gpt4", "gpt5", "claude",
+                 "gemini", "llama", "qwen", "deepseek", "mistral", "grok",
+                 "open-weight", "open weights", "model weights", "benchmark",
+                 "eval harness", "evals", "leaderboard", "rlhf", "rlvr",
+                 "reward model", "reward hack", "fine-tun", "interpretability",
+                 "sparse autoencoder", "mixture-of-experts", "anthropic",
+                 "openai", "hugging face", "inference engine", "agentic",
+                 "frontier model", "foundation model", "multimodal"]
 
 
 class SourceDown(Exception):
@@ -255,6 +286,86 @@ def trending_repos(days):
     return out
 
 
+def _reddit_token():
+    """App-only OAuth. client_credentials works for confidential clients, so
+    this needs the app's id and secret and never a Reddit password."""
+    body = urllib.parse.urlencode({"grant_type": "client_credentials"}).encode()
+    basic = base64.b64encode(f"{REDDIT_ID}:{REDDIT_SECRET}".encode()).decode()
+    req = urllib.request.Request(
+        "https://www.reddit.com/api/v1/access_token", data=body,
+        headers={"Authorization": "Basic " + basic, "User-Agent": REDDIT_UA,
+                 "Content-Type": "application/x-www-form-urlencoded"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.load(r).get("access_token")
+    except urllib.error.HTTPError as e:
+        raise SourceDown(f"reddit auth {e.code} — check the app id/secret")
+    except Exception as e:
+        raise SourceDown(f"reddit auth {type(e).__name__}")
+
+
+def reddit_posts(days):
+    if not (REDDIT_ID and REDDIT_SECRET):
+        # Not configured is a choice, not a failure; don't cry wolf daily.
+        print("  reddit: skipped (REDDIT_CLIENT_ID/SECRET not set)")
+        return []
+    tok = _reddit_token()
+    if not tok:
+        raise SourceDown("reddit auth returned no token")
+    out = []
+    for sub in SUBS:
+        d = get(f"https://oauth.reddit.com/r/{sub}/new?limit=50",
+                {"Authorization": "Bearer " + tok, "User-Agent": REDDIT_UA})
+        if d is None:
+            raise SourceDown(f"reddit r/{sub} unreachable")
+        for ch in (d.get("data") or {}).get("children", []):
+            p = ch.get("data") or {}
+            if p.get("stickied") or (p.get("score") or 0) < REDDIT_MIN_SCORE:
+                continue
+            created = datetime.datetime.utcfromtimestamp(
+                p.get("created_utc") or 0).date()
+            if (datetime.date.today() - created).days > days:
+                continue
+            title = p.get("title") or ""
+            if not any(t in title.lower() for t in CHATTER_TERMS):
+                continue
+            out.append({
+                "key": "reddit:" + (p.get("id") or title[:40]), "kind": "chatter",
+                "title": f"r/{sub}: {title}",
+                "url": "https://reddit.com" + (p.get("permalink") or ""),
+                "when": created.isoformat(),
+                "detail": f"{p.get('score')} points, {p.get('num_comments')} comments. "
+                          + " ".join((p.get("selftext") or "").split())[:300],
+            })
+        time.sleep(1.0)
+    return out
+
+
+def hn_posts(days):
+    """Hacker News via Algolia: free, no key, and reliable from CI."""
+    since = int(time.time()) - days * 86400
+    url = ("https://hn.algolia.com/api/v1/search_by_date?tags=story"
+           f"&numericFilters=created_at_i>{since},points>{HN_MIN_POINTS}"
+           "&hitsPerPage=100")
+    d = get(url)
+    if d is None:
+        raise SourceDown("hacker news unreachable")
+    out = []
+    for h in d.get("hits", []):
+        title = h.get("title") or ""
+        if not any(t in title.lower() for t in CHATTER_TERMS):
+            continue
+        oid = h.get("objectID")
+        out.append({
+            "key": "hn:" + str(oid), "kind": "chatter", "title": "HN: " + title,
+            "url": h.get("url") or f"https://news.ycombinator.com/item?id={oid}",
+            "when": (h.get("created_at") or "")[:10],
+            "detail": f"{h.get('points')} points, {h.get('num_comments')} comments. "
+                      f"discussion: https://news.ycombinator.com/item?id={oid}",
+        })
+    return out
+
+
 # ----------------------------------------------------------------------- triage
 
 TRIAGE_CHUNK = 8
@@ -308,8 +419,9 @@ Be concrete and do not restate the title. If you drop something, "why" should sa
 # ------------------------------------------------------------------------ output
 
 KIND_NAME = {"model": "Models", "harness": "Harness releases",
-             "paper": "Benchmarks & methods", "repo": "New eval repos"}
-KIND_ORDER = ["model", "harness", "paper", "repo"]
+             "paper": "Benchmarks & methods", "repo": "New eval repos",
+             "chatter": "Chatter (Reddit & HN)"}
+KIND_ORDER = ["model", "harness", "chatter", "paper", "repo"]
 
 
 def allocate(kept, cap):
@@ -393,7 +505,8 @@ def main():
     items, down = [], []
     for name, fn in (("hugging face", hf_models), ("pypi", pypi_releases),
                      ("github releases", gh_releases), ("arxiv", arxiv_papers),
-                     ("github search", trending_repos)):
+                     ("github search", trending_repos), ("reddit", reddit_posts),
+                     ("hacker news", hn_posts)):
         try:
             got = fn(WINDOW)
             print(f"  {name}: {len(got)}")

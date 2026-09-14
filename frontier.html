@@ -7,6 +7,7 @@
     --ground:#FBFAF8; --panel:#FFFFFF; --line:#D9DFE4; --line-soft:#ECEFF2;
     --paper:#1F2933; --muted:#5C6B78;
     --model:#9C6210; --harness:#0E6E8C; --paper-k:#6B3FA0; --repo:#C0243F;
+    --chatter:#0F7A52;
     --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, ui-serif, serif;
     --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   }
@@ -74,13 +75,14 @@
 const KINDS = {
   model:   {name: "Models",             css: "--model"},
   harness: {name: "Harness releases",   css: "--harness"},
+  chatter: {name: "Chatter",            css: "--chatter"},
   paper:   {name: "Benchmarks & methods", css: "--paper-k"},
   repo:    {name: "Eval repos",         css: "--repo"},
 };
 const REPO_ISSUES =
   "https://github.com/imhurl23/evals_research_repo/issues?q=label%3Afrontier-watch";
 
-const on = {model: 1, harness: 1, paper: 1, repo: 1};
+const on = {model: 1, harness: 1, chatter: 1, paper: 1, repo: 1};
 let RUNS = [];
 
 const css = k => getComputedStyle(document.documentElement).getPropertyValue(k).trim();
