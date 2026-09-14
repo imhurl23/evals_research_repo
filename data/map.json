@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-09-09",
+  "updated": "2026-09-14",
   "clusters": {
     "eval": {
       "name": "Evaluation methodology",
@@ -550,6 +550,32 @@
       "s2": "96c45a58618894342b2865b2d5f0641b467daa01",
       "isNew": true,
       "added": "2026-09-09"
+    },
+    {
+      "id": "mei2026",
+      "t": "TraceMind: Predicting User Information Uptake from Low-Cost Interaction Traces during Human-LLM Content Co-Generation",
+      "a": "Yu Mei, Feng-You Zu, Rui-Wen Zhang, Jie Cai, Chang Liu, Zhou-Tong Ye, Chun Yu, Yuan-Chun Shi",
+      "y": 2026,
+      "v": "preprint",
+      "c": "human",
+      "url": "https://arxiv.org/abs/2609.12600",
+      "n": "Introduces TraceMind, a model that predicts whether users actually process (recognize) AI-generated content in human-LLM co-generation tasks, using low-cost interaction traces across chat and draft histories. It targets a concrete risk in human-AI collaborative writing—unprocessed AI content entering final artifacts—building on prior work on uptake/interaction tracking (bo2025, liu2026) with a dataset of 1187 unit-level uptake labels.",
+      "s2": "8c3c6823de470702f9182c4de5fdda8e0911101d",
+      "isNew": true,
+      "added": "2026-09-14"
+    },
+    {
+      "id": "harzli2026",
+      "t": "Supervised sparse auto-encoders for interpretable and compositional representations",
+      "a": "Ouns El Harzli, Hugo Wallner, Yoonsoo Nam, Haixuan Xavier Tao",
+      "y": 2026,
+      "v": "preprint",
+      "c": "interp",
+      "url": "https://arxiv.org/abs/2602.00924",
+      "n": "Proposes supervised sparse autoencoders that jointly learn sparse concept embeddings and decoder weights using neural collapse theory, addressing SAE reconstruction/scalability issues and feature-human semantic misalignment. Validated on Stable Diffusion 3.5, it shows compositional generalization and enables feature-level semantic image editing, extending SAE-based interpretability work (yang2025) beyond language models into diffusion models.",
+      "s2": "4bc85a0069a34210fea93871a1ccd855888ae269",
+      "isNew": true,
+      "added": "2026-09-14"
     }
   ],
   "edges": [
@@ -866,6 +892,21 @@
     {
       "source": "zhu2026",
       "target": "overreliance2025",
+      "confidence": "v"
+    },
+    {
+      "source": "mei2026",
+      "target": "bo2025",
+      "confidence": "v"
+    },
+    {
+      "source": "mei2026",
+      "target": "liu2026",
+      "confidence": "v"
+    },
+    {
+      "source": "harzli2026",
+      "target": "yang2025",
       "confidence": "v"
     }
   ]
