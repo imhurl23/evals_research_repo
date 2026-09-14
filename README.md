@@ -9,10 +9,12 @@ The map is a real citation graph — nodes are papers, edges are citations — r
 ## Layout
 
 ```
-index.html                     the viewer; fetches data/map.json at load
+index.html                     the map viewer; fetches data/map.json at load
+frontier.html                  the watch feed; fetches data/frontier.json at load
 data/map.json                  the graph. this is the only file you edit by hand
 data/rejects.json              papers already screened and declined
 data/frontier_seen.json        what the frontier watch has already reported
+data/frontier.json             the rolling feed frontier.html renders
 digests/YYYY-MM-DD.md          what each weekly map run found
 digests/frontier-YYYY-MM-DD.md what the daily watch found
 snapshots/YYYY-MM-DD.png       rendered image of the map that week
@@ -56,7 +58,7 @@ Everything else is logged to `data/rejects.json` with a reason and skipped in fu
 
 ## Frontier watch
 
-A second, independent job runs daily at 12:00 UTC and opens an issue labelled `frontier-watch` when something new shows up. It is not part of the map and never edits it. Four structured sources, no scraping:
+A second, independent job runs daily at 12:00 UTC and opens an issue labelled `frontier-watch` when something new shows up. The same results are published as a page at [`/frontier.html`](https://imhurl23.github.io/evals_research_repo/frontier.html), filterable by kind, with 90 days of history — the issues are the notification, the page is the archive. It is not part of the map and never edits it. Four structured sources, no scraping:
 
 | Source | What it catches |
 |---|---|

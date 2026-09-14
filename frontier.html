@@ -1,0 +1,182 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Frontier watch</title>
+<style>
+  /* Same tokens as index.html so the two pages read as one site. */
+  :root{
+    --ground:#FBFAF8; --panel:#FFFFFF; --line:#D9DFE4; --line-soft:#ECEFF2;
+    --paper:#1F2933; --muted:#5C6B78;
+    --model:#9C6210; --harness:#0E6E8C; --paper-k:#6B3FA0; --repo:#C0243F;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, ui-serif, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--ground);color:var(--paper);font-family:var(--sans);margin:0}
+  #wrap{max-width:860px;margin:0 auto;padding:28px 20px 80px}
+
+  header{border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:8px}
+  h1{font-family:var(--serif);font-size:25px;font-weight:500;margin:0 0 6px}
+  .sub{font-size:13px;color:var(--muted);line-height:1.6;margin:0}
+  .sub a{color:#0E6E8C}
+  nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0 4px;
+    position:sticky;top:0;background:var(--ground);padding:10px 0;z-index:5;
+    border-bottom:1px solid var(--line-soft)}
+  .chip{background:#fff;border:1px solid var(--line);color:var(--muted);
+    font:inherit;font-size:12px;padding:5px 10px;border-radius:3px;cursor:pointer;
+    display:inline-flex;align-items:center;gap:7px}
+  .chip:hover{border-color:var(--muted);color:var(--paper)}
+  .chip:focus-visible{outline:2px solid var(--paper);outline-offset:2px}
+  .dot{width:8px;height:8px;border-radius:50%;background:currentColor;flex:none;
+    box-shadow:0 0 0 1px rgba(31,41,51,.14)}
+  .chip[aria-pressed="true"]{color:var(--c);border-color:var(--c);
+    background:color-mix(in srgb, var(--c) 7%, #fff)}
+  .chip[aria-pressed="false"] .dot{background:var(--line)}
+  #count{font-size:12px;color:var(--muted);margin-left:auto}
+
+  .day{margin:26px 0 0}
+  .daylabel{font-size:12px;color:var(--muted);letter-spacing:.04em;
+    text-transform:uppercase;margin:0 0 10px;padding-top:6px}
+  .warn{background:#FFF7E6;border:1px solid #E8C889;color:#6B4B12;
+    font-size:12.5px;line-height:1.6;padding:9px 12px;border-radius:4px;margin:0 0 12px}
+  .item{border-top:1px solid var(--line-soft);padding:13px 0 13px 14px;position:relative}
+  .item::before{content:"";position:absolute;left:0;top:19px;width:6px;height:6px;
+    border-radius:50%;background:var(--c)}
+  .item h2{font-size:14.5px;font-weight:600;line-height:1.4;margin:0 0 5px}
+  .item h2 a{color:var(--paper);text-decoration:none;border-bottom:1px solid transparent}
+  .item h2 a:hover{border-bottom-color:var(--c)}
+  .why{font-size:13px;line-height:1.62;color:#44525E;margin:0}
+  .tag{display:inline-block;font-size:10.5px;letter-spacing:.03em;text-transform:uppercase;
+    color:var(--c);border:1px solid currentColor;border-radius:3px;padding:1px 6px;
+    margin-right:8px;vertical-align:1px}
+  .when{font-size:11.5px;color:var(--muted)}
+  #empty{color:var(--muted);font-size:13.5px;line-height:1.7;padding:36px 0}
+  footer{margin-top:44px;border-top:1px solid var(--line);padding-top:14px;
+    font-size:11.5px;color:var(--muted)}
+</style>
+
+<div id="wrap">
+  <header>
+    <h1>Frontier watch</h1>
+    <p class="sub">
+      New models, eval harness releases, benchmark papers and eval repos, checked daily.
+      Facts come from the Hugging Face, PyPI, GitHub and arXiv APIs; the notes are judgement.
+      &nbsp;·&nbsp; <a href="./">the citation map</a>
+      &nbsp;·&nbsp; <a id="issues" href="#">issues</a>
+    </p>
+  </header>
+
+  <nav id="filters"></nav>
+  <div id="list"></div>
+  <footer id="stamp"></footer>
+</div>
+
+<script>
+const KINDS = {
+  model:   {name: "Models",             css: "--model"},
+  harness: {name: "Harness releases",   css: "--harness"},
+  paper:   {name: "Benchmarks & methods", css: "--paper-k"},
+  repo:    {name: "Eval repos",         css: "--repo"},
+};
+const REPO_ISSUES =
+  "https://github.com/imhurl23/evals_research_repo/issues?q=label%3Afrontier-watch";
+
+const on = {model: 1, harness: 1, paper: 1, repo: 1};
+let RUNS = [];
+
+const css = k => getComputedStyle(document.documentElement).getPropertyValue(k).trim();
+
+function chips(){
+  const nav = document.getElementById("filters");
+  nav.innerHTML = "";
+  for (const [k, v] of Object.entries(KINDS)){
+    const b = document.createElement("button");
+    b.className = "chip"; b.dataset.kind = k;
+    b.setAttribute("aria-pressed", on[k] ? "true" : "false");
+    b.style.setProperty("--c", css(v.css));
+    b.innerHTML = `<i class="dot"></i>${v.name}`;
+    b.addEventListener("click", () => {
+      on[k] = on[k] ? 0 : 1;
+      b.setAttribute("aria-pressed", on[k] ? "true" : "false");
+      render();
+    });
+    nav.appendChild(b);
+  }
+  const c = document.createElement("span"); c.id = "count"; nav.appendChild(c);
+}
+
+function fmtDay(iso){
+  const d = new Date(iso + "T00:00:00");
+  return d.toLocaleDateString(undefined,
+    {weekday: "short", year: "numeric", month: "short", day: "numeric"});
+}
+
+function render(){
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+  let shown = 0, total = 0;
+
+  for (const run of RUNS){
+    const items = (run.items || []).filter(i => on[i.kind]);
+    total += (run.items || []).length;
+    if (!items.length && !(run.down || []).length) continue;
+
+    const day = document.createElement("section");
+    day.className = "day";
+    day.innerHTML = `<p class="daylabel">${fmtDay(run.date)}</p>`;
+
+    // A run where a source failed is reported, not hidden — the whole point
+    // of the flag is that "nothing happened" and "we could not look" differ.
+    if ((run.down || []).length){
+      const w = document.createElement("p");
+      w.className = "warn";
+      w.textContent = "Coverage incomplete — sources unavailable: " + run.down.join("; ");
+      day.appendChild(w);
+    }
+
+    for (const it of items){
+      shown++;
+      const el = document.createElement("article");
+      el.className = "item";
+      el.style.setProperty("--c", css(KINDS[it.kind] ? KINDS[it.kind].css : "--muted"));
+      const kindName = KINDS[it.kind] ? KINDS[it.kind].name : it.kind;
+      el.innerHTML =
+        `<h2><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a></h2>
+         <p class="why"><span class="tag">${esc(kindName)}</span>${esc(it.why || "")}
+         <span class="when">&nbsp;·&nbsp;${esc(it.when || run.date)}</span></p>`;
+      day.appendChild(el);
+    }
+    list.appendChild(day);
+  }
+
+  document.getElementById("count").textContent =
+    shown + " of " + total + " shown";
+  if (!shown){
+    list.innerHTML = `<div id="empty">Nothing matches those filters.</div>`;
+  }
+}
+
+const esc = s => String(s == null ? "" : s)
+  .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+async function boot(){
+  document.getElementById("issues").href = REPO_ISSUES;
+  const res = await fetch("./data/frontier.json?v=" + Date.now());
+  if (!res.ok) throw new Error("frontier.json " + res.status);
+  const d = await res.json();
+  RUNS = d.runs || [];
+  chips();
+  render();
+  const n = RUNS.reduce((a, r) => a + (r.items || []).length, 0);
+  document.getElementById("stamp").textContent =
+    `${n} items across ${RUNS.length} reporting days · last run ${d.updated} · ` +
+    `checked daily at 12:00 UTC`;
+}
+
+boot().catch(err => {
+  document.getElementById("list").innerHTML =
+    `<div id="empty"><b>Could not load the feed.</b><br>data/frontier.json did not load ` +
+    `(${esc(err.message)}). If you opened this file from disk, browsers block the fetch — ` +
+    `serve the folder over HTTP, or use the published page. If the watch has not yet ` +
+    `reported anything, the file will not exist until its first run with results.</div>`;
+});
+</script>

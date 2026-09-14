@@ -350,6 +350,41 @@ def write_digest(kept, dropped, screened, today, down=()):
     return path
 
 
+FEED       = os.path.join(ROOT, "data", "frontier.json")
+FEED_DAYS  = 90        # how much history the page shows
+FEED_MAX   = 400       # and a hard ceiling, so the fetch stays small
+
+
+def update_feed(kept, today, down):
+    """Append this run to data/frontier.json for frontier.html.
+
+    Same split as the map: the job writes JSON, the page renders it. Nothing
+    here is the source of truth — the digests and issues are — but a static
+    page cannot read those, and markdown served raw is not a reading
+    experience.
+    """
+    feed = load(FEED, {"runs": []})
+    runs = [r for r in feed.get("runs", []) if r.get("date") != today]
+    runs.insert(0, {
+        "date": today,
+        "down": list(down),
+        "items": [{k: it[k] for k in ("kind", "title", "url", "when", "why")}
+                  for it in kept],
+    })
+    cutoff = (datetime.date.today() - datetime.timedelta(days=FEED_DAYS)).isoformat()
+    runs = [r for r in runs if r["date"] >= cutoff]
+    total = 0
+    trimmed = []
+    for r in runs:                       # keep whole days, drop the oldest first
+        if total >= FEED_MAX:
+            break
+        trimmed.append(r)
+        total += len(r["items"])
+    with open(FEED, "w") as f:
+        json.dump({"updated": today, "runs": trimmed}, f, indent=2, ensure_ascii=False)
+    print(f"  feed: {len(trimmed)} days, {total} items")
+
+
 def main():
     today = datetime.date.today().isoformat()
     seen = load(SEEN, {})
@@ -424,6 +459,7 @@ def main():
 
     path = write_digest(kept, dropped, len(fresh), today, down)
     print(f"wrote {path}: {len(kept)} reported, {dropped} filtered")
+    update_feed(kept, today, down)
     return 0
 
 
