@@ -476,13 +476,23 @@ def update_feed(kept, today, down):
     experience.
     """
     feed = load(FEED, {"runs": []})
+    prior = next((r for r in feed.get("runs", []) if r.get("date") == today), None)
     runs = [r for r in feed.get("runs", []) if r.get("date") != today]
-    runs.insert(0, {
-        "date": today,
-        "down": list(down),
-        "items": [{k: it[k] for k in ("kind", "title", "url", "when", "why")}
-                  for it in kept],
-    })
+
+    # Merge, don't replace. A second run on the same day used to overwrite the
+    # first — a manual re-run silently dropped 25 already-reported items off
+    # the page. The schedule runs once a day, so this only bites on re-runs,
+    # which is exactly when you least expect to lose history.
+    merged = list((prior or {}).get("items", []))
+    have = {i.get("url") for i in merged}
+    for it in kept:
+        if it["url"] in have:
+            continue
+        have.add(it["url"])
+        merged.append({k: it[k] for k in ("kind", "title", "url", "when", "why")})
+    down_all = sorted(set(list((prior or {}).get("down", [])) + list(down)))
+
+    runs.insert(0, {"date": today, "down": down_all, "items": merged})
     cutoff = (datetime.date.today() - datetime.timedelta(days=FEED_DAYS)).isoformat()
     runs = [r for r in runs if r["date"] >= cutoff]
     total = 0
@@ -495,6 +505,7 @@ def update_feed(kept, today, down):
     with open(FEED, "w") as f:
         json.dump({"updated": today, "runs": trimmed}, f, indent=2, ensure_ascii=False)
     print(f"  feed: {len(trimmed)} days, {total} items")
+    return merged, down_all
 
 
 def main():
@@ -570,9 +581,12 @@ def main():
         print(f"screened {len(fresh)}, nothing worth reporting")
         return 0
 
-    path = write_digest(kept, dropped, len(fresh), today, down)
-    print(f"wrote {path}: {len(kept)} reported, {dropped} filtered")
-    update_feed(kept, today, down)
+    # Feed first: it merges the day, and the digest renders that merged view
+    # so the file, the issue and the page all agree on what a day contained.
+    merged, down_all = update_feed(kept, today, down)
+    path = write_digest(merged, dropped, len(fresh), today, down_all)
+    print(f"wrote {path}: {len(kept)} new this run, {len(merged)} today, "
+          f"{dropped} filtered")
     return 0
 
 

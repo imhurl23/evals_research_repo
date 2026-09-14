@@ -6,6 +6,181 @@
       "down": [],
       "items": [
         {
+          "kind": "paper",
+          "title": "GAUGE: When Not to Trust LLM-as-a-Judge in User-Simulated Evaluation of Task-Oriented Agents",
+          "url": "https://arxiv.org/abs/2609.12191",
+          "when": "2026-09-14",
+          "why": "Introduces GAUGE, a protocol testing whether LLM-judge-based agent evaluation gates actually correlate with grounded verifiable rewards, directly relevant to LLM-as-judge reliability research."
+        },
+        {
+          "kind": "paper",
+          "title": "SynthSentry: Detecting Synthetic Data Contamination in Language Model Training Data",
+          "url": "https://arxiv.org/abs/2609.12353",
+          "when": "2026-09-14",
+          "why": "Proposes a corpus-level signal to detect synthetic/model-generated contamination in training data before training, relevant to data quality and model collapse concerns."
+        },
+        {
+          "kind": "paper",
+          "title": "Zipbench: Low-Cost Framework for Compressing Comprehensive Benchmarks of Large Language Models",
+          "url": "https://arxiv.org/abs/2609.12475",
+          "when": "2026-09-14",
+          "why": "Presents a low-cost method to compress large benchmark suites into representative subsets without requiring costly per-sample results from many LLMs, an adoptable benchmark compression technique."
+        },
+        {
+          "kind": "paper",
+          "title": "Tasks over Application Manuals: Revealing Gaps in Long-Horizon Procedural Reasoning for Language Models",
+          "url": "https://arxiv.org/abs/2609.13005",
+          "when": "2026-09-14",
+          "why": "New long-horizon procedural reasoning benchmark built from application manuals that exposes gaps beyond short-horizon multi-hop reasoning tests."
+        },
+        {
+          "kind": "paper",
+          "title": "Harness or Model? Isolating the Harness Effect in Agentic Coding with a Contamination-Controlled Private Suite",
+          "url": "https://arxiv.org/abs/2609.11987",
+          "when": "2026-09-14",
+          "why": "Uses a contamination-controlled private coding suite to isolate how much agentic coding performance depends on the harness versus the underlying model, directly informing eval harness methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "MAxBench: A Multinomial Concept Recovery Benchmark",
+          "url": "https://arxiv.org/abs/2609.13072",
+          "when": "2026-09-14",
+          "why": "Introduces a benchmark for recovering multinomial (non-binary) concepts in activation space, directly relevant to steering and interpretability research beyond simple linear-direction concepts."
+        },
+        {
+          "kind": "paper",
+          "title": "MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant",
+          "url": "https://arxiv.org/abs/2609.13076",
+          "when": "2026-09-14",
+          "why": "New benchmark evaluating voice agents in multi-party conversations, extending human-AI interaction evaluation beyond dyadic chat settings."
+        },
+        {
+          "kind": "paper",
+          "title": "Limits of LLM Text Detectors in Education",
+          "url": "https://arxiv.org/abs/2508.08096",
+          "when": "2026-09-14",
+          "why": "Studies failure modes of LLM-generated text detectors specifically in the nuanced case of partial/assisted writing, relevant to eval methodology for LLM detection tools."
+        },
+        {
+          "kind": "paper",
+          "title": "KoSimpleQA: A Korean Factuality Benchmark with an Analysis of Reasoning LLMs",
+          "url": "https://arxiv.org/abs/2510.18368",
+          "when": "2026-09-14",
+          "why": "New factuality benchmark (938 Q&A pairs) targeting Korean cultural knowledge with analysis of reasoning models, a genuine SimpleQA-style eval extension rather than mere localization repackaging."
+        },
+        {
+          "kind": "paper",
+          "title": "MMGR: Multi-Modal Generative Reasoning Benchmark and Evaluation",
+          "url": "https://arxiv.org/abs/2512.14691",
+          "when": "2026-09-14",
+          "why": "New benchmark testing whether multimodal generative models preserve physical/logical/spatial constraints, probing genuine reasoning vs. surface plausibility in generation."
+        },
+        {
+          "kind": "paper",
+          "title": "SAEExplainer: Interpreting SAE Features with Activation-Guided Preference Optimization",
+          "url": "https://arxiv.org/abs/2606.08496",
+          "when": "2026-09-14",
+          "why": "Proposes a closed-loop method using activation-guided preference optimization to generate and refine SAE feature explanations, advancing mechanistic interpretability tooling."
+        },
+        {
+          "kind": "paper",
+          "title": "When Auditors Fabricate: Batch-Size Degradation and Confident Hallucination in LLM Detection of Planted Document Contamination",
+          "url": "https://arxiv.org/abs/2609.09696",
+          "when": "2026-09-14",
+          "why": "Empirical study showing LLMs used as document-quality auditors confidently hallucinate detections of planted contamination, relevant to LLM-as-judge reliability research."
+        },
+        {
+          "kind": "paper",
+          "title": "Countdown-Code: A Testbed for Studying The Emergence and Generalization of Reward Hacking in RLVR",
+          "url": "https://arxiv.org/abs/2603.07084",
+          "when": "2026-09-14",
+          "why": "Introduces Countdown-Code, a controlled RLVR testbed for studying emergence and generalization of reward hacking, directly relevant to reward hacking research."
+        },
+        {
+          "kind": "paper",
+          "title": "Capable but Careless: Do Computer-Use Agents Follow Contextual Integrity?",
+          "url": "https://arxiv.org/abs/2606.23189",
+          "when": "2026-09-14",
+          "why": "Introduces AgentCIBench, an evaluation harness testing whether computer-use agents respect contextual integrity/privacy norms across applications, relevant to agent eval and human-AI interaction."
+        },
+        {
+          "kind": "paper",
+          "title": "EvoHarnessBench: Can Your Agents Keep Pace with an Evolving Harness?",
+          "url": "https://arxiv.org/abs/2609.04280",
+          "when": "2026-09-14",
+          "why": "Introduces EvoHarnessBench, a benchmark for testing agent robustness as their tool/skill/agent harness evolves, a new agentic eval harness with adoption potential."
+        },
+        {
+          "kind": "paper",
+          "title": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?",
+          "url": "https://arxiv.org/abs/2609.09113",
+          "when": "2026-09-14",
+          "why": "SAEScientist-Bench tests whether AI agents can autonomously conduct sparse-autoencoder interpretability research, directly relevant to mechanistic interpretability tooling and automation."
+        },
+        {
+          "kind": "paper",
+          "title": "Beyond Solver Verdicts: Generative Reward Models for Autoformalization",
+          "url": "https://arxiv.org/abs/2609.11085",
+          "when": "2026-09-14",
+          "why": "Proposes generative reward models to catch verdict-preserving-unfaithful autoformalizations, relevant to reward model design and reward hacking in verification pipelines."
+        },
+        {
+          "kind": "paper",
+          "title": "SoK: Rethinking Jailbreaking in the Era of Agentic AI: Attacks, Defenses, and Practical Consideration",
+          "url": "https://arxiv.org/abs/2609.12413",
+          "when": "2026-09-14",
+          "why": "Systematizes jailbreak attacks and defenses specifically for agentic AI systems with tool use and memory, relevant to safety evaluation of modern agentic models."
+        },
+        {
+          "kind": "paper",
+          "title": "EvoRS: On-Policy Self-Evolution of Reward Systems for Open-Ended Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2609.12459",
+          "when": "2026-09-14",
+          "why": "Proposes on-policy self-evolving reward systems to counter reward hacking and discriminability collapse in rubric-based RL, directly relevant to reward hacking research."
+        },
+        {
+          "kind": "paper",
+          "title": "Can We Trust LLM Judges: A Study of Capability-Dependent Biases and Multi-Judge Ensemble for Bias Calibration",
+          "url": "https://arxiv.org/abs/2609.12002",
+          "when": "2026-09-14",
+          "why": "Empirically maps capability-dependent biases in LLM-as-judge absolute scoring across 36 judge-examinee pairs and proposes multi-judge ensemble calibration, directly actionable for eval harness design."
+        },
+        {
+          "kind": "paper",
+          "title": "Reality Is the Final Verifier: On Two Key Gaps in Agentic Software Engineering",
+          "url": "https://arxiv.org/abs/2609.12039",
+          "when": "2026-09-14",
+          "why": "Analyzes gaps between test-suite verification and real deployment correctness in agentic coding, relevant to designing more robust SWE-agent benchmarks."
+        },
+        {
+          "kind": "paper",
+          "title": "Debiasing as a Measurement Intervention: Calibrated Ties and Resolution Loss in LLM-as-a-Judge Evaluation",
+          "url": "https://arxiv.org/abs/2609.12439",
+          "when": "2026-09-14",
+          "why": "Introduces TraceJudgeBench, a diagnostic benchmark showing that instructing judges to ignore presentation cues damages measurement resolution, a concrete new eval tool for RAG/agent judge auditing."
+        },
+        {
+          "kind": "paper",
+          "title": "TREAT: Evaluating Access to Formal Knowledge across Equivalent Mathematical Representations",
+          "url": "https://arxiv.org/abs/2608.07540",
+          "when": "2026-09-14",
+          "why": "Introduces TREAT, a benchmark testing whether LLMs recognize theorems across equivalent formal representations, a novel formal-reasoning eval method."
+        },
+        {
+          "kind": "paper",
+          "title": "Mr.LHDR: A Benchmark for Multimodal Real-World Long-Horizon Deep Research Agents",
+          "url": "https://arxiv.org/abs/2609.11318",
+          "when": "2026-09-14",
+          "why": "Mr.LHDR is a new benchmark for evaluating multimodal deep-research agents on long-horizon, dependency-heavy tasks, relevant to agent eval harness design."
+        },
+        {
+          "kind": "paper",
+          "title": "Who Judges the Judges? A Chinese Safety QA Benchmark for Evaluating LLM Responses and Safety Judges",
+          "url": "https://arxiv.org/abs/2609.01210",
+          "when": "2026-09-14",
+          "why": "C-SafeQA is a new Chinese safety benchmark evaluating both LLM responses and safety judge models, directly relevant to LLM-as-judge and safety eval methodology."
+        },
+        {
           "kind": "chatter",
           "title": "HN: Astra and Fable still hack on simple variants of alignment evals from 2025",
           "url": "https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment",
