@@ -1,6 +1,138 @@
 {
-  "updated": "2026-09-15",
+  "updated": "2026-09-16",
   "runs": [
+    {
+      "date": "2026-09-16",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: Learning to solve hard problems in RL for LLMs by never giving up",
+          "url": "https://mnoukhov.github.io/posts/ngu/",
+          "when": "2026-09-15",
+          "why": "Discusses a new RL exploration/curriculum technique for getting LLMs to solve hard problems, relevant to RL training methods researchers track for reward hacking and capability gains."
+        },
+        {
+          "kind": "paper",
+          "title": "Beyond the Name: Demographic Leakage in De-Identified R\\'esum\\'es and Evaluation Artifacts in LLM Bias Audits",
+          "url": "https://arxiv.org/abs/2609.16501",
+          "when": "2026-09-16",
+          "why": "Shows that removing declared-language fields doesn't fix demographic leakage in de-identified resume bias audits across 9 open-weight models, exposing a methodological flaw relevant to LLM bias evaluation design."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Gemini 3.8 Live and 3.8 Live Extended Thinking",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+          "when": "2026-09-15",
+          "why": "Announcement of Gemini 3.8 Live and Extended Thinking variants, a new frontier model release worth tracking for capability and eval comparisons."
+        },
+        {
+          "kind": "paper",
+          "title": "Rewarding Reasoning, Not Answers: Fixing and Bounding Test-Time Reinforcement Learning on Medical QA",
+          "url": "https://arxiv.org/abs/2609.16660",
+          "when": "2026-09-16",
+          "why": "Demonstrates that test-time RL with majority-vote pseudo-labels collapses output diversity on medical QA despite math gains, a concrete reward-hacking/RL failure mode relevant to RL researchers."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: 1Password's AI patching benchmark is misleading",
+          "url": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/",
+          "when": "2026-09-15",
+          "why": "Discussion critiquing a specific AI code-patching benchmark's methodology, relevant to evaluating benchmark validity and potential gaming."
+        },
+        {
+          "kind": "paper",
+          "title": "Test-Time Unlearning via Sparse Autoencoder",
+          "url": "https://arxiv.org/abs/2609.16229",
+          "when": "2026-09-16",
+          "why": "Proposes test-time unlearning via sparse autoencoders as an alternative to weight-editing methods, directly relevant to mechanistic interpretability applications for knowledge removal."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+          "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+          "when": "2026-09-14",
+          "why": "Community comparison of GPT-5.6 Luna vs GPT-6 Astra on code review tasks including cost-effectiveness, providing informal benchmark evidence on frontier model capability tradeoffs."
+        },
+        {
+          "kind": "paper",
+          "title": "LSREP: A Longitudinal State-Replay Protocol for Evaluating Conversational Memory, with ICE v2 as an Audited Local-First Architecture",
+          "url": "https://arxiv.org/abs/2609.16730",
+          "when": "2026-09-16",
+          "why": "Introduces a longitudinal replay protocol for evaluating how conversational memory systems accumulate, age, and revise state over time, a new eval methodology beyond single-turn QA."
+        },
+        {
+          "kind": "paper",
+          "title": "ImpossibleRubrics: Stress-Testing Generated Rubrics as Reward Signals",
+          "url": "https://arxiv.org/abs/2609.16816",
+          "when": "2026-09-16",
+          "why": "Stress-tests LLM-generated rubrics used as RL reward signals against adversarial optimization on impossible tasks, directly probing reward hacking vulnerabilities in rubric-based RL."
+        },
+        {
+          "kind": "paper",
+          "title": "R3: Robust Rubric-Agnostic Reward Models",
+          "url": "https://arxiv.org/abs/2505.13388",
+          "when": "2026-09-16",
+          "why": "Proposes rubric-agnostic reward models aimed at improving controllability and interpretability of reward signals, relevant to RL alignment and reward hacking research."
+        },
+        {
+          "kind": "paper",
+          "title": "There Is More to Refusal in Large Language Models than a Single Direction",
+          "url": "https://arxiv.org/abs/2602.02132",
+          "when": "2026-09-16",
+          "why": "Challenges the single-direction theory of refusal in LLMs, showing geometrically distinct directions for different refusal categories, a core mechanistic interpretability finding on safety behavior."
+        },
+        {
+          "kind": "paper",
+          "title": "Toward Robust LLM-Based Judges: Taxonomic Bias Evaluation and Debiasing Optimization",
+          "url": "https://arxiv.org/abs/2603.08091",
+          "when": "2026-09-16",
+          "why": "Presents a taxonomy of biases in LLM-as-judge evaluation across generative and discriminative formulations plus a debiasing optimization method, directly useful for improving eval reliability."
+        },
+        {
+          "kind": "paper",
+          "title": "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning",
+          "url": "https://arxiv.org/abs/2505.24846",
+          "when": "2026-09-16",
+          "why": "Proposes mixture-model reward modeling with context-aware routing to replace the single global Bradley-Terry reward, directly relevant to RLHF reward hacking and preference learning research."
+        },
+        {
+          "kind": "paper",
+          "title": "HoloAegis: Frozen Representation, Topological Inference --- Minimally Parametric Safety Manifolds and Their Capability Boundaries for LLM Guardrails",
+          "url": "https://arxiv.org/abs/2608.08485",
+          "when": "2026-09-16",
+          "why": "Introduces a training-free, geometry-based guardrail framework operating on frozen LLM representations, offering an interpretability-flavored alternative to fine-tuned or LLM-judge safety filters."
+        },
+        {
+          "kind": "paper",
+          "title": "FVSpec: Real-World Property-Based Tests as Lean Challenges",
+          "url": "https://arxiv.org/abs/2606.01008",
+          "when": "2026-09-16",
+          "why": "New benchmark translating real-world property-based tests into Lean formal verification challenges, giving a concrete eval harness for assessing LLM/agent code verification ability."
+        },
+        {
+          "kind": "paper",
+          "title": "Skill-based Agentic Evaluation for Real-time Data Science Tasks",
+          "url": "https://arxiv.org/abs/2609.16487",
+          "when": "2026-09-16",
+          "why": "Proposes an agentic evaluation framework for data-science LLM agents using live data and executable ground truth instead of static LLM-as-judge scoring, directly relevant to eval harness design."
+        },
+        {
+          "kind": "paper",
+          "title": "ResLRP: The Role of Residual Cancellation in Attribution Instability in Vision Transformers",
+          "url": "https://arxiv.org/abs/2609.17152",
+          "when": "2026-09-16",
+          "why": "Identifies residual-connection cancellation as a cause of unstable/unfaithful LRP attributions in Vision Transformers, a mechanistic interpretability method fix relevant to attribution research more broadly."
+        },
+        {
+          "kind": "paper",
+          "title": "Attention is All You Need Until You Need Retention",
+          "url": "https://arxiv.org/abs/2501.09166",
+          "when": "2026-09-16",
+          "why": "Proposes a persistent 'Retention Layer' memory mechanism for Transformers plus a social-learning framing for what agents should retain across sessions, relevant to human-AI interaction and agent memory design."
+        }
+      ]
+    },
     {
       "date": "2026-09-15",
       "down": [],
