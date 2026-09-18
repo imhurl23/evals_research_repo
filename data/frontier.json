@@ -1,6 +1,187 @@
 {
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "runs": [
+    {
+      "date": "2026-09-18",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: Qwen 3.8 Omni Flash",
+          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+          "when": "2026-09-17",
+          "why": "HN discussion of Qwen's new omni-modal 'Flash' model release, a genuinely new frontier multimodal model worth tracking for capability comparisons."
+        },
+        {
+          "kind": "paper",
+          "title": "Towards Proactive Detection of User-Side Implicit Conflicts in Human-LLM Dialogue",
+          "url": "https://arxiv.org/abs/2609.19155",
+          "when": "2026-09-18",
+          "why": "not judged this run — shown by default"
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data",
+          "url": "https://arxiv.org/abs/2609.18842",
+          "when": "2026-09-17",
+          "why": "Proposes 'infinite-parameter' LLMs that generate/adapt weights dynamically from live data, a novel architectural idea relevant to mechanistic interpretability and model design discussions."
+        },
+        {
+          "kind": "paper",
+          "title": "Reflective Recovery: A Self-Supervised Method for Reasoning by Learning from Mistakes",
+          "url": "https://arxiv.org/abs/2609.19156",
+          "when": "2026-09-18",
+          "why": "not judged this run — shown by default"
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: LLM Classification Is Feature Engineering",
+          "url": "https://minimallysufficient.com/posts/llm-classification-is-feature-extraction/",
+          "when": "2026-09-17",
+          "why": "HN discussion arguing LLM classification tasks are essentially feature engineering, relevant to how evaluators should design and interpret classification-style LLM benchmarks."
+        },
+        {
+          "kind": "paper",
+          "title": "F$^{2}$DR: A Fine-Grained Full-Pipeline Reward Framework for DeepSearch Workflows",
+          "url": "https://arxiv.org/abs/2609.19827",
+          "when": "2026-09-18",
+          "why": "Proposes a fine-grained reward model spanning the full DeepSearch pipeline (planning, retrieval, generation) rather than final-answer-only scoring, directly relevant to RL reward design and reward hacking mitigation in agentic search workflows."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: I had Gemini train its own replacement for $9",
+          "url": "https://www.petervijeh.com/projects/reddit-ner",
+          "when": "2026-09-17",
+          "why": "Experiment report on using Gemini to generate training data/distill a smaller replacement model cheaply, relevant to self-distillation and RL-style self-improvement pipelines."
+        },
+        {
+          "kind": "paper",
+          "title": "PetriBench: Benchmarking LLM Reasoning over Dynamic State Spaces",
+          "url": "https://arxiv.org/abs/2609.19883",
+          "when": "2026-09-18",
+          "why": "New self-contained benchmark using Petri nets to test LLM reasoning over dynamic/concurrent state spaces, offering a scalable alternative to knowledge-dependent reasoning benchmarks."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: OpenAI models secretly generate instructions to ignore constraints",
+          "url": "https://alignment.openai.com/misalignment-reports/self-generated-prompt-injections-in-compaction-summaries/",
+          "when": "2026-09-17",
+          "why": "Report/discussion that OpenAI models covertly generate internal instructions to bypass their own constraints, directly relevant to reward hacking and deceptive alignment research."
+        },
+        {
+          "kind": "paper",
+          "title": "Evaluating Communicative Success in Machine-Translated Conversation",
+          "url": "https://arxiv.org/abs/2609.19885",
+          "when": "2026-09-18",
+          "why": "Introduces a checklist-and-judge evaluation framework for MT interpreter agents that measures communicative success rather than sentence-level fidelity, offering a reusable eval methodology beyond standard BLEU-style metrics."
+        },
+        {
+          "kind": "paper",
+          "title": "The Neutral Mask: How Alignment Training Provides Shallow Alignment while Leaving Partisan Structure Intact in a Large Language Model",
+          "url": "https://arxiv.org/abs/2606.09735",
+          "when": "2026-09-18",
+          "why": "Empirically probes RLHF-trained models for latent partisan/value structure beneath surface alignment, relevant to interpretability of alignment training."
+        },
+        {
+          "kind": "paper",
+          "title": "TripScore: Aligning LLMs for Real-World Travel Planning via Expert-Calibrated Reward",
+          "url": "https://arxiv.org/abs/2510.09011",
+          "when": "2026-09-18",
+          "why": "A narrow domain-specific travel-planning benchmark and reward model, not a general eval method with broader adoption potential."
+        },
+        {
+          "kind": "paper",
+          "title": "When Self-Evolution Backfires: Pre-Commit Gating against Skill Contamination in LLM Agents",
+          "url": "https://arxiv.org/abs/2608.05810",
+          "when": "2026-09-18",
+          "why": "Identifies a phase-transition failure mode where self-evolving LLM agents' skill libraries become contaminated and degrade performance, directly relevant to RL/agent reward-hacking-style failures."
+        },
+        {
+          "kind": "paper",
+          "title": "A Unified Evaluation Framework for Trustworthy Large Language Models, Agentic AI, and Multimodal Systems",
+          "url": "https://arxiv.org/abs/2609.19524",
+          "when": "2026-09-18",
+          "why": "Proposes a unified multi-level (output/trajectory) evaluation framework spanning LLMs, agents, and multimodal systems, potentially adoptable as a trustworthiness eval harness."
+        },
+        {
+          "kind": "paper",
+          "title": "Self Improvement via Fast Tree-search",
+          "url": "https://arxiv.org/abs/2609.19526",
+          "when": "2026-09-18",
+          "why": "Proposes a sample-efficient tree-search self-improvement loop for coding agents under budget constraints, relevant to RL self-improvement and reward hacking dynamics in agentic coding."
+        },
+        {
+          "kind": "paper",
+          "title": "Reach or Solve? Attributing Agentic RL Gains with Checkpoint Handoffs",
+          "url": "https://arxiv.org/abs/2609.19636",
+          "when": "2026-09-18",
+          "why": "Introduces checkpoint-handoff methodology to disentangle whether agentic RL gains come from better decisions vs. self-generated favorable states, directly useful for rigorous RL evaluation and reward hacking analysis."
+        },
+        {
+          "kind": "paper",
+          "title": "When2Think: Learning Difficulty-Aware Length Control for Efficient Hybrid Reasoning Models",
+          "url": "https://arxiv.org/abs/2609.19671",
+          "when": "2026-09-18",
+          "why": "Proposes instance-adaptive reasoning-length control to fix overthinking/underthinking in reasoning models, a method relevant to efficient RL training and reasoning evaluation."
+        },
+        {
+          "kind": "paper",
+          "title": "MTVA-Bench: Evaluating the Language Model Inside Cascaded Voice Agents",
+          "url": "https://arxiv.org/abs/2609.20152",
+          "when": "2026-09-18",
+          "why": "New benchmark isolating the LLM decision-making component inside cascaded voice agents, a targeted eval harness for human-AI voice interaction."
+        },
+        {
+          "kind": "paper",
+          "title": "DeltaSelect: Affordable A/B Testing for Coding Agents",
+          "url": "https://arxiv.org/abs/2609.19607",
+          "when": "2026-09-18",
+          "why": "Analyzes correlation between cheap task subsets and full coding-agent benchmarks, offering a practical low-cost A/B testing methodology for agent evaluation harnesses."
+        },
+        {
+          "kind": "paper",
+          "title": "Local Sparsity Enables Unsupervised LLM Safety Detection",
+          "url": "https://arxiv.org/abs/2609.20129",
+          "when": "2026-09-18",
+          "why": "Proposes an unsupervised anomaly-detection approach using local sparsity to flag unsafe LLM outputs without labeled attack data, relevant to safety evaluation methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
+          "url": "https://arxiv.org/abs/2609.20812",
+          "when": "2026-09-18",
+          "why": "Introduces a method to quantify when frontier coding agents falsely claim task completion by contradicting their own context, directly relevant to reward hacking and agent trustworthiness evaluation."
+        },
+        {
+          "kind": "paper",
+          "title": "Architectural Design, Not Only Model Intelligence, Governs Multi-Agent LLM Performance",
+          "url": "https://arxiv.org/abs/2602.03128",
+          "when": "2026-09-18",
+          "why": "Argues multi-agent orchestration architecture (not just base model intelligence) drives system performance, with new benchmarks isolating architectural effects, useful for agent evaluation methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "SCICONVBENCH: Benchmarking LLMs on Multi-Turn Clarification for Task Formulation in Computational Science",
+          "url": "https://arxiv.org/abs/2605.18630",
+          "when": "2026-09-18",
+          "why": "New benchmark testing whether LLMs can handle multi-turn clarification of ill-posed scientific task requests, a novel eval harness for interactive task formulation."
+        },
+        {
+          "kind": "paper",
+          "title": "Inference-Time Nash Alignment",
+          "url": "https://arxiv.org/abs/2609.08082",
+          "when": "2026-09-18",
+          "why": "Proposes an inference-time alternative to RLHF/DPO using Nash equilibrium alignment without parameter access, relevant to RL/alignment method development."
+        },
+        {
+          "kind": "paper",
+          "title": "AquiLLM: Evaluating Faithfulness in Open-Weight RAG-LLM Systems for Scientific Research",
+          "url": "https://arxiv.org/abs/2609.16519",
+          "when": "2026-09-18",
+          "why": "Introduces AquiLLM, an evaluation framework testing faithfulness/hallucination of open-weight RAG-LLM systems on scientific literature, relevant as a new eval method for grounded generation."
+        }
+      ]
+    },
     {
       "date": "2026-09-17",
       "down": [],
