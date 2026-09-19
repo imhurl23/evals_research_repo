@@ -1395,6 +1395,10 @@
     "kept": true,
     "seen": "2026-09-18"
   },
+  "hn:49748553": {
+    "kept": false,
+    "seen": "2026-09-19"
+  },
   "hn:49749393": {
     "kept": false,
     "seen": "2026-09-18"
@@ -1402,6 +1406,42 @@
   "hn:49749656": {
     "kept": false,
     "seen": "2026-09-18"
+  },
+  "hn:49755431": {
+    "kept": false,
+    "seen": "2026-09-19"
+  },
+  "hn:49758250": {
+    "kept": false,
+    "seen": "2026-09-19"
+  },
+  "hn:49758615": {
+    "kept": true,
+    "seen": "2026-09-19"
+  },
+  "hn:49758689": {
+    "kept": false,
+    "seen": "2026-09-19"
+  },
+  "hn:49760187": {
+    "kept": false,
+    "seen": "2026-09-19"
+  },
+  "hn:49760988": {
+    "kept": false,
+    "seen": "2026-09-19"
+  },
+  "hn:49761432": {
+    "kept": false,
+    "seen": "2026-09-19"
+  },
+  "hn:49762493": {
+    "kept": false,
+    "seen": "2026-09-19"
+  },
+  "hn:49763987": {
+    "kept": false,
+    "seen": "2026-09-19"
   },
   "pypi:deepeval:4.2.3": {
     "kept": false,
@@ -1414,6 +1454,10 @@
   "pypi:inspect-ai:0.3.265": {
     "kept": false,
     "seen": "2026-09-18"
+  },
+  "pypi:promptfoo:0.2.0": {
+    "kept": false,
+    "seen": "2026-09-19"
   },
   "repo:MeteorNOX/DeepSeek-Balance-Whale-Widget": {
     "kept": false,

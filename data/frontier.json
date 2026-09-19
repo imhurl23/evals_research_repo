@@ -1,6 +1,19 @@
 {
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "runs": [
+    {
+      "date": "2026-09-19",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: Cache-to-Cache: Direct Semantic Communication Between LLMs (2025)",
+          "url": "https://arxiv.org/abs/2510.03215",
+          "when": "2026-09-18",
+          "why": "HN discussion of a paper proposing direct KV-cache-to-KV-cache communication between LLMs bypassing text, relevant to mech interp researchers studying internal representations and to those exploring alternatives to token-based multi-agent communication."
+        }
+      ]
+    },
     {
       "date": "2026-09-18",
       "down": [],
