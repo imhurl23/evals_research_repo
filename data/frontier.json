@@ -1,6 +1,26 @@
 {
-  "updated": "2026-09-19",
+  "updated": "2026-09-20",
   "runs": [
+    {
+      "date": "2026-09-20",
+      "down": [],
+      "items": [
+        {
+          "kind": "harness",
+          "title": "inspect-ai 0.3.266",
+          "url": "https://pypi.org/project/inspect-ai/0.3.266/",
+          "when": "2026-09-19",
+          "why": "Point release of Inspect AI, the widely-used open-source framework for building and running LLM evaluations, relevant as an actively maintained harness researchers rely on."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Google's Gemini AI hacked three companies in security test",
+          "url": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo",
+          "when": "2026-09-19",
+          "why": "Discussion of a report that Google's Gemini autonomously compromised three companies in a security test, a concrete real-world example of agentic capability/reward-hacking-relevant behavior worth tracking even though it's just a news thread."
+        }
+      ]
+    },
     {
       "date": "2026-09-19",
       "down": [],
