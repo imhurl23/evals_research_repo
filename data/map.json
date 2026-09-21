@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-09-14",
+  "updated": "2026-09-21",
   "clusters": {
     "eval": {
       "name": "Evaluation methodology",
@@ -576,6 +576,19 @@
       "s2": "4bc85a0069a34210fea93871a1ccd855888ae269",
       "isNew": true,
       "added": "2026-09-14"
+    },
+    {
+      "id": "kim2026b",
+      "t": "Use and Effects of LLMs in Peer Review: A Randomized Experiment and Survey at ICML 2026",
+      "a": "Sunnie S. Y. Kim, Wesley Hanwen Deng, Jennifer Wortman Vaughan, Buxin Su, Wei-Jie Su, Alekh Agarwal, Sharon Li, Martin Jaggi, Daniel G. Goldstein, Nihar B. Shah, Miroslav Dudík",
+      "y": 2026,
+      "v": "preprint",
+      "c": "human",
+      "url": "https://arxiv.org/abs/2609.19420",
+      "n": "A large-scale randomized experiment at ICML 2026 finds that permissive vs. conservative LLM-use policies for reviewers have near-zero effect on paper decisions or scores, but permissive reviews are longer and nearly a quarter of reviewers under the ban still used LLMs anyway. This connects to the overreliance2025 literature by empirically testing whether restricting AI assistance actually changes human judgment quality in a high-stakes evaluative task.",
+      "s2": "8f8bc525ebccecd1f8af7c67e17d562d577bff6d",
+      "isNew": true,
+      "added": "2026-09-21"
     }
   ],
   "edges": [
@@ -907,6 +920,11 @@
     {
       "source": "harzli2026",
       "target": "yang2025",
+      "confidence": "v"
+    },
+    {
+      "source": "kim2026b",
+      "target": "overreliance2025",
       "confidence": "v"
     }
   ]
