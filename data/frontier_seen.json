@@ -51,6 +51,14 @@
     "kept": true,
     "seen": "2026-09-14"
   },
+  "arxiv:2509.22754": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2509.24789": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
   "arxiv:2510.04100": {
     "kept": false,
     "seen": "2026-09-15"
@@ -74,6 +82,10 @@
   "arxiv:2511.02831": {
     "kept": false,
     "seen": "2026-09-16"
+  },
+  "arxiv:2511.13254": {
+    "kept": false,
+    "seen": "2026-09-21"
   },
   "arxiv:2511.13725": {
     "kept": true,
@@ -123,6 +135,10 @@
     "kept": false,
     "seen": "2026-09-18"
   },
+  "arxiv:2603.01250": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
   "arxiv:2603.03884": {
     "kept": false,
     "seen": "2026-09-17"
@@ -159,6 +175,10 @@
     "kept": true,
     "seen": "2026-09-15"
   },
+  "arxiv:2604.23478": {
+    "kept": true,
+    "seen": "2026-09-21"
+  },
   "arxiv:2604.23580": {
     "kept": false,
     "seen": "2026-09-14"
@@ -167,6 +187,10 @@
     "kept": false,
     "seen": "2026-09-18"
   },
+  "arxiv:2605.09134": {
+    "kept": true,
+    "seen": "2026-09-21"
+  },
   "arxiv:2605.12225": {
     "kept": true,
     "seen": "2026-09-15"
@@ -174,6 +198,10 @@
   "arxiv:2605.13481": {
     "kept": false,
     "seen": "2026-09-18"
+  },
+  "arxiv:2605.14347": {
+    "kept": true,
+    "seen": "2026-09-21"
   },
   "arxiv:2605.18630": {
     "kept": true,
@@ -290,6 +318,10 @@
   "arxiv:2608.27141": {
     "kept": true,
     "seen": "2026-09-17"
+  },
+  "arxiv:2608.27409": {
+    "kept": true,
+    "seen": "2026-09-21"
   },
   "arxiv:2609.01210": {
     "kept": true,
@@ -430,6 +462,10 @@
   "arxiv:2609.09476v1": {
     "kept": false,
     "seen": "2026-09-10"
+  },
+  "arxiv:2609.09556": {
+    "kept": true,
+    "seen": "2026-09-21"
   },
   "arxiv:2609.09664v1": {
     "kept": false,
@@ -1175,9 +1211,117 @@
     "kept": true,
     "seen": "2026-09-18"
   },
+  "arxiv:2609.20827": {
+    "kept": true,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.20843": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.20850": {
+    "kept": true,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21075": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21133": {
+    "kept": true,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21157": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21214": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21231": {
+    "kept": true,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21259": {
+    "kept": true,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21267": {
+    "kept": true,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21276": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21349": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21386": {
+    "kept": true,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21390": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21425": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21570": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21628": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21637": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21650": {
+    "kept": true,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21686": {
+    "kept": true,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21749": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21801": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.21879": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.22038": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "arxiv:2609.22064": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
   "hf:CohereLabs/tiny-aya-base-32K": {
     "kept": false,
     "seen": "2026-09-10"
+  },
+  "hf:Qwen/Qwen-Image-2.1-PE-I2I": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "hf:Qwen/Qwen-Image-2.1-PE-T2I": {
+    "kept": false,
+    "seen": "2026-09-21"
   },
   "hf:deepseek-ai/DeepSeek-V4.1-Flash": {
     "kept": false,
@@ -1471,9 +1615,49 @@
     "kept": false,
     "seen": "2026-09-20"
   },
+  "hn:49773624": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
   "hn:49773998": {
     "kept": false,
     "seen": "2026-09-20"
+  },
+  "hn:49774000": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "hn:49775104": {
+    "kept": true,
+    "seen": "2026-09-21"
+  },
+  "hn:49775499": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "hn:49776699": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "hn:49779802": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "hn:49780797": {
+    "kept": false,
+    "seen": "2026-09-21"
+  },
+  "hn:49780849": {
+    "kept": true,
+    "seen": "2026-09-21"
+  },
+  "hn:49783101": {
+    "kept": true,
+    "seen": "2026-09-21"
+  },
+  "hn:49783999": {
+    "kept": false,
+    "seen": "2026-09-21"
   },
   "pypi:deepeval:4.2.3": {
     "kept": false,
@@ -1498,6 +1682,10 @@
   "repo:MeteorNOX/DeepSeek-Balance-Whale-Widget": {
     "kept": false,
     "seen": "2026-09-13"
+  },
+  "repo:NVlabs/SoL-Pi": {
+    "kept": true,
+    "seen": "2026-09-21"
   },
   "repo:QwenLM/Qwen-MM-Plugins": {
     "kept": false,
@@ -1578,6 +1766,10 @@
   "repo:yc-software/qm": {
     "kept": false,
     "seen": "2026-09-10"
+  },
+  "repo:zai-org/ZCode": {
+    "kept": true,
+    "seen": "2026-09-21"
   },
   "repo:zhu1090093659/dsh-web": {
     "kept": false,

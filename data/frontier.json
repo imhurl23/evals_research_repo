@@ -1,6 +1,145 @@
 {
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "runs": [
+    {
+      "date": "2026-09-21",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: Heretic removes restrictions from language models",
+          "url": "https://heretic-project.org/",
+          "when": "2026-09-21",
+          "why": "Heretic is a tool for automatically stripping safety/refusal restrictions from open LLMs, relevant to jailbreak/red-teaming evaluation and human-AI interaction safety research."
+        },
+        {
+          "kind": "paper",
+          "title": "From Discharge Notes to Patient Understanding: Persona-Grounded, Open-Ended Simulation of LLMs as Discharge Educators",
+          "url": "https://arxiv.org/abs/2609.20827",
+          "when": "2026-09-21",
+          "why": "Introduces DischargeBench, a persona-grounded multi-turn simulation benchmark measuring whether LLM 'discharge educators' actually improve patient understanding, a novel open-ended dialogue eval methodology relevant to human-AI interaction research."
+        },
+        {
+          "kind": "repo",
+          "title": "zai-org/ZCode (4952★)",
+          "url": "https://github.com/zai-org/ZCode",
+          "when": "2026-09-20",
+          "why": "Z.ai's open-source coding agent harness with ~5k stars, relevant as an agent scaffolding/evaluation environment for coding-focused RL and agent research."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Show HN: jevals – replacing LLM judges with typed Jev decisions",
+          "url": "https://github.com/openlayer-ai/jevals",
+          "when": "2026-09-20",
+          "why": "Show HN tool proposing typed 'Jev' decisions as a structured alternative to free-text LLM-as-judge scoring, relevant to eval harness design though traction is minimal (27 points, 1 comment)."
+        },
+        {
+          "kind": "paper",
+          "title": "MME-Safety: A Fine-grained Benchmark for Safety Evaluation of MLLMs",
+          "url": "https://arxiv.org/abs/2609.20850",
+          "when": "2026-09-21",
+          "why": "MME-Safety is a new fine-grained, intent-annotated safety benchmark for multimodal LLMs addressing weaknesses of unidimensional safety metrics, useful for adoption in MLLM safety evaluation work."
+        },
+        {
+          "kind": "repo",
+          "title": "NVlabs/SoL-Pi (2772★)",
+          "url": "https://github.com/NVlabs/SoL-Pi",
+          "when": "2026-09-02",
+          "why": "NVIDIA's SoL-Pi is an agent harness for scaling automated research loops, a new infrastructure tool relevant to agent/RL evaluation workflows."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: The LLMentalist Effect (2023)",
+          "url": "https://softwarecrisis.dev/letters/llmentalist/",
+          "when": "2026-09-20",
+          "why": "Revisits the 'LLMentalist Effect' argument comparing LLM evaluation to cold-reading, a critique relevant to how researchers think about eval validity."
+        },
+        {
+          "kind": "paper",
+          "title": "Beyond Reference-Based Evaluation: Reward Models for Meta-Evaluation of Grammatical Error Correction",
+          "url": "https://arxiv.org/abs/2609.21231",
+          "when": "2026-09-21",
+          "why": "Proposes RM-EVAL, a reward-model-based reference-free meta-evaluator trained on human preference data for grammatical error correction, a reusable eval method relevant to reward modeling and LLM evaluation research."
+        },
+        {
+          "kind": "paper",
+          "title": "JudgeSense: A Benchmark for Prompt Sensitivity in LLM-as-a-Judge Systems",
+          "url": "https://arxiv.org/abs/2604.23478",
+          "when": "2026-09-21",
+          "why": "Introduces JudgeSense, a benchmark testing whether LLM-as-judge verdicts change under paraphrased prompts across 25 judges, directly useful for auditing eval robustness."
+        },
+        {
+          "kind": "paper",
+          "title": "Consolidating RLVR Capabilities Across Domains: A Deep Dive into Fusion Paradigms",
+          "url": "https://arxiv.org/abs/2608.27409",
+          "when": "2026-09-21",
+          "why": "Systematically compares model merging, RL data mixing, and multi-teacher distillation as paradigms for consolidating RLVR-trained capabilities, relevant to RL/verifiable-reward research."
+        },
+        {
+          "kind": "paper",
+          "title": "CogGym: Towards Large-Scale Comparative Evaluation of Human and Machine Cognition",
+          "url": "https://arxiv.org/abs/2609.21259",
+          "when": "2026-09-21",
+          "why": "Introduces a large-scale benchmark directly comparing human and LLM cognitive task performance, offering a new evaluation paradigm for human-AI alignment research."
+        },
+        {
+          "kind": "paper",
+          "title": "Efficient Benchmarking in Production: A Study of an Evolving LLM Agent",
+          "url": "https://arxiv.org/abs/2609.21267",
+          "when": "2026-09-21",
+          "why": "Presents an efficient recurring-evaluation methodology (subsampling strategies) for production LLM agents based on 574 real deployment runs, useful for scalable eval harness design."
+        },
+        {
+          "kind": "paper",
+          "title": "The Stochastic Shift: A New Evaluation Paradigm for Text-to-SQL with AI Operators",
+          "url": "https://arxiv.org/abs/2609.21133",
+          "when": "2026-09-21",
+          "why": "Proposes a new evaluation paradigm for Text-to-SQL with AI operators, addressing non-determinism in correctness metrics, relevant to benchmark/eval methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "AgentVidBench: A Multi-Hop Video Question Answering Benchmark for Evaluating MLLM Agents",
+          "url": "https://arxiv.org/abs/2609.21386",
+          "when": "2026-09-21",
+          "why": "New multi-hop video QA benchmark targeting MLLM agents' reasoning over long video sequences, a genuine benchmark contribution for multimodal eval."
+        },
+        {
+          "kind": "paper",
+          "title": "SynthDemo-RL: Breaking the Zero-Reward Barrier in VLA Adaptation with LLM-Guided Synthetic Demonstrations",
+          "url": "https://arxiv.org/abs/2609.21650",
+          "when": "2026-09-21",
+          "why": "Addresses the zero-reward exploration problem in RL fine-tuning of VLA models via LLM-guided synthetic demonstrations, directly relevant to RL/reward hacking research."
+        },
+        {
+          "kind": "paper",
+          "title": "CIPL: A Channel-Aware Framework for Recoverable Privacy Leakage in LLM Agents",
+          "url": "https://arxiv.org/abs/2609.21686",
+          "when": "2026-09-21",
+          "why": "Introduces a black-box, channel-aware evaluation framework for measuring recoverable privacy leakage in LLM agents, offering a new eval methodology for agent safety research."
+        },
+        {
+          "kind": "paper",
+          "title": "BoostAPR: Boosting Automated Program Repair via Execution-Grounded Reinforcement Learning with Dual Reward Models",
+          "url": "https://arxiv.org/abs/2605.09134",
+          "when": "2026-09-21",
+          "why": "Proposes execution-grounded RL with dual (sequence- and line-level) reward models for program repair, directly relevant to reward design and credit assignment research."
+        },
+        {
+          "kind": "paper",
+          "title": "High-probability guarantees for linear accessibility in feature superposition",
+          "url": "https://arxiv.org/abs/2609.09556",
+          "when": "2026-09-21",
+          "why": "Derives theoretical high-probability bounds on linear feature accessibility under superposition via compressed sensing, directly relevant to mechanistic interpretability theory."
+        },
+        {
+          "kind": "paper",
+          "title": "Exemplar Partitioning for Mechanistic Interpretability",
+          "url": "https://arxiv.org/abs/2605.14347",
+          "when": "2026-09-21",
+          "why": "Introduces Exemplar Partitioning, an unsupervised Voronoi-based clustering method for building interpretable feature dictionaries directly from LLM activations, a new mech-interp technique."
+        }
+      ]
+    },
     {
       "date": "2026-09-20",
       "down": [],
