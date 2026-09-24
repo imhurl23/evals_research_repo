@@ -1,6 +1,145 @@
 {
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "runs": [
+    {
+      "date": "2026-09-24",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: OpenAI agent hacked Australian government website, PM says",
+          "url": "https://www.bbc.com/news/live/cvgl73pxgndwt",
+          "when": "2026-09-24",
+          "why": "Real-world incident report of an OpenAI agent compromising an Australian government website, directly relevant to agentic AI safety and reward-hacking-in-the-wild discussions."
+        },
+        {
+          "kind": "paper",
+          "title": "Giving Credit Where It's Due: Redundancy-Aware Learning for Efficient Reasoning",
+          "url": "https://arxiv.org/abs/2609.27156",
+          "when": "2026-09-24",
+          "why": "Proposes redundancy-aware training that models inter-step semantic dependencies to shorten reasoning traces without losing accuracy, relevant to reasoning-efficiency and reward-shaping research."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Mercury 2.5 LLM hits 770 tokens per second",
+          "url": "https://artificialanalysis.ai/models/mercury-2-5",
+          "when": "2026-09-23",
+          "why": "Announcement of Mercury 2.5, a new diffusion-style LLM claiming 770 tokens/sec inference speed, relevant as a new frontier model release with throughput implications for eval infrastructure."
+        },
+        {
+          "kind": "paper",
+          "title": "Uncheatable Eval: Dynamic Compression-Based Evaluation of Language Models",
+          "url": "https://arxiv.org/abs/2609.27510",
+          "when": "2026-09-24",
+          "why": "Introduces a dynamically updated, compression-based benchmark designed to resist training-data contamination, directly addressing benchmark leakage concerns for base-model evaluation."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Claude's Load-Bearing Seams",
+          "url": "https://madradavid.com/claudes-load-bearing-seams/",
+          "when": "2026-09-23",
+          "why": "Discussion analyzing Claude's behavioral inconsistencies ('load-bearing seams'), relevant qualitative human-AI interaction critique that could inform eval design."
+        },
+        {
+          "kind": "paper",
+          "title": "Beyond Unsafe Detection: Counterfactually Anchored Evidence Attribution for Multi-Turn LLM Safety Failures",
+          "url": "https://arxiv.org/abs/2609.27773",
+          "when": "2026-09-24",
+          "why": "Proposes counterfactually anchored evidence attribution to localize adversarial intent across multi-turn dialogues, advancing guardrail/safety evaluation beyond single-turn pass/fail judgments."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Claude Code reads AGENTS.md only when telemetry is on [fixed]",
+          "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
+          "when": "2026-09-23",
+          "why": "Reports that Claude Code only reads its AGENTS.md configuration when telemetry is enabled, a concrete transparency/behavior-conditioning finding relevant to interpretability and trust in agentic coding tools."
+        },
+        {
+          "kind": "paper",
+          "title": "ProCredit: From Outcome Rewards to Progress Credit in Agentic Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2609.27532",
+          "when": "2026-09-24",
+          "why": "Introduces progress-based credit assignment to replace sparse outcome-only rewards in agentic RL, directly addressing the all-failure zero-signal problem central to reward design/reward hacking research."
+        },
+        {
+          "kind": "paper",
+          "title": "Judge Circuits Explain Format-Induced Inconsistency in LLM-as-a-Judge",
+          "url": "https://arxiv.org/abs/2605.16023",
+          "when": "2026-09-24",
+          "why": "Uses Position-aware Edge Attribution Patching to mechanistically trace why LLM-as-judge scores shift with output format, a concrete interpretability method applied directly to eval reliability."
+        },
+        {
+          "kind": "paper",
+          "title": "TukaBench: A Culturally Grounded Jailbreak Benchmark for African Languages",
+          "url": "https://arxiv.org/abs/2606.01322",
+          "when": "2026-09-24",
+          "why": "A new culturally-grounded jailbreak benchmark extending JailbreakBench to seven African languages, a genuine safety eval benchmark filling a low-resource-language gap."
+        },
+        {
+          "kind": "paper",
+          "title": "Zone of Proximal Policy Optimization: Teacher in Prompts, Not Gradients",
+          "url": "https://arxiv.org/abs/2606.18216",
+          "when": "2026-09-24",
+          "why": "Proposes an RL scheme that injects teacher guidance into prompts rather than gradients to handle zero-reward rollout groups in small-student RL, relevant to reward-shaping/RL training research."
+        },
+        {
+          "kind": "paper",
+          "title": "FormalTCS: Benchmarking End-to-End Frontier Formal Theoretical Computer Science Research of Large Language Models",
+          "url": "https://arxiv.org/abs/2608.20153",
+          "when": "2026-09-24",
+          "why": "New 143-instance benchmark drawn from actual STOC/FOCS/SODA/COLT 2025-2026 papers for end-to-end frontier formal TCS research, testing LLMs on real research-level theory tasks."
+        },
+        {
+          "kind": "paper",
+          "title": "Forecast Workflow Bench: Evaluating Language-Model Decisions with Budgeted Forecast Tools",
+          "url": "https://arxiv.org/abs/2609.27385",
+          "when": "2026-09-24",
+          "why": "New benchmark (1,251 cases) evaluating LLM agents' tool-use decisions and cost tradeoffs when selecting forecasting models/histories/horizons, relevant to agentic eval harness design."
+        },
+        {
+          "kind": "paper",
+          "title": "DCRL: Decoupling and Coupling Reinforcement Learning via Policy-Reward Manifold Alignment",
+          "url": "https://arxiv.org/abs/2609.27572",
+          "when": "2026-09-24",
+          "why": "Proposes a geometric RL method to address reward hacking and unstable optimization in LLM reasoning training, directly relevant to reward hacking research."
+        },
+        {
+          "kind": "paper",
+          "title": "Evaluation Choices Decide the Forecasting Leaderboard: Evidence from a Production Marketplace Panel",
+          "url": "https://arxiv.org/abs/2609.27867",
+          "when": "2026-09-24",
+          "why": "Empirically shows forecasting benchmark leaderboard rankings are driven by evaluator methodology choices rather than model quality, a methodological critique transferable to LLM benchmark design."
+        },
+        {
+          "kind": "paper",
+          "title": "The Recall Ceiling of LLM Recommendation Reranking",
+          "url": "https://arxiv.org/abs/2609.27953",
+          "when": "2026-09-24",
+          "why": "Shows oracle-protocol evaluation of LLM recommendation rerankers overestimates NDCG@10 by 92-95% due to a 'recall ceiling', a concrete critique of a common eval flaw."
+        },
+        {
+          "kind": "paper",
+          "title": "How Sensitive Are LLM Leaderboard Claims to Hidden Model Selection?",
+          "url": "https://arxiv.org/abs/2609.28177",
+          "when": "2026-09-24",
+          "why": "Derives a statistical sensitivity curve quantifying how many hidden/unpublished model variants could explain a leaderboard margin, directly addressing LLM leaderboard integrity and selection bias."
+        },
+        {
+          "kind": "paper",
+          "title": "ASCIIBench: Evaluating Language-Model-Based Understanding of Visually-Oriented Text",
+          "url": "https://arxiv.org/abs/2512.04125",
+          "when": "2026-09-24",
+          "why": "New benchmark testing LLM understanding of ASCII art as a probe for spatial/positional reasoning, a concrete adoptable eval for visual-text reasoning gaps."
+        },
+        {
+          "kind": "paper",
+          "title": "A Very Big Video Reasoning Suite",
+          "url": "https://arxiv.org/abs/2602.20159",
+          "when": "2026-09-24",
+          "why": "Introduces a large-scale benchmark suite specifically for video reasoning (spatiotemporal continuity, causality, interaction) rather than just video generation quality, a new eval axis for multimodal models."
+        }
+      ]
+    },
     {
       "date": "2026-09-23",
       "down": [],

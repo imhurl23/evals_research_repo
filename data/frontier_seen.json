@@ -127,6 +127,14 @@
     "kept": true,
     "seen": "2026-09-22"
   },
+  "arxiv:2512.04125": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2512.04457": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
   "arxiv:2512.14691": {
     "kept": true,
     "seen": "2026-09-14"
@@ -170,6 +178,10 @@
   "arxiv:2602.18307": {
     "kept": false,
     "seen": "2026-09-23"
+  },
+  "arxiv:2602.20159": {
+    "kept": true,
+    "seen": "2026-09-24"
   },
   "arxiv:2603.00842": {
     "kept": false,
@@ -259,6 +271,10 @@
     "kept": true,
     "seen": "2026-09-21"
   },
+  "arxiv:2605.16023": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
   "arxiv:2605.18630": {
     "kept": true,
     "seen": "2026-09-18"
@@ -287,6 +303,10 @@
     "kept": true,
     "seen": "2026-09-16"
   },
+  "arxiv:2606.01322": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
   "arxiv:2606.04261": {
     "kept": true,
     "seen": "2026-09-22"
@@ -310,6 +330,10 @@
   "arxiv:2606.10581": {
     "kept": false,
     "seen": "2026-09-15"
+  },
+  "arxiv:2606.18216": {
+    "kept": true,
+    "seen": "2026-09-24"
   },
   "arxiv:2606.18479": {
     "kept": false,
@@ -338,6 +362,10 @@
   "arxiv:2606.30943": {
     "kept": false,
     "seen": "2026-09-15"
+  },
+  "arxiv:2607.00848": {
+    "kept": false,
+    "seen": "2026-09-24"
   },
   "arxiv:2607.01940": {
     "kept": true,
@@ -402,6 +430,10 @@
   "arxiv:2608.18752": {
     "kept": false,
     "seen": "2026-09-23"
+  },
+  "arxiv:2608.20153": {
+    "kept": true,
+    "seen": "2026-09-24"
   },
   "arxiv:2608.22808": {
     "kept": true,
@@ -1751,6 +1783,74 @@
     "kept": false,
     "seen": "2026-09-23"
   },
+  "arxiv:2609.26823": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.26848": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.26945": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.27156": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.27376": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.27385": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.27510": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.27532": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.27572": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.27773": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.27867": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.27953": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.28007": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.28177": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.28199": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.28245": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "arxiv:2609.28416": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
   "hf:CohereLabs/tiny-aya-base-32K": {
     "kept": false,
     "seen": "2026-09-10"
@@ -2179,6 +2279,62 @@
     "kept": false,
     "seen": "2026-09-23"
   },
+  "hn:49814947": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
+  "hn:49815127": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "hn:49817404": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "hn:49817615": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "hn:49820134": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "hn:49821196": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "hn:49822457": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "hn:49822556": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "hn:49822654": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "hn:49822864": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
+  "hn:49823348": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
+  "hn:49825024": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
+  "hn:49825580": {
+    "kept": true,
+    "seen": "2026-09-24"
+  },
+  "hn:49826221": {
+    "kept": false,
+    "seen": "2026-09-24"
+  },
   "pypi:deepeval:4.2.3": {
     "kept": false,
     "seen": "2026-09-14"
@@ -2186,6 +2342,10 @@
   "pypi:deepeval:4.2.5": {
     "kept": true,
     "seen": "2026-09-23"
+  },
+  "pypi:deepeval:4.2.6": {
+    "kept": false,
+    "seen": "2026-09-24"
   },
   "pypi:inspect-ai:0.3.264": {
     "kept": true,
