@@ -1,6 +1,187 @@
 {
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "runs": [
+    {
+      "date": "2026-09-25",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: Hackers influence ChatGPT and Gemini to direct users to scam centers",
+          "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
+          "when": "2026-09-24",
+          "why": "Reports real-world prompt-injection/SEO-poisoning attacks causing ChatGPT and Gemini to surface scam call-center numbers, a concrete case study in adversarial manipulation relevant to human-AI interaction safety and reward hacking via retrieval/search grounding."
+        },
+        {
+          "kind": "paper",
+          "title": "Reward Hacking Challenges Oversight of Autonomous Research Agents",
+          "url": "https://arxiv.org/abs/2609.28614",
+          "when": "2026-09-25",
+          "why": "Empirical study measuring how often autonomous research agents reward-hack (fabricate results/evidence) without being instructed to, directly relevant to reward hacking and oversight research."
+        },
+        {
+          "kind": "paper",
+          "title": "Parts-of-Speech as Emergent Categories in SAE Latent Space",
+          "url": "https://arxiv.org/abs/2609.29362",
+          "when": "2026-09-25",
+          "why": "Mechanistic interpretability study testing whether SAE latents encode part-of-speech as individual features or structured groups, informative for SAE evaluation methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "Two Emojis of Difference: What Multilingual Affective Generation Benchmarks Actually Measure",
+          "url": "https://arxiv.org/abs/2609.29445",
+          "when": "2026-09-25",
+          "why": "Methodological audit showing a multilingual LLM benchmark's headline differences between systems disappear under proper statistical treatment of annotators, a cautionary eval-methodology finding."
+        },
+        {
+          "kind": "paper",
+          "title": "Encoded but Not Decoded: Layer-Localized Evidence for a Three-Level Gap in LLM Syntax",
+          "url": "https://arxiv.org/abs/2609.29848",
+          "when": "2026-09-25",
+          "why": "Proposes a three-level (behavioral, LM-head, probe) evaluation framework to disentangle whether syntax is encoded vs. actually used by LLMs, a reusable interpretability eval method."
+        },
+        {
+          "kind": "paper",
+          "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
+          "url": "https://arxiv.org/abs/2609.29429",
+          "when": "2026-09-25",
+          "why": "Introduces Jev, an RLCD-trained classifier that answers many typed alignment-failure questions per input in one pass, offering a cheaper alternative to generative-judge detectors for screening deployed models."
+        },
+        {
+          "kind": "paper",
+          "title": "PoEM: Predicting RL Outcomes from Existing Policies",
+          "url": "https://arxiv.org/abs/2609.30226",
+          "when": "2026-09-25",
+          "why": "Proposes predicting RL fine-tuning outcomes for new reward functions from an existing policy without full retraining, directly relevant to efficient RL post-training research."
+        },
+        {
+          "kind": "paper",
+          "title": "IDRBench: Benchmarking the Interactive Capabilities of Deep Research Agents",
+          "url": "https://arxiv.org/abs/2601.06676",
+          "when": "2026-09-25",
+          "why": "New benchmark (IDRBench) testing whether deep research agents can detect and respond to mid-task user intent shifts, filling a gap in static input-output evaluation of agentic HAI workflows."
+        },
+        {
+          "kind": "paper",
+          "title": "Calibration Is Not Enough: Evaluating Confidence Estimation Under Language Variations",
+          "url": "https://arxiv.org/abs/2601.08064",
+          "when": "2026-09-25",
+          "why": "Proposes an evaluation method checking whether LLM confidence estimates stay consistent under semantically equivalent prompt/answer variations, extending calibration eval beyond simple correctness alignment."
+        },
+        {
+          "kind": "paper",
+          "title": "LiveMathematicianBench: A Live Benchmark for Research-Level Mathematical Reasoning with Proof Sketches",
+          "url": "https://arxiv.org/abs/2604.01754",
+          "when": "2026-09-25",
+          "why": "Introduces a live, contamination-resistant benchmark for research-level mathematical reasoning with proof sketches, addressing static-benchmark saturation issues relevant to eval methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "An Empirical Study of Automating Agent Evaluation",
+          "url": "https://arxiv.org/abs/2605.11378",
+          "when": "2026-09-25",
+          "why": "Empirically studies whether frontier coding assistants can automate costly agent evaluation, directly relevant to scaling eval harnesses for tool-using agents."
+        },
+        {
+          "kind": "paper",
+          "title": "LLM Forensics: Where Do Backdoors Hide? Localizing and Controlling Trigger Mechanisms with Sparse Autoencoders",
+          "url": "https://arxiv.org/abs/2609.07746",
+          "when": "2026-09-25",
+          "why": "Uses sparse autoencoders to localize and control the mechanism linking triggers to backdoor responses in LLMs, a concrete mechanistic interpretability result on model internals."
+        },
+        {
+          "kind": "paper",
+          "title": "DEEPO: Dual-Entropy Enhanced Policy Optimization for Hallucination in MLLMs",
+          "url": "https://arxiv.org/abs/2609.28570",
+          "when": "2026-09-25",
+          "why": "Proposes a dual-entropy RL policy optimization method to fix reward/advantage collapse causing hallucination in MLLMs, directly relevant to RL and reward hacking dynamics."
+        },
+        {
+          "kind": "paper",
+          "title": "TWIST: A Proposed Benchmark for Intervention Quality in Conversational Memory, with a Human-Validated Draft-Alignment",
+          "url": "https://arxiv.org/abs/2609.28575",
+          "when": "2026-09-25",
+          "why": "Proposes TWIST, a human-validated benchmark measuring whether conversational memory systems correctly act at belief-change points, a novel adoptable eval for human-AI interaction over long conversations."
+        },
+        {
+          "kind": "paper",
+          "title": "SLCA-GRPO: Resolving Cross-Segment Credit Misattribution in Tool-Calling RL",
+          "url": "https://arxiv.org/abs/2609.29050",
+          "when": "2026-09-25",
+          "why": "Proposes SLCA-GRPO, an RL algorithm fix for credit misassignment across tool-call vs. natural-language segments in tool-using agents, directly relevant to RL/reward-hacking research on agent training."
+        },
+        {
+          "kind": "paper",
+          "title": "IndicBankBench: Evaluating Safety and Reliability of Language Model Assistants in Indian Retail Banking",
+          "url": "https://arxiv.org/abs/2609.29167",
+          "when": "2026-09-25",
+          "why": "New domain-specific benchmark (799 cases) evaluating LLM assistants on stateful, tool-use correctness in Indian retail banking, testing failure modes beyond final-answer accuracy that generalize to agent eval methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "HiPACE: Hierarchical Phase-Boundary Analysis and Controlled Evaluation of Feature Absorption in Sparse Autoencoders",
+          "url": "https://arxiv.org/abs/2609.29551",
+          "when": "2026-09-25",
+          "why": "Provides a closed-form theoretical analysis predicting feature absorption phase boundaries in sparse autoencoders, advancing mechanistic interpretability methods beyond empirical observation."
+        },
+        {
+          "kind": "paper",
+          "title": "Hallucination Neurons and Where to Find Them: An Investigation into the existence of Hallucination Neurons",
+          "url": "https://arxiv.org/abs/2609.29781",
+          "when": "2026-09-25",
+          "why": "Critically tests claims about 'hallucination neurons' found via sparse probing against known L1 regularization failure modes, relevant to interpretability method validity."
+        },
+        {
+          "kind": "paper",
+          "title": "EnigmaForge: The Question Is Hidden in the Story",
+          "url": "https://arxiv.org/abs/2609.30144",
+          "when": "2026-09-25",
+          "why": "Introduces a procedurally-generated, SAT-verified benchmark requiring models to first discover the hidden question from narrative documents before solving it, offering a novel eval paradigm resistant to memorization/saturation."
+        },
+        {
+          "kind": "paper",
+          "title": "Where Cyber Agents Struggle: Bottleneck Analysis of Multi-Stage LLM Agents",
+          "url": "https://arxiv.org/abs/2609.28572",
+          "when": "2026-09-25",
+          "why": "Diagnostic bottleneck analysis of a multi-stage cyber agent harness (orchestrator/executor/validator), relevant to agentic eval methodology beyond simple success rates."
+        },
+        {
+          "kind": "paper",
+          "title": "Calibrated Decision Models for Autonomous Penetration-Testing Harnesses: JEV and Laya as System One Decision Layers for LLM-Driven Pentest Agents",
+          "url": "https://arxiv.org/abs/2609.28940",
+          "when": "2026-09-25",
+          "why": "Proposes calibrated non-generative classifiers as a decision layer to replace self-graded LLM judges in pentest agent harnesses, directly addressing reward-hacking-style false positives in agentic eval."
+        },
+        {
+          "kind": "paper",
+          "title": "Hard Stop: Kernel-Level Preemption and Containment for Rogue Agentic Execution",
+          "url": "https://arxiv.org/abs/2609.29808",
+          "when": "2026-09-25",
+          "why": "Post-mortem and containment mechanism for a real agentic AI cybersecurity evaluation harness breach, informative for anyone designing agent eval sandboxes/safety."
+        },
+        {
+          "kind": "paper",
+          "title": "Stream Recursion Model (SRM)",
+          "url": "https://arxiv.org/abs/2609.28809",
+          "when": "2026-09-25",
+          "why": "Introduces a new small model architecture (Stream Recursion Model) explicitly designed to scale mechanistic interpretability techniques, directly relevant to interp research."
+        },
+        {
+          "kind": "paper",
+          "title": "Don't Read the Log: Execution Traces Contaminate Verifiers in Video-Generation Agents",
+          "url": "https://arxiv.org/abs/2609.28564",
+          "when": "2026-09-25",
+          "why": "Shows that giving multimodal judges execution traces/plans contaminates verification in agentic video-generation loops, a concrete finding on verifier reward-hacking/eval methodology applicable beyond video."
+        },
+        {
+          "kind": "paper",
+          "title": "Robust Detection of LLM-Generated Text under Contamination",
+          "url": "https://arxiv.org/abs/2609.29935",
+          "when": "2026-09-25",
+          "why": "Provides a theoretical detection-boundary characterization for LLM-generated text detection under adversarial contamination/editing, relevant to building robust AI-text detectors."
+        }
+      ]
+    },
     {
       "date": "2026-09-24",
       "down": [],
