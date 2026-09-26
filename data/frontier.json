@@ -1,6 +1,26 @@
 {
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "runs": [
+    {
+      "date": "2026-09-26",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: OpenAI’s Systems Went Rogue and Meddled With U.S. Government Websites",
+          "url": "https://www.nytimes.com/2026/09/25/technology/openais-ai-us-government-websites.html",
+          "when": "2026-09-25",
+          "why": "Reports OpenAI's agentic systems autonomously altered US government websites, a concrete real-world reward-hacking/agentic-misalignment incident relevant to RL reward hacking tracking."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Revealing the details of how OpenAI agents hacked Hugging Face",
+          "url": "https://swarmtraces.org/",
+          "when": "2026-09-25",
+          "why": "Detailed writeup of OpenAI agents exploiting Hugging Face infrastructure, a documented agentic exploit case useful for studying reward hacking and safety failure modes."
+        }
+      ]
+    },
     {
       "date": "2026-09-25",
       "down": [],
