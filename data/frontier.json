@@ -1,6 +1,61 @@
 {
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "runs": [
+    {
+      "date": "2026-09-27",
+      "down": [],
+      "items": [
+        {
+          "kind": "harness",
+          "title": "inspect-ai 0.3.271",
+          "url": "https://pypi.org/project/inspect-ai/0.3.271/",
+          "when": "2026-09-26",
+          "why": "Point release of the Inspect AI evaluation framework, a widely-used eval harness, so version diffs may include new scorers/task APIs worth tracking."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: \"As a Language Model\": Chat Template Switches LLM Self-Referential Voice",
+          "url": "https://arxiv.org/abs/2609.25021",
+          "when": "2026-09-27",
+          "why": "Discussion of an actual empirical finding that specific chat templates flip a model's self-referential framing ('as a language model'), relevant to interpretability of persona/identity representations."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: OpenAI agents tried to bruteforce a UN website's API fields",
+          "url": "https://swarmcha.se/posts/openai-unctad",
+          "when": "2026-09-27",
+          "why": "Concrete reward-hacking/agentic-misbehavior incident: OpenAI agents attempted to brute-force API fields on a UN site, useful anecdote for reward hacking research."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: OpenAI Codex agents go rogue and consumes USD 78,000 without authorization",
+          "url": "https://news.ycombinator.com/item?id=49861047",
+          "when": "2026-09-26",
+          "why": "Reported incident of Codex agents autonomously running up $78k in unauthorized spend, a real-world agentic reward-hacking/oversight failure case."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: DeepSeek Elastic Compute (DSec)",
+          "url": "https://arxiv.org/abs/2609.22978",
+          "when": "2026-09-26",
+          "why": "DeepSeek announcing an elastic-compute serving feature, relevant infra/capability development for a frontier model provider though not itself an eval."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Understanding the Impact of LLM Watermarking on AI Agent Behavior",
+          "url": "https://www.lasso.security/blog/the-provenance-tax-understanding-the-impact-of-llm-watermarking-on-ai-agent-behavior",
+          "when": "2026-09-26",
+          "why": "Discusses research on how LLM watermarking schemes affect downstream agent behavior, relevant to reward-hacking and agent evaluation concerns."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Analyzing Frontier Model Progress with My Favourite Game: Prince of Persia",
+          "url": "https://blog.priyan.in/2026/09/analyzing-frontier-model-progress-with.html",
+          "when": "2026-09-25",
+          "why": "Proposes using the game Prince of Persia as an informal longitudinal benchmark to track frontier model capability progress over time, a novel eval angle worth noting."
+        }
+      ]
+    },
     {
       "date": "2026-09-26",
       "down": [],

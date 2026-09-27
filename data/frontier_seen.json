@@ -2559,6 +2559,10 @@
     "kept": false,
     "seen": "2026-09-26"
   },
+  "hn:49849820": {
+    "kept": true,
+    "seen": "2026-09-27"
+  },
   "hn:49849985": {
     "kept": true,
     "seen": "2026-09-26"
@@ -2567,6 +2571,10 @@
     "kept": true,
     "seen": "2026-09-26"
   },
+  "hn:49851883": {
+    "kept": false,
+    "seen": "2026-09-27"
+  },
   "hn:49853175": {
     "kept": false,
     "seen": "2026-09-26"
@@ -2574,6 +2582,46 @@
   "hn:49854875": {
     "kept": false,
     "seen": "2026-09-26"
+  },
+  "hn:49856034": {
+    "kept": false,
+    "seen": "2026-09-27"
+  },
+  "hn:49856149": {
+    "kept": true,
+    "seen": "2026-09-27"
+  },
+  "hn:49856665": {
+    "kept": false,
+    "seen": "2026-09-27"
+  },
+  "hn:49857528": {
+    "kept": false,
+    "seen": "2026-09-27"
+  },
+  "hn:49859112": {
+    "kept": true,
+    "seen": "2026-09-27"
+  },
+  "hn:49861047": {
+    "kept": true,
+    "seen": "2026-09-27"
+  },
+  "hn:49862120": {
+    "kept": false,
+    "seen": "2026-09-27"
+  },
+  "hn:49862299": {
+    "kept": true,
+    "seen": "2026-09-27"
+  },
+  "hn:49863864": {
+    "kept": false,
+    "seen": "2026-09-27"
+  },
+  "hn:49865343": {
+    "kept": true,
+    "seen": "2026-09-27"
   },
   "pypi:deepeval:4.2.3": {
     "kept": false,
@@ -2606,6 +2654,10 @@
   "pypi:inspect-ai:0.3.269": {
     "kept": false,
     "seen": "2026-09-26"
+  },
+  "pypi:inspect-ai:0.3.271": {
+    "kept": true,
+    "seen": "2026-09-27"
   },
   "pypi:promptfoo:0.2.0": {
     "kept": false,
