@@ -1,6 +1,117 @@
 {
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "runs": [
+    {
+      "date": "2026-09-28",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: Prompting Claude Opus 5.5",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5",
+          "when": "2026-09-28",
+          "why": "High-engagement HN thread on prompting techniques for the newly released Claude Opus 5.5, giving practitioner signal on a new frontier model's behavior."
+        },
+        {
+          "kind": "paper",
+          "title": "CARGO: Context-Aware Retrieval-Gated Evaluation of Agentic AI in Production",
+          "url": "https://arxiv.org/abs/2609.30471",
+          "when": "2026-09-28",
+          "why": "Introduces a new evaluation framework (CARGO) that fixes reference-based LLM-as-judge failures in production agentic systems, directly relevant to eval methodology for agents."
+        },
+        {
+          "kind": "paper",
+          "title": "The Hard Part Comes After Search: Benchmarking Web Agents on Synthesizing, Organizing, and Displaying Knowledge",
+          "url": "https://arxiv.org/abs/2609.30604",
+          "when": "2026-09-28",
+          "why": "New benchmark testing web agents' ability to synthesize and organize retrieved information into final artifacts, extending computer-use agent evaluation beyond search."
+        },
+        {
+          "kind": "paper",
+          "title": "Enhancing Assessment of Self-Consistency in LLM Explanations using Perturbation Strength",
+          "url": "https://arxiv.org/abs/2609.30849",
+          "when": "2026-09-28",
+          "why": "Proposes an LLM-as-judge method to quantify perturbation strength for measuring self-consistency of LLM explanations, a reusable eval technique relevant to interpretability and faithfulness research."
+        },
+        {
+          "kind": "paper",
+          "title": "Does Understanding Inform Generation in Unified Multimodal Models? From Analysis to Path Forward",
+          "url": "https://arxiv.org/abs/2511.20561",
+          "when": "2026-09-28",
+          "why": "Introduces UniSandbox, a decoupled evaluation framework with synthetic controlled datasets to test whether understanding informs generation in unified multimodal models, useful as an adoptable eval methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "Stepwise Intrinsic Rewards for Reasoning in Large Language Models",
+          "url": "https://arxiv.org/abs/2602.01034",
+          "when": "2026-09-28",
+          "why": "Proposes stepwise intrinsic rewards to address sparse/spurious reward signals in RL for LLM/VLM reasoning, directly relevant to reward hacking and RL training design."
+        },
+        {
+          "kind": "paper",
+          "title": "The Communication Map of a Transformer",
+          "url": "https://arxiv.org/abs/2608.22007",
+          "when": "2026-09-28",
+          "why": "Presents the 'communication map,' a method to automatically chart all inter-component communication channels in a transformer from weight geometry alone, generalizing prior composition-score interpretability work."
+        },
+        {
+          "kind": "paper",
+          "title": "Do LLMs Understand Context? A Knowledge Graph-Based Evaluation Framework",
+          "url": "https://arxiv.org/abs/2609.30484",
+          "when": "2026-09-28",
+          "why": "Proposes a knowledge-graph-grounded framework for testing whether LLMs truly integrate context versus pattern-match, offering a new evaluation methodology for contextual understanding."
+        },
+        {
+          "kind": "paper",
+          "title": "Neuralyzing the Trace: Selective Representation-Level Unlearning with Contrastive Sparse Autoencoders",
+          "url": "https://arxiv.org/abs/2609.31056",
+          "when": "2026-09-28",
+          "why": "Introduces representation-level unlearning using contrastive sparse autoencoders, a mechanistic-interpretability technique for targeted forgetting relevant to interpretability-driven model editing."
+        },
+        {
+          "kind": "paper",
+          "title": "Accounting for Bias Enables Sustainable LLM Evaluation",
+          "url": "https://arxiv.org/abs/2609.31184",
+          "when": "2026-09-28",
+          "why": "Proposes a statistical bias-correction model for LLM-as-judge evaluation to replace the wasteful brute-force comparison approach used in current leaderboards, directly relevant to eval methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "Evolutionary Safety of Recursive Self-Improving AI: Taxonomy, Risk Discovery, and Evaluation",
+          "url": "https://arxiv.org/abs/2609.31186",
+          "when": "2026-09-28",
+          "why": "Builds a taxonomy and risk-discovery/evaluation framework for recursive self-improving AI safety, relevant to long-horizon RL and reward-hacking risk analysis."
+        },
+        {
+          "kind": "paper",
+          "title": "FLIP: Final Layer Inference-Time Probing for Vision-Language Models",
+          "url": "https://arxiv.org/abs/2609.30993",
+          "when": "2026-09-28",
+          "why": "Introduces an inference-time probing method to test whether intervention sites in open-weight VLMs support structured computation, relevant to mechanistic interpretability methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "Agentick: A Unified Benchmark for General Sequential Decision-Making Agents",
+          "url": "https://arxiv.org/abs/2605.06869",
+          "when": "2026-09-28",
+          "why": "A unified benchmark enabling fair comparison of RL, LLM, VLM, and hybrid agents on sequential decision-making tasks, directly useful as an eval harness for agent research."
+        },
+        {
+          "kind": "paper",
+          "title": "Efficient Safety Benchmarking via Item Response Theory",
+          "url": "https://arxiv.org/abs/2606.20626",
+          "when": "2026-09-28",
+          "why": "Proposes an IRT-based method to drastically reduce the number of responses needed for safety benchmark evaluation, a reusable eval methodology for LLM safety testing."
+        },
+        {
+          "kind": "paper",
+          "title": "One Capability or Many? Structural and Predictive Tests of Benchmark Validity Disagree About Economic Benchmarks for Frontier AI",
+          "url": "https://arxiv.org/abs/2608.29420",
+          "when": "2026-09-28",
+          "why": "Uses structural vs predictive validity tests on a hash-pinned frontier leaderboard snapshot to show 'economic' AI benchmarks may not measure a distinct capability from general test-taking, directly bearing on benchmark construct validity methodology."
+        }
+      ]
+    },
     {
       "date": "2026-09-27",
       "down": [],
