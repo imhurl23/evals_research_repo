@@ -1,6 +1,187 @@
 {
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "runs": [
+    {
+      "date": "2026-09-29",
+      "down": [],
+      "items": [
+        {
+          "kind": "paper",
+          "title": "ScopeIF: Improving Scope-Aware Precise Instruction-Following in Large Language Models via Graded Reward Modeling",
+          "url": "https://arxiv.org/abs/2609.32189",
+          "when": "2026-09-29",
+          "why": "Introduces graded reward modeling to handle scope-specific constraints in instruction-following, directly relevant to reward design and reward hacking mitigation research."
+        },
+        {
+          "kind": "paper",
+          "title": "Gradients for Interventions and Activations for Detection: Targeted Feature Learning in Language Models",
+          "url": "https://arxiv.org/abs/2609.32355",
+          "when": "2026-09-29",
+          "why": "Proposes targeted feature learning using gradients for interventions vs activations for detection, contrasting with SAE-based dictionaries, relevant to mechanistic interpretability methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "Pinned and Still Unstable: Within-Judge Verdict Variance and the Noise Floor of LLM-as-Judge Leaderboards",
+          "url": "https://arxiv.org/abs/2609.33044",
+          "when": "2026-09-29",
+          "why": "Empirically shows LLM-as-Judge verdicts on pinned, temperature-zero models still vary due to cloud serving infrastructure, undermining reproducibility assumptions behind many LLM-judge benchmarks and leaderboards."
+        },
+        {
+          "kind": "paper",
+          "title": "Dense Is Not Enough: Hierarchical Supervision Allocation for Long-Horizon On-Policy Distillation",
+          "url": "https://arxiv.org/abs/2609.33409",
+          "when": "2026-09-29",
+          "why": "Proposes hierarchical (non-uniform) token-level supervision allocation for on-policy distillation in long-horizon agentic RL, addressing a known failure mode of naive teacher-student token matching."
+        },
+        {
+          "kind": "paper",
+          "title": "Understanding Confabulation and Rethinking Reconstruction in Activation Explanations",
+          "url": "https://arxiv.org/abs/2609.33702",
+          "when": "2026-09-29",
+          "why": "Analyzes a confabulation failure mode in natural-language activation explanations (verbalizer+reconstructor interpretability method), showing explanations trade off usefulness for unsupported detail—directly relevant to mech interp evaluation."
+        },
+        {
+          "kind": "paper",
+          "title": "RewardExplainer: Learning Reward Model Explanations from Counterfactual Preference Feedback",
+          "url": "https://arxiv.org/abs/2609.33989",
+          "when": "2026-09-29",
+          "why": "Introduces a method to generate counterfactual-preference-based explanations for scalar reward models, giving interpretability into RLHF reward signals relevant to reward hacking analysis."
+        },
+        {
+          "kind": "paper",
+          "title": "Coherence-Aware Distributional Evaluation of Open-Ended Text Generation",
+          "url": "https://arxiv.org/abs/2609.34240",
+          "when": "2026-09-29",
+          "why": "Proposes a coherence-aware distributional metric for open-ended text generation that captures global consistency missed by likelihood/diversity metrics, a new adoptable eval method."
+        },
+        {
+          "kind": "paper",
+          "title": "Certified Selective Automation of LLM Agent Evaluation",
+          "url": "https://arxiv.org/abs/2609.34320",
+          "when": "2026-09-29",
+          "why": "Introduces a certified selective-automation framework giving statistical guarantees on error rates when LLM judges replace humans in agent trajectory evaluation, directly useful for scaling agent eval harnesses."
+        },
+        {
+          "kind": "paper",
+          "title": "CRISP: Cultural Reward Modeling for Implicit Situated Propriety",
+          "url": "https://arxiv.org/abs/2609.34345",
+          "when": "2026-09-29",
+          "why": "Presents CRISP, a benchmark/reward-modeling framework for open-ended culturally situated propriety judgments, extending reward model evaluation beyond fixed-answer cultural knowledge tasks."
+        },
+        {
+          "kind": "paper",
+          "title": "AgentHop: A Diagnostic Benchmark for Agentic Multi-Hop Scientific Question Answering",
+          "url": "https://arxiv.org/abs/2609.34428",
+          "when": "2026-09-29",
+          "why": "New diagnostic benchmark for agentic multi-hop scientific QA that attributes failures to specific causes rather than a single leaderboard score, useful for agent eval research."
+        },
+        {
+          "kind": "paper",
+          "title": "RGDT-Bench: Benchmarking LLM Reasoning for Rule-Governed Decisions and Their Justifications",
+          "url": "https://arxiv.org/abs/2609.34455",
+          "when": "2026-09-29",
+          "why": "New benchmark (RGDT-Bench) testing LLM ability to apply and justify decisions under explicit external rules, relevant to reasoning/eval beyond standard math/logic tasks."
+        },
+        {
+          "kind": "paper",
+          "title": "When Confidence Rises Too Early: Detecting Shortcut Reasoning via Premature Answer Commitment",
+          "url": "https://arxiv.org/abs/2609.35074",
+          "when": "2026-09-29",
+          "why": "Proposes a method to detect unfaithful chain-of-thought via premature answer commitment, directly relevant to mechanistic interpretability and reasoning faithfulness monitoring."
+        },
+        {
+          "kind": "paper",
+          "title": "Understanding On-Policy Distillation: A Mechanistic Interpretability Perspective via Sparse Crosscoders",
+          "url": "https://arxiv.org/abs/2609.35210",
+          "when": "2026-09-29",
+          "why": "Uses sparse crosscoders to mechanistically analyze what on-policy distillation actually transfers into student model representations, directly relevant to interpretability of post-training methods."
+        },
+        {
+          "kind": "paper",
+          "title": "Epistemic Policy Divergence in Multi-Turn LLM Contamination: A Protocol-Gradient Investigation",
+          "url": "https://arxiv.org/abs/2609.35308",
+          "when": "2026-09-29",
+          "why": "Introduces five multi-turn contamination protocols testing how GPT-5.4 Mini, Gemini-3.1 Flash-Lite and others adopt false premises injected into conversation history, a new eval method for human-AI interaction failure modes."
+        },
+        {
+          "kind": "paper",
+          "title": "From Input to Output: A Flexible Agent for Dual-End Interpretation of Sparse Autoencoder Features",
+          "url": "https://arxiv.org/abs/2609.35367",
+          "when": "2026-09-29",
+          "why": "Proposes an agent-based method linking input-side activation evidence with output-side intervention effects for SAE feature interpretation, reducing costly corpus scans, a new mech interp tool."
+        },
+        {
+          "kind": "paper",
+          "title": "Beyond Token Scale: Chunk-Level Sparse Autoencoders for Reliable Semantic Feature Discovery",
+          "url": "https://arxiv.org/abs/2609.35521",
+          "when": "2026-09-29",
+          "why": "Proposes chunk-level SAEs that pool activations over spans instead of tokens to yield more semantically faithful features, a methodological advance for sparse autoencoder-based interpretability."
+        },
+        {
+          "kind": "paper",
+          "title": "Less Sycophancy, Stronger Refusal? Lessons for AI Safety from Mechanistic Interpretability",
+          "url": "https://arxiv.org/abs/2609.35544",
+          "when": "2026-09-29",
+          "why": "Uses compensatory feature injection, a mech interp intervention technique, to study whether reducing sycophancy strengthens refusal robustness, linking interpretability findings to AI safety training."
+        },
+        {
+          "kind": "paper",
+          "title": "On Evaluating and Improving Conversational Agents in Production",
+          "url": "https://arxiv.org/abs/2609.32092",
+          "when": "2026-09-29",
+          "why": "Presents a production evaluation framework for a multi-agent shopping assistant addressing non-replayability and system variance, offering practical lessons on evaluating deployed conversational agents."
+        },
+        {
+          "kind": "paper",
+          "title": "What Can a Leaderboard Certify? Compositional Controllability for Fair Evaluation and Training of Biomedical Literature-Review Agents",
+          "url": "https://arxiv.org/abs/2609.32318",
+          "when": "2026-09-29",
+          "why": "Introduces 'compositional controllability' as a formal method for auditing what leaderboard scores actually certify in multi-stage agent evaluations, directly relevant to eval methodology critique."
+        },
+        {
+          "kind": "paper",
+          "title": "PULSE: Identifying Demonstration-Utility Features with Sparse Autoencoders",
+          "url": "https://arxiv.org/abs/2609.32469",
+          "when": "2026-09-29",
+          "why": "Uses sparse autoencoders to identify which internal features make in-context demonstrations useful, a concrete mechanistic interpretability method for improving demonstration selection."
+        },
+        {
+          "kind": "paper",
+          "title": "CUE-Mem: Benchmarking Long-Term User Memory via Implicit Cues in Multimodal Conversations",
+          "url": "https://arxiv.org/abs/2609.32574",
+          "when": "2026-09-29",
+          "why": "New multimodal benchmark testing whether agents can infer long-term user memory from implicit cues (background objects, ambient sounds) rather than explicit statements, extending human-AI interaction evaluation beyond text."
+        },
+        {
+          "kind": "paper",
+          "title": "TraceDance: An Automated System for Building Agent Behavior Benchmarks from Real-World Agent Deployment Traces",
+          "url": "https://arxiv.org/abs/2609.33295",
+          "when": "2026-09-29",
+          "why": "An automated system that mines real agent deployment traces to build targeted benchmarks for specific undesirable behaviors, directly useful for reward-hacking and safety evaluation work."
+        },
+        {
+          "kind": "paper",
+          "title": "MetaBench-Harness: Unlocking End-to-End Optimization of Benchmark Harnesses",
+          "url": "https://arxiv.org/abs/2609.33411",
+          "when": "2026-09-29",
+          "why": "Proposes end-to-end optimization of the benchmark-generation workflow itself (not just individual questions) to keep pace with model progress, a new eval harness construction method."
+        },
+        {
+          "kind": "paper",
+          "title": "Population Physics, Population Problems: Safety and Emergence in LLM Societies",
+          "url": "https://arxiv.org/abs/2609.33871",
+          "when": "2026-09-29",
+          "why": "Introduces a framework for measuring emergent, unpredictable collective behavior and safety risks in multi-agent LLM societies, relevant to reward hacking and safety-oriented human-AI interaction research."
+        },
+        {
+          "kind": "paper",
+          "title": "PlaylistEval: Can Video-Language Judges Be Trusted at Day Scale and Beyond?",
+          "url": "https://arxiv.org/abs/2609.34314",
+          "when": "2026-09-29",
+          "why": "Tests whether video-language models can serve as reliable judges over day-long videos, directly bearing on LLM-as-judge reliability at scale."
+        }
+      ]
+    },
     {
       "date": "2026-09-28",
       "down": [],
