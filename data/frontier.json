@@ -1,6 +1,187 @@
 {
-  "updated": "2026-09-29",
+  "updated": "2026-10-01",
   "runs": [
+    {
+      "date": "2026-10-01",
+      "down": [],
+      "items": [
+        {
+          "kind": "paper",
+          "title": "CruxBench: A Benchmark of Information Discovery",
+          "url": "https://arxiv.org/abs/2609.35879",
+          "when": "2026-10-01",
+          "why": "Introduces CruxBench, a benchmark testing whether LLMs can decompose complex problems into the right sub-questions ('cruxes') rather than just matching final answers, a new evaluation method for reasoning quality."
+        },
+        {
+          "kind": "paper",
+          "title": "SCOUT: Synergizing Reasoning and Tool-Use for Computer-Use Safety",
+          "url": "https://arxiv.org/abs/2609.36201",
+          "when": "2026-10-01",
+          "why": "Proposes SCOUT, a reasoning+tool-use verifier/eval harness for detecting subtle unintended harms from computer-use agents, directly relevant to agent safety evaluation."
+        },
+        {
+          "kind": "paper",
+          "title": "Population Fidelity: Evaluating Population Representativeness in LLMs",
+          "url": "https://arxiv.org/abs/2609.36253",
+          "when": "2026-10-01",
+          "why": "Introduces 'Population Fidelity,' an evaluation framework measuring whether LLM-simulated populations faithfully represent real human attitude distributions and subgroups, relevant to human-AI interaction evaluation."
+        },
+        {
+          "kind": "paper",
+          "title": "G\\\"odel Forest: Balancing Search Depth and Breadth for Data-Centric Recursive Self-Improvement",
+          "url": "https://arxiv.org/abs/2609.36675",
+          "when": "2026-10-01",
+          "why": "Proposes a search-depth/breadth balancing method for data-centric recursive self-improvement (training on agent-generated data), relevant to RL self-improvement and reward-hacking dynamics in model training loops."
+        },
+        {
+          "kind": "paper",
+          "title": "ProgressCompass: Embodied Progress Reward Models Are Lost Without the Right Context",
+          "url": "https://arxiv.org/abs/2609.36684",
+          "when": "2026-10-01",
+          "why": "Shows embodied Progress Reward Models fail without richer context on long tasks, a concrete finding on reward model design relevant to RL reward shaping and hacking risks."
+        },
+        {
+          "kind": "paper",
+          "title": "Dating the Model: Hidden Dates in System Prompts Affect LLM Evaluation",
+          "url": "https://arxiv.org/abs/2609.36931",
+          "when": "2026-10-01",
+          "why": "Shows that undisclosed date-injection into system prompts causes measurable, uncontrolled day-to-day variation in LLM benchmark scores across MCQA, math, code, and MT, a reproducibility confound for eval researchers."
+        },
+        {
+          "kind": "paper",
+          "title": "Pair Difficulty Matters: Rethinking Pairwise LLM-as-a-Judge Evaluation and Consistency",
+          "url": "https://arxiv.org/abs/2609.37577",
+          "when": "2026-10-01",
+          "why": "Critically re-examines the standard position-bias/transitivity/agreement proxies used to validate LLM-as-judge systems, directly relevant to how researchers select and trust judge models."
+        },
+        {
+          "kind": "paper",
+          "title": "LongHarness Bench: Stress-Testing Language Model Harnesses for Long-Context Reasoning",
+          "url": "https://arxiv.org/abs/2609.38137",
+          "when": "2026-10-01",
+          "why": "Introduces a benchmark specifically designed to differentiate long-context LM harnesses on both effectiveness and efficiency where existing long-context evals have saturated."
+        },
+        {
+          "kind": "paper",
+          "title": "When Trees Are Not Enough: Learning Mixed-Topology Feature Graphs with Adaptive Graph Sparse Autoencoders",
+          "url": "https://arxiv.org/abs/2609.36294",
+          "when": "2026-10-01",
+          "why": "Proposes Adaptive Graph SAEs that learn mixed-topology (multi-parent) feature graphs rather than tree/forest structures, advancing structured sparse autoencoder interpretability methods."
+        },
+        {
+          "kind": "paper",
+          "title": "Asking for What Was Never Requested: Horizontal and Vertical Proactivity in Agents",
+          "url": "https://arxiv.org/abs/2609.37236",
+          "when": "2026-10-01",
+          "why": "Introduces a new axis of agent proactivity (pursuing unstated but needed information) relevant to designing and evaluating human-AI interactive agents."
+        },
+        {
+          "kind": "paper",
+          "title": "Risk-Controlled Selective LLM Answering by Pricing Label-Free Checks",
+          "url": "https://arxiv.org/abs/2609.37493",
+          "when": "2026-10-01",
+          "why": "Introduces PriceCheck, a method for pricing label-free verification checks to control error rates in selective LLM answering/abstention, relevant to eval reliability research."
+        },
+        {
+          "kind": "paper",
+          "title": "When Models Don't Manipulate Manifolds: The Geometry of a Comparison Task",
+          "url": "https://arxiv.org/abs/2609.37680",
+          "when": "2026-10-01",
+          "why": "Mechanistic interpretability study questioning whether low-dimensional manifold geometry actually explains model computation on a comparison task."
+        },
+        {
+          "kind": "paper",
+          "title": "TagPR: Tag-Guided Process Supervision for Personalization Reasoning in Large Language Models",
+          "url": "https://arxiv.org/abs/2509.23140",
+          "when": "2026-10-01",
+          "why": "Proposes tag-guided process supervision (RL) for personalization reasoning, addressing flawed reasoning chains despite correct outcomes—relevant to reward hacking/process supervision."
+        },
+        {
+          "kind": "paper",
+          "title": "On Calibration of Large Language Models: From Response To Capability",
+          "url": "https://arxiv.org/abs/2602.13540",
+          "when": "2026-10-01",
+          "why": "Distinguishes response-level vs capability-level calibration in LLMs, a new framing for confidence estimation evaluation methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "RAWR: Reward Assignment Without Rollouts in Verifiable Domains",
+          "url": "https://arxiv.org/abs/2603.17815",
+          "when": "2026-10-01",
+          "why": "Introduces MCNIG, a rollout-free method for training process reward models in verifiable domains, directly relevant to RL reward modeling research."
+        },
+        {
+          "kind": "paper",
+          "title": "AdvancedMathBench: A Benchmark Suite for Advanced Mathematical Proof Generation and Verification",
+          "url": "https://arxiv.org/abs/2607.11849",
+          "when": "2026-10-01",
+          "why": "New benchmark suite for advanced mathematical proof generation and verification with finer-grained evaluation than final-answer correctness."
+        },
+        {
+          "kind": "paper",
+          "title": "CultureConverse: A Multilingual Multi-turn Simulation Harness for Culturally Grounded Assistance in East and Southeast Asia",
+          "url": "https://arxiv.org/abs/2608.28405",
+          "when": "2026-10-01",
+          "why": "New multilingual multi-turn simulation harness evaluating culturally grounded assistance across East/Southeast Asian languages, a reusable eval methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "Reproducing, Analyzing, and Detecting Reward Hacking in Rubric-Based Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2606.04923",
+          "when": "2026-10-01",
+          "why": "Introduces a framework to reproduce and detect reward hacking in rubric-based RL with LLM judges, directly relevant to reward hacking research."
+        },
+        {
+          "kind": "paper",
+          "title": "Sense and Sensitivity: Benchmarking LLM Clinical Triage Recommendations with Physician Experts",
+          "url": "https://arxiv.org/abs/2609.38600",
+          "when": "2026-10-01",
+          "why": "A new benchmark (6,000 scenarios, 7,000 physician annotations) testing LLM robustness to text perturbations in clinical triage versus human experts, offering a transferable eval methodology for robustness testing."
+        },
+        {
+          "kind": "paper",
+          "title": "AgBench: Agentic AI Benchmarks for Personal AI Devices",
+          "url": "https://arxiv.org/abs/2609.38652",
+          "when": "2026-10-01",
+          "why": "A new benchmark for agentic AI performance and trade-offs on resource-constrained personal devices, relevant to agent evaluation harnesses."
+        },
+        {
+          "kind": "paper",
+          "title": "Talk2Agent: Benchmarking Voice Interfaces for Text Agents",
+          "url": "https://arxiv.org/abs/2609.38867",
+          "when": "2026-10-01",
+          "why": "A new benchmark evaluating how speech/ASR transcription errors affect computer-use agent task success, relevant to human-AI interaction and agent eval."
+        },
+        {
+          "kind": "paper",
+          "title": "MADBench: Benchmarking the Security of Multi-Agent Debate",
+          "url": "https://arxiv.org/abs/2609.39146",
+          "when": "2026-10-01",
+          "why": "A new benchmark testing adversarial robustness and error propagation in multi-agent debate systems, relevant to reward hacking and adversarial eval of LLM agents."
+        },
+        {
+          "kind": "paper",
+          "title": "Learning Process Rewards via Reasoning State Propagation",
+          "url": "https://arxiv.org/abs/2609.39220",
+          "when": "2026-10-01",
+          "why": "Proposes a method for training process reward models with reduced annotation cost by propagating outcome supervision to intermediate reasoning states, relevant to RL reward design and potential reward hacking vectors."
+        },
+        {
+          "kind": "paper",
+          "title": "On the Complexity of Preference-Based Bandits",
+          "url": "https://arxiv.org/abs/2609.39351",
+          "when": "2026-10-01",
+          "why": "Theoretical analysis of sample complexity for Bradley-Terry preference-based bandits with general function classes, directly underpinning RLHF/preference learning methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "FIGS: Evaluating Multi-Turn Sycophancy Without Penalizing Empathy",
+          "url": "https://arxiv.org/abs/2609.39863",
+          "when": "2026-10-01",
+          "why": "Introduces a benchmark (FIGS) specifically designed to measure multi-turn sycophancy while distinguishing it from legitimate empathetic responses, a nuanced eval method for human-AI interaction research."
+        }
+      ]
+    },
     {
       "date": "2026-09-29",
       "down": [],
