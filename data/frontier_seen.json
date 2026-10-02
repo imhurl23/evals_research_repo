@@ -7,6 +7,10 @@
     "kept": true,
     "seen": "2026-09-17"
   },
+  "arxiv:2410.22046": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
   "arxiv:2411.10163": {
     "kept": true,
     "seen": "2026-09-22"
@@ -82,6 +86,10 @@
   "arxiv:2508.08096": {
     "kept": true,
     "seen": "2026-09-14"
+  },
+  "arxiv:2508.13408": {
+    "kept": false,
+    "seen": "2026-10-02"
   },
   "arxiv:2508.15851": {
     "kept": false,
@@ -235,6 +243,14 @@
     "kept": false,
     "seen": "2026-09-25"
   },
+  "arxiv:2601.21666": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2601.22984": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
   "arxiv:2602.01034": {
     "kept": true,
     "seen": "2026-09-28"
@@ -255,6 +271,10 @@
     "kept": false,
     "seen": "2026-09-18"
   },
+  "arxiv:2602.08889": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
   "arxiv:2602.10711": {
     "kept": false,
     "seen": "2026-09-18"
@@ -270,6 +290,18 @@
   "arxiv:2602.20159": {
     "kept": true,
     "seen": "2026-09-24"
+  },
+  "arxiv:2602.20294": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2602.21061": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2602.22755": {
+    "kept": true,
+    "seen": "2026-10-02"
   },
   "arxiv:2603.00842": {
     "kept": false,
@@ -327,6 +359,10 @@
     "kept": true,
     "seen": "2026-09-22"
   },
+  "arxiv:2603.16065": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
   "arxiv:2603.17815": {
     "kept": true,
     "seen": "2026-10-01"
@@ -351,6 +387,10 @@
     "kept": false,
     "seen": "2026-09-25"
   },
+  "arxiv:2604.01151": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
   "arxiv:2604.01754": {
     "kept": true,
     "seen": "2026-09-25"
@@ -366,6 +406,10 @@
   "arxiv:2604.04720": {
     "kept": true,
     "seen": "2026-09-22"
+  },
+  "arxiv:2604.12102": {
+    "kept": true,
+    "seen": "2026-10-02"
   },
   "arxiv:2604.23478": {
     "kept": true,
@@ -390,6 +434,10 @@
   "arxiv:2605.01203": {
     "kept": true,
     "seen": "2026-10-01"
+  },
+  "arxiv:2605.02035": {
+    "kept": false,
+    "seen": "2026-10-02"
   },
   "arxiv:2605.03361": {
     "kept": false,
@@ -479,6 +527,10 @@
     "kept": false,
     "seen": "2026-09-15"
   },
+  "arxiv:2605.28009": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
   "arxiv:2605.28190": {
     "kept": true,
     "seen": "2026-09-22"
@@ -490,6 +542,10 @@
   "arxiv:2606.01322": {
     "kept": true,
     "seen": "2026-09-24"
+  },
+  "arxiv:2606.02289": {
+    "kept": true,
+    "seen": "2026-10-02"
   },
   "arxiv:2606.02461": {
     "kept": true,
@@ -679,9 +735,21 @@
     "kept": true,
     "seen": "2026-09-15"
   },
+  "arxiv:2608.11469": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2608.11755": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
   "arxiv:2608.12365": {
     "kept": false,
     "seen": "2026-09-16"
+  },
+  "arxiv:2608.12573": {
+    "kept": false,
+    "seen": "2026-10-02"
   },
   "arxiv:2608.16697": {
     "kept": false,
@@ -706,6 +774,10 @@
   "arxiv:2608.18752": {
     "kept": false,
     "seen": "2026-09-23"
+  },
+  "arxiv:2608.19741": {
+    "kept": true,
+    "seen": "2026-10-02"
   },
   "arxiv:2608.20153": {
     "kept": true,
@@ -762,6 +834,10 @@
   "arxiv:2608.29420": {
     "kept": true,
     "seen": "2026-09-28"
+  },
+  "arxiv:2608.30258": {
+    "kept": false,
+    "seen": "2026-10-02"
   },
   "arxiv:2609.01210": {
     "kept": true,
@@ -2739,6 +2815,10 @@
     "kept": true,
     "seen": "2026-10-01"
   },
+  "arxiv:2609.38612": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
   "arxiv:2609.38625": {
     "kept": true,
     "seen": "2026-10-01"
@@ -2791,6 +2871,10 @@
     "kept": true,
     "seen": "2026-10-01"
   },
+  "arxiv:2609.39533": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
   "arxiv:2609.39625": {
     "kept": true,
     "seen": "2026-10-01"
@@ -2819,6 +2903,206 @@
     "kept": false,
     "seen": "2026-10-01"
   },
+  "arxiv:2610.00002": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00007": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00047": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00054": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00302": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00314": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00316": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00332": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00370": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00406": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00408": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00416": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00421": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00424": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00425": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00447": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00492": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00523": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00531": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00610": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00651": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00666": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00737": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00817": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00850": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00895": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.00954": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01066": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01110": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01218": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01306": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01461": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01519": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01548": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01581": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01618": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01626": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01729": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01800": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01821": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01833": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01861": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01864": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.01921": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.02000": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.02098": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.02122": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.02136": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.02144": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "arxiv:2610.02189": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
   "hf:CohereLabs/tiny-aya-base-32K": {
     "kept": false,
     "seen": "2026-09-10"
@@ -2846,6 +3130,14 @@
   "hf:nvidia/DeepSeek-V4.1-Flash-NVFP4": {
     "kept": false,
     "seen": "2026-09-17"
+  },
+  "hf:nvidia/PixelDiT2-ImageNet": {
+    "kept": false,
+    "seen": "2026-10-02"
+  },
+  "hf:nvidia/PixelUMM": {
+    "kept": false,
+    "seen": "2026-10-02"
   },
   "hf:nvidia/c-foundationstereo-s": {
     "kept": false,
@@ -3431,6 +3723,10 @@
     "kept": true,
     "seen": "2026-09-28"
   },
+  "hn:49929489": {
+    "kept": true,
+    "seen": "2026-10-02"
+  },
   "pypi:deepeval:4.2.3": {
     "kept": false,
     "seen": "2026-09-14"
@@ -3466,6 +3762,10 @@
   "pypi:inspect-ai:0.3.271": {
     "kept": true,
     "seen": "2026-09-27"
+  },
+  "pypi:inspect-ai:0.3.275": {
+    "kept": false,
+    "seen": "2026-10-02"
   },
   "pypi:promptfoo:0.2.0": {
     "kept": false,
