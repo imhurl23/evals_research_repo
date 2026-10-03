@@ -3723,9 +3723,57 @@
     "kept": true,
     "seen": "2026-09-28"
   },
+  "hn:49927854": {
+    "kept": false,
+    "seen": "2026-10-03"
+  },
+  "hn:49929391": {
+    "kept": false,
+    "seen": "2026-10-03"
+  },
   "hn:49929489": {
     "kept": true,
     "seen": "2026-10-02"
+  },
+  "hn:49932606": {
+    "kept": false,
+    "seen": "2026-10-03"
+  },
+  "hn:49933251": {
+    "kept": false,
+    "seen": "2026-10-03"
+  },
+  "hn:49933386": {
+    "kept": false,
+    "seen": "2026-10-03"
+  },
+  "hn:49933459": {
+    "kept": false,
+    "seen": "2026-10-03"
+  },
+  "hn:49934511": {
+    "kept": false,
+    "seen": "2026-10-03"
+  },
+  "hn:49936575": {
+    "kept": false,
+    "seen": "2026-10-03"
+  },
+  "hn:49936641": {
+    "kept": false,
+    "seen": "2026-10-03"
+  },
+  "hn:49942437": {
+    "kept": false,
+    "seen": "2026-10-03"
+  },
+  "hn:49942592": {
+    "kept": false,
+    "seen": "2026-10-03"
+  },
+  "hn:49942706": {
+    "kept": false,
+    "seen": "2026-10-03"
   },
   "pypi:deepeval:4.2.3": {
     "kept": false,
@@ -3738,6 +3786,10 @@
   "pypi:deepeval:4.2.6": {
     "kept": false,
     "seen": "2026-09-24"
+  },
+  "pypi:deepeval:4.2.8": {
+    "kept": false,
+    "seen": "2026-10-03"
   },
   "pypi:inspect-ai:0.3.264": {
     "kept": true,
@@ -3766,6 +3818,10 @@
   "pypi:inspect-ai:0.3.275": {
     "kept": false,
     "seen": "2026-10-02"
+  },
+  "pypi:inspect-ai:0.3.276": {
+    "kept": false,
+    "seen": "2026-10-03"
   },
   "pypi:promptfoo:0.2.0": {
     "kept": false,
@@ -3798,6 +3854,10 @@
   "repo:XiaoDuoYa/codex-with-chatgpt": {
     "kept": false,
     "seen": "2026-09-10"
+  },
+  "repo:YuJunZhiXue/dsh-purge": {
+    "kept": false,
+    "seen": "2026-10-03"
   },
   "repo:anywhere-labs/dsh-desktop": {
     "kept": false,
