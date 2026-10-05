@@ -187,6 +187,10 @@
     "kept": true,
     "seen": "2026-09-14"
   },
+  "arxiv:2512.19905": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
   "arxiv:2512.24565": {
     "kept": true,
     "seen": "2026-09-15"
@@ -283,6 +287,10 @@
     "kept": true,
     "seen": "2026-10-01"
   },
+  "arxiv:2602.16543": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
   "arxiv:2602.18307": {
     "kept": false,
     "seen": "2026-09-23"
@@ -339,6 +347,10 @@
     "kept": false,
     "seen": "2026-09-15"
   },
+  "arxiv:2603.13856": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
   "arxiv:2603.13966": {
     "kept": false,
     "seen": "2026-09-15"
@@ -387,6 +399,10 @@
     "kept": false,
     "seen": "2026-09-25"
   },
+  "arxiv:2603.29112": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
   "arxiv:2604.01151": {
     "kept": true,
     "seen": "2026-10-02"
@@ -422,6 +438,10 @@
   "arxiv:2604.24952": {
     "kept": true,
     "seen": "2026-10-01"
+  },
+  "arxiv:2604.24955": {
+    "kept": true,
+    "seen": "2026-10-05"
   },
   "arxiv:2604.25154": {
     "kept": false,
@@ -495,6 +515,10 @@
     "kept": true,
     "seen": "2026-09-24"
   },
+  "arxiv:2605.16358": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
   "arxiv:2605.17877": {
     "kept": true,
     "seen": "2026-10-01"
@@ -510,6 +534,10 @@
   "arxiv:2605.22902": {
     "kept": true,
     "seen": "2026-09-15"
+  },
+  "arxiv:2605.23215": {
+    "kept": false,
+    "seen": "2026-10-05"
   },
   "arxiv:2605.23497": {
     "kept": false,
@@ -534,6 +562,10 @@
   "arxiv:2605.28190": {
     "kept": true,
     "seen": "2026-09-22"
+  },
+  "arxiv:2606.00467": {
+    "kept": true,
+    "seen": "2026-10-05"
   },
   "arxiv:2606.01008": {
     "kept": true,
@@ -619,6 +651,10 @@
     "kept": true,
     "seen": "2026-09-28"
   },
+  "arxiv:2606.20627": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
   "arxiv:2606.21008": {
     "kept": true,
     "seen": "2026-09-22"
@@ -650,6 +686,10 @@
   "arxiv:2606.30943": {
     "kept": false,
     "seen": "2026-09-15"
+  },
+  "arxiv:2607.00711": {
+    "kept": true,
+    "seen": "2026-10-05"
   },
   "arxiv:2607.00848": {
     "kept": false,
@@ -730,6 +770,10 @@
   "arxiv:2608.09095": {
     "kept": true,
     "seen": "2026-10-01"
+  },
+  "arxiv:2608.09539": {
+    "kept": false,
+    "seen": "2026-10-05"
   },
   "arxiv:2608.11025": {
     "kept": true,
@@ -2547,6 +2591,10 @@
     "kept": true,
     "seen": "2026-09-29"
   },
+  "arxiv:2609.32532": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
   "arxiv:2609.32574": {
     "kept": true,
     "seen": "2026-09-29"
@@ -2767,9 +2815,17 @@
     "kept": true,
     "seen": "2026-10-01"
   },
+  "arxiv:2609.38021": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
   "arxiv:2609.38137": {
     "kept": true,
     "seen": "2026-10-01"
+  },
+  "arxiv:2609.38256": {
+    "kept": true,
+    "seen": "2026-10-05"
   },
   "arxiv:2609.38260": {
     "kept": true,
@@ -3055,6 +3111,10 @@
     "kept": true,
     "seen": "2026-10-02"
   },
+  "arxiv:2610.01769": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
   "arxiv:2610.01800": {
     "kept": false,
     "seen": "2026-10-02"
@@ -3103,6 +3163,138 @@
     "kept": false,
     "seen": "2026-10-02"
   },
+  "arxiv:2610.02349": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02399": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02432": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02439": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02440": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02527": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02563": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02588": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02657": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02781": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02829": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02858": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02860": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02868": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02877": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02918": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02926": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.02967": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.03055": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.03063": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.03176": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.03185": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.03329": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.03389": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.03448": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.03458": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.03498": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.03564": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.03567": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.03574": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.03636": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.03639": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
+  "arxiv:2610.03641": {
+    "kept": true,
+    "seen": "2026-10-05"
+  },
   "hf:CohereLabs/tiny-aya-base-32K": {
     "kept": false,
     "seen": "2026-09-10"
@@ -3118,6 +3310,10 @@
   "hf:deepseek-ai/DeepSeek-V4.1-Flash": {
     "kept": false,
     "seen": "2026-09-10"
+  },
+  "hf:google/DiarizationLM-Gemma-4-E4B-v1": {
+    "kept": false,
+    "seen": "2026-10-05"
   },
   "hf:microsoft/rho-roboeval": {
     "kept": false,
@@ -3810,6 +4006,14 @@
   "hn:49953495": {
     "kept": false,
     "seen": "2026-10-04"
+  },
+  "hn:49957191": {
+    "kept": false,
+    "seen": "2026-10-05"
+  },
+  "hn:49961057": {
+    "kept": true,
+    "seen": "2026-10-05"
   },
   "pypi:deepeval:4.2.3": {
     "kept": false,
