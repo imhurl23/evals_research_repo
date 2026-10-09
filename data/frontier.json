@@ -1,6 +1,187 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "runs": [
+    {
+      "date": "2026-10-09",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: AHM Statement on OpenAI's October 6 Release of Mathematical Documents",
+          "url": "https://www.ahmath.org/statements",
+          "when": "2026-10-08",
+          "why": "HN discussion debating an association's statement challenging OpenAI's claims about AI-generated mathematical proofs, relevant to scrutinizing capability claims and eval validity for frontier models."
+        },
+        {
+          "kind": "paper",
+          "title": "Disentangling Linguistic and Paralinguistic Information with Routed Sparse Autoencoders",
+          "url": "https://arxiv.org/abs/2610.10865",
+          "when": "2026-10-09",
+          "why": "Introduces a routed sparse autoencoder method to disentangle linguistic vs paralinguistic features in speech encoders, a concrete new SAE variant/technique relevant to mechanistic interpretability work."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Why isn't the industry freaking out about DeepSeek 4.1 Flash?",
+          "url": "https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/",
+          "when": "2026-10-08",
+          "why": "High-engagement HN discussion (833 points) on DeepSeek's new 4.1 Flash model and muted industry reaction, relevant frontier-model competitive landscape chatter."
+        },
+        {
+          "kind": "paper",
+          "title": "Clinician use of language models diverges from how the models are evaluated",
+          "url": "https://arxiv.org/abs/2610.11069",
+          "when": "2026-10-09",
+          "why": "Empirically shows a gap between how clinicians actually use LLM assistants and how current medical benchmarks evaluate them, directly bearing on benchmark validity and eval design methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "REMORY: Learning Residual Memory for Context Compaction",
+          "url": "https://arxiv.org/abs/2610.11287",
+          "when": "2026-10-09",
+          "why": "Proposes a learned residual memory mechanism (soft memory tokens) for long-horizon agent context compaction, relevant to evaluating and designing agentic LLM systems' memory/context handling."
+        },
+        {
+          "kind": "paper",
+          "title": "Incremental Open-Ended Deep Research with Structured Harness",
+          "url": "https://arxiv.org/abs/2610.11566",
+          "when": "2026-10-09",
+          "why": "Introduces an incremental deep-research agent setting and harness for continuously updating reports, relevant to agent eval tooling."
+        },
+        {
+          "kind": "paper",
+          "title": "UXBench Pro: Benchmarking Personalized User Experience in Multi-Turn Dialogue Interactions",
+          "url": "https://arxiv.org/abs/2610.11638",
+          "when": "2026-10-09",
+          "why": "New benchmark for evaluating personalized, multi-turn user experience in dialogue agents, directly relevant to human-AI interaction evaluation."
+        },
+        {
+          "kind": "paper",
+          "title": "MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement",
+          "url": "https://arxiv.org/abs/2610.11959",
+          "when": "2026-10-09",
+          "why": "New frontier omni-modal model (MiMo-V2.6) with a technical report on scaling RL-based self-improvement training."
+        },
+        {
+          "kind": "paper",
+          "title": "All Verdicts are Not Equal: Rethinking LLM Judge Reliability",
+          "url": "https://arxiv.org/abs/2610.12083",
+          "when": "2026-10-09",
+          "why": "Systematic reliability audit of LLM-as-a-Judge across models, prompts, and sampling conditions, directly useful for eval methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "Conversational Task Disambiguation over Tabular Data: Leakage-Aware Formulation, Benchmark Suite, and Training",
+          "url": "https://arxiv.org/abs/2610.10740",
+          "when": "2026-10-09",
+          "why": "Proposes a leakage-aware benchmark and training setup for conversational disambiguation over tabular data, a new eval formulation addressing a known contamination issue."
+        },
+        {
+          "kind": "paper",
+          "title": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents",
+          "url": "https://arxiv.org/abs/2610.10942",
+          "when": "2026-10-09",
+          "why": "Introduces a live, continuously-evolving e-commerce RL environment with non-terminal rewards for training/evaluating autonomous agents, directly relevant to RL environment design and reward hacking research."
+        },
+        {
+          "kind": "paper",
+          "title": "Who Verifies the Verifier? Co-Evolving Inspectable Graders with Self-Improving Agents",
+          "url": "https://arxiv.org/abs/2610.11464",
+          "when": "2026-10-09",
+          "why": "Proposes making the verifier itself an inspectable, co-evolving component in self-improving agent loops to address reward hacking and judge blind-spots, directly relevant to reward hacking research."
+        },
+        {
+          "kind": "paper",
+          "title": "RouterInterp: Understanding Superposed Specialisation in Mixture of Experts Routing",
+          "url": "https://arxiv.org/abs/2610.11775",
+          "when": "2026-10-09",
+          "why": "Mechanistic interpretability study testing (and largely refuting) the specialization hypothesis for MoE expert routing, relevant to interpretability researchers studying model internals."
+        },
+        {
+          "kind": "paper",
+          "title": "Can AI Agents Learn Their Way to the Top? Evaluating Heuristic Learning in a Long-Running Game Agent Competition",
+          "url": "https://arxiv.org/abs/2610.12341",
+          "when": "2026-10-09",
+          "why": "A long-running competitive benchmark evaluating whether AI agents can iteratively learn and refine executable strategies in adversarial games, offering a new eval methodology for agentic learning."
+        },
+        {
+          "kind": "paper",
+          "title": "Obscuring Data Contamination Through Translation: Evidence from Arabic Corpora",
+          "url": "https://arxiv.org/abs/2601.14994",
+          "when": "2026-10-09",
+          "why": "Studies cross-lingual benchmark contamination (exposing models to Arabic translations of MMLU/XQuAD) to show contamination audits that only check same-language overlap can miss leakage, relevant to eval validity."
+        },
+        {
+          "kind": "paper",
+          "title": "How Much Do Circuits Tell Us? Measuring the Consistency and Specificity of Language Model Circuits",
+          "url": "https://arxiv.org/abs/2605.08348",
+          "when": "2026-10-09",
+          "why": "Proposes metrics for consistency and task-specificity of mechanistic interpretability circuits, addressing a core methodological gap in circuit-based causal analysis."
+        },
+        {
+          "kind": "paper",
+          "title": "Are Near-Tied LLM Rankings Robust to Family-DIF-Guided Benchmark Recomposition?",
+          "url": "https://arxiv.org/abs/2609.00482",
+          "when": "2026-10-09",
+          "why": "Uses item-response theory to test whether near-tied leaderboard rankings flip under benchmark item recomposition, directly bearing on benchmark reliability and leaderboard interpretation."
+        },
+        {
+          "kind": "paper",
+          "title": "\\$OneMillion-Bench: How Far are Language Agents from Human Experts?",
+          "url": "https://arxiv.org/abs/2603.07980",
+          "when": "2026-10-09",
+          "why": "Introduces a new 400-task expert-curated benchmark spanning professional domains to measure how far long-horizon language agents are from human experts, a new agentic benchmark."
+        },
+        {
+          "kind": "paper",
+          "title": "When Interfaces Speak: Data-Aware Generative UI Harness for Active Interaction",
+          "url": "https://arxiv.org/abs/2610.11123",
+          "when": "2026-10-09",
+          "why": "Presents GenUI-Harness, a multi-agent harness generating ephemeral data-aware UIs for human-agent interaction instead of pure text, relevant to human-AI interaction research."
+        },
+        {
+          "kind": "paper",
+          "title": "TypedBench: A Benchmark for Calibration, Framing Sensitivity, and Cost in System One Decision Models",
+          "url": "https://arxiv.org/abs/2610.11392",
+          "when": "2026-10-09",
+          "why": "Introduces a benchmark measuring calibration, prompt-framing sensitivity, and decision cost for classifier-style model outputs, offering a reusable eval methodology for probabilistic/typed-output systems."
+        },
+        {
+          "kind": "paper",
+          "title": "What Output-Only Review Cannot Verify: Study Contracts for Research Agents",
+          "url": "https://arxiv.org/abs/2610.11754",
+          "when": "2026-10-09",
+          "why": "Proposes 'study contracts' as a verification framework distinguishing contract-compliance from truth for AI research agents, relevant to evaluating autonomous research agents' outputs."
+        },
+        {
+          "kind": "paper",
+          "title": "Safe Actions Alone Do Not Ensure Safe Agents: Identifying Unfulfilled Obligations with Guard Models",
+          "url": "https://arxiv.org/abs/2610.11773",
+          "when": "2026-10-09",
+          "why": "Introduces guard models that detect unfulfilled safety obligations (not just forbidden actions) in LLM agents, directly relevant to agent safety evaluation and reward hacking concerns."
+        },
+        {
+          "kind": "paper",
+          "title": "Certified Corruption Budgets: Anytime-Valid Leaderboard Claims under Adaptive Rigging",
+          "url": "https://arxiv.org/abs/2610.10597",
+          "when": "2026-10-09",
+          "why": "Proposes a statistical method for anytime-valid detection of adversarial leaderboard manipulation, directly applicable to benchmark/leaderboard integrity for LLM evals."
+        },
+        {
+          "kind": "paper",
+          "title": "How to post-train on a surrogate: Envelope sampling mitigates reward hacking",
+          "url": "https://arxiv.org/abs/2610.11281",
+          "when": "2026-10-09",
+          "why": "Proposes envelope sampling as a post-training method to mitigate reward hacking when training against cheap surrogate rewards/judges, directly relevant to RL reward hacking research."
+        },
+        {
+          "kind": "paper",
+          "title": "Closed-loop evaluation of LLM agents for embedded software development",
+          "url": "https://arxiv.org/abs/2610.11447",
+          "when": "2026-10-09",
+          "why": "Introduces a closed-loop evaluation harness for LLM coding agents on embedded firmware, testing under real sensing/timing/safety constraints rather than static code quality."
+        }
+      ]
+    },
     {
       "date": "2026-10-08",
       "down": [],
@@ -2799,187 +2980,6 @@
           "url": "https://arxiv.org/abs/2501.09166",
           "when": "2026-09-16",
           "why": "Proposes a persistent 'Retention Layer' memory mechanism for Transformers plus a social-learning framing for what agents should retain across sessions, relevant to human-AI interaction and agent memory design."
-        }
-      ]
-    },
-    {
-      "date": "2026-09-15",
-      "down": [],
-      "items": [
-        {
-          "kind": "paper",
-          "title": "Domain-Specific Jargon in Large Language Models: A Comparative Analysis between General-Purpose and Specialist Models",
-          "url": "https://arxiv.org/abs/2609.13556",
-          "when": "2026-09-15",
-          "why": "Introduces two new medical jargon evaluation benchmarks probing how parametric knowledge of domain terms is encoded in general vs specialist LLMs, relevant to eval design and interpretability of knowledge encoding."
-        },
-        {
-          "kind": "paper",
-          "title": "Same Patient, Different Order: Action-Level Reliability of Clinical LLM Agents Under Repeated Runs",
-          "url": "https://arxiv.org/abs/2609.13582",
-          "when": "2026-09-15",
-          "why": "Proposes action-level (not just verdict-level) reliability testing for clinical LLM agents across repeated runs on MedAgentBench, exposing a blind spot in single-attempt agent benchmarking methodology."
-        },
-        {
-          "kind": "paper",
-          "title": "When Consistency Does Not Mean Reliability: Evaluating Local LLM Judges Against Human Ratings",
-          "url": "https://arxiv.org/abs/2609.13824",
-          "when": "2026-09-15",
-          "why": "Empirically tests whether consistent LLM-as-a-Judge scores actually correlate with human ratings using LLaMA-3-8B and Qwen2.5-7B judges, directly informing judge-based eval reliability."
-        },
-        {
-          "kind": "paper",
-          "title": "Policy Loopholes in Agent Evaluation: When Policy Ambiguity Masquerades as Agent Error",
-          "url": "https://arxiv.org/abs/2609.14400",
-          "when": "2026-09-15",
-          "why": "Introduces a taxonomy of policy ambiguity in agent benchmarks like tau2-bench, showing that many 'agent errors' are actually artifacts of underspecified gold policies, a methodological critique relevant to agent eval validity."
-        },
-        {
-          "kind": "paper",
-          "title": "Optimizing Sparse Outcomes Through Dense Behavioral Signals via Value-Guided Preference Distillation",
-          "url": "https://arxiv.org/abs/2609.14648",
-          "when": "2026-09-15",
-          "why": "Proposes a multi-head value model trained on dense behavioral signals to optimize long-horizon dialogue while explicitly addressing reward hacking, directly relevant to RL/reward hacking research."
-        },
-        {
-          "kind": "paper",
-          "title": "A primer on evaluation methods for large language models in healthcare",
-          "url": "https://arxiv.org/abs/2609.14819",
-          "when": "2026-09-15",
-          "why": "A review synthesizing evaluation methodologies and challenges specific to deploying LLMs in healthcare, useful reference for eval researchers thinking about domain-specific validity issues."
-        },
-        {
-          "kind": "paper",
-          "title": "One Example Is Enough to Pass Fairness Benchmarks: Rethinking Fairness Evaluation for Aligned LLMs",
-          "url": "https://arxiv.org/abs/2609.14860",
-          "when": "2026-09-15",
-          "why": "Shows fairness benchmarks like BBQ can be gamed with a single GRPO-trained example, a direct critique of benchmark robustness relevant to eval methodology and reward hacking."
-        },
-        {
-          "kind": "paper",
-          "title": "Artificial entrepreneurial cognition: Locating and causally steering an opportunity recognition dial inside large language models (LLMs)",
-          "url": "https://arxiv.org/abs/2609.15277",
-          "when": "2026-09-15",
-          "why": "Uses causal steering/probing techniques to locate an 'opportunity recognition' direction in LLM internals, a mech-interp style method applied to a novel behavioral construct."
-        },
-        {
-          "kind": "paper",
-          "title": "Can We Trust the Judges? Validation of Factuality Evaluation Methods via Answer Perturbation",
-          "url": "https://arxiv.org/abs/2609.15561",
-          "when": "2026-09-15",
-          "why": "Introduces a meta-evaluation framework that stress-tests factuality metrics via controlled answer corruptions, directly addressing whether current LLM eval judges are trustworthy."
-        },
-        {
-          "kind": "paper",
-          "title": "K-Bench: a clinically calibrated benchmark for evaluating large language models in high-risk mental health conversations",
-          "url": "https://arxiv.org/abs/2609.15855",
-          "when": "2026-09-15",
-          "why": "A clinician-calibrated benchmark testing 125 model configurations on high-risk mental health conversations, a concrete new safety-relevant eval harness for human-AI interaction research."
-        },
-        {
-          "kind": "paper",
-          "title": "The Limits of Reference-Free Speech Quality Metrics as Evaluators and Rewards on Modern Text-to-Speech",
-          "url": "https://arxiv.org/abs/2609.13150",
-          "when": "2026-09-15",
-          "why": "Empirically tests whether reference-free TTS quality metrics (used both as evaluators and as RL reward signals) actually track human preference, relevant to reward hacking and reward-model validity concerns."
-        },
-        {
-          "kind": "paper",
-          "title": "Does Reasoning Improve Psychological Depth in Large Language Models? It Depends on Who's Judging",
-          "url": "https://arxiv.org/abs/2609.13773",
-          "when": "2026-09-15",
-          "why": "Shows that LLM-judge validity for scoring psychological depth in stories breaks down depending on which judge/human rater is used, a concrete case study on LLM-as-judge reliability."
-        },
-        {
-          "kind": "paper",
-          "title": "Clean Scores, Buried Evidence, and Confident Wrong: A Receipt-Based Audit of Frontier Agentic QA",
-          "url": "https://arxiv.org/abs/2609.15319",
-          "when": "2026-09-15",
-          "why": "Introduces a controlled agentic QA audit showing buried evidence degrades accuracy and inflates confident wrong answers, a concrete eval methodology for measuring miscalibration and reward hacking in tool-using agents."
-        },
-        {
-          "kind": "paper",
-          "title": "Lost-in-the-Middle in Long-Text Generation: Synthetic Dataset, Evaluation Framework, and Mitigation",
-          "url": "https://arxiv.org/abs/2503.06868",
-          "when": "2026-09-15",
-          "why": "Presents a synthetic dataset and evaluation framework for measuring and mitigating lost-in-the-middle effects in long-input-to-long-output generation, a reusable benchmark for long-context eval."
-        },
-        {
-          "kind": "paper",
-          "title": "Who Benchmarks the Benchmarks? Towards Comprehensive Evaluation of Commonsense Reasoning Benchmarks",
-          "url": "https://arxiv.org/abs/2504.07825",
-          "when": "2026-09-15",
-          "why": "A meta-evaluation of commonsense reasoning benchmarks like HellaSwag exposing validity issues, directly relevant to researchers assessing benchmark reliability."
-        },
-        {
-          "kind": "paper",
-          "title": "Confident Rankings with Fewer Items: Adaptive LLM Evaluation with Continuous Scores",
-          "url": "https://arxiv.org/abs/2601.13885",
-          "when": "2026-09-15",
-          "why": "Extends IRT-based adaptive testing to continuous LLM-as-judge scores, offering a more efficient benchmark evaluation method applicable beyond binary MCQ setups."
-        },
-        {
-          "kind": "paper",
-          "title": "On the Interpretability of Whisper Encodings Using Sparse Autoencoders",
-          "url": "https://arxiv.org/abs/2605.12225",
-          "when": "2026-09-15",
-          "why": "Applies sparse autoencoders to Whisper's encoder to find monosemantic features, extending mechanistic interpretability methods beyond text transformers into ASR systems."
-        },
-        {
-          "kind": "paper",
-          "title": "Data Attribution of Emergent Misalignment with Persona Features",
-          "url": "https://arxiv.org/abs/2608.11025",
-          "when": "2026-09-15",
-          "why": "Traces emergent misalignment persona features back to specific pre-training documents, directly extending mechanistic interpretability work on why fine-tuning causes broad misalignment."
-        },
-        {
-          "kind": "paper",
-          "title": "What's the Catch? Evaluating Temporal Consistency in Vision-Language Models",
-          "url": "https://arxiv.org/abs/2608.23474",
-          "when": "2026-09-15",
-          "why": "Introduces TimeCatch, an anomaly-detection-based benchmark for probing whether VLMs actually capture temporal structure in video, a reusable eval method."
-        },
-        {
-          "kind": "paper",
-          "title": "To See is Not to Master: Teaching LLMs to Use Private Libraries for Code Generation",
-          "url": "https://arxiv.org/abs/2603.15159",
-          "when": "2026-09-15",
-          "why": "Shows retrieval-augmented private-library API documentation injection is insufficient for code generation and proposes a training method, relevant to LLM capability evaluation on realistic coding tasks."
-        },
-        {
-          "kind": "paper",
-          "title": "Transcoders Trace Visual Grounding and Hallucinations in Vision-Language Models",
-          "url": "https://arxiv.org/abs/2605.22902",
-          "when": "2026-09-15",
-          "why": "Applies transcoders (function-centric interpretability tool) to trace how VLMs transform visual inputs into text and diagnose hallucinations, a new mech interp technique for multimodal models."
-        },
-        {
-          "kind": "paper",
-          "title": "Root-Cause Attribution Is a Search Problem: Continual Search for Long-Horizon Agent Failures",
-          "url": "https://arxiv.org/abs/2609.13463",
-          "when": "2026-09-15",
-          "why": "Frames root-cause attribution of long-horizon agent failures as a search problem, offering a new automated diagnostic method relevant to agent evaluation and debugging at scale."
-        },
-        {
-          "kind": "paper",
-          "title": "Identity Is More Than Recall: A Benchmark for Persistent Identity in Deployed AI Agents",
-          "url": "https://arxiv.org/abs/2609.13637",
-          "when": "2026-09-15",
-          "why": "Introduces PAI-Bench, a provider-neutral benchmark separating recall from behavioral enactment of identity contracts in deployed agents, a new eval methodology for persistent agent identity."
-        },
-        {
-          "kind": "paper",
-          "title": "Safety Signals to Verify NetOps Agents with Action-Level Granularity",
-          "url": "https://arxiv.org/abs/2609.14422",
-          "when": "2026-09-15",
-          "why": "Proposes action-level safety verification signals for autonomous NetOps agents, a new methodology for evaluating long-horizon agent reliability relevant to agent eval/reward-hacking concerns."
-        },
-        {
-          "kind": "paper",
-          "title": "DynSTEER: Dynamic Stage-wise Trajectory Evaluation and Execution-time Review for Agents",
-          "url": "https://arxiv.org/abs/2609.14637",
-          "when": "2026-09-15",
-          "why": "DynSTEER introduces a stage-wise trajectory evaluation method with execution-time review to localize agent errors beyond terminal-only or single-reference matching, a new agent eval harness approach."
         }
       ]
     }
