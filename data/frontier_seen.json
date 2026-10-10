@@ -4343,6 +4343,10 @@
     "kept": true,
     "seen": "2026-10-09"
   },
+  "ghrel:UKGovernmentBEIS/inspect_ai:0.3.278": {
+    "kept": true,
+    "seen": "2026-10-10"
+  },
   "hf:CohereLabs/tiny-aya-base-32K": {
     "kept": false,
     "seen": "2026-09-10"
@@ -4355,6 +4359,10 @@
     "kept": false,
     "seen": "2026-09-21"
   },
+  "hf:Qwen/Qwen-Image-2.1-Turbo": {
+    "kept": false,
+    "seen": "2026-10-10"
+  },
   "hf:deepseek-ai/DeepSeek-V4.1-Flash": {
     "kept": false,
     "seen": "2026-09-10"
@@ -4366,6 +4374,14 @@
   "hf:microsoft/rho-roboeval": {
     "kept": false,
     "seen": "2026-09-23"
+  },
+  "hf:mistralai/LIDstral-Arabic": {
+    "kept": false,
+    "seen": "2026-10-10"
+  },
+  "hf:mistralai/Voxtral-Mini-4B-Realtime-Arabic": {
+    "kept": false,
+    "seen": "2026-10-10"
   },
   "hf:nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark": {
     "kept": false,
@@ -4391,9 +4407,21 @@
     "kept": false,
     "seen": "2026-10-09"
   },
+  "hf:nvidia/agile_one_s_pick_ssd_n2_1120": {
+    "kept": false,
+    "seen": "2026-10-10"
+  },
+  "hf:nvidia/agile_one_s_pickplace_ssd_n2_18200": {
+    "kept": false,
+    "seen": "2026-10-10"
+  },
   "hf:nvidia/agile_one_s_place_ssd_n17_24050": {
     "kept": false,
     "seen": "2026-10-09"
+  },
+  "hf:nvidia/agile_one_s_place_ssd_n2_1260": {
+    "kept": false,
+    "seen": "2026-10-10"
   },
   "hf:nvidia/agile_one_s_walk_n2_1680": {
     "kept": false,
@@ -5195,6 +5223,34 @@
     "kept": false,
     "seen": "2026-10-09"
   },
+  "hn:50019860": {
+    "kept": false,
+    "seen": "2026-10-10"
+  },
+  "hn:50021763": {
+    "kept": false,
+    "seen": "2026-10-10"
+  },
+  "hn:50023293": {
+    "kept": false,
+    "seen": "2026-10-10"
+  },
+  "hn:50025767": {
+    "kept": false,
+    "seen": "2026-10-10"
+  },
+  "hn:50026734": {
+    "kept": false,
+    "seen": "2026-10-10"
+  },
+  "hn:50027118": {
+    "kept": false,
+    "seen": "2026-10-10"
+  },
+  "hn:50029330": {
+    "kept": false,
+    "seen": "2026-10-10"
+  },
   "pypi:deepeval:4.2.3": {
     "kept": false,
     "seen": "2026-09-14"
@@ -5246,6 +5302,10 @@
   "pypi:inspect-ai:0.3.277": {
     "kept": true,
     "seen": "2026-10-07"
+  },
+  "pypi:inspect-ai:0.3.278": {
+    "kept": true,
+    "seen": "2026-10-10"
   },
   "pypi:promptfoo:0.2.0": {
     "kept": false,

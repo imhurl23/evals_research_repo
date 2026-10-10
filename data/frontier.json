@@ -1,6 +1,26 @@
 {
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "runs": [
+    {
+      "date": "2026-10-10",
+      "down": [],
+      "items": [
+        {
+          "kind": "harness",
+          "title": "inspect-ai 0.3.278",
+          "url": "https://pypi.org/project/inspect-ai/0.3.278/",
+          "when": "2026-10-09",
+          "why": "Inspect AI 0.3.278 release adds task/sample 'description' metadata surfaced in eval logs and evals_df/samples_df, and extends tool-call approval review to handoff() calls plus compaction fixes, directly useful for building and auditing agent eval harnesses."
+        },
+        {
+          "kind": "harness",
+          "title": "UKGovernmentBEIS/inspect_ai 0.3.278",
+          "url": "https://github.com/UKGovernmentBEIS/inspect_ai/releases/tag/0.3.278",
+          "when": "2026-10-09",
+          "why": "Same Inspect AI 0.3.278 changelog from the UKGovernmentBEIS repo detailing new sample descriptions, handoff-call tool review, and fixed early/inflated compaction triggering—concrete harness improvements relevant to agent evaluation and reward-hacking-style tool misuse detection."
+        }
+      ]
+    },
     {
       "date": "2026-10-09",
       "down": [],
