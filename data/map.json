@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-05",
+  "updated": "2026-10-12",
   "clusters": {
     "eval": {
       "name": "Evaluation methodology",
@@ -561,7 +561,7 @@
       "url": "https://arxiv.org/abs/2609.12600",
       "n": "Introduces TraceMind, a model that predicts whether users actually process (recognize) AI-generated content in human-LLM co-generation tasks, using low-cost interaction traces across chat and draft histories. It targets a concrete risk in human-AI collaborative writing—unprocessed AI content entering final artifacts—building on prior work on uptake/interaction tracking (bo2025, liu2026) with a dataset of 1187 unit-level uptake labels.",
       "s2": "8c3c6823de470702f9182c4de5fdda8e0911101d",
-      "isNew": true,
+      "isNew": false,
       "added": "2026-09-14"
     },
     {
@@ -574,7 +574,7 @@
       "url": "https://arxiv.org/abs/2602.00924",
       "n": "Proposes supervised sparse autoencoders that jointly learn sparse concept embeddings and decoder weights using neural collapse theory, addressing SAE reconstruction/scalability issues and feature-human semantic misalignment. Validated on Stable Diffusion 3.5, it shows compositional generalization and enables feature-level semantic image editing, extending SAE-based interpretability work (yang2025) beyond language models into diffusion models.",
       "s2": "4bc85a0069a34210fea93871a1ccd855888ae269",
-      "isNew": true,
+      "isNew": false,
       "added": "2026-09-14"
     },
     {
@@ -589,6 +589,19 @@
       "s2": "8f8bc525ebccecd1f8af7c67e17d562d577bff6d",
       "isNew": true,
       "added": "2026-09-21"
+    },
+    {
+      "id": "bai2026",
+      "t": "Verify Less, Evolve More: Training Idea-Level Critics for Verification-Efficient ML Evolving Agents",
+      "a": "Jiamu Bai, Li-Zhu Zhang, Xin Yu, Yan-Hong Wu, Zellux Wang, Serena Li, Wei-Wei Li, Zhuo-Kai Zhao, Ling-Zhou Xue, Kiwan Maeng, Xiang-Jun Fan, Bo Peng",
+      "y": 2026,
+      "v": "preprint",
+      "c": "rl",
+      "url": "https://arxiv.org/abs/2610.08993",
+      "n": "Trains specialized idea-level critic models via supervised fine-tuning plus GRPO to predict whether ML modifications will improve solutions, letting self-evolving AI4ML agents skip costly empirical verification for most candidates. Builds on RLHF-style fine-tuning (ouyang2022) and recent agent evolution work (kim2026b) to make verification-efficient agentic search practical.",
+      "s2": "5ee15c1568740433334dda8d0371bea8285d8fd3",
+      "isNew": true,
+      "added": "2026-10-12"
     }
   ],
   "edges": [
@@ -925,6 +938,16 @@
     {
       "source": "kim2026b",
       "target": "overreliance2025",
+      "confidence": "v"
+    },
+    {
+      "source": "bai2026",
+      "target": "kim2026b",
+      "confidence": "v"
+    },
+    {
+      "source": "bai2026",
+      "target": "ouyang2022",
       "confidence": "v"
     }
   ]
