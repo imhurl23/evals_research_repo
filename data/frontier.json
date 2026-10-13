@@ -1,6 +1,19 @@
 {
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "runs": [
+    {
+      "date": "2026-10-13",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: DishwasherBench – Can Frontier Models Stack a Dishwasher?",
+          "url": "https://github.com/composo-ai/DishwasherBench",
+          "when": "2026-10-13",
+          "why": "A new community benchmark (DishwasherBench) probing frontier models' physical/spatial task planning, relevant as a novel capability eval even if informal."
+        }
+      ]
+    },
     {
       "date": "2026-10-12",
       "down": [],
