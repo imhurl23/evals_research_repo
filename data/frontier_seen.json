@@ -5383,6 +5383,10 @@
     "kept": false,
     "seen": "2026-09-10"
   },
+  "hf:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+    "kept": true,
+    "seen": "2026-10-17"
+  },
   "hf:google/DiarizationLM-Gemma-4-E4B-v1": {
     "kept": false,
     "seen": "2026-10-05"
@@ -5394,6 +5398,10 @@
   "hf:microsoft/rho-roboeval": {
     "kept": false,
     "seen": "2026-09-23"
+  },
+  "hf:microsoft/scFM-dataselection": {
+    "kept": false,
+    "seen": "2026-10-17"
   },
   "hf:mistralai/LIDstral-Arabic": {
     "kept": false,
@@ -5442,6 +5450,22 @@
   "hf:nvidia/Muse-Spark-Open-816B-A42B-DFlash2": {
     "kept": false,
     "seen": "2026-10-16"
+  },
+  "hf:nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16": {
+    "kept": true,
+    "seen": "2026-10-17"
+  },
+  "hf:nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF": {
+    "kept": false,
+    "seen": "2026-10-17"
+  },
+  "hf:nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8": {
+    "kept": false,
+    "seen": "2026-10-17"
+  },
+  "hf:nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4": {
+    "kept": false,
+    "seen": "2026-10-17"
   },
   "hf:nvidia/Nemotron-3.5-Rerank-8B-BF16": {
     "kept": false,
@@ -6387,6 +6411,58 @@
     "kept": false,
     "seen": "2026-10-16"
   },
+  "hn:50118662": {
+    "kept": true,
+    "seen": "2026-10-17"
+  },
+  "hn:50118688": {
+    "kept": true,
+    "seen": "2026-10-17"
+  },
+  "hn:50118863": {
+    "kept": false,
+    "seen": "2026-10-17"
+  },
+  "hn:50121179": {
+    "kept": true,
+    "seen": "2026-10-17"
+  },
+  "hn:50121562": {
+    "kept": false,
+    "seen": "2026-10-17"
+  },
+  "hn:50121939": {
+    "kept": false,
+    "seen": "2026-10-17"
+  },
+  "hn:50122112": {
+    "kept": false,
+    "seen": "2026-10-17"
+  },
+  "hn:50122431": {
+    "kept": false,
+    "seen": "2026-10-17"
+  },
+  "hn:50122800": {
+    "kept": false,
+    "seen": "2026-10-17"
+  },
+  "hn:50122951": {
+    "kept": true,
+    "seen": "2026-10-17"
+  },
+  "hn:50127979": {
+    "kept": false,
+    "seen": "2026-10-17"
+  },
+  "hn:50129045": {
+    "kept": true,
+    "seen": "2026-10-17"
+  },
+  "hn:50129121": {
+    "kept": true,
+    "seen": "2026-10-17"
+  },
   "pypi:deepeval:4.2.3": {
     "kept": false,
     "seen": "2026-09-14"
@@ -6410,6 +6486,10 @@
   "pypi:deepeval:4.3.0": {
     "kept": true,
     "seen": "2026-10-16"
+  },
+  "pypi:deepeval:4.3.1": {
+    "kept": true,
+    "seen": "2026-10-17"
   },
   "pypi:inspect-ai:0.3.264": {
     "kept": true,

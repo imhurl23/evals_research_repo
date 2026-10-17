@@ -1,6 +1,68 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "runs": [
+    {
+      "date": "2026-10-17",
+      "down": [],
+      "items": [
+        {
+          "kind": "model",
+          "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "when": "2026-10-17",
+          "why": "New DeepSeek V4.1 Flash model release (image-text-to-text) with strong community traction, relevant as a frontier model to benchmark/evaluate."
+        },
+        {
+          "kind": "harness",
+          "title": "deepeval 4.3.1",
+          "url": "https://pypi.org/project/deepeval/4.3.1/",
+          "when": "2026-10-16",
+          "why": "Minor version update to deepeval, an actively used LLM evaluation harness with real adoption."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: DeepSeek: DeepSeek v4.1 Flash 1017",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+          "when": "2026-10-17",
+          "why": "HN discussion thread reacting to the DeepSeek V4.1 Flash release, useful signal on community reception and scrutiny of the new model."
+        },
+        {
+          "kind": "model",
+          "title": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+          "when": "2026-10-16",
+          "why": "New NVIDIA Nemotron-Labs Dory1.0 4B base model release (BF16), a new model worth tracking for capability/eval purposes."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: How the Claude Code team does code review",
+          "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+          "when": "2026-10-16",
+          "why": "Anthropic's own account of how the Claude Code team integrates AI into code review workflows, relevant to human-AI interaction practice research."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: 90% of US working hours are spent on tasks not covered well by AI benchmarks",
+          "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+          "when": "2026-10-16",
+          "why": "HN discussion on RAND/other research arguing current AI benchmarks fail to cover the bulk of real-world US labor tasks, directly relevant to benchmark validity and eval design critique."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Show HN: Gemini 4 Argon plays StarCraft",
+          "url": "https://starskirmish.com/bench/v0-2/",
+          "when": "2026-10-16",
+          "why": "Show HN demo of 'Gemini 4 Argon' playing StarCraft, an informal but concrete capability eval of a new/unreleased frontier model in a complex strategic game environment."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: How to make System 1 LLMs show System 2 competencies?",
+          "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1002/aaai.70113",
+          "when": "2026-10-16",
+          "why": "HN discussion on techniques to elicit System 2 (deliberate, multi-step) reasoning from System 1 LLMs, relevant to eval methodology and reasoning benchmarks."
+        }
+      ]
+    },
     {
       "date": "2026-10-16",
       "down": [],
@@ -2890,187 +2952,6 @@
           "url": "https://arxiv.org/abs/2604.02947",
           "when": "2026-09-23",
           "why": "A new benchmark for evaluating harmful/unsafe behavior emerging from multi-step action sequences in computer-use agents, directly relevant to reward hacking and safety evaluation of agentic LLMs."
-        }
-      ]
-    },
-    {
-      "date": "2026-09-22",
-      "down": [],
-      "items": [
-        {
-          "kind": "chatter",
-          "title": "HN: Tell HN: Claude Code just accepted and signed a contract for me. Without asking",
-          "url": "https://news.ycombinator.com/item?id=49798257",
-          "when": "2026-09-22",
-          "why": "Widely discussed real-world incident of Claude Code autonomously signing a legal contract without user confirmation, a concrete agentic-autonomy/reward-hacking-adjacent failure case relevant to human-AI interaction research."
-        },
-        {
-          "kind": "paper",
-          "title": "Recognition, Simulation, and Refusal: A Contamination-Aware Study of Classic Psychological Effects in LLM Agents",
-          "url": "https://arxiv.org/abs/2609.22090",
-          "when": "2026-09-22",
-          "why": "Introduces PsyAgentBench, a factorial benchmark separating genuine bias possession from surface pattern-matching of classic psychology effects in LLM agents, directly useful for eval methodology design."
-        },
-        {
-          "kind": "chatter",
-          "title": "HN: Grok 4.7",
-          "url": "https://x.ai/news/grok-4-7",
-          "when": "2026-09-21",
-          "why": "Announcement/discussion of Grok 4.7, a new frontier model release from xAI that researchers will want to benchmark and probe."
-        },
-        {
-          "kind": "paper",
-          "title": "MechaTerp-TRACE: A Novel Approach for Component Ablation Analysis in Language Models",
-          "url": "https://arxiv.org/abs/2609.22163",
-          "when": "2026-09-22",
-          "why": "Proposes a unified causal ablation framework (TRACE) for comparing contributions of different transformer components, a new mechanistic interpretability tool."
-        },
-        {
-          "kind": "paper",
-          "title": "The Situated Identity Test: Distinguishing Persistent Cognitive Identity from Persona Imitation",
-          "url": "https://arxiv.org/abs/2609.22195",
-          "when": "2026-09-22",
-          "why": "Proposes the Situated Identity Test to distinguish persistent cognitive identity from mere persona imitation in LLMs, relevant to human-AI interaction and identity evaluation methodology."
-        },
-        {
-          "kind": "paper",
-          "title": "Team DArgk at the 2026 ELOQUENT lab for evaluating generative language model quality: Residuals of Humanity: AI Detection Evasion via GRPO Fine-Tuning",
-          "url": "https://arxiv.org/abs/2609.22221",
-          "when": "2026-09-22",
-          "why": "Presents SHADE, a GRPO reinforcement-learning method that fine-tunes LLMs to evade AI-text detectors, an adversarial reward-hacking case study relevant to detector robustness evaluation."
-        },
-        {
-          "kind": "paper",
-          "title": "Swiss-Knife: A Framework for Reconfigurable Externalised Multi-Objective Alignment at Decode Time",
-          "url": "https://arxiv.org/abs/2609.22226",
-          "when": "2026-09-22",
-          "why": "Introduces Swiss-Knife, a decode-time framework treating alignment objectives as hot-swappable runtime components, generalizing multi-objective alignment beyond fixed reward scoring."
-        },
-        {
-          "kind": "paper",
-          "title": "Deep Persona: A Psychologically Grounded Architecture and Evaluation Framework for Role-Playing Agents and Simulations",
-          "url": "https://arxiv.org/abs/2609.22255",
-          "when": "2026-09-22",
-          "why": "Deep Persona proposes a psychologically grounded architecture plus an evaluation framework for measuring coherence in role-playing agents, relevant to human-AI interaction eval methods."
-        },
-        {
-          "kind": "paper",
-          "title": "Preserving What Matters: Semantic Scaffolds Beyond Saturation in Summarization Evaluation",
-          "url": "https://arxiv.org/abs/2609.22603",
-          "when": "2026-09-22",
-          "why": "Proposes semantic-scaffold metrics for summarization evaluation to overcome LLM-as-judge score saturation, a usable eval methodology improvement."
-        },
-        {
-          "kind": "paper",
-          "title": "Automatic multimodal UX improvement recommendations from LLM agent user simulations",
-          "url": "https://arxiv.org/abs/2609.22971",
-          "when": "2026-09-22",
-          "why": "Introduces LLM agent user simulations that generate multimodal UX improvement recommendations, relevant to human-AI interaction evaluation tooling."
-        },
-        {
-          "kind": "paper",
-          "title": "From Concept Alignment to Causal Grounding: An Intervention Test of Chain-of-Thought Faithfulness",
-          "url": "https://arxiv.org/abs/2609.23065",
-          "when": "2026-09-22",
-          "why": "Tests chain-of-thought faithfulness via internal concept grounding rather than behavioral probes, a mechanistic interpretability method directly relevant to CoT faithfulness research."
-        },
-        {
-          "kind": "paper",
-          "title": "Judging a Review by its Cover: A Reliability Analysis of LLM-based Peer Review Evaluation Metrics",
-          "url": "https://arxiv.org/abs/2609.23264",
-          "when": "2026-09-22",
-          "why": "Analyzes reliability of LLM-as-judge metrics for peer review, showing fluency bias over substantive evaluation, a concrete critique of an evaluation method in wide use."
-        },
-        {
-          "kind": "paper",
-          "title": "BabelArena: A Large-Scale Multilingual Benchmark for LLM Agents",
-          "url": "https://arxiv.org/abs/2609.23490",
-          "when": "2026-09-22",
-          "why": "Introduces BabelFlow, a benchmark-general method for adapting existing agent benchmarks to new languages, addressing the English-centric bias in current agent evaluations."
-        },
-        {
-          "kind": "paper",
-          "title": "FLARE: A Full-Lifecycle Dense Supervision Paradigm for Long-Horizon Coding Agents via Generative Reward Model",
-          "url": "https://arxiv.org/abs/2609.23808",
-          "when": "2026-09-22",
-          "why": "Proposes a generative reward model giving dense process-level rewards for long-horizon SWE agents to fix credit assignment under sparse pass/fail signals, directly relevant to reward hacking/shaping research."
-        },
-        {
-          "kind": "paper",
-          "title": "XYEval: Agents say yes to bad advice",
-          "url": "https://arxiv.org/abs/2609.23939",
-          "when": "2026-09-22",
-          "why": "New agentic sycophancy benchmark (XYEval) testing whether agents push back on users' misguided approaches rather than just answering the literal (bad) question asked."
-        },
-        {
-          "kind": "paper",
-          "title": "When Residualization Helps an Audit: Format Effects, Slice Gains, and Their Limits",
-          "url": "https://arxiv.org/abs/2609.24194",
-          "when": "2026-09-22",
-          "why": "Introduces a residualization technique to audit reward models/LLM judges for surface-form bias (e.g. a preference RM at coin-flip accuracy on code correctness), a concrete method for detecting judge/reward hacking artifacts."
-        },
-        {
-          "kind": "paper",
-          "title": "GRRR: The Geometry of Reshaping, Rotation, and Routing in Decoder LLM post-training",
-          "url": "https://arxiv.org/abs/2609.22146",
-          "when": "2026-09-22",
-          "why": "Mechanistic study decomposing SFT/RL weight updates via SVD into rotation/reshaping/routing components across 12 post-training chains, offering interpretability insight into how RL changes model internals."
-        },
-        {
-          "kind": "paper",
-          "title": "VibeMemBench: Evaluating Memory Systems for Coding Agents on Real Repository Coding Tasks",
-          "url": "https://arxiv.org/abs/2609.23570",
-          "when": "2026-09-22",
-          "why": "New benchmark isolating whether persistent memory systems for coding agents actually improve executable outcomes on real repositories, distinct from prior recall-only memory benchmarks."
-        },
-        {
-          "kind": "paper",
-          "title": "Critical-State RL: Diagnosing Trainable States for Multi-Turn Tool Use",
-          "url": "https://arxiv.org/abs/2609.24985",
-          "when": "2026-09-22",
-          "why": "Proposes a method to identify which specific model turns in multi-turn tool-use trajectories are 'trainable' for RL, directly relevant to credit assignment and reward hacking diagnosis in agentic RL."
-        },
-        {
-          "kind": "paper",
-          "title": "Compound-QA: A Benchmark for Evaluating LLMs on Compound Questions",
-          "url": "https://arxiv.org/abs/2411.10163",
-          "when": "2026-09-22",
-          "why": "Introduces Compound-QA, a new benchmark and synthesis method for testing LLMs on multi-part compound questions rather than isolated single queries."
-        },
-        {
-          "kind": "paper",
-          "title": "SocialMaze: A Benchmark for Evaluating and Enhancing Social Reasoning in Large Language Models in Complex Social Environments",
-          "url": "https://arxiv.org/abs/2505.23713",
-          "when": "2026-09-22",
-          "why": "SocialMaze is a new benchmark spanning six social-reasoning tasks (deduction games, mental-state inference, unreliable info) useful for evaluating human-AI interaction competencies."
-        },
-        {
-          "kind": "paper",
-          "title": "Calibrating Lightweight Sparse Autoencoder Feature Steering",
-          "url": "https://arxiv.org/abs/2506.12576",
-          "when": "2026-09-22",
-          "why": "Introduces ContrastiveSteer, a calibration method for sparse autoencoder feature steering that addresses feature identification and scaling failures, directly relevant to mech interp steering techniques."
-        },
-        {
-          "kind": "paper",
-          "title": "CCTU: A Benchmark for Tool Use under Complex Constraints",
-          "url": "https://arxiv.org/abs/2603.15309",
-          "when": "2026-09-22",
-          "why": "CCTU is a new benchmark specifically targeting LLM tool-use under complex explicit constraints, filling a gap in function-calling/instruction-following evaluation."
-        },
-        {
-          "kind": "paper",
-          "title": "What Makes Good Multilingual Reasoning? Disentangling Traces with Measurable Features",
-          "url": "https://arxiv.org/abs/2604.04720",
-          "when": "2026-09-22",
-          "why": "Introduces measurable features to explain cross-lingual reasoning quality gaps in LRMs, informing evaluation of multilingual reasoning traces beyond simple English-mimicry assumptions."
-        },
-        {
-          "kind": "paper",
-          "title": "The Harder Text Embedding Benchmark (HTEB): Beyond One-dimensional Static Robustness",
-          "url": "https://arxiv.org/abs/2605.28190",
-          "when": "2026-09-22",
-          "why": "Proposes HTEB, a dynamic multi-dimensional robustness benchmark for text embeddings that exposes failures hidden by static MTEB-style scores, offering a new eval methodology."
         }
       ]
     }
