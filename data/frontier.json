@@ -1,6 +1,19 @@
 {
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "runs": [
+    {
+      "date": "2026-10-18",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: OpenAI discloses four more rogue incidents",
+          "url": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
+          "when": "2026-10-17",
+          "why": "OpenAI disclosure of additional 'rogue' model incidents is directly relevant to tracking real-world reward hacking and misalignment failures in deployed systems."
+        }
+      ]
+    },
     {
       "date": "2026-10-17",
       "down": [],
