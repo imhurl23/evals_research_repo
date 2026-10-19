@@ -5008,5 +5008,30 @@
     "title": "Changes in Help-Seeking Strategies Predict unaided Performance during AI-based Mathematical Learning",
     "why": "cites only liu2026; no velocity signal",
     "seen": "2026-10-12"
+  },
+  "66a877d563f9fb04a2a13cfb3a1a602bc5fd09aa": {
+    "title": "Who Sets the Pace of Judge Hacking? Judge Capability versus the Policy-Judge Gap",
+    "why": "attaches only through hub papers (rafailov2024); no topical signal",
+    "seen": "2026-10-19"
+  },
+  "d64b335b58d486431fec787ad8517a589e2791c2": {
+    "title": "Ethical challenges for computer vision in the social sciences",
+    "why": "attaches only through hub papers (bo2025); no topical signal",
+    "seen": "2026-10-19"
+  },
+  "90476e06186f99790a4621303d82e6e5631055f8": {
+    "title": "Appropriate Reliance on AI Decision Support Systems: A Sociotechnical Narrative Review",
+    "why": "attaches only through hub papers (bo2025); no topical signal",
+    "seen": "2026-10-19"
+  },
+  "66f5fddcfe29b4a6fedf641e925578dacf3b2378": {
+    "title": "Impact of Expertise and Trust on AI-assisted Work",
+    "why": "cites only liu2026; no velocity signal",
+    "seen": "2026-10-19"
+  },
+  "8fe54b7032383344e99553ea69ac63b334f16e81": {
+    "title": "How Well Do LLMs Perform in Peer Review? Evidence from Finance and Accounting",
+    "why": "cites only kim2026b; no velocity signal",
+    "seen": "2026-10-19"
   }
 }

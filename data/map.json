@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-12",
+  "updated": "2026-10-19",
   "clusters": {
     "eval": {
       "name": "Evaluation methodology",
@@ -587,7 +587,7 @@
       "url": "https://arxiv.org/abs/2609.19420",
       "n": "A large-scale randomized experiment at ICML 2026 finds that permissive vs. conservative LLM-use policies for reviewers have near-zero effect on paper decisions or scores, but permissive reviews are longer and nearly a quarter of reviewers under the ban still used LLMs anyway. This connects to the overreliance2025 literature by empirically testing whether restricting AI assistance actually changes human judgment quality in a high-stakes evaluative task.",
       "s2": "8f8bc525ebccecd1f8af7c67e17d562d577bff6d",
-      "isNew": true,
+      "isNew": false,
       "added": "2026-09-21"
     },
     {
