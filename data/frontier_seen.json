@@ -15,6 +15,10 @@
     "kept": false,
     "seen": "2026-10-02"
   },
+  "arxiv:2410.23726": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
   "arxiv:2411.10163": {
     "kept": true,
     "seen": "2026-09-22"
@@ -163,6 +167,10 @@
     "kept": false,
     "seen": "2026-09-29"
   },
+  "arxiv:2509.17401": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
   "arxiv:2509.20645": {
     "kept": true,
     "seen": "2026-10-15"
@@ -310,6 +318,10 @@
   "arxiv:2512.09172": {
     "kept": false,
     "seen": "2026-09-28"
+  },
+  "arxiv:2512.10551": {
+    "kept": false,
+    "seen": "2026-10-23"
   },
   "arxiv:2512.12066": {
     "kept": true,
@@ -903,6 +915,10 @@
     "kept": true,
     "seen": "2026-10-12"
   },
+  "arxiv:2605.12122": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
   "arxiv:2605.12225": {
     "kept": true,
     "seen": "2026-09-15"
@@ -987,6 +1003,10 @@
     "kept": true,
     "seen": "2026-10-14"
   },
+  "arxiv:2605.27733": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
   "arxiv:2605.27813": {
     "kept": true,
     "seen": "2026-10-08"
@@ -1011,9 +1031,17 @@
     "kept": true,
     "seen": "2026-09-22"
   },
+  "arxiv:2605.28567": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
   "arxiv:2605.28579": {
     "kept": false,
     "seen": "2026-10-20"
+  },
+  "arxiv:2605.29507": {
+    "kept": true,
+    "seen": "2026-10-23"
   },
   "arxiv:2605.30018": {
     "kept": true,
@@ -1022,6 +1050,10 @@
   "arxiv:2605.30251": {
     "kept": true,
     "seen": "2026-10-21"
+  },
+  "arxiv:2605.30329": {
+    "kept": true,
+    "seen": "2026-10-23"
   },
   "arxiv:2605.30348": {
     "kept": true,
@@ -1054,6 +1086,10 @@
   "arxiv:2606.01322": {
     "kept": true,
     "seen": "2026-09-24"
+  },
+  "arxiv:2606.01995": {
+    "kept": false,
+    "seen": "2026-10-23"
   },
   "arxiv:2606.02289": {
     "kept": true,
@@ -1118,6 +1154,10 @@
   "arxiv:2606.09735": {
     "kept": true,
     "seen": "2026-09-18"
+  },
+  "arxiv:2606.10066": {
+    "kept": true,
+    "seen": "2026-10-23"
   },
   "arxiv:2606.10281": {
     "kept": false,
@@ -1230,6 +1270,10 @@
   "arxiv:2606.22994": {
     "kept": true,
     "seen": "2026-10-07"
+  },
+  "arxiv:2606.23061": {
+    "kept": false,
+    "seen": "2026-10-23"
   },
   "arxiv:2606.23189": {
     "kept": true,
@@ -1479,6 +1523,10 @@
     "kept": false,
     "seen": "2026-10-05"
   },
+  "arxiv:2608.10475": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
   "arxiv:2608.11025": {
     "kept": true,
     "seen": "2026-09-15"
@@ -1543,6 +1591,10 @@
     "kept": true,
     "seen": "2026-10-02"
   },
+  "arxiv:2608.19893": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
   "arxiv:2608.20153": {
     "kept": true,
     "seen": "2026-09-24"
@@ -1574,6 +1626,10 @@
   "arxiv:2608.24065": {
     "kept": true,
     "seen": "2026-10-15"
+  },
+  "arxiv:2608.24164": {
+    "kept": false,
+    "seen": "2026-10-23"
   },
   "arxiv:2608.24314": {
     "kept": true,
@@ -2342,6 +2398,10 @@
   "arxiv:2609.17152": {
     "kept": true,
     "seen": "2026-09-16"
+  },
+  "arxiv:2609.17210": {
+    "kept": false,
+    "seen": "2026-10-23"
   },
   "arxiv:2609.17435": {
     "kept": false,
@@ -5251,6 +5311,10 @@
     "kept": false,
     "seen": "2026-10-15"
   },
+  "arxiv:2610.17528": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
   "arxiv:2610.17549": {
     "kept": false,
     "seen": "2026-10-14"
@@ -6230,6 +6294,134 @@
   "arxiv:2610.30113": {
     "kept": true,
     "seen": "2026-10-22"
+  },
+  "arxiv:2610.30162": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30170": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30344": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30394": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30412": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30421": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30474": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30518": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30577": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30635": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30690": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30765": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30822": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30828": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30860": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30882": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30970": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30983": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.30989": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.31047": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.31062": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.31090": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.31133": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.31172": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.31272": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.31404": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.31511": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.31520": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.31588": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.31606": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.31650": {
+    "kept": true,
+    "seen": "2026-10-23"
+  },
+  "arxiv:2610.31657": {
+    "kept": false,
+    "seen": "2026-10-23"
   },
   "ghrel:UKGovernmentBEIS/inspect_ai:0.3.278": {
     "kept": true,
@@ -7495,6 +7687,14 @@
     "kept": false,
     "seen": "2026-10-22"
   },
+  "hn:50200997": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
+  "hn:50202217": {
+    "kept": false,
+    "seen": "2026-10-23"
+  },
   "pypi:deepeval:4.2.3": {
     "kept": false,
     "seen": "2026-09-14"
@@ -7630,6 +7830,10 @@
   "repo:awesome-dsh-plugin/awesome-dsh-plugin": {
     "kept": false,
     "seen": "2026-09-10"
+  },
+  "repo:bowenliang123/dsh-context": {
+    "kept": false,
+    "seen": "2026-10-23"
   },
   "repo:chuspeeism/dashi-taskboard": {
     "kept": false,
