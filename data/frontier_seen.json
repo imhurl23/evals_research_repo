@@ -6531,6 +6531,10 @@
     "kept": false,
     "seen": "2026-09-17"
   },
+  "hf:nvidia/InternVideo2-CLIP-anomaly-detection": {
+    "kept": false,
+    "seen": "2026-10-24"
+  },
   "hf:nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2": {
     "kept": false,
     "seen": "2026-10-16"
@@ -7695,6 +7699,18 @@
     "kept": false,
     "seen": "2026-10-23"
   },
+  "hn:50207405": {
+    "kept": true,
+    "seen": "2026-10-24"
+  },
+  "hn:50214416": {
+    "kept": true,
+    "seen": "2026-10-24"
+  },
+  "hn:50218633": {
+    "kept": true,
+    "seen": "2026-10-24"
+  },
   "pypi:deepeval:4.2.3": {
     "kept": false,
     "seen": "2026-09-14"
@@ -7786,6 +7802,14 @@
   "pypi:promptfoo:0.2.0": {
     "kept": false,
     "seen": "2026-09-19"
+  },
+  "repo:Fei2411/DeepSeek-Bot": {
+    "kept": false,
+    "seen": "2026-10-24"
+  },
+  "repo:Folkbench/folkbench": {
+    "kept": false,
+    "seen": "2026-10-24"
   },
   "repo:HarnessRouter/harnessrouter": {
     "kept": false,
