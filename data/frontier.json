@@ -1,6 +1,33 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "runs": [
+    {
+      "date": "2026-10-25",
+      "down": [],
+      "items": [
+        {
+          "kind": "harness",
+          "title": "UKGovernmentBEIS/inspect_ai 0.3.284",
+          "url": "https://github.com/UKGovernmentBEIS/inspect_ai/releases/tag/0.3.284",
+          "when": "2026-10-25",
+          "why": "Inspect AI harness adds support for new Moonshot Kimi K3.1 Pro models, letting researchers plug these models into existing eval pipelines."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness",
+          "url": "https://github.com/slee-persis/GVS5H",
+          "when": "2026-10-25",
+          "why": "HN discussion comparing several ~27B Qwen3 models against a 'Fable 5' benchmark using a custom harness, relevant to tracking new eval harnesses and benchmark results."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Oai-math-revised: a community hub for revising OpenAI's math write-ups",
+          "url": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/",
+          "when": "2026-10-24",
+          "why": "A community effort auditing/correcting OpenAI's published math benchmark write-ups, relevant to eval methodology and benchmark integrity scrutiny."
+        }
+      ]
+    },
     {
       "date": "2026-10-24",
       "down": [],
