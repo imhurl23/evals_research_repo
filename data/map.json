@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-19",
+  "updated": "2026-10-26",
   "clusters": {
     "eval": {
       "name": "Evaluation methodology",
@@ -602,6 +602,19 @@
       "s2": "5ee15c1568740433334dda8d0371bea8285d8fd3",
       "isNew": true,
       "added": "2026-10-12"
+    },
+    {
+      "id": "pe2026",
+      "t": "Contrastive explainable AI in healthcare: a systematic review of trends, benefits, research gaps, and future directions",
+      "a": "Samuele Pe, Antonino Angi, C. Izquierdo, E. Parimbelli, M. Boonstra, F. Asselbergs, K. Lekadir",
+      "y": 2026,
+      "v": "BMC Medical Informatics and Decision Making",
+      "c": "human",
+      "url": "https://doi.org/10.1186/s12911-026-03697-6",
+      "n": "A systematic review mapping how contrastive explainable AI (answering 'why P rather than Q') has been applied in healthcare, arguing it better mirrors clinicians' differential-diagnosis reasoning than classical feature-attribution XAI. It builds on human-AI decision-support work like bucinca2025 by cataloguing benefits and gaps in explanation design for clinical trust and actionability.",
+      "s2": "eb63fc1b01a270644c31bb219ed303b351c4d23f",
+      "isNew": true,
+      "added": "2026-10-26"
     }
   ],
   "edges": [
@@ -948,6 +961,11 @@
     {
       "source": "bai2026",
       "target": "ouyang2022",
+      "confidence": "v"
+    },
+    {
+      "source": "pe2026",
+      "target": "bucinca2025",
       "confidence": "v"
     }
   ]
