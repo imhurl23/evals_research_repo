@@ -111,6 +111,10 @@
     "kept": true,
     "seen": "2026-09-22"
   },
+  "arxiv:2506.19846": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
   "arxiv:2506.20040": {
     "kept": true,
     "seen": "2026-10-01"
@@ -767,9 +771,17 @@
     "kept": true,
     "seen": "2026-10-20"
   },
+  "arxiv:2604.19298": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
   "arxiv:2604.22503": {
     "kept": true,
     "seen": "2026-10-12"
+  },
+  "arxiv:2604.23018": {
+    "kept": false,
+    "seen": "2026-10-28"
   },
   "arxiv:2604.23478": {
     "kept": true,
@@ -778,6 +790,10 @@
   "arxiv:2604.23580": {
     "kept": false,
     "seen": "2026-09-14"
+  },
+  "arxiv:2604.23813": {
+    "kept": false,
+    "seen": "2026-10-28"
   },
   "arxiv:2604.24952": {
     "kept": true,
@@ -1111,6 +1127,10 @@
     "kept": true,
     "seen": "2026-10-08"
   },
+  "arxiv:2605.30188": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
   "arxiv:2605.30251": {
     "kept": true,
     "seen": "2026-10-21"
@@ -1278,6 +1298,10 @@
   "arxiv:2606.15735": {
     "kept": false,
     "seen": "2026-10-22"
+  },
+  "arxiv:2606.15796": {
+    "kept": true,
+    "seen": "2026-10-28"
   },
   "arxiv:2606.16193": {
     "kept": true,
@@ -1555,6 +1579,10 @@
     "kept": true,
     "seen": "2026-10-26"
   },
+  "arxiv:2608.00711": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
   "arxiv:2608.02287": {
     "kept": true,
     "seen": "2026-10-08"
@@ -1594,6 +1622,10 @@
   "arxiv:2608.05810": {
     "kept": true,
     "seen": "2026-09-18"
+  },
+  "arxiv:2608.06745": {
+    "kept": false,
+    "seen": "2026-10-28"
   },
   "arxiv:2608.07540": {
     "kept": true,
@@ -1799,6 +1831,10 @@
     "kept": true,
     "seen": "2026-10-21"
   },
+  "arxiv:2609.00184": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
   "arxiv:2609.00192": {
     "kept": false,
     "seen": "2026-10-20"
@@ -1818,6 +1854,10 @@
   "arxiv:2609.01210": {
     "kept": true,
     "seen": "2026-09-14"
+  },
+  "arxiv:2609.01271": {
+    "kept": true,
+    "seen": "2026-10-28"
   },
   "arxiv:2609.02766": {
     "kept": false,
@@ -5399,6 +5439,10 @@
     "kept": true,
     "seen": "2026-10-15"
   },
+  "arxiv:2610.17306": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
   "arxiv:2610.17310": {
     "kept": true,
     "seen": "2026-10-15"
@@ -6703,6 +6747,94 @@
     "kept": true,
     "seen": "2026-10-27"
   },
+  "arxiv:2610.35866": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.36006": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.36109": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.36226": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.36308": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.36363": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.36374": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.36435": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.36484": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.36713": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.36761": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.36763": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.36848": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.36857": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.36990": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.37058": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.37081": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.37157": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.37229": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.37407": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.37451": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
+  "arxiv:2610.37481": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
   "ghrel:UKGovernmentBEIS/inspect_ai:0.3.278": {
     "kept": true,
     "seen": "2026-10-10"
@@ -6834,6 +6966,10 @@
   "hf:nvidia/Kimodo-SOMA-RP-v1.2": {
     "kept": false,
     "seen": "2026-10-16"
+  },
+  "hf:nvidia/Metatron-v1": {
+    "kept": false,
+    "seen": "2026-10-28"
   },
   "hf:nvidia/Muse-Spark-Open-816B-A42B-DFlash2": {
     "kept": false,
@@ -8055,9 +8191,49 @@
     "kept": false,
     "seen": "2026-10-27"
   },
+  "hn:50249872": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
+  "hn:50251896": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
   "hn:50254836": {
     "kept": false,
     "seen": "2026-10-27"
+  },
+  "hn:50255159": {
+    "kept": true,
+    "seen": "2026-10-28"
+  },
+  "hn:50260571": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "hn:50260814": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "hn:50261583": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "hn:50264853": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "hn:50265609": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "hn:50266701": {
+    "kept": false,
+    "seen": "2026-10-28"
+  },
+  "hn:50266910": {
+    "kept": true,
+    "seen": "2026-10-28"
   },
   "pypi:deepeval:4.2.3": {
     "kept": false,
@@ -8086,6 +8262,10 @@
   "pypi:deepeval:4.3.1": {
     "kept": true,
     "seen": "2026-10-17"
+  },
+  "pypi:deepeval:4.3.2": {
+    "kept": false,
+    "seen": "2026-10-28"
   },
   "pypi:inspect-ai:0.3.264": {
     "kept": true,
