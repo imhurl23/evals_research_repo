@@ -6867,6 +6867,10 @@
     "kept": true,
     "seen": "2026-10-26"
   },
+  "ghrel:UKGovernmentBEIS/inspect_ai:0.3.286": {
+    "kept": true,
+    "seen": "2026-10-29"
+  },
   "hf:CohereLabs/tiny-aya-base-32K": {
     "kept": false,
     "seen": "2026-09-10"
@@ -8235,6 +8239,26 @@
     "kept": true,
     "seen": "2026-10-28"
   },
+  "hn:50272479": {
+    "kept": false,
+    "seen": "2026-10-29"
+  },
+  "hn:50276792": {
+    "kept": true,
+    "seen": "2026-10-29"
+  },
+  "hn:50282838": {
+    "kept": true,
+    "seen": "2026-10-29"
+  },
+  "hn:50282865": {
+    "kept": false,
+    "seen": "2026-10-29"
+  },
+  "hn:50284255": {
+    "kept": true,
+    "seen": "2026-10-29"
+  },
   "pypi:deepeval:4.2.3": {
     "kept": false,
     "seen": "2026-09-14"
@@ -8335,6 +8359,10 @@
     "kept": true,
     "seen": "2026-10-26"
   },
+  "pypi:inspect-ai:0.3.286": {
+    "kept": false,
+    "seen": "2026-10-29"
+  },
   "pypi:promptfoo:0.2.0": {
     "kept": false,
     "seen": "2026-09-19"
@@ -8387,6 +8415,10 @@
     "kept": false,
     "seen": "2026-10-03"
   },
+  "repo:amosblomqvist/learnharness": {
+    "kept": false,
+    "seen": "2026-10-29"
+  },
   "repo:anywhere-labs/dsh-desktop": {
     "kept": false,
     "seen": "2026-09-10"
@@ -8430,6 +8462,10 @@
   "repo:google/artemis": {
     "kept": false,
     "seen": "2026-09-12"
+  },
+  "repo:horizon-rust/horizon": {
+    "kept": false,
+    "seen": "2026-10-29"
   },
   "repo:lopopolo/harness-engineering": {
     "kept": false,
