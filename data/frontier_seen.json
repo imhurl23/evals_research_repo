@@ -7183,6 +7183,10 @@
     "kept": false,
     "seen": "2026-10-26"
   },
+  "hf:microsoft/Mage-VL-Cowork": {
+    "kept": true,
+    "seen": "2026-10-31"
+  },
   "hf:microsoft/UserRepGen-4B": {
     "kept": true,
     "seen": "2026-10-16"
@@ -7234,6 +7238,10 @@
   "hf:nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark": {
     "kept": false,
     "seen": "2026-09-10"
+  },
+  "hf:nvidia/DeepSeek-V4.1-Flash-1017-NVFP4": {
+    "kept": false,
+    "seen": "2026-10-31"
   },
   "hf:nvidia/DeepSeek-V4.1-Flash-NVFP4": {
     "kept": false,
@@ -8551,6 +8559,10 @@
     "kept": false,
     "seen": "2026-10-30"
   },
+  "hn:50300683": {
+    "kept": false,
+    "seen": "2026-10-31"
+  },
   "hn:50301983": {
     "kept": false,
     "seen": "2026-10-30"
@@ -8558,6 +8570,26 @@
   "hn:50302334": {
     "kept": false,
     "seen": "2026-10-30"
+  },
+  "hn:50304358": {
+    "kept": false,
+    "seen": "2026-10-31"
+  },
+  "hn:50306442": {
+    "kept": false,
+    "seen": "2026-10-31"
+  },
+  "hn:50307219": {
+    "kept": false,
+    "seen": "2026-10-31"
+  },
+  "hn:50311311": {
+    "kept": false,
+    "seen": "2026-10-31"
+  },
+  "hn:50312922": {
+    "kept": false,
+    "seen": "2026-10-31"
   },
   "pypi:deepeval:4.2.3": {
     "kept": false,

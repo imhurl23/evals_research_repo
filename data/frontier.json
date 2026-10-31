@@ -1,6 +1,19 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "runs": [
+    {
+      "date": "2026-10-31",
+      "down": [],
+      "items": [
+        {
+          "kind": "model",
+          "title": "microsoft/Mage-VL-Cowork",
+          "url": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+          "when": "2026-10-30",
+          "why": "New vision-language computer-use agent model (hybrid-agent/CUA) relevant to human-AI interaction and agentic eval benchmarks."
+        }
+      ]
+    },
     {
       "date": "2026-10-30",
       "down": [],
