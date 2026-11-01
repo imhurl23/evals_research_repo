@@ -1,6 +1,33 @@
 {
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "runs": [
+    {
+      "date": "2026-11-01",
+      "down": [],
+      "items": [
+        {
+          "kind": "harness",
+          "title": "inspect-ai 0.3.287",
+          "url": "https://pypi.org/project/inspect-ai/0.3.287/",
+          "when": "2026-10-31",
+          "why": "Routine point release of Inspect AI (UK AISI's widely-adopted eval harness) with no specific new capability noted, so likely low-value unless changelog details matter to harness maintainers."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+          "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+          "when": "2026-10-31",
+          "why": "Claims a 5-model ensemble of smaller Qwen models outperforms a larger 'Fable 5' model on LiveCodeBench Hard, relevant to benchmark gaming/ensemble eval tricks though unverified and worth scrutiny for eval validity."
+        },
+        {
+          "kind": "harness",
+          "title": "UKGovernmentBEIS/inspect_ai 0.3.287",
+          "url": "https://github.com/UKGovernmentBEIS/inspect_ai/releases/tag/0.3.287",
+          "when": "2026-10-31",
+          "why": "Inspect AI (UK AISI's eval harness) adds runtime hooks to hold/rewrite react() agent conversations at turn boundaries and a reset() for compaction handlers, which affects how researchers build and control multi-turn agent eval loops."
+        }
+      ]
+    },
     {
       "date": "2026-10-31",
       "down": [],

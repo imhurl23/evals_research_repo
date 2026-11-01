@@ -7151,6 +7151,10 @@
     "kept": true,
     "seen": "2026-10-29"
   },
+  "ghrel:UKGovernmentBEIS/inspect_ai:0.3.287": {
+    "kept": true,
+    "seen": "2026-11-01"
+  },
   "hf:CohereLabs/tiny-aya-base-32K": {
     "kept": false,
     "seen": "2026-09-10"
@@ -8591,6 +8595,46 @@
     "kept": false,
     "seen": "2026-10-31"
   },
+  "hn:50315574": {
+    "kept": false,
+    "seen": "2026-11-01"
+  },
+  "hn:50315782": {
+    "kept": false,
+    "seen": "2026-11-01"
+  },
+  "hn:50315987": {
+    "kept": false,
+    "seen": "2026-11-01"
+  },
+  "hn:50315990": {
+    "kept": false,
+    "seen": "2026-11-01"
+  },
+  "hn:50316531": {
+    "kept": false,
+    "seen": "2026-11-01"
+  },
+  "hn:50316635": {
+    "kept": false,
+    "seen": "2026-11-01"
+  },
+  "hn:50318871": {
+    "kept": false,
+    "seen": "2026-11-01"
+  },
+  "hn:50319358": {
+    "kept": false,
+    "seen": "2026-11-01"
+  },
+  "hn:50320255": {
+    "kept": false,
+    "seen": "2026-11-01"
+  },
+  "hn:50320995": {
+    "kept": true,
+    "seen": "2026-11-01"
+  },
   "pypi:deepeval:4.2.3": {
     "kept": false,
     "seen": "2026-09-14"
@@ -8695,6 +8739,10 @@
     "kept": false,
     "seen": "2026-10-29"
   },
+  "pypi:inspect-ai:0.3.287": {
+    "kept": true,
+    "seen": "2026-11-01"
+  },
   "pypi:promptfoo:0.2.0": {
     "kept": false,
     "seen": "2026-09-19"
@@ -8763,6 +8811,10 @@
     "kept": false,
     "seen": "2026-10-23"
   },
+  "repo:ccch1mneyyy/dsh-Go": {
+    "kept": false,
+    "seen": "2026-11-01"
+  },
   "repo:chuspeeism/dashi-taskboard": {
     "kept": false,
     "seen": "2026-09-10"
@@ -8798,6 +8850,10 @@
   "repo:horizon-rust/horizon": {
     "kept": false,
     "seen": "2026-10-29"
+  },
+  "repo:kingcharleslzy-ai/dsh-purge": {
+    "kept": false,
+    "seen": "2026-11-01"
   },
   "repo:lopopolo/harness-engineering": {
     "kept": false,
