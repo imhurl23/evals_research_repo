@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-26",
+  "updated": "2026-11-02",
   "clusters": {
     "eval": {
       "name": "Evaluation methodology",
@@ -615,6 +615,19 @@
       "s2": "eb63fc1b01a270644c31bb219ed303b351c4d23f",
       "isNew": true,
       "added": "2026-10-26"
+    },
+    {
+      "id": "gao2026",
+      "t": "PrejSense: Non-intrusive Gaze-Informed Prediction of Implicit Prejudice Against Machine for Proactive Interface Adaptation",
+      "a": "En-Tong Gao, Zhe Chen",
+      "y": 2026,
+      "v": "preprint",
+      "c": "human",
+      "url": "https://doi.org/10.1145/3830398.3830669",
+      "n": "Proposes PrejSense, a system using non-intrusive gaze tracking to detect implicit prejudice against AI in real time and drive an LLM-agent-based adaptive interface that responds to the user's estimated bias state. It builds on human-AI collaboration and trust/cooperation framing (citing bucinca2025, ouyang2022) and extends that work toward physiological-signal-driven proactive interface design rather than retrospective self-report measures.",
+      "s2": "b3b9771769a3b6c61dc77d8b7f9d3cde02501e31",
+      "isNew": true,
+      "added": "2026-11-02"
     }
   ],
   "edges": [
@@ -966,6 +979,16 @@
     {
       "source": "pe2026",
       "target": "bucinca2025",
+      "confidence": "v"
+    },
+    {
+      "source": "gao2026",
+      "target": "bucinca2025",
+      "confidence": "v"
+    },
+    {
+      "source": "gao2026",
+      "target": "ouyang2022",
       "confidence": "v"
     }
   ]
