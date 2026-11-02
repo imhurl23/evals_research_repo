@@ -63,6 +63,10 @@
     "kept": true,
     "seen": "2026-09-15"
   },
+  "arxiv:2505.00020": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
   "arxiv:2505.10597": {
     "kept": true,
     "seen": "2026-10-19"
@@ -242,6 +246,10 @@
   "arxiv:2510.10932": {
     "kept": false,
     "seen": "2026-09-14"
+  },
+  "arxiv:2510.12787": {
+    "kept": false,
+    "seen": "2026-11-02"
   },
   "arxiv:2510.13154": {
     "kept": true,
@@ -727,6 +735,10 @@
     "kept": true,
     "seen": "2026-10-07"
   },
+  "arxiv:2603.26034": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
   "arxiv:2603.26797": {
     "kept": false,
     "seen": "2026-09-25"
@@ -870,6 +882,10 @@
   "arxiv:2605.00425": {
     "kept": true,
     "seen": "2026-10-30"
+  },
+  "arxiv:2605.00826": {
+    "kept": false,
+    "seen": "2026-11-02"
   },
   "arxiv:2605.01203": {
     "kept": true,
@@ -1098,6 +1114,10 @@
   "arxiv:2605.23215": {
     "kept": false,
     "seen": "2026-10-05"
+  },
+  "arxiv:2605.23238": {
+    "kept": true,
+    "seen": "2026-11-02"
   },
   "arxiv:2605.23420": {
     "kept": true,
@@ -1371,6 +1391,10 @@
     "kept": true,
     "seen": "2026-10-07"
   },
+  "arxiv:2606.16562": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
   "arxiv:2606.16939": {
     "kept": true,
     "seen": "2026-10-12"
@@ -1502,6 +1526,10 @@
   "arxiv:2606.30201": {
     "kept": false,
     "seen": "2026-10-20"
+  },
+  "arxiv:2606.30410": {
+    "kept": false,
+    "seen": "2026-11-02"
   },
   "arxiv:2606.30943": {
     "kept": false,
@@ -3090,6 +3118,10 @@
   "arxiv:2609.22971": {
     "kept": true,
     "seen": "2026-09-22"
+  },
+  "arxiv:2609.23058": {
+    "kept": false,
+    "seen": "2026-11-02"
   },
   "arxiv:2609.23065": {
     "kept": true,
@@ -6027,6 +6059,10 @@
     "kept": true,
     "seen": "2026-10-20"
   },
+  "arxiv:2610.24430": {
+    "kept": false,
+    "seen": "2026-11-02"
+  },
   "arxiv:2610.24447": {
     "kept": false,
     "seen": "2026-10-20"
@@ -6751,6 +6787,10 @@
     "kept": false,
     "seen": "2026-10-27"
   },
+  "arxiv:2610.33509": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
   "arxiv:2610.33512": {
     "kept": true,
     "seen": "2026-10-27"
@@ -7114,6 +7154,94 @@
   "arxiv:2610.40637": {
     "kept": true,
     "seen": "2026-10-30"
+  },
+  "arxiv:2610.40716": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.40798": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.40884": {
+    "kept": false,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.40940": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.40959": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41124": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41165": {
+    "kept": false,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41168": {
+    "kept": false,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41185": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41213": {
+    "kept": false,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41292": {
+    "kept": false,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41333": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41358": {
+    "kept": false,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41375": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41411": {
+    "kept": false,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41445": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41704": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41732": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41745": {
+    "kept": false,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41856": {
+    "kept": true,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.41933": {
+    "kept": false,
+    "seen": "2026-11-02"
+  },
+  "arxiv:2610.42010": {
+    "kept": false,
+    "seen": "2026-11-02"
   },
   "ghrel:UKGovernmentBEIS/inspect_ai:0.3.278": {
     "kept": true,
@@ -8635,6 +8763,26 @@
     "kept": true,
     "seen": "2026-11-01"
   },
+  "hn:50326727": {
+    "kept": false,
+    "seen": "2026-11-02"
+  },
+  "hn:50327240": {
+    "kept": false,
+    "seen": "2026-11-02"
+  },
+  "hn:50327416": {
+    "kept": false,
+    "seen": "2026-11-02"
+  },
+  "hn:50330253": {
+    "kept": false,
+    "seen": "2026-11-02"
+  },
+  "hn:50331001": {
+    "kept": false,
+    "seen": "2026-11-02"
+  },
   "pypi:deepeval:4.2.3": {
     "kept": false,
     "seen": "2026-09-14"
@@ -8862,6 +9010,10 @@
   "repo:pathwaycom/arc-task-gen": {
     "kept": false,
     "seen": "2026-09-10"
+  },
+  "repo:phone-harness/phone-harness": {
+    "kept": true,
+    "seen": "2026-11-02"
   },
   "repo:simonlin1212/Vibe-Research": {
     "kept": false,
