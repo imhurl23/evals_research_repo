@@ -111,6 +111,10 @@
     "kept": false,
     "seen": "2026-09-22"
   },
+  "arxiv:2506.10912": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
   "arxiv:2506.12576": {
     "kept": true,
     "seen": "2026-09-22"
@@ -535,6 +539,10 @@
     "kept": true,
     "seen": "2026-10-30"
   },
+  "arxiv:2601.20476": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
   "arxiv:2601.21666": {
     "kept": true,
     "seen": "2026-10-02"
@@ -551,6 +559,10 @@
     "kept": false,
     "seen": "2026-10-09"
   },
+  "arxiv:2602.00986": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
   "arxiv:2602.01034": {
     "kept": true,
     "seen": "2026-09-28"
@@ -558,6 +570,10 @@
   "arxiv:2602.02132": {
     "kept": true,
     "seen": "2026-09-16"
+  },
+  "arxiv:2602.02313": {
+    "kept": true,
+    "seen": "2026-11-05"
   },
   "arxiv:2602.02464": {
     "kept": true,
@@ -646,6 +662,10 @@
   "arxiv:2602.22871": {
     "kept": false,
     "seen": "2026-10-09"
+  },
+  "arxiv:2602.22968": {
+    "kept": true,
+    "seen": "2026-11-05"
   },
   "arxiv:2603.00842": {
     "kept": false,
@@ -971,6 +991,10 @@
     "kept": true,
     "seen": "2026-10-09"
   },
+  "arxiv:2605.06375": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
   "arxiv:2605.06557": {
     "kept": true,
     "seen": "2026-10-19"
@@ -1058,6 +1082,10 @@
   "arxiv:2605.09883": {
     "kept": true,
     "seen": "2026-10-01"
+  },
+  "arxiv:2605.10779": {
+    "kept": true,
+    "seen": "2026-11-05"
   },
   "arxiv:2605.10971": {
     "kept": true,
@@ -1151,6 +1179,10 @@
     "kept": true,
     "seen": "2026-10-07"
   },
+  "arxiv:2605.21849": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
   "arxiv:2605.22611": {
     "kept": false,
     "seen": "2026-09-16"
@@ -1170,6 +1202,10 @@
   "arxiv:2605.23238": {
     "kept": true,
     "seen": "2026-11-02"
+  },
+  "arxiv:2605.23262": {
+    "kept": true,
+    "seen": "2026-11-05"
   },
   "arxiv:2605.23420": {
     "kept": true,
@@ -1515,6 +1551,10 @@
     "kept": true,
     "seen": "2026-10-09"
   },
+  "arxiv:2606.19544": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
   "arxiv:2606.19624": {
     "kept": false,
     "seen": "2026-10-30"
@@ -1691,6 +1731,10 @@
     "kept": true,
     "seen": "2026-10-15"
   },
+  "arxiv:2607.09153": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
   "arxiv:2607.11183": {
     "kept": true,
     "seen": "2026-10-16"
@@ -1790,6 +1834,10 @@
   "arxiv:2608.02372": {
     "kept": true,
     "seen": "2026-11-03"
+  },
+  "arxiv:2608.02602": {
+    "kept": false,
+    "seen": "2026-11-05"
   },
   "arxiv:2608.02617": {
     "kept": true,
@@ -1899,6 +1947,10 @@
     "kept": true,
     "seen": "2026-10-30"
   },
+  "arxiv:2608.15008": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
   "arxiv:2608.16697": {
     "kept": false,
     "seen": "2026-10-01"
@@ -1942,6 +1994,10 @@
   "arxiv:2608.20153": {
     "kept": true,
     "seen": "2026-09-24"
+  },
+  "arxiv:2608.21095": {
+    "kept": true,
+    "seen": "2026-11-05"
   },
   "arxiv:2608.21376": {
     "kept": true,
@@ -2083,6 +2139,10 @@
     "kept": true,
     "seen": "2026-10-28"
   },
+  "arxiv:2609.02459": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
   "arxiv:2609.02766": {
     "kept": false,
     "seen": "2026-10-22"
@@ -2090,6 +2150,10 @@
   "arxiv:2609.03203": {
     "kept": false,
     "seen": "2026-09-22"
+  },
+  "arxiv:2609.03507": {
+    "kept": false,
+    "seen": "2026-11-05"
   },
   "arxiv:2609.03995": {
     "kept": false,
@@ -2782,6 +2846,10 @@
   "arxiv:2609.17644": {
     "kept": false,
     "seen": "2026-09-17"
+  },
+  "arxiv:2609.17655": {
+    "kept": false,
+    "seen": "2026-11-05"
   },
   "arxiv:2609.17686": {
     "kept": true,
@@ -3986,6 +4054,10 @@
   "arxiv:2609.34790": {
     "kept": true,
     "seen": "2026-10-22"
+  },
+  "arxiv:2609.34799": {
+    "kept": false,
+    "seen": "2026-11-05"
   },
   "arxiv:2609.34800": {
     "kept": false,
@@ -5571,6 +5643,10 @@
     "kept": true,
     "seen": "2026-10-14"
   },
+  "arxiv:2610.15884": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
   "arxiv:2610.15924": {
     "kept": true,
     "seen": "2026-10-15"
@@ -6895,6 +6971,10 @@
     "kept": false,
     "seen": "2026-10-27"
   },
+  "arxiv:2610.33200": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
   "arxiv:2610.33503": {
     "kept": false,
     "seen": "2026-10-27"
@@ -7707,6 +7787,130 @@
     "kept": false,
     "seen": "2026-11-04"
   },
+  "arxiv:2611.05386": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.05422": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.05506": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.05512": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.05551": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.05556": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.05567": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.05612": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.05636": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.05709": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.05739": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.05798": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.05823": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.05842": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.05895": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.05953": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.06048": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.06078": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.06123": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.06244": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.06259": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.06290": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.06496": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.06518": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.06554": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.06631": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.06688": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.06848": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.06864": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.06910": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
+  "arxiv:2611.06911": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
   "ghrel:UKGovernmentBEIS/inspect_ai:0.3.278": {
     "kept": true,
     "seen": "2026-10-10"
@@ -7819,6 +8023,10 @@
     "kept": false,
     "seen": "2026-10-10"
   },
+  "hf:moonshotai/Kimi-K3.1-Pro": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
   "hf:nvidia/ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60": {
     "kept": false,
     "seen": "2026-10-16"
@@ -7858,6 +8066,10 @@
   "hf:nvidia/Metatron-v1": {
     "kept": false,
     "seen": "2026-10-28"
+  },
+  "hf:nvidia/MetricTrail": {
+    "kept": false,
+    "seen": "2026-11-05"
   },
   "hf:nvidia/Muse-Spark-Open-816B-A42B-DFlash2": {
     "kept": false,
@@ -9286,6 +9498,30 @@
   "hn:50363461": {
     "kept": false,
     "seen": "2026-11-04"
+  },
+  "hn:50366117": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "hn:50366863": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "hn:50366999": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
+  "hn:50368626": {
+    "kept": true,
+    "seen": "2026-11-05"
+  },
+  "hn:50369462": {
+    "kept": false,
+    "seen": "2026-11-05"
+  },
+  "hn:50369925": {
+    "kept": true,
+    "seen": "2026-11-05"
   },
   "pypi:deepeval:4.2.3": {
     "kept": false,
