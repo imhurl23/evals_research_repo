@@ -1,6 +1,26 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "runs": [
+    {
+      "date": "2026-11-07",
+      "down": [],
+      "items": [
+        {
+          "kind": "harness",
+          "title": "UKGovernmentBEIS/inspect_ai 0.3.288",
+          "url": "https://github.com/UKGovernmentBEIS/inspect_ai/releases/tag/0.3.288",
+          "when": "2026-11-07",
+          "why": "Inspect AI (widely used LLM eval harness) patch release with breaking changes requiring google-genai>=3.0.0, relevant for researchers maintaining eval pipelines on this framework."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Gemini Omni 1.2 Flash",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+          "when": "2026-11-06",
+          "why": "HN discussion of a reportedly new Gemini Omni 1.2 Flash model release, a frontier model update worth tracking for capability/eval comparisons."
+        }
+      ]
+    },
     {
       "date": "2026-11-06",
       "down": [],
