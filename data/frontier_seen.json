@@ -8863,6 +8863,10 @@
     "kept": false,
     "seen": "2026-10-24"
   },
+  "hf:nvidia/Kimi-K3.1-Pro-NVFP4": {
+    "kept": false,
+    "seen": "2026-11-12"
+  },
   "hf:nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2": {
     "kept": false,
     "seen": "2026-10-16"
@@ -10451,6 +10455,10 @@
     "kept": true,
     "seen": "2026-11-11"
   },
+  "hn:50447363": {
+    "kept": true,
+    "seen": "2026-11-12"
+  },
   "hn:50448340": {
     "kept": true,
     "seen": "2026-11-11"
@@ -10458,6 +10466,22 @@
   "hn:50449130": {
     "kept": true,
     "seen": "2026-11-11"
+  },
+  "hn:50452496": {
+    "kept": true,
+    "seen": "2026-11-12"
+  },
+  "hn:50456791": {
+    "kept": true,
+    "seen": "2026-11-12"
+  },
+  "hn:50458434": {
+    "kept": true,
+    "seen": "2026-11-12"
+  },
+  "hn:50465829": {
+    "kept": false,
+    "seen": "2026-11-12"
   },
   "pypi:deepeval:4.2.3": {
     "kept": false,
@@ -10494,6 +10518,10 @@
   "pypi:deepeval:4.3.3": {
     "kept": false,
     "seen": "2026-11-04"
+  },
+  "pypi:deepeval:4.3.4": {
+    "kept": false,
+    "seen": "2026-11-12"
   },
   "pypi:inspect-ai:0.3.264": {
     "kept": true,
@@ -10615,6 +10643,10 @@
     "kept": false,
     "seen": "2026-09-13"
   },
+  "repo:N4darae/shrt": {
+    "kept": true,
+    "seen": "2026-11-12"
+  },
   "repo:NVlabs/SoL-Pi": {
     "kept": true,
     "seen": "2026-09-21"
@@ -10642,6 +10674,10 @@
   "repo:YuJunZhiXue/dsh-purge": {
     "kept": false,
     "seen": "2026-10-03"
+  },
+  "repo:amontlabs/lcu": {
+    "kept": true,
+    "seen": "2026-11-12"
   },
   "repo:amosblomqvist/learnharness": {
     "kept": false,
@@ -10727,9 +10763,25 @@
     "kept": false,
     "seen": "2026-09-10"
   },
+  "repo:syv-ai/HyperQwen": {
+    "kept": false,
+    "seen": "2026-11-12"
+  },
   "repo:truefoundry/trueforge": {
     "kept": false,
     "seen": "2026-09-10"
+  },
+  "repo:unreallabsai/unreal-agent": {
+    "kept": false,
+    "seen": "2026-11-12"
+  },
+  "repo:windows-GPU-UNLOCK/Windows-GPU-UNLOCK": {
+    "kept": false,
+    "seen": "2026-11-12"
+  },
+  "repo:wuyoscar/AISafetyHot": {
+    "kept": false,
+    "seen": "2026-11-12"
   },
   "repo:xai-org/grok-build": {
     "kept": false,

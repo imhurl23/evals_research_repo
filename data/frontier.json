@@ -1,6 +1,54 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "runs": [
+    {
+      "date": "2026-11-12",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: Tools for exploring the souls of large language models",
+          "url": "https://oshea00.github.io/posts/tinygpt-visualizer/",
+          "when": "2026-11-11",
+          "why": "Discussion of tools for probing LLM internal 'personas' or behavioral tendencies, relevant to interpretability and understanding emergent model character traits."
+        },
+        {
+          "kind": "repo",
+          "title": "N4darae/shrt (2699★)",
+          "url": "https://github.com/N4darae/shrt",
+          "when": "2026-09-03",
+          "why": "A regression-testing harness that snapshots valid API call chains so coding agents can look up rather than explore, useful as a concrete eval/guardrail tool for agentic coding tasks and potential reward-hacking mitigation."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Gemini Decisions API",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+          "when": "2026-11-11",
+          "why": "Google's new Gemini Decisions API lets developers build agentic decision-making systems, relevant to human-AI interaction and agent evaluation research given its high engagement (454 points)."
+        },
+        {
+          "kind": "repo",
+          "title": "amontlabs/lcu (2418★)",
+          "url": "https://github.com/amontlabs/lcu",
+          "when": "2026-09-22",
+          "why": "A decoupled computer-use harness for Codex-style agents that can be plugged into other evaluation harnesses, relevant to agentic/tool-use eval infrastructure."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Next-Level Benchmarking Overfitting – Thomas Neumann",
+          "url": "http://databasearchitects.blogspot.com/2026/11/next-level-benchmarking-overfitting.html",
+          "when": "2026-11-11",
+          "why": "A technical critique of benchmark overfitting/gaming by Thomas Neumann, directly relevant to eval methodology concerns about benchmark validity."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: The Surprising Effectiveness of Deleting Weights in LLM Post-Training",
+          "url": "https://arxiv.org/abs/2611.10866",
+          "when": "2026-11-10",
+          "why": "Explores weight-deletion as a post-training technique, relevant to mechanistic interpretability and model editing research on how capabilities are encoded in weights."
+        }
+      ]
+    },
     {
       "date": "2026-11-11",
       "down": [],
