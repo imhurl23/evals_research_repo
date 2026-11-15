@@ -1,6 +1,33 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-15",
   "runs": [
+    {
+      "date": "2026-11-15",
+      "down": [],
+      "items": [
+        {
+          "kind": "harness",
+          "title": "UKGovernmentBEIS/inspect_ai 0.3.290",
+          "url": "https://github.com/UKGovernmentBEIS/inspect_ai/releases/tag/0.3.290",
+          "when": "2026-11-14",
+          "why": "Inspect AI (UK AISI's eval harness) adds active_model_event_id() to track in-flight model call attempts, a concrete new API feature useful for building custom eval/monitoring tooling."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Claude asked to renumber pages deletes professor's syllabus, year of notes",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
+          "when": "2026-11-14",
+          "why": "HN discussion of a real-world agentic failure case (Claude deleting a professor's files when asked to renumber pages), relevant anecdote for reward hacking and human-AI interaction researchers studying unsafe tool-use behavior."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: The Claude Delusion",
+          "url": "https://www.netmeister.org/blog/claude-delusion.html",
+          "when": "2026-11-14",
+          "why": "HN discussion piece on user perceptions/overtrust of Claude, directly relevant to human-AI interaction research on how people misjudge model capabilities and behavior."
+        }
+      ]
+    },
     {
       "date": "2026-11-13",
       "down": [],

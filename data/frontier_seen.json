@@ -9003,6 +9003,10 @@
     "kept": true,
     "seen": "2026-11-11"
   },
+  "ghrel:UKGovernmentBEIS/inspect_ai:0.3.290": {
+    "kept": true,
+    "seen": "2026-11-15"
+  },
   "hf:CohereLabs/tiny-aya-base-32K": {
     "kept": false,
     "seen": "2026-09-10"
@@ -10799,6 +10803,22 @@
     "kept": false,
     "seen": "2026-11-14"
   },
+  "hn:50496921": {
+    "kept": true,
+    "seen": "2026-11-15"
+  },
+  "hn:50497155": {
+    "kept": false,
+    "seen": "2026-11-15"
+  },
+  "hn:50497589": {
+    "kept": false,
+    "seen": "2026-11-15"
+  },
+  "hn:50499114": {
+    "kept": true,
+    "seen": "2026-11-15"
+  },
   "pypi:deepeval:4.2.3": {
     "kept": false,
     "seen": "2026-09-14"
@@ -10922,6 +10942,10 @@
   "pypi:inspect-ai:0.3.289": {
     "kept": false,
     "seen": "2026-11-11"
+  },
+  "pypi:inspect-ai:0.3.290": {
+    "kept": false,
+    "seen": "2026-11-15"
   },
   "pypi:promptfoo:0.2.0": {
     "kept": false,
