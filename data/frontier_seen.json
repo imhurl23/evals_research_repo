@@ -119,6 +119,10 @@
     "kept": false,
     "seen": "2026-09-22"
   },
+  "arxiv:2506.10903": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
   "arxiv:2506.10912": {
     "kept": false,
     "seen": "2026-11-05"
@@ -286,6 +290,10 @@
   "arxiv:2510.06445": {
     "kept": true,
     "seen": "2026-11-03"
+  },
+  "arxiv:2510.08697": {
+    "kept": true,
+    "seen": "2026-11-16"
   },
   "arxiv:2510.09011": {
     "kept": true,
@@ -531,6 +539,10 @@
     "kept": false,
     "seen": "2026-10-15"
   },
+  "arxiv:2601.10455": {
+    "kept": false,
+    "seen": "2026-11-16"
+  },
   "arxiv:2601.11420": {
     "kept": false,
     "seen": "2026-11-04"
@@ -662,6 +674,10 @@
   "arxiv:2602.05842": {
     "kept": true,
     "seen": "2026-11-03"
+  },
+  "arxiv:2602.06008": {
+    "kept": true,
+    "seen": "2026-11-16"
   },
   "arxiv:2602.08819": {
     "kept": true,
@@ -962,6 +978,10 @@
   "arxiv:2604.07338": {
     "kept": false,
     "seen": "2026-11-13"
+  },
+  "arxiv:2604.07953": {
+    "kept": false,
+    "seen": "2026-11-16"
   },
   "arxiv:2604.09596": {
     "kept": false,
@@ -2031,6 +2051,10 @@
     "kept": true,
     "seen": "2026-10-06"
   },
+  "arxiv:2607.03836": {
+    "kept": false,
+    "seen": "2026-11-16"
+  },
   "arxiv:2607.04096": {
     "kept": false,
     "seen": "2026-11-11"
@@ -2038,6 +2062,10 @@
   "arxiv:2607.04332": {
     "kept": true,
     "seen": "2026-10-07"
+  },
+  "arxiv:2607.04688": {
+    "kept": false,
+    "seen": "2026-11-16"
   },
   "arxiv:2607.04845": {
     "kept": false,
@@ -2174,6 +2202,10 @@
   "arxiv:2608.02602": {
     "kept": false,
     "seen": "2026-11-05"
+  },
+  "arxiv:2608.02612": {
+    "kept": false,
+    "seen": "2026-11-16"
   },
   "arxiv:2608.02617": {
     "kept": true,
@@ -2590,6 +2622,10 @@
   "arxiv:2609.07681v1": {
     "kept": false,
     "seen": "2026-09-10"
+  },
+  "arxiv:2609.07729": {
+    "kept": false,
+    "seen": "2026-11-16"
   },
   "arxiv:2609.07741v1": {
     "kept": false,
@@ -8955,6 +8991,110 @@
     "kept": false,
     "seen": "2026-11-13"
   },
+  "arxiv:2611.17388": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.17440": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.17499": {
+    "kept": false,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.17563": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.17585": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.17632": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.17763": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.17766": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.17780": {
+    "kept": false,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.17821": {
+    "kept": false,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.17856": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.17931": {
+    "kept": false,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.17939": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.17955": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.18030": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.18067": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.18096": {
+    "kept": false,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.18130": {
+    "kept": false,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.18179": {
+    "kept": false,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.18190": {
+    "kept": false,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.18274": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.18293": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.18359": {
+    "kept": false,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.18477": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.18514": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "arxiv:2611.18553": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
   "ghrel:UKGovernmentBEIS/inspect_ai:0.3.278": {
     "kept": true,
     "seen": "2026-10-10"
@@ -10819,6 +10959,14 @@
     "kept": true,
     "seen": "2026-11-15"
   },
+  "hn:50506376": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
+  "hn:50513215": {
+    "kept": true,
+    "seen": "2026-11-16"
+  },
   "pypi:deepeval:4.2.3": {
     "kept": false,
     "seen": "2026-09-14"
@@ -10999,6 +11147,10 @@
     "kept": true,
     "seen": "2026-09-21"
   },
+  "repo:Pomerado/pomerado": {
+    "kept": false,
+    "seen": "2026-11-16"
+  },
   "repo:QwenLM/Qwen-MM-Plugins": {
     "kept": false,
     "seen": "2026-09-10"
@@ -11054,6 +11206,10 @@
   "repo:dataelement/dsh-desktop": {
     "kept": false,
     "seen": "2026-09-10"
+  },
+  "repo:davidondrej/cloudroom": {
+    "kept": false,
+    "seen": "2026-11-16"
   },
   "repo:deepseek-ai/deepseek-harness": {
     "kept": false,
