@@ -6878,5 +6878,490 @@
     "title": "Same Text, Different Filename: Are LLM Judges Biased?",
     "why": "cites only kim2026b; no velocity signal",
     "seen": "2026-11-09"
+  },
+  "3589acda36a2b8c9956e0e8873d9be6f9125df03": {
+    "title": "Standardized assessment of LLM English proficiency",
+    "why": "attaches only through hub papers (lin2021); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "0bdb54c8a407627a1b2c4dc5585b46a82165053f": {
+    "title": "Memory-Decoupled Layer-Wise Fine-Tuning for Efficient On-Device LLM Adaptation",
+    "why": "attaches only through hub papers (lin2021); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "86e3467b58dcb01d3f7e37fb51ac1a2de6d92c5d": {
+    "title": "ReA-Bench: Benchmarking Responsible Agent Auditing",
+    "why": "attaches only through hub papers (lin2021); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "ebab6c648bbb61a197d9de0e073fa538b31a4716": {
+    "title": "Mind the Accuracy-Approval Gap: How Users Evaluate Sycophantic AI in Everyday Tasks",
+    "why": "attaches only through hub papers (lin2021); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "13fa79aeffb8b7e28d5e79a04161f5a82a2432d7": {
+    "title": "Improving Confidence Estimation in Language Models with Linear Representations of Ambiguity",
+    "why": "attaches only through hub papers (lin2021); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "ec394cd4a37bcf8ccd3d27d87b4b94b491e397f4": {
+    "title": "When Calibration Data Matter in Sub-4-Bit Language Model Quantization",
+    "why": "attaches only through hub papers (lin2021); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "84e6109fb50639fe7f41d650df33086ccf72e550": {
+    "title": "Approximate Recall, Approximate Forecasts: Recall as a Diagnostic for LLM Forecasting Errors",
+    "why": "attaches only through hub papers (lin2021); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "234a191f5f9be744013792aac491bd074d77a48d": {
+    "title": "Efficient LLM Adaptation with Forward-Only Passes",
+    "why": "attaches only through hub papers (lin2021, ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "222b973f460402d15b620ef7be8aeddfef349053": {
+    "title": "Enhancing Mathematical Reasoning in Turkish Large Language Models with Search-Based Inference and Model Merging",
+    "why": "attaches only through hub papers (lin2021); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "946719dd8abe788c0ac74f1042ac82a3d3f5e624": {
+    "title": "BMMS: Policy-Conditioned Measurement of Behavioral Compliance in Language Models",
+    "why": "attaches only through hub papers (lin2021); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "fec2e5ec0e4db19a6d1bcb81652687cc8008139a": {
+    "title": "Not All Misalignment Is Alike: A Decomposed Benchmark for Emergent Misalignment",
+    "why": "attaches only through hub papers (lin2021); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "4d2bf13d6170514e8fcd670ef66430b7187a963b": {
+    "title": "Agentic AI for Quantitative Finance: A Decision Science Framework and Scoping Review of Intelligent Alpha Systems",
+    "why": "attaches only through hub papers (lin2021); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "17ec5aa77afe8274bb4c55158dc7fbd93ad2967d": {
+    "title": "On the Trail of a Green and Golden Generative AI: Assessing LLM Text Generation in Brazilian Portuguese",
+    "why": "attaches only through hub papers (lin2021); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "80d55fdc1345a8a61921f42db43b438341cd47f6": {
+    "title": "Can LLMs reliably explain logical conflicts in DL ontologies? A systematic evaluation",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "b778a960ff055c054ff0b0985986b2c773e30016": {
+    "title": "LLM-guided adaptive segmentation of tunnel linings from point clouds",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "92f1e87a7d618dd89500669201fdf3be9d8e1695": {
+    "title": "A Survey of Relation Extraction: From Deep Learning to Large Language Models",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "d5f2e5f75168b477414a2de40a09a558583896b3": {
+    "title": "One Backtest Can Reject a Strategy but Cannot Validate a Model Swap: LLM-Stack Sensitivity in Multi-Agent Black–Litterman Asset Allocation",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "8a1f4a06dcdc6c89081ae82899ae07fec1628ad8": {
+    "title": "Do Large Language Models Understand Financial Fraud?",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "261f6bb28a5a70747d9a3ec6fe805b061f006dfb": {
+    "title": "PromptLeaks: Assessing Data Leakage in Guardrails and Automated Jailbreak Tools",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "d7dd0bb4a8ec9bcf6f0f5de7c306cf57cac2b06b": {
+    "title": "Code-SeC: A Decoding-time Probing Method for Characterizing Secret Memorization in Code LLM",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "1a647591658226a0085455fd290ee6077f436aee": {
+    "title": "When Hedging Hides Heterogeneity: A Measurement and Identification Framework for Uncertainty in Large Language Models",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "bd2d51d4e3a6e6efcc89cd0b0843ea3db42bbc0f": {
+    "title": "Lexico-syntactic complexity in human and AI-generated outputs across interpreting and translation: a paired-corpus study",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "1071324fa39de1ebc9c784092dd62ffd638f004e": {
+    "title": "What makes an LLM a tutor? A component-centric survey of LLM-based and agentic tutoring systems",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "8a7fcf0e81a3d61ae5223511ee7f682a30c9a7ba": {
+    "title": "JudgeMix: Judge-Guided Mixed-Rollout Data Synthesis for LLM Agents",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "4f6ddaaed17bbfebc874ca27d98802e2792ae53b": {
+    "title": "Intent-Aware Protection for AI Agents",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "0a06e0d63debf90cecbb13de19d28bfb43b747ac": {
+    "title": "Maximizing LLM Utility While Managing LLM Fallibility",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "8254f077f5a95b8342b5be256158101059597e0f": {
+    "title": "MuSeToM: Multi-Sensory Evaluation of Belief Revision with Textual Cues Across Six Senses",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "ebcc16676a419b55bea6724cd301e44acf9bf26b": {
+    "title": "CADET: Construction of PCB Routing Instances with Executable Demonstrations",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "b1a6b1ecfdd84d25e0f135e8d138930bdb395af7": {
+    "title": "AI for Biologists: The Knowledge Boundaries of Foundation Models in the Age of Agentic Systems",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "2d7b3b596fa12f9be49fa858053156e5381d5b6f": {
+    "title": "We Are What We Remember: Mental-State-Driven Memory for Long-Term Character Dialogue",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "8cc1f29ee8f04ceacd8c6bacde945190ba140e51": {
+    "title": "Human or Synthetic? What a Fixed Budget Buys for Post-Training",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "8c12038c85a3b3584dd1c1b4ddc80e358a5f9fa4": {
+    "title": "SPADE: Soft Prompts for Ai-text DEtection",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "745205bea0fc90fa64bfc08c7f678083dd3fd6c5": {
+    "title": "LoCoJAX: Host-Local Coordination for Small-Model RL on TPUs",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "e18a3921c1de835a8e4141b4cf851edf68331cff": {
+    "title": "Do Large Language Models Show Racial and Sex Bias in Pain Management? A Counterfactual Audit of GPT, Claude, Gemini, Llama, DeepSeek and Qwen",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "3b1178ec3b792759317860e22ef3aca11d55a645": {
+    "title": "Between Ideal and Non-Ideal: A Case for Principle-Based AI Alignment",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "9ed5daf796de3db280c6284a6d06c7796013f31e": {
+    "title": "MER-LLM: a lightweight domain-adaptation workflow for knowledge support in marine ecosystem restoration",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "c27d4923f15d652be19d40f9fdf70adf942af237": {
+    "title": "VRMaaS: Verifiable Reward-Model-as-a-Service for Trustworthy LLM Alignment",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "dadb57bdfb2c419ab0dce25f56498ca09d9d56a1": {
+    "title": "Read and Ignore: What Self-Directed LLM Agents Do in Public Service Scenarios",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "7a82bb5526574f5561b19a91d0a3058c4297fb54": {
+    "title": "Reward-Driven Collider Physics Challenges for Self-Improving Agentic AI via Reinforcement Learning",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "5d3034fa9c1e9ac67938d12ce1dda7a1cae4b8f2": {
+    "title": "Right Advice, Wrong Reasons: How Decision and Reasoning Alignment Shape Reliance on AI Advisors",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "673cbac1665c2a5ddf64f102460f9b8a6547c270": {
+    "title": "DeALR: Decoupled Audio-Latent Optimization with Acoustic Backtracking for Test-Time Reasoning",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "2c9c91c97ffaf2f3425ccd850584351cebc67df5": {
+    "title": "FVE: Fire-Management-Aligned Vision–Language Reasoning for UAV-Based Fire-Event Assessment",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "9d010da02b4b4a9b280d652625ce5dd2019e0398": {
+    "title": "Performance–efficiency trade-offs of large language models for structured extraction from Chinese clinical free text: a benchmark study of model scale, reasoning mode, and architecture",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "faa476c8a294784f91e0b1aa71f7c1e1c560b27b": {
+    "title": "Can large language models provide reliable information on harmful skincare practices? A comparison of ChatGPT-5.2, Gemini 3, and Perplexity Sonar in debunking viral dermatological myths.",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "188c69e8678d924e2536a29913cdec9c66da1a4e": {
+    "title": "Large Language Models In Auditing Assessments: Comparisons Between Human Learners, Model Scale, and Enhancement Techniques",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "3cefdde0c8451484fd1c3b2ae4c7a91aea9bf2a7": {
+    "title": "Transformer architectures scaling laws and in context learning in foundation models",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "ff7712562f611441140f5fd92f58eecda5d46a1c": {
+    "title": "ExRL: Sample-Efficient Online Adaptation of Long-Chunk Policies via Execution Length Control",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "0f252afb47a74399413485ef3c7af5b3c7c6d900": {
+    "title": "AI Isn't Getting Dumber, We're Getting Pickier: Rising Standards in Human Evaluation of Large Language Models",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "218b6e3484637fc95c5ea2165e9700f8ac192924": {
+    "title": "Sharp Sample Complexity of KL-Regularized Reinforcement Learning",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "9234ea33f8eaf99f91ec0c7a126e9e50f9fe29be": {
+    "title": "A Cross-Scenario Survey and Analysis of Self-Evolving Multimodal Agents",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "3f5971458ff147d0034ed96b875ac2b7d633f22d": {
+    "title": "Visual Token Pruning in Vision-Language Models Based on Entropy Maximization Optimization",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "56127a9550c8dddba6dc9d9c1e523be91dec12a2": {
+    "title": "D2PO: Dual-Direction Preference Optimization via Adaptive Distribution Alignment for Vision-Language Models",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "7fb845ec06c241a244a1f074baabdfab163569cd": {
+    "title": "Evaluating AI Musical Creativity: Towards a Quantitative Multi-Dimensional Framework Based on Value, Novelty, and Surprise",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "6334fb583fb72a317734acf2a3c4d69508fe3702": {
+    "title": "PORT: Preference Optimization via Robust Token-Level Reweighting",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "3b648f9fed9177e57c68c285cfa41b17221e9c40": {
+    "title": "Beyond Captioning: A Preference-Aligned Benchmark for Fine-Grained Reasoning and Spatiotemporal Geo-World Understanding",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "a952aec54389a0cb419900f8509bf499924839f5": {
+    "title": "Traj-MCPO: Trajectory-wise Marginal Consistent Policy Optimization",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "826dc494a10d91bc56d6d275d2da43c8710fd013": {
+    "title": "Mitigating Hallucinations in Large Multimodal Reasoning Models by Regulating Parametric Prior Drift",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "3666569b128bda3251874908c56fbfafd4ac0f51": {
+    "title": "MIRD: Multimodal Implicit Reasoning Distillation for Efficient Sarcasm Detection",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "3eb8b543ee607f69bc6f81ff718dae3ac6d442b6": {
+    "title": "RAP: Relation-Aware Post-training for Multimodal Large Language Models",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "59164f0c0641a1274669963e1c16cd4a03279be4": {
+    "title": "Generating Multiple-Choice Questions and Diagrams for Multimodal Machine Comprehension",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "26edee8c5c210c70b81bd37f1318a8dea143d4f1": {
+    "title": "Consensus-Guided Iterative Refinement for Multimodal Emotion Preference Prediction in MER 2026 Track 3",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "b4a0e60fc88709479479856b6176997b73051235": {
+    "title": "LoopEdit: Learning Data-driven Hierarchical Planners for Short-Video Assembly",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "a8ef4bc8061ab44a41095f48cc1e702a071b34b9": {
+    "title": "EviGuard: Evidence-Guided Connector Intervention for Cross-Modal Safety Unlearning in Multimodal LLMs",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "4bfaf6f36b51c64ed7138dcf6299268011bd3f10": {
+    "title": "Long-Horizon Vision-Language Navigation by Memory Editing",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "4bfa7d2ff33babfc92c20c88204a4dfc49c1be97": {
+    "title": "GraphSense: Resource-Aware Graph Memory for Efficient Sequential Agents",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "9a09d83719c001eceeb3e55deda2bcdad2884a62": {
+    "title": "ELASTIC-V: Reconstructing Spatiotemporal Fidelity via Saliency Compression and Elastic Encoding",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "b161b507a16dd974495ef61a41c49366700326a3": {
+    "title": "Med-OR: Curriculum Reinforcement Learning for Open-Ended Medical Visual Reasoning",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "affd48a3202d8267e42729edfc788749fa19fa84": {
+    "title": "TaME4D: Tailoring Multisensory Effects for Improving 4D Movie Watching Experiences",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "657a6f59a7d81f2476782008e2b445bb88369b43": {
+    "title": "MBench: Rebuilding Human-Aligned Zero-Shot Evaluation for Motion-Language Models",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "0aee5e2aae2eb81bcf49b3152a5986a6a81595de": {
+    "title": "Beyond Unimodal Reliance: Multimodal Synergy for Training-Free Test-Time Adaptation",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "9dd0767c2a827816c502d766417894cb3b830587": {
+    "title": "Direct Trajectory Optimization for Inference-Time Alignment of Text-to-Image Diffusion Models",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "33a8f9b5872ce38399134b7d2a3927fcc3f422bc": {
+    "title": "Agent4Crypto: A Dual-Reflective and Market-Feedback-Aligned LLM-Based Multi-Agent System for Cryptocurrency Trading",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "b988b4a88154d921b519660bd9126be2abfd2b00": {
+    "title": "Reward-Estimated Hypergradient for Bilevel Reinforcement Learning with Black-Box Follower",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "c5db07cd83d04552950fbabbcd082cad18d65b64": {
+    "title": "MaxIM: Maximally Informative Incremental Summarization via Reinforcement Learning",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "b85b471922295f894c6892f44965e2c969abd159": {
+    "title": "Lost in space: uncovering fundamental limits of large language models in complex, spatial problem solving",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "a375e711347027e4d3e6ded6632e9220fb36b592": {
+    "title": "Veritas: A Verifier Generation Harness for Agent Tasks",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "cf4ac89aac3e246a9d1952107f3442b0df31193f": {
+    "title": "No finite rulebook can certify every safe program: an impossibility theorem for gatekeeping AI agents",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "a671d591257511cf33f7e496af573952373b15ec": {
+    "title": "Train High, Ship Low: Efficient LoRA Synchronization for Distributed On-Policy Post-Training",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "1f9d3dc2ec32b6bd75ea34ed1e5a43dc4dbb4371": {
+    "title": "Wrong the Same Way: Cross-Prompt Sharing Both Suppresses and Amplifies Reward Hacking in RLVR",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "95391a5e3f46fa89d8e5b927b445e1127df46588": {
+    "title": "AI Alignment Is Neither Solvable nor Sufficient",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "557647b10adc82561630247ff70512bae05139cd": {
+    "title": "Guiding Multimodal Continual Instruction Tuning via Learning Update-Induced Forgetting",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "5488e9ccce89d3c2b75d3ac1fb2a106e554c1068": {
+    "title": "SEPO: Self-Evolving Preference Optimization for Diffusion Alignment via Dynamic Rule Refinement",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "e1a9858b326777974abfd0c60cf2ceff67e67a5d": {
+    "title": "TLRS-DPO: Token-Level Risk Scoring for Better Direct Preference Optimization",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "5e962b31ce75d3942a8ee8ff2eb6cbfbe7892cc5": {
+    "title": "Uncertainty-Guided Reward Labeling for Reinforcement Learning under Limited Feedback",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "da45a7d1efb1fdf9b4664e32bfe683e19f73cf24": {
+    "title": "PRISM: Preference-based Reward and Uncertainty-Integrated Synthesis Minimization for RTL PPA Optimization",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "c05cc1b3536136e339597acb67cba0e3878f9bbe": {
+    "title": "The Surprising Effectiveness of Deleting Weights in LLM Post-Training",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "248f04e6047f40b130377307641a34c96001d750": {
+    "title": "AERO: Adaptive Ensemble-Disagreement Routing for Oracle Feedback in Sample-Efficient Online RLHF",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "c85376bea8787d849513bae1a9237f1c15d688cd": {
+    "title": "Semantic Synthesis over Brute-Force Search: LLM-Guided Transformation Design for Efficient Learning",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "c650decb24e0a701f6761274451cd82161551833": {
+    "title": "Open Problems in Chatbots and Mental Health",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "944c2bfe15f019b3b45b15b86ebf248ee072ee7b": {
+    "title": "SCorPion: A Strategic, Controllable and Personified Conversational Companion",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "c1bf8b0c963cfe7ae3d4624a75ebd3d21def2ad9": {
+    "title": "When Safety Becomes An Outlier: Understanding the Retention of LLM Safety Behaviors",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "e21bc304877183fadf888b5ab0c514664ea94a94": {
+    "title": "META-IR: Meta-Introspective Reasoning for Adaptive Safety Alignment in LLM",
+    "why": "attaches only through hub papers (ouyang2022); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "8b862d37fc15c366c8e9cfa980a5c486956cdf85": {
+    "title": "Mitigating Reward Hacking in Reinforcement Learning from Human Feedback via Advantage Sign Robustness",
+    "why": "attaches only through hub papers (rafailov2024); no topical signal",
+    "seen": "2026-11-16"
+  },
+  "b706a227cfe53b17882ec05dfe1572d88f756970": {
+    "title": "Understanding the Effects of Multi-Agent Deliberation for Human-AI Decision-Making",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-11-16"
+  },
+  "998d1620e17117a439b12184135be9dec65a231a": {
+    "title": "How communicating an AI’s relational risk influences trust perceptions in AI-assisted decision-making",
+    "why": "cites only bo2025; no velocity signal",
+    "seen": "2026-11-16"
+  },
+  "1f766a85614a7fd5a133927b170479fd1b436015": {
+    "title": "Shortcuts and Boundaries: Verifiable RL Misalignment and Contextual Safety Learning",
+    "why": "cites only liu2026; no velocity signal",
+    "seen": "2026-11-16"
+  },
+  "89fd11557f77dfd3ed7206f61f00555a9b9b1c71": {
+    "title": "Winning Reviews, Losing Discovery? The Co-Evolutionary Game of AI Research and Peer Review",
+    "why": "cites only kim2026b; no velocity signal",
+    "seen": "2026-11-16"
   }
 }
