@@ -63,6 +63,10 @@
     "kept": true,
     "seen": "2026-10-14"
   },
+  "arxiv:2504.09895": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
   "arxiv:2504.17023": {
     "kept": true,
     "seen": "2026-09-15"
@@ -315,6 +319,10 @@
     "kept": true,
     "seen": "2026-09-18"
   },
+  "arxiv:2510.10605": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
   "arxiv:2510.10730": {
     "kept": false,
     "seen": "2026-09-23"
@@ -498,6 +506,10 @@
   "arxiv:2512.20159": {
     "kept": true,
     "seen": "2026-10-16"
+  },
+  "arxiv:2512.20974": {
+    "kept": false,
+    "seen": "2026-11-19"
   },
   "arxiv:2512.23065": {
     "kept": false,
@@ -854,6 +866,10 @@
   "arxiv:2603.08913": {
     "kept": false,
     "seen": "2026-10-21"
+  },
+  "arxiv:2603.10233": {
+    "kept": false,
+    "seen": "2026-11-19"
   },
   "arxiv:2603.10287": {
     "kept": true,
@@ -1843,6 +1859,14 @@
     "kept": true,
     "seen": "2026-09-29"
   },
+  "arxiv:2606.12563": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2606.12922": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
   "arxiv:2606.13120": {
     "kept": true,
     "seen": "2026-10-20"
@@ -1858,6 +1882,10 @@
   "arxiv:2606.14302": {
     "kept": true,
     "seen": "2026-10-06"
+  },
+  "arxiv:2606.14990": {
+    "kept": true,
+    "seen": "2026-11-19"
   },
   "arxiv:2606.15123": {
     "kept": true,
@@ -2063,6 +2091,10 @@
     "kept": false,
     "seen": "2026-11-10"
   },
+  "arxiv:2606.28778": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
   "arxiv:2606.28900": {
     "kept": false,
     "seen": "2026-10-14"
@@ -2183,6 +2215,10 @@
     "kept": true,
     "seen": "2026-11-05"
   },
+  "arxiv:2607.10059": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
   "arxiv:2607.11183": {
     "kept": true,
     "seen": "2026-10-16"
@@ -2190,6 +2226,10 @@
   "arxiv:2607.11849": {
     "kept": true,
     "seen": "2026-10-01"
+  },
+  "arxiv:2607.13315": {
+    "kept": false,
+    "seen": "2026-11-19"
   },
   "arxiv:2607.14108": {
     "kept": true,
@@ -2354,6 +2394,10 @@
   "arxiv:2608.05810": {
     "kept": true,
     "seen": "2026-09-18"
+  },
+  "arxiv:2608.06400": {
+    "kept": true,
+    "seen": "2026-11-19"
   },
   "arxiv:2608.06745": {
     "kept": false,
@@ -2726,6 +2770,10 @@
   "arxiv:2609.07290v1": {
     "kept": false,
     "seen": "2026-09-10"
+  },
+  "arxiv:2609.07441": {
+    "kept": false,
+    "seen": "2026-11-19"
   },
   "arxiv:2609.07603v1": {
     "kept": false,
@@ -3431,6 +3479,10 @@
     "kept": false,
     "seen": "2026-09-17"
   },
+  "arxiv:2609.18366": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
   "arxiv:2609.18461": {
     "kept": false,
     "seen": "2026-09-17"
@@ -3866,6 +3918,10 @@
   "arxiv:2609.23775": {
     "kept": false,
     "seen": "2026-09-22"
+  },
+  "arxiv:2609.23806": {
+    "kept": true,
+    "seen": "2026-11-19"
   },
   "arxiv:2609.23808": {
     "kept": true,
@@ -9575,6 +9631,90 @@
     "kept": true,
     "seen": "2026-11-18"
   },
+  "arxiv:2611.23241": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.23342": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.23365": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.23403": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.23779": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.23840": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.23917": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.24039": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.24059": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.24156": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.24159": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.24221": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.24321": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.24453": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.24619": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.24622": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.24651": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.24669": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.24867": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.24880": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "arxiv:2611.24892": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
   "ghrel:UKGovernmentBEIS/inspect_ai:0.3.278": {
     "kept": true,
     "seen": "2026-10-10"
@@ -9666,6 +9806,14 @@
   "hf:google/DiarizationLM-Gemma-4-E4B-v1": {
     "kept": false,
     "seen": "2026-10-05"
+  },
+  "hf:microsoft/Aion-1.0-Instruct-2.3B": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "hf:microsoft/Aion-1.0-Instruct-2.3B-ONNX-WebGPU": {
+    "kept": false,
+    "seen": "2026-11-19"
   },
   "hf:microsoft/CogACT-v2-RoboDojo": {
     "kept": false,
@@ -11499,6 +11647,50 @@
     "kept": false,
     "seen": "2026-11-18"
   },
+  "hn:50547223": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "hn:50547901": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "hn:50548485": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "hn:50549493": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "hn:50551601": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "hn:50552424": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
+  "hn:50553225": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "hn:50553843": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "hn:50554269": {
+    "kept": false,
+    "seen": "2026-11-19"
+  },
+  "hn:50554374": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
+  "hn:50554908": {
+    "kept": true,
+    "seen": "2026-11-19"
+  },
   "pypi:deepeval:4.2.3": {
     "kept": false,
     "seen": "2026-09-14"
@@ -11770,6 +11962,10 @@
   "repo:google/artemis": {
     "kept": false,
     "seen": "2026-09-12"
+  },
+  "repo:helloHub1212/dsh-windows-mcp": {
+    "kept": false,
+    "seen": "2026-11-19"
   },
   "repo:horizon-rust/horizon": {
     "kept": false,
