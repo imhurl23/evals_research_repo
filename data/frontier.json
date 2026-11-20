@@ -1,6 +1,152 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "runs": [
+    {
+      "date": "2026-11-20",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: Gemini 4 Neon is the new #1 on the Models Engineering Index",
+          "url": "https://git-aarvin.github.io/mei/",
+          "when": "2026-11-19",
+          "why": "HN discussion of a new frontier model (Gemini 4 Neon) topping a models engineering benchmark/index, relevant frontier-model and eval-ranking development."
+        },
+        {
+          "kind": "paper",
+          "title": "PAIR-MED: Policy-reward Alternation for Iterative Refinement in Multilingual Medical Reasoning",
+          "url": "https://arxiv.org/abs/2611.25446",
+          "when": "2026-11-20",
+          "why": "Studies PRM drift/misalignment during RL training on an evolving policy, a reward-model reliability issue directly relevant to reward hacking research despite the medical/multilingual framing."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: An FBI agent called a Claude user about his chats",
+          "url": "https://austinpatrick.substack.com/p/when-should-ai-labs-alert-police",
+          "when": "2026-11-19",
+          "why": "Discussion of an FBI agent contacting a Claude user about their chat logs, raising real-world human-AI interaction and privacy/surveillance implications for deployed LLMs."
+        },
+        {
+          "kind": "paper",
+          "title": "PILAPS: A Bilingual Benchmark for Evaluating Pragmatic Inference across Phenomena and Settings",
+          "url": "https://arxiv.org/abs/2611.25459",
+          "when": "2026-11-20",
+          "why": "New bilingual English/Mandarin benchmark isolating pragmatic inference phenomena, usable to test whether LLM pragmatic competence generalizes across languages."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Claude solves two open problems in the physics of black holes",
+          "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+          "when": "2026-11-19",
+          "why": "Claims Claude solved two open problems in black hole physics, a notable frontier-capability claim worth scrutinizing for eval/benchmark validity."
+        },
+        {
+          "kind": "paper",
+          "title": "Same Judgement, Different Scores: Numerical Scoring Topology in LLM-as-a-Judge Evaluation",
+          "url": "https://arxiv.org/abs/2611.26077",
+          "when": "2026-11-20",
+          "why": "Introduces 'numerical scoring topology' to analyze how scale width, granularity, and symmetry of scoring schemes affect LLM-as-judge reliability, directly actionable for anyone designing judge-based evals."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Two stealth models just appeared on the leaderboard, both ahead of Fable 5.2",
+          "url": "https://contralabs.com/frontierdesign",
+          "when": "2026-11-19",
+          "why": "Reports two new unidentified stealth models outranking Fable 5.2 on a leaderboard, relevant frontier-model tracking and benchmark signal."
+        },
+        {
+          "kind": "paper",
+          "title": "Beam Model Technical Report",
+          "url": "https://arxiv.org/abs/2611.26358",
+          "when": "2026-11-20",
+          "why": "New frontier-scale MoE model (501B total/23.4B active params, 1M context) targeting coding/reasoning/agentic workloads with claimed 3-4x inference efficiency gains."
+        },
+        {
+          "kind": "paper",
+          "title": "Calibrated Decision Rewards: Training Language Models with a Judge That Knows How Sure It Is",
+          "url": "https://arxiv.org/abs/2611.25135",
+          "when": "2026-11-20",
+          "why": "Introduces RLCDR, an RL training method using calibrated judge probabilities instead of raw LLM-judge scores, directly addressing reward hacking from miscalibrated reward signals."
+        },
+        {
+          "kind": "paper",
+          "title": "Robust LLM Evaluation with Boundedly Bad Judges: A Constrained Maximum Likelihood Approach",
+          "url": "https://arxiv.org/abs/2604.03257",
+          "when": "2026-11-20",
+          "why": "Proposes constrained maximum likelihood estimation to combine noisy LLM-judge labels with reliable human labels, a new statistical method for robust LLM evaluation."
+        },
+        {
+          "kind": "paper",
+          "title": "Persistent Sparse Autoencoders: Learning Feature-Specific Timescales in Language Model Representations",
+          "url": "https://arxiv.org/abs/2607.17117",
+          "when": "2026-11-20",
+          "why": "Introduces persistent sparse autoencoders that capture feature-specific temporal dynamics in activations, a methodological advance for mechanistic interpretability."
+        },
+        {
+          "kind": "paper",
+          "title": "EvoSkill Injection: Red-Teaming Autonomous Skill Generation and Evolution in Self-Evolving Agents",
+          "url": "https://arxiv.org/abs/2608.30429",
+          "when": "2026-11-20",
+          "why": "Red-teaming study exposing a new attack surface (malicious skill injection) in self-evolving LLM agents, relevant to reward hacking and agent safety evaluation."
+        },
+        {
+          "kind": "paper",
+          "title": "AppSci-Bench: Can LLMs Build AI Agents and Make Them Better?",
+          "url": "https://arxiv.org/abs/2611.25360",
+          "when": "2026-11-20",
+          "why": "New benchmark evaluating LLMs on building AI agents from stakeholder requirements, a distinct eval angle on agentic meta-capability rather than agent performance itself."
+        },
+        {
+          "kind": "paper",
+          "title": "CompAct-Bench: A Benchmark for Working-Context Compaction in Long-Horizon Agent Tasks",
+          "url": "https://arxiv.org/abs/2611.25673",
+          "when": "2026-11-20",
+          "why": "New benchmark specifically measuring how well LLM agents compact working context over long-horizon tasks, directly relevant to agent eval methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "Tether: Verified Stateful Policy Engine for System-Level Monitoring of Agents",
+          "url": "https://arxiv.org/abs/2611.25599",
+          "when": "2026-11-20",
+          "why": "A verified stateful policy engine providing provable safety guarantees for monitoring autonomous agent actions, relevant to reward-hacking mitigation and agent safety evaluation."
+        },
+        {
+          "kind": "paper",
+          "title": "Agent^2 RL-Bench: Can LLM Agents Engineer Agentic RL Post-Training?",
+          "url": "https://arxiv.org/abs/2604.10547",
+          "when": "2026-11-20",
+          "why": "Introduces a benchmark testing whether LLM agents can autonomously design and debug RL post-training pipelines, directly relevant to agentic eval harness development."
+        },
+        {
+          "kind": "paper",
+          "title": "Separating Interpretability and Reconstruction in Sparse Autoencoders",
+          "url": "https://arxiv.org/abs/2611.25165",
+          "when": "2026-11-20",
+          "why": "Proposes DualSAE to decouple reconstruction fidelity from interpretability in sparse autoencoders, a methodological advance directly usable in mechanistic interpretability work."
+        },
+        {
+          "kind": "paper",
+          "title": "Sequential Anytime Valid Tests for Efficient Inference-Time Alignment",
+          "url": "https://arxiv.org/abs/2611.26413",
+          "when": "2026-11-20",
+          "why": "Proposes anytime-valid sequential testing to adaptively allocate Best-of-N compute at inference time, a concrete efficiency-oriented eval method for inference-time alignment."
+        },
+        {
+          "kind": "paper",
+          "title": "A Statistical Framework for Training Data Auditing of Large Language Models",
+          "url": "https://arxiv.org/abs/2611.26264",
+          "when": "2026-11-20",
+          "why": "Proposes a statistical framework for auditing whether specific data was used in LLM training, directly applicable to benchmark-contamination detection and copyright/privacy auditing."
+        },
+        {
+          "kind": "paper",
+          "title": "Necessary, Not Sufficient, and No Longer Available: Grader Non-Determinism After the Withdrawal of Sampling Controls",
+          "url": "https://arxiv.org/abs/2606.26185",
+          "when": "2026-11-20",
+          "why": "Reports empirical evidence that LLM-as-judge grader non-determinism persists (and worsens) after vendors removed sampling controls like temperature=0, a direct concern for safety eval harnesses that gate deployment decisions."
+        }
+      ]
+    },
     {
       "date": "2026-11-19",
       "down": [],
