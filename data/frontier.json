@@ -1,6 +1,40 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "runs": [
+    {
+      "date": "2026-11-21",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: The Hungry Butler Effect: Concealed Commercial Incentives in LLMs",
+          "url": "https://www.researchgate.net/publication/418143113_The_Hungry_Butler_Effect_Concealed_Commercial_Incentives_and_the_Erosion_of_Epistemic_Rigour_in_Large_Language_Models",
+          "when": "2026-11-20",
+          "why": "HN discussion on a paper documenting concealed commercial incentives/steering in LLM outputs, directly relevant to reward hacking and deceptive alignment research."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Language Models Can Rewrite Their Own Weights",
+          "url": "https://arxiv.org/abs/2611.21885",
+          "when": "2026-11-20",
+          "why": "High-engagement HN thread on research showing LLMs can modify their own weights, relevant to mechanistic interpretability and self-modifying model safety."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Llms.txt and MCP didn't move the needle",
+          "url": "https://backpackforlaravel.com/articles/opinions/llms-txt-and-mcp-didn-t-move-the-needle-for-us-here-s-what-did",
+          "when": "2026-11-20",
+          "why": "HN discussion debating whether llms.txt and MCP standards have actually improved agent-tool interoperability, relevant to human-AI interaction tooling adoption."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Mapping every neuron in Qwen3-8B",
+          "url": "https://www.fermionresearch.com/research/mapping-every-neuron-in-qwen3-8b/",
+          "when": "2026-11-20",
+          "why": "HN discussion of a project mapping neuron functions across Qwen3-8B, a concrete mechanistic interpretability effort on a current open model."
+        }
+      ]
+    },
     {
       "date": "2026-11-20",
       "down": [],
@@ -2909,187 +2943,6 @@
           "url": "https://arxiv.org/abs/2610.17306",
           "when": "2026-10-28",
           "why": "Proposes HD-RL, an RL framework that trains LLM explanations to optimize actual human decision quality rather than preference/task reward, directly relevant to reward hacking and human-AI interaction research."
-        }
-      ]
-    },
-    {
-      "date": "2026-10-27",
-      "down": [],
-      "items": [
-        {
-          "kind": "chatter",
-          "title": "HN: GPT-6.1 Terra",
-          "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
-          "when": "2026-10-26",
-          "why": "HN megathread (600+ points) discussing the release of GPT-6.1 Terra, a new frontier model worth tracking for capability and eval implications."
-        },
-        {
-          "kind": "paper",
-          "title": "Eat Your Precision: Precision Objective Mitigates Reward Hacking in Rubric-based RL",
-          "url": "https://arxiv.org/abs/2610.33512",
-          "when": "2026-10-27",
-          "why": "Introduces a precision-based training objective that directly mitigates reward hacking (verbosity/padding) in rubric-based RL, relevant to reward hacking research."
-        },
-        {
-          "kind": "chatter",
-          "title": "HN: Concerning behavior from a popular open-weight AI model",
-          "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
-          "when": "2026-10-26",
-          "why": "HN discussion of concerning emergent behavior in a popular open-weight model, relevant to safety/alignment and reward-hacking tracking."
-        },
-        {
-          "kind": "paper",
-          "title": "Beyond Belief: Evaluating and Mitigating LLM Susceptibility to Misinformation",
-          "url": "https://arxiv.org/abs/2610.33962",
-          "when": "2026-10-27",
-          "why": "Evaluates whether tool-using LLMs' stated credibility judgments actually translate into resistance against misinformation/prompt-injection-like attacks, a concrete safety eval for human-AI interaction."
-        },
-        {
-          "kind": "chatter",
-          "title": "HN: Fixing Tool-Call Accuracy in vLLM",
-          "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
-          "when": "2026-10-26",
-          "why": "Technical writeup on diagnosing and fixing tool-call accuracy issues in vLLM, relevant to agentic tool-use evaluation and harness reliability."
-        },
-        {
-          "kind": "paper",
-          "title": "$\\Delta\\tau$-Bench: Pushing Agents Toward a Moving Capability",
-          "url": "https://arxiv.org/abs/2610.34238",
-          "when": "2026-10-27",
-          "why": "New agent benchmark testing robustness to continually evolving tool ecosystems (disappearing/replaced tools, noisy docs), pushing beyond static tool-use benchmarks like tau-bench."
-        },
-        {
-          "kind": "paper",
-          "title": "iPrefBench: A User-Centric Benchmark for Personalized Mobile Use Agents",
-          "url": "https://arxiv.org/abs/2610.34735",
-          "when": "2026-10-27",
-          "why": "New benchmark for personalized mobile-use agents that must infer underspecified user intent from activity history, relevant to human-AI interaction and agent evaluation."
-        },
-        {
-          "kind": "paper",
-          "title": "Text Is the Bottleneck: A Small-Scale Replication of LLM Game Playing in Riichi Mahjong",
-          "url": "https://arxiv.org/abs/2610.34791",
-          "when": "2026-10-27",
-          "why": "Small-scale replication study isolating whether text representation (vs. board state) is the bottleneck in LLM game-playing, offering a cheap methodology for probing LLM capability limits relevant to eval design."
-        },
-        {
-          "kind": "paper",
-          "title": "NumTrace: Auditing the Number Provenance of Financial Analyst Agents",
-          "url": "https://arxiv.org/abs/2610.34887",
-          "when": "2026-10-27",
-          "why": "Introduces NumTrace, a benchmark that audits provenance (entity/period/unit) of numerical claims from financial agents rather than just matching reference answers, a reusable attribution-style eval method."
-        },
-        {
-          "kind": "paper",
-          "title": "Diagnosing and Mitigating Long-Session Degradation in Full-Duplex Speech Models",
-          "url": "https://arxiv.org/abs/2610.34991",
-          "when": "2026-10-27",
-          "why": "Studies how full-duplex speech dialogue model behavior degrades over long conversational sessions and proposes mitigations, relevant to long-horizon human-AI interaction evaluation."
-        },
-        {
-          "kind": "paper",
-          "title": "Evaluating DeepSeek V4.1 Flash-1017 for loss of control and harmful manipulation risks",
-          "url": "https://arxiv.org/abs/2610.35671",
-          "when": "2026-10-27",
-          "why": "Independent third-party safety evaluation of DeepSeek V4.1 Flash for loss-of-control and manipulation risks, directly relevant to frontier model risk assessment practices."
-        },
-        {
-          "kind": "paper",
-          "title": "From Self-Confidence to Statistical Accuracy: Scaling Human-in-the-Loop Evaluation with Direct and LLM-Assisted Auditing",
-          "url": "https://arxiv.org/abs/2610.35698",
-          "when": "2026-10-27",
-          "why": "Proposes a statistical framework combining model self-confidence with LLM-assisted auditing to scale human-in-the-loop evaluation, directly relevant to eval methodology design."
-        },
-        {
-          "kind": "paper",
-          "title": "LLM-as-a-Judge Version Shift: The Instrument Changed, Not the Standard",
-          "url": "https://arxiv.org/abs/2610.32986",
-          "when": "2026-10-27",
-          "why": "Empirically tests whether swapping LLM-judge versions preserves measurement consistency in automated research pipelines, a key reliability concern for LLM-as-judge eval setups."
-        },
-        {
-          "kind": "paper",
-          "title": "SkillShift-Bench: Benchmarking Skill Learning under Environment Evolution for Web Agents",
-          "url": "https://arxiv.org/abs/2610.33528",
-          "when": "2026-10-27",
-          "why": "Introduces a benchmark testing whether web agents' learned skills generalize under shifting environment context, relevant to agentic eval harness development."
-        },
-        {
-          "kind": "paper",
-          "title": "Can LLMs Trust Appropriately? Evaluating Calibrated Reliance on Imperfect Partners",
-          "url": "https://arxiv.org/abs/2610.34107",
-          "when": "2026-10-27",
-          "why": "Introduces a benchmark testing whether LLMs calibrate trust/reliance on imperfect human or AI partners based on accumulating evidence, directly relevant to human-AI interaction research."
-        },
-        {
-          "kind": "paper",
-          "title": "Whether or Where? Tail Calibration Signals Finite-Budget Reward Hacking in Best-of-N Selection",
-          "url": "https://arxiv.org/abs/2610.34375",
-          "when": "2026-10-27",
-          "why": "Provides a theoretical analysis showing Best-of-N selection depends only on reward-model rank calibration in the tail, giving a concrete mechanism and diagnostic for reward hacking under finite sampling budgets."
-        },
-        {
-          "kind": "paper",
-          "title": "AndroidFlux: Evaluating and Reward Modeling Failure Recovery Capabilities in Mobile Use Multimodal Agents",
-          "url": "https://arxiv.org/abs/2610.34384",
-          "when": "2026-10-27",
-          "why": "Introduces AndroidFlux, a benchmark and reward-modeling evaluation for whether mobile-use multimodal agents can detect and recover from intermediate failures, relevant to agentic eval and reward hacking research."
-        },
-        {
-          "kind": "paper",
-          "title": "Mechanistic Insights into LoRA: Layer Sparsity for Adaptive Fine-Tuning via Path Patching",
-          "url": "https://arxiv.org/abs/2610.34756",
-          "when": "2026-10-27",
-          "why": "Mechanistic interpretability analysis of LoRA fine-tuning using path patching to identify layer-wise contribution sparsity, relevant to interpretability of adaptation methods."
-        },
-        {
-          "kind": "paper",
-          "title": "KnowMT-Bench: Benchmarking Knowledge-Intensive Long-Form Question Answering in Multi-Turn Dialogues",
-          "url": "https://arxiv.org/abs/2509.21856",
-          "when": "2026-10-27",
-          "why": "New benchmark for multi-turn, knowledge-intensive long-form QA evaluation, filling a gap in existing single-turn or non-factuality-focused dialogue benchmarks."
-        },
-        {
-          "kind": "paper",
-          "title": "Semantic Needles in Document Haystacks: Sensitivity Testing of LLM-as-a-Judge Similarity Scoring",
-          "url": "https://arxiv.org/abs/2604.18835",
-          "when": "2026-10-27",
-          "why": "A systematic sensitivity-testing framework for LLM-as-judge similarity scoring, probing robustness to subtle semantic perturbations like negation and entity swaps."
-        },
-        {
-          "kind": "paper",
-          "title": "Why Are Some Emotions Harder for LLMs? Uncovering the Causal Mechanisms of Emotion Inference via Sparse Autoencoders",
-          "url": "https://arxiv.org/abs/2604.25866",
-          "when": "2026-10-27",
-          "why": "Uses sparse autoencoders to uncover causal mechanisms behind uneven emotion recognition performance across LLMs, directly relevant to mech interp research."
-        },
-        {
-          "kind": "paper",
-          "title": "Naturalistic measure of social norms alignment",
-          "url": "https://arxiv.org/abs/2605.23420",
-          "when": "2026-10-27",
-          "why": "Proposes a naturalistic alternative to multiple-choice social norms alignment evaluation, relevant to alignment evaluation methodology."
-        },
-        {
-          "kind": "paper",
-          "title": "Learning Faithful Reasoning Processes with Spatio-Temporal Latent Dynamics for Large Language Models",
-          "url": "https://arxiv.org/abs/2605.26893",
-          "when": "2026-10-27",
-          "why": "Introduces GeoFaith, an RL method targeting faithful (not just outcome-correct) chain-of-thought reasoning, directly relevant to reward hacking and shortcut learning in RL-trained reasoners."
-        },
-        {
-          "kind": "paper",
-          "title": "Investigating and Alleviating Harm Amplification in LLM Interactions",
-          "url": "https://arxiv.org/abs/2606.02423",
-          "when": "2026-10-27",
-          "why": "Studies how LLMs can amplify user harm through extended interactions (democratizing expertise, scaling harmful operations), relevant to human-AI interaction safety evaluation."
-        },
-        {
-          "kind": "paper",
-          "title": "Mathematical Reasoning via Intervention-Based Time-Series Causal Discovery Using LLMs as Concept Mastery Simulators",
-          "url": "https://arxiv.org/abs/2605.07600",
-          "when": "2026-10-27",
-          "why": "Proposes a causal-intervention framework to identify which math concepts causally drive correct LLM answers, relevant to interpretability-style analysis of reasoning rather than spurious correlation."
         }
       ]
     }

@@ -9931,6 +9931,14 @@
     "kept": false,
     "seen": "2026-10-10"
   },
+  "hf:allenai/ACE2.5-ERA5": {
+    "kept": false,
+    "seen": "2026-11-21"
+  },
+  "hf:allenai/LitAgent-Joint-SFT-9B-lg7eae-2n": {
+    "kept": false,
+    "seen": "2026-11-21"
+  },
   "hf:allenai/Molmo2-4B-tb": {
     "kept": false,
     "seen": "2026-11-06"
@@ -11870,6 +11878,30 @@
   "hn:50568130": {
     "kept": true,
     "seen": "2026-11-20"
+  },
+  "hn:50569783": {
+    "kept": true,
+    "seen": "2026-11-21"
+  },
+  "hn:50574383": {
+    "kept": false,
+    "seen": "2026-11-21"
+  },
+  "hn:50574772": {
+    "kept": true,
+    "seen": "2026-11-21"
+  },
+  "hn:50577265": {
+    "kept": true,
+    "seen": "2026-11-21"
+  },
+  "hn:50582280": {
+    "kept": false,
+    "seen": "2026-11-21"
+  },
+  "hn:50583117": {
+    "kept": true,
+    "seen": "2026-11-21"
   },
   "pypi:deepeval:4.2.3": {
     "kept": false,
