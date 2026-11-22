@@ -1,6 +1,19 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "runs": [
+    {
+      "date": "2026-11-22",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: Harsher on Male? Evaluating LLMs on Gender-Asymmetric Moral Framing in Conflicts",
+          "url": "https://arxiv.org/abs/2606.14068",
+          "when": "2026-11-22",
+          "why": "HN discussion of a new benchmark testing LLMs for gender-asymmetric moral framing in conflict scenarios, a concrete bias-evaluation method relevant to eval researchers."
+        }
+      ]
+    },
     {
       "date": "2026-11-21",
       "down": [],
