@@ -1,6 +1,110 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "runs": [
+    {
+      "date": "2026-11-23",
+      "down": [],
+      "items": [
+        {
+          "kind": "paper",
+          "title": "WaXup: Weight Averaging of Experts as Data Augmentation for Robust Introspection",
+          "url": "https://arxiv.org/abs/2611.27353",
+          "when": "2026-11-23",
+          "why": "Proposes weight-averaging of finetuned experts as data augmentation to improve trainable 'introspection' methods where models verbalize their own learned behavior, a mechanistic interpretability technique."
+        },
+        {
+          "kind": "paper",
+          "title": "Open CDLM: A Benchmark and Library for Continuous Diffusion Language Models",
+          "url": "https://arxiv.org/abs/2611.27536",
+          "when": "2026-11-23",
+          "why": "Introduces a benchmark and library standardizing likelihood- and sample-based evaluation of continuous diffusion language models, addressing known measurement flaws in comparing CDLMs."
+        },
+        {
+          "kind": "paper",
+          "title": "Auditing Post-Training Unlearning in Diffusion Language Models using Sparse Autoencoders",
+          "url": "https://arxiv.org/abs/2611.27652",
+          "when": "2026-11-23",
+          "why": "Uses sparse autoencoders to audit whether post-training unlearning in diffusion language models actually removes targeted information, extending interpretability-based auditing beyond autoregressive LLMs."
+        },
+        {
+          "kind": "paper",
+          "title": "The Vulnerability Window: Decision Instability in Quantized Reward Models",
+          "url": "https://arxiv.org/abs/2611.27155",
+          "when": "2026-11-23",
+          "why": "Shows that 4-bit quantization of reward models and LLM judges silently flips 1-12% of pairwise preference decisions on RewardBench despite stable aggregate accuracy, a direct warning for RLHF/reward-hacking evaluation practice."
+        },
+        {
+          "kind": "paper",
+          "title": "TEA-Bench-BR: Can Coding Agents Turn a Branching Clinical Specification into Correct Code?",
+          "url": "https://arxiv.org/abs/2611.27895",
+          "when": "2026-11-23",
+          "why": "Introduces a coding-agent benchmark on translating branching clinical specs to code with FHIR export, targeting silent correctness failures rather than crash-level bugs, relevant to agentic coding eval design."
+        },
+        {
+          "kind": "paper",
+          "title": "Improving Consistency in Retrieval-Augmented Systems with Group Similarity Rewards",
+          "url": "https://arxiv.org/abs/2510.04392",
+          "when": "2026-11-23",
+          "why": "Proposes a group similarity reward to train RAG systems for output consistency across paraphrased queries, a concrete RL reward-shaping technique relevant to reward hacking/robustness research."
+        },
+        {
+          "kind": "paper",
+          "title": "CodeReviewBench: An Automated Benchmark for Evaluating the Software Factory",
+          "url": "https://arxiv.org/abs/2611.26942",
+          "when": "2026-11-23",
+          "why": "New benchmark for evaluating AI-driven code review by using actual PR authors (not third-party reviewers) as ground truth, addressing a known eval-validity gap in agentic coding pipelines."
+        },
+        {
+          "kind": "paper",
+          "title": "Decision Models Are General-Purpose Process Reward Models",
+          "url": "https://arxiv.org/abs/2611.27068",
+          "when": "2026-11-23",
+          "why": "Introduces DM-PRM, converting general yes/no decision models into step-level process reward models for credit assignment in sparse-reward RL settings, directly relevant to RL training methodology."
+        },
+        {
+          "kind": "paper",
+          "title": "Benchmarks' Last Exam",
+          "url": "https://arxiv.org/abs/2611.27622",
+          "when": "2026-11-23",
+          "why": "A meta-study quantifying how often benchmark prompts, environments, and graders disagree on success criteria, directly actionable for anyone trusting leaderboard scores."
+        },
+        {
+          "kind": "paper",
+          "title": "Weight-space programming and mechanistic interpretability for model editing in particle physics",
+          "url": "https://arxiv.org/abs/2611.27079",
+          "when": "2026-11-23",
+          "why": "Uses sparse-autoencoder-guided mechanistic interpretability to locate and edit specific attention heads causing physics-safety violations, a concrete weight-editing application of interpretability techniques."
+        },
+        {
+          "kind": "paper",
+          "title": "Preserving Pretrained CFG Structure in RL for Diffusion Models with Conditional Contrast Regularization",
+          "url": "https://arxiv.org/abs/2611.27288",
+          "when": "2026-11-23",
+          "why": "Proposes a regularization method to curb reward hacking during RL post-training of diffusion models by preserving classifier-free-guidance structure, directly relevant to reward hacking mitigation techniques."
+        },
+        {
+          "kind": "paper",
+          "title": "Who Grades the Agent? Privilege Separation for Coding-Agent Benchmarks",
+          "url": "https://arxiv.org/abs/2611.27860",
+          "when": "2026-11-23",
+          "why": "Introduces a privilege-separation design to prevent coding agents from manipulating their own grading infrastructure, directly addressing benchmark integrity and reward-hacking risks in agent evaluation."
+        },
+        {
+          "kind": "paper",
+          "title": "Parasite Features: Causal Abstraction Through Spurious Pathways",
+          "url": "https://arxiv.org/abs/2611.26711",
+          "when": "2026-11-23",
+          "why": "Identifies a class of spurious 'parasite features' that pass causal abstraction equivalence tests, directly challenging a core validation method used in mechanistic interpretability."
+        },
+        {
+          "kind": "paper",
+          "title": "Beyond Arrow: From Impossibility to Possibility in Multi-Criteria Benchmarking",
+          "url": "https://arxiv.org/abs/2602.07593",
+          "when": "2026-11-23",
+          "why": "Proposes a social-choice-theoretic framework to fix cyclic/unstable rankings when aggregating multi-metric benchmarks like HELM/MMLU, directly useful for benchmark design critique."
+        }
+      ]
+    },
     {
       "date": "2026-11-22",
       "down": [],
