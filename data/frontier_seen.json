@@ -39,6 +39,10 @@
     "kept": true,
     "seen": "2026-11-24"
   },
+  "arxiv:2502.10197": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
   "arxiv:2503.05061": {
     "kept": true,
     "seen": "2026-09-29"
@@ -87,6 +91,10 @@
     "kept": true,
     "seen": "2026-10-19"
   },
+  "arxiv:2505.12707": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
   "arxiv:2505.13388": {
     "kept": true,
     "seen": "2026-09-16"
@@ -118,6 +126,10 @@
   "arxiv:2505.23126": {
     "kept": true,
     "seen": "2026-09-17"
+  },
+  "arxiv:2505.23281": {
+    "kept": true,
+    "seen": "2026-11-26"
   },
   "arxiv:2505.23713": {
     "kept": true,
@@ -231,6 +243,10 @@
     "kept": false,
     "seen": "2026-09-29"
   },
+  "arxiv:2508.20637": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
   "arxiv:2508.21285": {
     "kept": true,
     "seen": "2026-11-04"
@@ -282,6 +298,10 @@
   "arxiv:2509.22754": {
     "kept": false,
     "seen": "2026-09-21"
+  },
+  "arxiv:2509.22994": {
+    "kept": true,
+    "seen": "2026-11-26"
   },
   "arxiv:2509.23140": {
     "kept": true,
@@ -458,6 +478,10 @@
   "arxiv:2511.22341": {
     "kept": true,
     "seen": "2026-09-18"
+  },
+  "arxiv:2512.00672": {
+    "kept": true,
+    "seen": "2026-11-26"
   },
   "arxiv:2512.02004": {
     "kept": true,
@@ -803,9 +827,17 @@
     "kept": true,
     "seen": "2026-11-17"
   },
+  "arxiv:2602.15460": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
   "arxiv:2602.16543": {
     "kept": false,
     "seen": "2026-10-05"
+  },
+  "arxiv:2602.17229": {
+    "kept": true,
+    "seen": "2026-11-26"
   },
   "arxiv:2602.18297": {
     "kept": true,
@@ -1055,6 +1087,10 @@
     "kept": false,
     "seen": "2026-09-22"
   },
+  "arxiv:2604.02507": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
   "arxiv:2604.02947": {
     "kept": true,
     "seen": "2026-09-23"
@@ -1094,6 +1130,10 @@
   "arxiv:2604.07953": {
     "kept": false,
     "seen": "2026-11-16"
+  },
+  "arxiv:2604.08641": {
+    "kept": false,
+    "seen": "2026-11-26"
   },
   "arxiv:2604.09596": {
     "kept": false,
@@ -1579,6 +1619,10 @@
     "kept": false,
     "seen": "2026-11-17"
   },
+  "arxiv:2605.22511": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
   "arxiv:2605.22611": {
     "kept": false,
     "seen": "2026-09-16"
@@ -1654,6 +1698,10 @@
   "arxiv:2605.25440": {
     "kept": false,
     "seen": "2026-11-03"
+  },
+  "arxiv:2605.25676": {
+    "kept": false,
+    "seen": "2026-11-26"
   },
   "arxiv:2605.26074": {
     "kept": false,
@@ -1903,9 +1951,17 @@
     "kept": true,
     "seen": "2026-09-23"
   },
+  "arxiv:2606.06462": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
   "arxiv:2606.06857": {
     "kept": true,
     "seen": "2026-11-13"
+  },
+  "arxiv:2606.07007": {
+    "kept": true,
+    "seen": "2026-11-26"
   },
   "arxiv:2606.07311": {
     "kept": false,
@@ -2211,6 +2267,10 @@
     "kept": false,
     "seen": "2026-11-13"
   },
+  "arxiv:2606.27510": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
   "arxiv:2606.27539": {
     "kept": false,
     "seen": "2026-11-17"
@@ -2270,6 +2330,10 @@
   "arxiv:2606.30943": {
     "kept": false,
     "seen": "2026-09-15"
+  },
+  "arxiv:2606.31126": {
+    "kept": false,
+    "seen": "2026-11-26"
   },
   "arxiv:2606.31179": {
     "kept": false,
@@ -2418,6 +2482,10 @@
   "arxiv:2607.21424": {
     "kept": false,
     "seen": "2026-09-25"
+  },
+  "arxiv:2607.21570": {
+    "kept": false,
+    "seen": "2026-11-26"
   },
   "arxiv:2607.21606": {
     "kept": false,
@@ -2646,6 +2714,10 @@
   "arxiv:2608.15008": {
     "kept": true,
     "seen": "2026-11-05"
+  },
+  "arxiv:2608.15790": {
+    "kept": false,
+    "seen": "2026-11-26"
   },
   "arxiv:2608.16207": {
     "kept": false,
@@ -3206,6 +3278,10 @@
   "arxiv:2609.11334v1": {
     "kept": false,
     "seen": "2026-09-11"
+  },
+  "arxiv:2609.11347": {
+    "kept": false,
+    "seen": "2026-11-26"
   },
   "arxiv:2609.11414v1": {
     "kept": false,
@@ -7815,6 +7891,10 @@
     "kept": true,
     "seen": "2026-10-27"
   },
+  "arxiv:2610.34501": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
   "arxiv:2610.34585": {
     "kept": false,
     "seen": "2026-10-27"
@@ -10483,6 +10563,154 @@
     "kept": true,
     "seen": "2026-11-25"
   },
+  "arxiv:2611.33162": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33182": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33307": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33398": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33452": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33470": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33493": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33510": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33523": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33594": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33640": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33656": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33715": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33732": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33748": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33775": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33789": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33794": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33848": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.33964": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34024": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34042": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34044": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34079": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34130": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34132": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34328": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34331": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34400": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34407": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34466": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34493": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34529": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34603": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34637": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34823": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "arxiv:2611.34930": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
   "ghrel:UKGovernmentBEIS/inspect_ai:0.3.278": {
     "kept": true,
     "seen": "2026-10-10"
@@ -12583,6 +12811,10 @@
     "kept": true,
     "seen": "2026-11-25"
   },
+  "hn:50634369": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
   "hn:50634658": {
     "kept": true,
     "seen": "2026-11-25"
@@ -12606,6 +12838,22 @@
   "hn:50638320": {
     "kept": true,
     "seen": "2026-11-25"
+  },
+  "hn:50648050": {
+    "kept": true,
+    "seen": "2026-11-26"
+  },
+  "hn:50648365": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "hn:50648823": {
+    "kept": false,
+    "seen": "2026-11-26"
+  },
+  "hn:50651117": {
+    "kept": false,
+    "seen": "2026-11-26"
   },
   "pypi:deepeval:4.2.3": {
     "kept": false,
@@ -12650,6 +12898,10 @@
   "pypi:deepeval:4.3.5": {
     "kept": false,
     "seen": "2026-11-24"
+  },
+  "pypi:deepeval:4.3.6": {
+    "kept": false,
+    "seen": "2026-11-26"
   },
   "pypi:inspect-ai:0.3.264": {
     "kept": true,
@@ -12766,6 +13018,10 @@
   "repo:Derpyu520/qq-bridge": {
     "kept": false,
     "seen": "2026-11-11"
+  },
+  "repo:Ebony-Vinyl/EAC-design-world": {
+    "kept": false,
+    "seen": "2026-11-26"
   },
   "repo:Fei-Craft/DS-Bot": {
     "kept": false,
