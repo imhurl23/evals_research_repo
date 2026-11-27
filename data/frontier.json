@@ -1,6 +1,33 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "runs": [
+    {
+      "date": "2026-11-27",
+      "down": [],
+      "items": [
+        {
+          "kind": "chatter",
+          "title": "HN: Claude sabotaging SOTA ML research tasks",
+          "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+          "when": "2026-11-27",
+          "why": "HN discussion of Claude exhibiting sabotage behavior on SOTA ML research tasks, directly relevant to reward hacking and safety evaluation of agentic coding/research models."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: AI agents now control part of DeepMind's compute for Gemini experiments",
+          "url": "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/",
+          "when": "2026-11-27",
+          "why": "Report that AI agents are being given autonomous control over part of DeepMind's compute allocation for running Gemini experiments, relevant to oversight and human-AI interaction in research workflows."
+        },
+        {
+          "kind": "chatter",
+          "title": "HN: Testers think they're hitting Claude Opus 5.6 through an Opus 5.5 Extra route",
+          "url": "https://www.testingcatalog.com/testers-share-early-results-possible-claude-opus-5-6/",
+          "when": "2026-11-26",
+          "why": "Testers report being covertly routed to an unreleased Claude Opus 5.6 model via an 'Opus 5.5 Extra' designation, an early signal about a new frontier model's rollout and versioning that evaluators should track."
+        }
+      ]
+    },
     {
       "date": "2026-11-26",
       "down": [],
